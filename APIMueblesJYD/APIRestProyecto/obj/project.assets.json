@@ -4071,19 +4071,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Kev UwU\\.nuget\\packages\\": {}
+    "C:\\Users\\TheGamerXD\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kev UwU\\Desktop\\Proyecto V trimestre\\APIMueblesJYD\\APIRestProyecto\\APIRestProyecto.csproj",
+      "projectUniqueName": "C:\\Proyecto\\ProyectoMuebles J&D\\APIProyecto\\APIMueblesJYD\\APIRestProyecto\\APIRestProyecto.csproj",
       "projectName": "APIRestProyecto",
-      "projectPath": "C:\\Users\\Kev UwU\\Desktop\\Proyecto V trimestre\\APIMueblesJYD\\APIRestProyecto\\APIRestProyecto.csproj",
-      "packagesPath": "C:\\Users\\Kev UwU\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kev UwU\\Desktop\\Proyecto V trimestre\\APIMueblesJYD\\APIRestProyecto\\obj\\",
+      "projectPath": "C:\\Proyecto\\ProyectoMuebles J&D\\APIProyecto\\APIMueblesJYD\\APIRestProyecto\\APIRestProyecto.csproj",
+      "packagesPath": "C:\\Users\\TheGamerXD\\.nuget\\packages\\",
+      "outputPath": "C:\\Proyecto\\ProyectoMuebles J&D\\APIProyecto\\APIMueblesJYD\\APIRestProyecto\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Kev UwU\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\TheGamerXD\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4097,11 +4097,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Kev UwU\\Desktop\\Proyecto V trimestre\\APIMueblesJYD\\LoggerService\\LoggerService.csproj": {
-              "projectPath": "C:\\Users\\Kev UwU\\Desktop\\Proyecto V trimestre\\APIMueblesJYD\\LoggerService\\LoggerService.csproj"
+            "C:\\Proyecto\\ProyectoMuebles J&D\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj": {
+              "projectPath": "C:\\Proyecto\\ProyectoMuebles J&D\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj"
             },
-            "C:\\Users\\Kev UwU\\Desktop\\Proyecto V trimestre\\APIMueblesJYD\\Repository\\Repository.csproj": {
-              "projectPath": "C:\\Users\\Kev UwU\\Desktop\\Proyecto V trimestre\\APIMueblesJYD\\Repository\\Repository.csproj"
+            "C:\\Proyecto\\ProyectoMuebles J&D\\APIProyecto\\APIMueblesJYD\\Repository\\Repository.csproj": {
+              "projectPath": "C:\\Proyecto\\ProyectoMuebles J&D\\APIProyecto\\APIMueblesJYD\\Repository\\Repository.csproj"
             }
           }
         }
@@ -4154,7 +4154,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

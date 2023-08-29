@@ -505,19 +505,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Kev UwU\\.nuget\\packages\\": {}
+    "C:\\Users\\TheGamerXD\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kev UwU\\Desktop\\Proyecto V trimestre\\APIMueblesJYD\\LoggerService\\LoggerService.csproj",
+      "projectUniqueName": "C:\\Proyecto\\ProyectoMuebles J&D\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj",
       "projectName": "LoggerService",
-      "projectPath": "C:\\Users\\Kev UwU\\Desktop\\Proyecto V trimestre\\APIMueblesJYD\\LoggerService\\LoggerService.csproj",
-      "packagesPath": "C:\\Users\\Kev UwU\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kev UwU\\Desktop\\Proyecto V trimestre\\APIMueblesJYD\\LoggerService\\obj\\",
+      "projectPath": "C:\\Proyecto\\ProyectoMuebles J&D\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj",
+      "packagesPath": "C:\\Users\\TheGamerXD\\.nuget\\packages\\",
+      "outputPath": "C:\\Proyecto\\ProyectoMuebles J&D\\APIProyecto\\APIMueblesJYD\\LoggerService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Kev UwU\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\TheGamerXD\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -531,8 +531,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Kev UwU\\Desktop\\Proyecto V trimestre\\APIMueblesJYD\\Contracts\\Contracts.csproj": {
-              "projectPath": "C:\\Users\\Kev UwU\\Desktop\\Proyecto V trimestre\\APIMueblesJYD\\Contracts\\Contracts.csproj"
+            "C:\\Proyecto\\ProyectoMuebles J&D\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj": {
+              "projectPath": "C:\\Proyecto\\ProyectoMuebles J&D\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj"
             }
           }
         }
@@ -568,7 +568,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
