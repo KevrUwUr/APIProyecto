@@ -21,7 +21,15 @@ namespace Repository
             modelBuilder.ApplyConfiguration(new CargoConfiguration());
         }
 
+
+
         public DbSet<Cargo>? Cargos { get; set; }
+        public DbSet<Empleado>? Empleados { get; set; }
+        public DbSet<Empleado_Cargo>? Empleados_Cargos { get; set; }
+        public DbSet<FacturaCompra>? FacturasCompras { get; set; }
+        public DbSet<FacturaVenta>? FacturasVentas { get; set; }
+        public DbSet<DetalleFacturaVenta>? DetallesFacturaVentas { get; set; }
+        public DbSet<HistoricoPrecios>? HistoricosPrecios { get; set; }
 
     }
 }
