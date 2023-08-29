@@ -22,6 +22,12 @@ namespace Repository
         }
 
         public DbSet<Cargo>? Cargos { get; set; }
+        public DbSet<ContactoEmpleado> ContactoEmpleados {get; set;}
+        public DbSet<ContactoProveedor> ContactoProveedores { get; set; }
+        public DbSet<ContactoUsuario> contactoUsuarios { get; set; }
+        public DbSet<DetalleFacturaCompra> DetalleFacturaCompras { get; set; }
+        public DbSet<Empleado> Empleados { get; set; }
+        public DbSet<Producto> Productos { get; set; }
 
     }
 }

@@ -24,6 +24,24 @@ namespace Repository.Configuration
             },
             new Cargo
             {
+                IdCargo = new Guid("ef3f0aae-804f-4e7c-9633-212a439d0960"),
+                NombreCargo = "Diseñador de Muebles",
+                Estado = 1,
+            },
+            new Cargo
+            {
+                IdCargo = new Guid("2954f19b-36e5-4a69-996b-dc3911df74b2"),
+                NombreCargo = "Vendedor de Muebles",
+                Estado = 1,
+            },
+            new Cargo
+            {
+                IdCargo = new Guid("8d8330ee-16ed-41ba-89d3-599651cddb34"),
+                NombreCargo = "Técnico de Acabados",
+                Estado = 1,
+            },
+            new Cargo
+            {
                 IdCargo = new Guid("2d2df54e-e3ff-45e3-915d-ac2f53d371f2"),
                 NombreCargo = "Asistente de carpinteria",
                 Estado = 1
