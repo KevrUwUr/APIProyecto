@@ -19,6 +19,8 @@ namespace Repository
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new CargoConfiguration());
+            modelBuilder.ApplyConfiguration(new ContactoEmpleadoConfiguration());
+            modelBuilder.ApplyConfiguration(new ContactoProveedorConfiguration());
         }
 
         public DbSet<Cargo>? Cargos { get; set; }

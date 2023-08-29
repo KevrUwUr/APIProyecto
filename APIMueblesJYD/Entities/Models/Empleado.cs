@@ -27,7 +27,7 @@ namespace Entities.Models
         public string? Sexo { get; set; }
 
         [Required(ErrorMessage = "FechaNacimiento es un campo requerido.")]
-        public DateOnly? FechaNacimiento { get; set; }
+        public DateOnly FechaNacimiento { get; set; }
 
         [Required(ErrorMessage = "Estado es un campo requerido.")]
         public int Estado { get; set; }

@@ -28,7 +28,7 @@ namespace Entities.Models
         public string? Email { get; set; }
 
         [Required(ErrorMessage = "Estado es un campo requerido.")]
-        public DateTime FechaCreacion { get; set; }
+        public DateOnly FechaCreacion { get; set; }
 
         [ForeignKey(nameof(Empleado))]
         public Guid IdEmpleado { get; set; }

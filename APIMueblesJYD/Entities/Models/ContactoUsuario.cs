@@ -17,10 +17,6 @@ namespace Entities.Models
         [Required(ErrorMessage = "Este es un campo requerido")]
         public int NumeroTelefonico { get; set; }
 
-        [Required(ErrorMessage = "NombreProv es un campo requerido.")]
-        [MaxLength(80, ErrorMessage = "Largo maximo del nombre es de 80 caracteres")]
-        public string? NombreProv { get; set; }
-
         [Required(ErrorMessage = "IndicativoCiudad es un campo requerido.")]
         [MaxLength(80, ErrorMessage = "Largo maximo del nombre es de 80 caracteres")]
         public string? IndicativoCiudad { get; set; }
