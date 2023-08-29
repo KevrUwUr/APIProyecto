@@ -21,6 +21,9 @@ namespace Repository
             modelBuilder.ApplyConfiguration(new CargoConfiguration());
             modelBuilder.ApplyConfiguration(new ContactoEmpleadoConfiguration());
             modelBuilder.ApplyConfiguration(new ContactoProveedorConfiguration());
+            modelBuilder.ApplyConfiguration(new ContactoUsuarioConfiguration());
+            modelBuilder.ApplyConfiguration(new DetalleFacturaCompraConfiguration());
+            modelBuilder.ApplyConfiguration(new ProductoConfiguration());
         }
 
         public DbSet<Cargo>? Cargos { get; set; }
