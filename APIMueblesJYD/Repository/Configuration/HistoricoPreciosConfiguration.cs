@@ -1,5 +1,6 @@
 ﻿using Entities.Models;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Repository.Configuration
 {
-    public class HistoricoPreciosConfiguration
+    public class HistoricoPreciosConfiguration : IEntityTypeConfiguration<HistoricoPrecios>
     {
         public void Configure(EntityTypeBuilder<HistoricoPrecios> builder)
         {

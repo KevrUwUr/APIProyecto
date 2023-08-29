@@ -19,6 +19,12 @@ namespace Repository
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new CargoConfiguration());
+            modelBuilder.ApplyConfiguration(new DetalleFacturaVentaConfiguration());
+            modelBuilder.ApplyConfiguration(new Empleado_CargoConfiguration());
+            modelBuilder.ApplyConfiguration(new EmpleadoConfiguration());
+            modelBuilder.ApplyConfiguration(new FacturaCompraConfiguration());
+            modelBuilder.ApplyConfiguration(new FacturaVentaConfiguration());
+            modelBuilder.ApplyConfiguration(new HistoricoPreciosConfiguration());
         }
 
 

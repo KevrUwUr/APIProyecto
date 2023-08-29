@@ -1,5 +1,6 @@
 ﻿using Entities.Models;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Repository.Configuration
 {
-    public class FacturaVentaConfiguration
+    public class FacturaVentaConfiguration : IEntityTypeConfiguration<FacturaVenta>
     {
         public void Configure(EntityTypeBuilder<FacturaVenta> builder)
         {

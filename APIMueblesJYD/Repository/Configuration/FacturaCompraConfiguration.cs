@@ -1,16 +1,15 @@
 ﻿using Entities.Models;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace Repository.Configuration
 {
-    public class FacturaCompraConfiguration
+    public class FacturaCompraConfiguration : IEntityTypeConfiguration<FacturaCompra>
     {
         public void Configure(EntityTypeBuilder<FacturaCompra> builder)
         {

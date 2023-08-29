@@ -9,3 +9,15 @@ C:\Users\Kev UwU\Desktop\Proyecto V trimestre\APIMueblesJYD\Contracts\obj\Debug\
 C:\Users\Kev UwU\Desktop\Proyecto V trimestre\APIMueblesJYD\Contracts\obj\Debug\net7.0\refint\Contracts.dll
 C:\Users\Kev UwU\Desktop\Proyecto V trimestre\APIMueblesJYD\Contracts\obj\Debug\net7.0\Contracts.pdb
 C:\Users\Kev UwU\Desktop\Proyecto V trimestre\APIMueblesJYD\Contracts\obj\Debug\net7.0\ref\Contracts.dll
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\Contracts\bin\Debug\net7.0\Contracts.deps.json
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\Contracts\bin\Debug\net7.0\Contracts.dll
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\Contracts\bin\Debug\net7.0\Contracts.pdb
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\Contracts\obj\Debug\net7.0\Contracts.csproj.AssemblyReference.cache
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\Contracts\obj\Debug\net7.0\Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\Contracts\obj\Debug\net7.0\Contracts.AssemblyInfoInputs.cache
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\Contracts\obj\Debug\net7.0\Contracts.AssemblyInfo.cs
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\Contracts\obj\Debug\net7.0\Contracts.csproj.CoreCompileInputs.cache
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\Contracts\obj\Debug\net7.0\Contracts.dll
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\Contracts\obj\Debug\net7.0\refint\Contracts.dll
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\Contracts\obj\Debug\net7.0\Contracts.pdb
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\Contracts\obj\Debug\net7.0\ref\Contracts.dll
