@@ -8,25 +8,29 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Entities.Models
 {
-    public class Empleado_Cargo
+    public class EmpleadoCargo
     {
         [Required(ErrorMessage = "FechaInicio es un campo requerido.")]
-        public DateOnly? FechaInicio { get; set; }
+        public DateTime? FechaInicio { get; set; }
 
         [Required(ErrorMessage = "FechaFin es un campo requerido.")]
-        public DateOnly? FechaFin { get; set; }
+        public DateTime? FechaFin { get; set; }
 
         [Required(ErrorMessage = "NumeroContrato es un campo requerido.")]
         [MaxLength(80, ErrorMessage = "Largo maximo de  NumeroContrato es de 80 caracteres")]
         public int? NumeroContrato { get; set; }
 
-        [ForeignKey(nameof(Empleado))]
-        public Guid IdEmpleado { get; set; }
+        //[ForeignKey(nameof(Empleado))]
+        [Required]
+        [Key, Column(Order = 0)]
+        public int EmpleadoId { get; set; }
         public Empleado? Empleado { get; set; }
 
-        [ForeignKey(nameof(Cargo))]
-        public Guid idCargo { get; set; }
-        public Cargo? Cargos { get; set; }
+        //[ForeignKey(nameof(Cargo))]
+        [Required]
+        [Key, Column(Order = 1)]
+        public int CargoId { get; set; }
+        public Cargo? Cargo { get; set; }
 
     }
 }

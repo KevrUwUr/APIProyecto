@@ -17,19 +17,23 @@ namespace Repository.Configuration
             (
                 new DetalleFacturaVenta
                 {
-                    DetalleFacturaVentaID = new Guid("c5f7d82a-b380-49df-9c2a-61ef92acabc1"),
+                    DetalleFacturaVentaID = 1,
                     ValorUnitario = 42500,
                     Cantidad = 2,
                     IVA = 8075,
-                    ValorDescuento = 0
+                    ValorDescuento = 0,
+                    IdFacturaVenta = 1,
+                    IdProducto = 1
                 },
                 new DetalleFacturaVenta
                 {
-                    DetalleFacturaVentaID = new Guid("d7e0f4c9-5b0c-4ccf-8ae0-b7220e5c693e"),
+                    DetalleFacturaVentaID = 2,
                     ValorUnitario = 60000,
                     Cantidad = 2,
                     IVA = 1534,
-                    ValorDescuento = 0
+                    ValorDescuento = 0,
+                    IdFacturaVenta = 2,
+                    IdProducto = 2
                 }
             );
         }
