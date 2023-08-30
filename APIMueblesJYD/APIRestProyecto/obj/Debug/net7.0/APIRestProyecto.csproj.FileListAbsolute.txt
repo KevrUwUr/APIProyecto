@@ -85,3 +85,13 @@ C:\Users\Kev UwU\Desktop\Proyecto V trimestre\APIMueblesJYD\APIRestProyecto\obj\
 C:\Users\Kev UwU\Desktop\Proyecto V trimestre\APIMueblesJYD\APIRestProyecto\obj\Debug\net7.0\APIRestProyecto.pdb
 C:\Users\Kev UwU\Desktop\Proyecto V trimestre\APIMueblesJYD\APIRestProyecto\obj\Debug\net7.0\APIRestProyecto.genruntimeconfig.cache
 C:\Users\Kev UwU\Desktop\Proyecto V trimestre\APIMueblesJYD\APIRestProyecto\obj\Debug\net7.0\ref\APIRestProyecto.dll
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\APIRestProyecto\obj\Debug\net7.0\APIRestProyecto.csproj.AssemblyReference.cache
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\APIRestProyecto\obj\Debug\net7.0\APIRestProyecto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\APIRestProyecto\obj\Debug\net7.0\APIRestProyecto.AssemblyInfoInputs.cache
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\APIRestProyecto\obj\Debug\net7.0\APIRestProyecto.AssemblyInfo.cs
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\APIRestProyecto\obj\Debug\net7.0\APIRestProyecto.csproj.CoreCompileInputs.cache
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\APIRestProyecto\obj\Debug\net7.0\APIRestProyecto.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\APIRestProyecto\obj\Debug\net7.0\APIRestProyecto.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\APIRestProyecto\obj\Debug\net7.0\APIRestProyecto.dll
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\APIRestProyecto\obj\Debug\net7.0\refint\APIRestProyecto.dll
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\APIRestProyecto\obj\Debug\net7.0\APIRestProyecto.pdb
