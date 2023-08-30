@@ -34,5 +34,6 @@ namespace Entities.Models
 
         public ICollection<ContactoEmpleado>? ContactoEmpleados { get; set; }
         public ICollection<Empleado_Cargo>? Empleados_Cargos { get; set; }
+        public ICollection<Perdida>? Perdidas { get; set; }
     }
 }

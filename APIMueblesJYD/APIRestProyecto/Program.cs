@@ -1,9 +1,10 @@
 using Contracts;
 using APIRestProyecto.Extensions;
 using Microsoft.AspNetCore.HttpOverrides;
-//using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using NLog;
-//using Repository;
+using Entities.Models;
+using Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(),
@@ -12,10 +13,14 @@ LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(),
 builder.Services.ConfigureCors();
 builder.Services.ConfigureIISIntegration();
 builder.Services.ConfigureLoggerService();
+builder.Services.ConfigureRepositoryManager();
+builder.Services.ConfigureServiceManager();
+builder.Services.ConfigureSqlContext(builder.Configuration);
+
+builder.Services.AddControllers()
+    .AddApplicationPart(typeof(Proyecto.Presentation.AssemblyReference).Assembly);
 
 // Add services to the container.
-
-builder.Services.AddControllers();
 
 var app = builder.Build();
 

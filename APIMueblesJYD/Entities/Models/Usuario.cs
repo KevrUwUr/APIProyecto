@@ -46,7 +46,7 @@ namespace Entities.Models
         public int Estado { get; set; }
 
         [Required(ErrorMessage = "Fecha de Registro es un campo requerido.")]
-        public int FechaRegistro { get; set; }
+        public DateTime FechaRegistro { get; set; }
 
         [Required(ErrorMessage = "Tipo de Usuario es un campo requerido.")]
         public int TipoUsuario { get; set; }
