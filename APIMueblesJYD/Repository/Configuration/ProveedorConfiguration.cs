@@ -12,7 +12,7 @@ namespace Repository.Configuration
 {
     public class ProveedorConfiguration : IEntityTypeConfiguration<Proveedor>
     {
-        public void Configure(EntityTypeBuilder<Proveedor|> builder)
+        public void Configure(EntityTypeBuilder<Proveedor> builder)
         {
             builder.HasData
             (
