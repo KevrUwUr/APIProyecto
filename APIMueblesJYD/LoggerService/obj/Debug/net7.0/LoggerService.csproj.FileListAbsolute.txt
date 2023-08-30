@@ -13,18 +13,18 @@ C:\Users\Kev UwU\Desktop\Proyecto V trimestre\APIMueblesJYD\LoggerService\obj\De
 C:\Users\Kev UwU\Desktop\Proyecto V trimestre\APIMueblesJYD\LoggerService\obj\Debug\net7.0\refint\LoggerService.dll
 C:\Users\Kev UwU\Desktop\Proyecto V trimestre\APIMueblesJYD\LoggerService\obj\Debug\net7.0\LoggerService.pdb
 C:\Users\Kev UwU\Desktop\Proyecto V trimestre\APIMueblesJYD\LoggerService\obj\Debug\net7.0\ref\LoggerService.dll
-C:\Proyecto\ProyectoMuebles J&D\APIProyecto\APIMueblesJYD\LoggerService\bin\Debug\net7.0\LoggerService.deps.json
-C:\Proyecto\ProyectoMuebles J&D\APIProyecto\APIMueblesJYD\LoggerService\bin\Debug\net7.0\LoggerService.dll
-C:\Proyecto\ProyectoMuebles J&D\APIProyecto\APIMueblesJYD\LoggerService\bin\Debug\net7.0\LoggerService.pdb
-C:\Proyecto\ProyectoMuebles J&D\APIProyecto\APIMueblesJYD\LoggerService\bin\Debug\net7.0\Contracts.dll
-C:\Proyecto\ProyectoMuebles J&D\APIProyecto\APIMueblesJYD\LoggerService\bin\Debug\net7.0\Contracts.pdb
-C:\Proyecto\ProyectoMuebles J&D\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\LoggerService.csproj.AssemblyReference.cache
-C:\Proyecto\ProyectoMuebles J&D\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\LoggerService.GeneratedMSBuildEditorConfig.editorconfig
-C:\Proyecto\ProyectoMuebles J&D\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\LoggerService.AssemblyInfoInputs.cache
-C:\Proyecto\ProyectoMuebles J&D\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\LoggerService.AssemblyInfo.cs
-C:\Proyecto\ProyectoMuebles J&D\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\LoggerService.csproj.CoreCompileInputs.cache
-C:\Proyecto\ProyectoMuebles J&D\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\LoggerService.csproj.CopyComplete
-C:\Proyecto\ProyectoMuebles J&D\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\LoggerService.dll
-C:\Proyecto\ProyectoMuebles J&D\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\refint\LoggerService.dll
-C:\Proyecto\ProyectoMuebles J&D\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\LoggerService.pdb
-C:\Proyecto\ProyectoMuebles J&D\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\ref\LoggerService.dll
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\LoggerService\bin\Debug\net7.0\LoggerService.deps.json
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\LoggerService\bin\Debug\net7.0\LoggerService.dll
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\LoggerService\bin\Debug\net7.0\LoggerService.pdb
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\LoggerService\bin\Debug\net7.0\Contracts.dll
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\LoggerService\bin\Debug\net7.0\Contracts.pdb
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\LoggerService.csproj.AssemblyReference.cache
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\LoggerService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\LoggerService.AssemblyInfoInputs.cache
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\LoggerService.AssemblyInfo.cs
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\LoggerService.csproj.CoreCompileInputs.cache
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\LoggerService.csproj.CopyComplete
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\LoggerService.dll
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\refint\LoggerService.dll
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\LoggerService.pdb
+C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\ref\LoggerService.dll
