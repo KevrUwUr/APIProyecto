@@ -12,7 +12,7 @@ namespace Entities.Models
     {
         [Column("IdUsuario")]
         [Key]
-        public Guid IdUsuario { get; set; }
+        public int IdUsuario { get; set; }
 
         [Required(ErrorMessage = "Primer Nombre de usuario es un campo requerido.")]
         [MaxLength(80, ErrorMessage = "Largo maximo del primer nombre es de 80 caracteres")]
@@ -40,7 +40,7 @@ namespace Entities.Models
         public int NumDocumento { get; set; }
 
         [Required(ErrorMessage = "Fecha de Nacimiento es un campo requerido.")]
-        public DateOnly FechaNacimiento { get; set; }
+        public DateTime FechaNacimiento { get; set; }
 
         [Required(ErrorMessage = "Estado es un campo requerido.")]
         public int Estado { get; set; }
@@ -51,16 +51,18 @@ namespace Entities.Models
         [Required(ErrorMessage = "Tipo de Usuario es un campo requerido.")]
         public int TipoUsuario { get; set; }
 
-        public DateOnly FechaContrato { get; set; }
+        public DateTime FechaContrato { get; set; }
 
         [MaxLength(80, ErrorMessage = "Largo maximo del cargo es de 80 caracteres")]
         public string? Cargo { get; set; }
 
-        public DateOnly FechaFin { get; set; }
+        public DateTime FechaFin { get; set; }
 
         public string? Contrasena { get; set; }
 
         [MaxLength(80, ErrorMessage = "Largo maximo de llave es de 80 caracteres")]
         public string? Llave { get; set; }
+        public ICollection<ContactoUsuario>? contactoUsuarios { get; set; }
+        public ICollection<FacturaVenta>? facturaVentas { get; set; }
     }
 }

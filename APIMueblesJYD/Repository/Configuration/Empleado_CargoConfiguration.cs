@@ -17,48 +17,48 @@ namespace Repository.Configuration
             (
             new Empleado_Cargo
             {
-                FechaInicio = new DateOnly(1995, 5, 15),
-                FechaFin = new DateOnly(2015, 5, 15),
+                FechaInicio = new DateTime(1995, 5, 15),
+                FechaFin = new DateTime(2015, 5, 15),
                 NumeroContrato = 1
             },
             new Empleado_Cargo
             {
-                FechaInicio = new DateOnly(2000, 10, 03),
-                FechaFin = new DateOnly(2010, 12, 31),
+                FechaInicio = new DateTime(2000, 10, 03),
+                FechaFin = new DateTime(2010, 12, 31),
                 NumeroContrato = 2
             },
 
             new Empleado_Cargo
             {
-                FechaInicio = new DateOnly(2005, 3, 20),
+                FechaInicio = new DateTime(2005, 3, 20),
                 FechaFin = null,
                 NumeroContrato = 3
             },
 
             new Empleado_Cargo
             {
-                FechaInicio = new DateOnly(2012, 8, 10),
+                FechaInicio = new DateTime(2012, 8, 10),
                 FechaFin = null,
                 NumeroContrato = 4
             },
 
             new Empleado_Cargo
             {
-                FechaInicio = new DateOnly(2010, 6, 15),
-                FechaFin = new DateOnly(2018, 9, 30),
+                FechaInicio = new DateTime(2010, 6, 15),
+                FechaFin = new DateTime(2018, 9, 30),
                 NumeroContrato = 5
             },
 
             new Empleado_Cargo
             {
-                FechaInicio = new DateOnly(2017, 2, 25),
-                FechaFin = new DateOnly(2022, 4, 15),
+                FechaInicio = new DateTime(2017, 2, 25),
+                FechaFin = new DateTime(2022, 4, 15),
                 NumeroContrato = 6
             },
 
             new Empleado_Cargo
             {
-                FechaInicio = new DateOnly(2019, 11, 5),
+                FechaInicio = new DateTime(2019, 11, 5),
                 FechaFin = null,
                 NumeroContrato = 7
             }

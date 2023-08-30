@@ -15,7 +15,7 @@ namespace APIRestProyecto.Migrations
                 name: "Cargos",
                 columns: table => new
                 {
-                    IdCargo = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    IdCargo = table.Column<int>(type: "uniqueidentifier", nullable: false),
                     NombreCargo = table.Column<string>(type: "nvarchar(80)", maxLength: 80, nullable: false),
                     Estado = table.Column<int>(type: "int", nullable: false)
                 },

@@ -43,3 +43,18 @@ C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\LoggerService\obj\De
 C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\refint\LoggerService.dll
 C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\LoggerService.pdb
 C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\ref\LoggerService.dll
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\LoggerService\bin\Debug\net7.0\LoggerService.deps.json
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\LoggerService\bin\Debug\net7.0\LoggerService.dll
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\LoggerService\bin\Debug\net7.0\LoggerService.pdb
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\LoggerService\bin\Debug\net7.0\Contracts.dll
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\LoggerService\bin\Debug\net7.0\Contracts.pdb
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\LoggerService.csproj.AssemblyReference.cache
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\LoggerService.GeneratedMSBuildEditorConfig.editorconfig
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\LoggerService.AssemblyInfoInputs.cache
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\LoggerService.AssemblyInfo.cs
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\LoggerService.csproj.CoreCompileInputs.cache
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\LoggerService.csproj.CopyComplete
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\LoggerService.dll
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\refint\LoggerService.dll
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\LoggerService.pdb
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\ref\LoggerService.dll

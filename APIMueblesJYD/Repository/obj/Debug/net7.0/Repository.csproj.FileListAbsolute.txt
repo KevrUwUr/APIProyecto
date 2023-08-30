@@ -37,3 +37,11 @@ C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Repository\obj\Debug
 C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\refint\Repository.dll
 C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.pdb
 C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\ref\Repository.dll
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.csproj.AssemblyReference.cache
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.AssemblyInfoInputs.cache
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.AssemblyInfo.cs
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.csproj.CoreCompileInputs.cache
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.dll
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\refint\Repository.dll
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.pdb

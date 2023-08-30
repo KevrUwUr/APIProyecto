@@ -12,22 +12,22 @@ namespace Entities.Models
     {
         [Column("IdHistoricoPrecios")]
         [Key]
-        public Guid IdHistoricoPrecios { get; set; }
+        public int IdHistoricoPrecios { get; set; }
 
         [Required(ErrorMessage = "PresioVenta es un campo requerido.")]
-        public float PresioVenta { get; set; }
+        public float PrecioVenta { get; set; }
 
         [Required(ErrorMessage = "FechaPrecioInicial es un campo requerido.")]
-        public DateOnly? FechaPrecioInicial { get; set; }
+        public DateTime? FechaPrecioInicial { get; set; }
 
         [Required(ErrorMessage = "FechaPrecioFinal es un campo requerido.")]
-        public DateOnly? FechaPrecioFinal { get; set; }
+        public DateTime? FechaPrecioFinal { get; set; }
 
         [Required(ErrorMessage = "Estado es un campo requerido.")]
         public int Estado { get; set; }
 
         [ForeignKey(nameof(Producto))]
-        public Guid IdProducto { get; set; }
+        public int IdProducto { get; set; }
         public Producto? Producto { get; set; }
     }
 }

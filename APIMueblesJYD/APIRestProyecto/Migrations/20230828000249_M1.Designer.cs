@@ -27,7 +27,7 @@ namespace APIRestProyecto.Migrations
 
             modelBuilder.Entity("Entities.Models.Cargo", b =>
                 {
-                    b.Property<Guid>("IdCargo")
+                    b.Property<int>("IdCargo")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
                         .HasColumnName("IdCargo");

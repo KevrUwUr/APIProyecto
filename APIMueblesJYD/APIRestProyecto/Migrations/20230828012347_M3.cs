@@ -18,9 +18,9 @@ namespace APIRestProyecto.Migrations
                 columns: new[] { "IdCargo", "Estado", "NombreCargo" },
                 values: new object[,]
                 {
-                    { new Guid("2954f19b-36e5-4a69-996b-dc3911df74b2"), 1, "Vendedor de Muebles" },
-                    { new Guid("8d8330ee-16ed-41ba-89d3-599651cddb34"), 1, "Técnico de Acabados" },
-                    { new Guid("ef3f0aae-804f-4e7c-9633-212a439d0960"), 1, "Diseñador de Muebles" }
+                    { new int("2954f19b-36e5-4a69-996b-dc3911df74b2"), 1, "Vendedor de Muebles" },
+                    { new int("8d8330ee-16ed-41ba-89d3-599651cddb34"), 1, "Técnico de Acabados" },
+                    { new int("ef3f0aae-804f-4e7c-9633-212a439d0960"), 1, "Diseñador de Muebles" }
                 });
         }
 
@@ -30,17 +30,17 @@ namespace APIRestProyecto.Migrations
             migrationBuilder.DeleteData(
                 table: "Cargos",
                 keyColumn: "IdCargo",
-                keyValue: new Guid("2954f19b-36e5-4a69-996b-dc3911df74b2"));
+                keyValue: new int("2954f19b-36e5-4a69-996b-dc3911df74b2"));
 
             migrationBuilder.DeleteData(
                 table: "Cargos",
                 keyColumn: "IdCargo",
-                keyValue: new Guid("8d8330ee-16ed-41ba-89d3-599651cddb34"));
+                keyValue: new int("8d8330ee-16ed-41ba-89d3-599651cddb34"));
 
             migrationBuilder.DeleteData(
                 table: "Cargos",
                 keyColumn: "IdCargo",
-                keyValue: new Guid("ef3f0aae-804f-4e7c-9633-212a439d0960"));
+                keyValue: new int("ef3f0aae-804f-4e7c-9633-212a439d0960"));
         }
     }
 }
