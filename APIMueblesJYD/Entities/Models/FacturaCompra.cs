@@ -12,19 +12,19 @@ namespace Entities.Models
     {
         [Column("IdFacturaCompra")]
         [Key]
-        public Guid IdFacturaCompra { get; set; }
+        public int IdFacturaCompra { get; set; }
 
         [Required(ErrorMessage = "NFactura es un campo requerido.")]
         public int NFactura { get; set; }
 
         [Required(ErrorMessage = "FechaGeneracion es un campo requerido.")]
-        public DateOnly? FechaGeneracion { get; set; }
+        public DateTime? FechaGeneracion { get; set; }
 
         [Required(ErrorMessage = "FechaExpedicion es un campo requerido.")]
-        public DateOnly? FechaExpedicion { get; set; }
+        public DateTime? FechaExpedicion { get; set; }
 
         [Required(ErrorMessage = "FechaVencimiento es un campo requerido.")]
-        public DateOnly? FechaVencimiento { get; set; }
+        public DateTime? FechaVencimiento { get; set; }
 
         [Required(ErrorMessage = "TotalBruto es un campo requerido.")]
         public float TotalBruto { get; set; }
@@ -41,7 +41,9 @@ namespace Entities.Models
         public ICollection<DetalleFacturaCompra>? DetalleFacturaCompras { get; set; }
 
         [ForeignKey(nameof(Proveedor))]
-        public Guid IdProveedor { get; set; }
+        public int IdProveedor { get; set; }
         public Proveedor? Proveedores { get; set; }
+
+        public ICollection<DetalleFacturaVenta>? detalleFacturaVentas { get; set; }
     }
 }

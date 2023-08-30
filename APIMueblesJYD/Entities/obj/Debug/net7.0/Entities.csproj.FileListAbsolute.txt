@@ -14,3 +14,15 @@ C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\Entities\obj\De
 C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.AssemblyInfoInputs.cache
 C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.AssemblyInfo.cs
 C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Entities\bin\Debug\net7.0\Entities.deps.json
+C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Entities\bin\Debug\net7.0\Entities.dll
+C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Entities\bin\Debug\net7.0\Entities.pdb
+C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.csproj.AssemblyReference.cache
+C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.AssemblyInfoInputs.cache
+C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.AssemblyInfo.cs
+C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.dll
+C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\refint\Entities.dll
+C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.pdb
+C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\ref\Entities.dll

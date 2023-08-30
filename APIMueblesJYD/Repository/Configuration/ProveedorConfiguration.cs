@@ -12,61 +12,61 @@ namespace Repository.Configuration
 {
     public class ProveedorConfiguration : IEntityTypeConfiguration<Proveedor>
     {
-        public void Configure(EntityTypeBuilder<Proveedor|> builder)
+        public void Configure(EntityTypeBuilder<Proveedor> builder)
         {
             builder.HasData
             (
             new Proveedor
             {
-                IdProveedor = new Guid("02d69c24-45fe-11ee-be56-0242ac120001"),
+                IdProveedor = 1,
                 RazonSocial = "La Guitarra, S.A",
                 Estado = 1,
             },
             new Proveedor
             {
-                IdProveedor = new Guid("02d69c24-45fe-11ee-be56-0242ac120002"),
+                IdProveedor = 2,
                 RazonSocial = "Sol Dorado",
                 Estado = 1,
             },
             new Proveedor
             {
-                IdProveedor = new Guid("02d69c24-45fe-11ee-be56-0242ac120003"),
+                IdProveedor = 3,
                 RazonSocial = "Marena",
                 Estado = 1,
             },
             new Proveedor
             {
-                IdProveedor = new Guid("02d69c24-45fe-11ee-be56-0242ac120004"),
+                IdProveedor = 4,
                 RazonSocial = "Juguetes Vikingos",
                 Estado = 1,
             },
             new Proveedor
             {
-                IdProveedor = new Guid("02d69c24-45fe-11ee-be56-0242ac120005"),
+                IdProveedor = 5,
                 RazonSocial = "Lima & Álvarez",
                 Estado = 2,
             },
             new Proveedor
             {
-                IdProveedor = new Guid("02d69c24-45fe-11ee-be56-0242ac120006"),
+                IdProveedor = 6,
                 RazonSocial = "Arcos Dorados, C.A",
                 Estado = 1,
             },
             new Proveedor
             {
-                IdProveedor = new Guid("02d69c24-45fe-11ee-be56-0242ac120007"),
+                IdProveedor = 7,
                 RazonSocial = "Carlos Fernández, E.I.R",
                 Estado = 1,
             },
             new Proveedor
             {
-                IdProveedor = new Guid("02d69c24-45fe-11ee-be56-0242ac120008"),
+                IdProveedor = 8,
                 RazonSocial = "Chascomús, S.A",
                 Estado = 1,
             },
             new Proveedor
             {
-                IdProveedor = new Guid("02d69c24-45fe-11ee-be56-0242ac120009"),
+                IdProveedor = 9,
                 RazonSocial = "Grupo Fernández S.A",
                 Estado = 2,
             }

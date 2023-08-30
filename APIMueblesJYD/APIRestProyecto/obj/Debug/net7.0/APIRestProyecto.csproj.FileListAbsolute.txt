@@ -1,0 +1,6 @@
+C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\APIRestProyecto\obj\Debug\net7.0\APIRestProyecto.csproj.AssemblyReference.cache
+C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\APIRestProyecto\obj\Debug\net7.0\APIRestProyecto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\APIRestProyecto\obj\Debug\net7.0\APIRestProyecto.AssemblyInfoInputs.cache
+C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\APIRestProyecto\obj\Debug\net7.0\APIRestProyecto.AssemblyInfo.cs
+C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\APIRestProyecto\obj\Debug\net7.0\APIRestProyecto.csproj.CoreCompileInputs.cache
+C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\APIRestProyecto\obj\Debug\net7.0\APIRestProyecto.MvcApplicationPartsAssemblyInfo.cache
