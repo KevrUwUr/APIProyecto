@@ -12,7 +12,7 @@ namespace Entities.Models
     {
         [Column("IdContactoCliente")]
         [Key]
-        public Guid IdContactoCliente { get; set; }
+        public int IdContactoCliente { get; set; }
 
         [Required(ErrorMessage = "Este es un campo requerido")]
         public int NumeroTelefonico { get; set; }
@@ -42,7 +42,7 @@ namespace Entities.Models
         public string? Email { get; set; }
 
         [ForeignKey(nameof(Usuario))]
-        public Guid IdUsuario { get; set; }
-        public Usuario? Usuario{ get; set; }
+        public int IdUsuario { get; set; }
+        public Usuario? Usuario { get; set; }
     }
 }

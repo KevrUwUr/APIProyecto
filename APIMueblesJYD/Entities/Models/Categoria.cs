@@ -12,7 +12,7 @@ namespace Entities.Models
     {
         [Column("IdCategoria")]
         [Key]
-        public Guid IdCategoria { get; set; }
+        public int IdCategoria { get; set; }
 
         [Required(ErrorMessage = "Nombre de Categoria es un campo requerido.")]
         [MaxLength(80, ErrorMessage = "Largo maximo del nombre es de 80 caracteres")]
@@ -21,5 +21,6 @@ namespace Entities.Models
 
         [Required(ErrorMessage = "Estado es un campo requerido.")]
         public int Estado { get; set; }
+        public ICollection<Producto>? Productos { get; set; }
     }
 }

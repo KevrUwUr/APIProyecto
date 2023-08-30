@@ -11,21 +11,21 @@ namespace Entities.Models
     public class Empleado_Cargo
     {
         [Required(ErrorMessage = "FechaInicio es un campo requerido.")]
-        public DateOnly? FechaInicio { get; set; }
+        public DateTime? FechaInicio { get; set; }
 
         [Required(ErrorMessage = "FechaFin es un campo requerido.")]
-        public DateOnly? FechaFin { get; set; }
+        public DateTime? FechaFin { get; set; }
 
         [Required(ErrorMessage = "NumeroContrato es un campo requerido.")]
         [MaxLength(80, ErrorMessage = "Largo maximo de  NumeroContrato es de 80 caracteres")]
         public int? NumeroContrato { get; set; }
 
         [ForeignKey(nameof(Empleado))]
-        public Guid IdEmpleado { get; set; }
+        public int IdEmpleado { get; set; }
         public Empleado? Empleado { get; set; }
 
         [ForeignKey(nameof(Cargo))]
-        public Guid idCargo { get; set; }
+        public int IdCargo { get; set; }
         public Cargo? Cargos { get; set; }
 
     }

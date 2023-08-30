@@ -17,25 +17,29 @@ namespace Repository.Configuration
             (
                 new FacturaCompra
                 {
-                    IdFacturaCompra = new Guid("a1a26fe5-39b3-4e71-bc0a-725e7c5b8a99"),
-                    FechaGeneracion = new DateOnly(1995, 5, 15),
-                    FechaExpedicion = new DateOnly(1995, 5, 15),
-                    FechaVencimiento = new DateOnly(1995, 5, 15),
+                    IdFacturaCompra = 1,
+                    NFactura = 1,
+                    FechaGeneracion = new DateTime(1995, 5, 15),
+                    FechaExpedicion = new DateTime(1995, 5, 15),
+                    FechaVencimiento = new DateTime(1995, 5, 15),
                     TotalBruto = 100000,
                     TotalIVA = 19000,
                     TotalRefuete = 20000,
-                    TotalPago = 139000
+                    TotalPago = 139000,
+                    IdProveedor = 1
                 },
                 new FacturaCompra
                 {
-                    IdFacturaCompra = new Guid("b3d8ca9e-968f-4c5a-9b9e-8247123df605"),
-                    FechaGeneracion = new DateOnly(2000, 10, 03),
-                    FechaExpedicion = new DateOnly(2000, 10, 03),
-                    FechaVencimiento = new DateOnly(2000, 10, 17),
+                    IdFacturaCompra = 2,
+                    NFactura = 2,
+                    FechaGeneracion = new DateTime(2000, 10, 03),
+                    FechaExpedicion = new DateTime(2000, 10, 03),
+                    FechaVencimiento = new DateTime(2000, 10, 17),
                     TotalBruto = 150000,
                     TotalIVA = 2850, 
                     TotalRefuete = 30000,
-                    TotalPago = 182850 
+                    TotalPago = 182850,
+                    IdProveedor = 2
                 }
 
             );
