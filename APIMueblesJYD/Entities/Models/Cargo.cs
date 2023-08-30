@@ -10,9 +10,9 @@ namespace Entities.Models
 {
     public class Cargo
     {
-        [Column("IdCargo")]
+        [Column("CargoId")]
         [Key]
-        public int IdCargo { get; set; }
+        public int CargoId { get; set; }
 
         [Required(ErrorMessage = "NombreCargo es un campo requerido.")]
         [MaxLength(80, ErrorMessage = "Largo maximo del nombre es de 80 caracteres")]
@@ -22,6 +22,6 @@ namespace Entities.Models
         [Required(ErrorMessage = "Estado es un campo requerido.")]
         public int Estado { get; set; }
 
-        public ICollection<Empleado_Cargo>? facturaVentas { get; set; }
+        public List<EmpleadoCargo>? EmpleadoCargos { get; set; }
     }
 }

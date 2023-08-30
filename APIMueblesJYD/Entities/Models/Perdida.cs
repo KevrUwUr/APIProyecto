@@ -25,7 +25,7 @@ namespace Entities.Models
         public ICollection<Perdida_Producto>? perdida_Productos { get; set; }
 
         [ForeignKey(nameof(Empleado))]
-        public int IdEmpleado { get; set; }
+        public int EmpleadoId { get; set; }
         public Empleado? Empleado { get; set; }
     }
 }

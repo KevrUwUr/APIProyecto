@@ -31,7 +31,7 @@ namespace Entities.Models
         public DateTime FechaCreacion { get; set; }
 
         [ForeignKey(nameof(Empleado))]
-        public int IdEmpleado { get; set; }
+        public int EmpleadoId { get; set; }
         public Empleado? Empleado { get; set; }
 
     }
