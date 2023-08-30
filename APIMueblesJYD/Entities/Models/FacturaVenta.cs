@@ -45,6 +45,5 @@ namespace Entities.Models
         public Usuario? Usuarios { get; set; }
 
         public ICollection<MetodoPago>? MetodoPago { get; set; }
-        public ICollection<DetalleFacturaVenta>? detalleFacturaVentas { get; set; }
     }
 }

@@ -18,31 +18,31 @@ namespace Repository.Configuration
             (
             new Cargo
             {
-                IdCargo = 1,
+                CargoId = 1,
                 NombreCargo = "Carpintero",
                 Estado = 1,
             },
             new Cargo
             {
-                IdCargo = 2,
+                CargoId = 2,
                 NombreCargo = "Diseñador de Muebles",
                 Estado = 1,
             },
             new Cargo
             {
-                IdCargo = 3,
+                CargoId = 3,
                 NombreCargo = "Vendedor de Muebles",
                 Estado = 1,
             },
             new Cargo
             {
-                IdCargo = 4,
+                CargoId = 4,
                 NombreCargo = "Técnico de Acabados",
                 Estado = 1,
             },
             new Cargo
             {
-                IdCargo = 5,
+                CargoId = 5,
                 NombreCargo = "Asistente de carpinteria",
                 Estado = 1
             }

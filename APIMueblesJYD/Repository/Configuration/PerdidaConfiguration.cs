@@ -18,7 +18,7 @@ namespace Repository.Configuration
                 new Perdida
                 {
                     IdPerdida = 1,
-                    IdEmpleado = 1,
+                    EmpleadoId = 1,
                     FechaPerdida = new DateTime(2023, 06, 21),
                     Estado = 1,
                     Total=300000
@@ -26,7 +26,7 @@ namespace Repository.Configuration
                 new Perdida
                 {
                     IdPerdida = 2,
-                    IdEmpleado = 2,
+                    EmpleadoId = 2,
                     FechaPerdida = new DateTime(2023, 06, 21),
                     Estado = 2,
                     Total = 200000
@@ -34,7 +34,7 @@ namespace Repository.Configuration
                 new Perdida
                 {
                     IdPerdida = 3,
-                    IdEmpleado = 3,
+                    EmpleadoId = 3,
                     FechaPerdida = new DateTime(2023, 06, 21),
                     Estado = 2,
                     Total = 350000
@@ -42,7 +42,7 @@ namespace Repository.Configuration
                 new Perdida
                 {
                     IdPerdida = 4,
-                    IdEmpleado = 4,
+                    EmpleadoId = 4,
                     FechaPerdida = new DateTime(2023, 06, 21),
                     Estado = 1,
                     Total = 500000
@@ -50,7 +50,7 @@ namespace Repository.Configuration
                 new Perdida
                 {
                     IdPerdida = 5,
-                    IdEmpleado = 5,
+                    EmpleadoId = 5,
                     FechaPerdida = new DateTime(2023, 06, 21),
                     Estado = 1,
                     Total = 100000

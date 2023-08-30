@@ -101,14 +101,14 @@ namespace Repository.Configuration
                 },
                 new ContactoProveedor
                 {
-                    IdContactoProveedor = 8,
+                    IdContactoProveedor = 9,
                     NombreProv = "Fernando López",
                     Telefono = 317896542,
                     Email = "ContactP9@gmail.com",
                     Estado = 1,
                     FechaAlta = new DateTime(2022, 4, 17),
                     FechaBaja = new DateTime(2023, 7, 15),
-                    IdProveedor = 8
+                    IdProveedor = 9
                 }
             );
         }

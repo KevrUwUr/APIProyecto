@@ -22,7 +22,7 @@ namespace Repository.Configuration
                 Direccion = "Cra15B #13-52",
                 Email = "ContactoE1@gmail.com",
                 FechaCreacion = new DateTime(2023, 8, 28),
-                IdEmpleado = 1
+                EmpleadoId = 1
             },
             new ContactoEmpleado
             {
@@ -31,7 +31,7 @@ namespace Repository.Configuration
                 Direccion = "Av. 7 de Septiembre #25-10",
                 Email = "ContactoE2@gmail.com",
                 FechaCreacion = new DateTime(2023, 8, 28),
-                IdEmpleado = 2
+                EmpleadoId = 2
             },
             new ContactoEmpleado
             {
@@ -40,7 +40,7 @@ namespace Repository.Configuration
                 Direccion = "Calle 24 #18-15",
                 Email = "ContactoE3@gmail.com",
                 FechaCreacion = new DateTime(2023, 8, 29),
-                IdEmpleado =3
+                EmpleadoId =3
             },
             new ContactoEmpleado
             {
@@ -49,7 +49,7 @@ namespace Repository.Configuration
                 Direccion = "Cra 10A #5-30",
                 Email = "ContactoE4@gmail.com",
                 FechaCreacion = new DateTime(2023, 8, 29),
-                IdEmpleado = 4
+                EmpleadoId = 4
             },
             new ContactoEmpleado
             {
@@ -58,7 +58,7 @@ namespace Repository.Configuration
                 Direccion = "Cra 20 #8-45",
                 Email = "ContactoE5@gmail.com",
                 FechaCreacion = new DateTime(2023, 8, 30),
-                IdEmpleado = 5
+                EmpleadoId = 5
             }
             );
         }

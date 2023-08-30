@@ -17,7 +17,7 @@ namespace Repository.Configuration
             (
                 new Empleado
                 {
-                    IdEmpleado = 1,
+                    EmpleadoId = 1,
                     Nombres = "Ana María",
                     Apellidos = "González",
                     Sexo = "Femenino",
@@ -27,7 +27,7 @@ namespace Repository.Configuration
 
                 new Empleado
                 {
-                    IdEmpleado = 2,
+                    EmpleadoId = 2,
                     Nombres = "Carlos Alberto",
                     Apellidos = "Ramírez",
                     Sexo = "Masculino",
@@ -37,7 +37,7 @@ namespace Repository.Configuration
 
                 new Empleado
                 {
-                    IdEmpleado = 3,
+                    EmpleadoId = 3,
                     Nombres = "Laura",
                     Apellidos = "López",
                     Sexo = "Femenino",
@@ -47,7 +47,7 @@ namespace Repository.Configuration
 
                 new Empleado
                 {
-                    IdEmpleado = 4,
+                    EmpleadoId = 4,
                     Nombres = "Roberto",
                     Apellidos = "Hernández",
                     Sexo = "Masculino",
@@ -57,7 +57,7 @@ namespace Repository.Configuration
 
                 new Empleado
                 {
-                    IdEmpleado =5,
+                    EmpleadoId =5,
                     Nombres = "María José",
                     Apellidos = "Martínez",
                     Sexo = "Femenino",
