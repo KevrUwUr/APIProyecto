@@ -25,9 +25,10 @@ namespace Service
         {
             try
             {
-                var companies = _repository.Cargo.GetAllCargos(trackChanges);
-                var cargosDto = companies.Select(c => 
-                new CargoDto(c.Id, c.Name ?? "", string.Join(' ',c.Address, c.Country))).ToList();
+                var cargos = _repository.Cargo.GetAllCargos(trackChanges);
+                var cargosDto = cargos.Select(c => 
+                new CargoDto(c.IdCargo, c.NombreCargo ?? "", c.Estado))
+                    .ToList();
                 return cargosDto;
             }
             catch (Exception ex)
