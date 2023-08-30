@@ -17,7 +17,7 @@ namespace Repository.Configuration
             (
                 new DetalleFacturaVenta
                 {
-                    DetalleFacturaVentaID = new int("c5f7d82a-b380-49df-9c2a-61ef92acabc1"),
+                    DetalleFacturaVentaID = new Guid("c5f7d82a-b380-49df-9c2a-61ef92acabc1"),
                     ValorUnitario = 42500,
                     Cantidad = 2,
                     IVA = 8075,
@@ -25,7 +25,7 @@ namespace Repository.Configuration
                 },
                 new DetalleFacturaVenta
                 {
-                    DetalleFacturaVentaID = new int("d7e0f4c9-5b0c-4ccf-8ae0-b7220e5c693e"),
+                    DetalleFacturaVentaID = new Guid("d7e0f4c9-5b0c-4ccf-8ae0-b7220e5c693e"),
                     ValorUnitario = 60000,
                     Cantidad = 2,
                     IVA = 1534,

@@ -12,7 +12,7 @@ namespace Entities.Models
     {
         [Column("IdHistoricoPrecios")]
         [Key]
-        public int IdHistoricoPrecios { get; set; }
+        public Guid IdHistoricoPrecios { get; set; }
 
         [Required(ErrorMessage = "PresioVenta es un campo requerido.")]
         public float PrecioVenta { get; set; }
@@ -27,7 +27,7 @@ namespace Entities.Models
         public int Estado { get; set; }
 
         [ForeignKey(nameof(Producto))]
-        public int IdProducto { get; set; }
+        public Guid IdProducto { get; set; }
         public Producto? Producto { get; set; }
     }
 }

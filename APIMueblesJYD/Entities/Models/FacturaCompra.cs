@@ -12,7 +12,7 @@ namespace Entities.Models
     {
         [Column("IdFacturaCompra")]
         [Key]
-        public int IdFacturaCompra { get; set; }
+        public Guid IdFacturaCompra { get; set; }
 
         [Required(ErrorMessage = "NFactura es un campo requerido.")]
         public int NFactura { get; set; }
@@ -41,7 +41,7 @@ namespace Entities.Models
         public ICollection<DetalleFacturaCompra>? DetalleFacturaCompras { get; set; }
 
         [ForeignKey(nameof(Proveedor))]
-        public int IdProveedor { get; set; }
+        public Guid IdProveedor { get; set; }
         public Proveedor? Proveedores { get; set; }
 
         public ICollection<DetalleFacturaVenta>? detalleFacturaVentas { get; set; }

@@ -12,7 +12,7 @@ namespace Entities.Models
     {
         [Column("DetalleFacturaVentaID")]
         [Key]
-        public int DetalleFacturaVentaID { get; set; }
+        public Guid DetalleFacturaVentaID { get; set; }
 
         [Required(ErrorMessage = "ValorUnitario es un campo requerido.")]
         public float ValorUnitario { get; set; }
@@ -27,11 +27,11 @@ namespace Entities.Models
         public float ValorDescuento { get; set; }
 
         [ForeignKey(nameof(Producto))]
-        public int IdProducto { get; set; }
+        public Guid IdProducto { get; set; }
         public Producto? Producto { get; set; }
 
         [ForeignKey(nameof(FacturaVenta))]
-        public int IdFacturaVenta { get; set; }
+        public Guid IdFacturaVenta { get; set; }
         public FacturaVenta? FacturasVenta { get; set; }
     }
 }

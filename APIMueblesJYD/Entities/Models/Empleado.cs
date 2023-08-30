@@ -12,7 +12,7 @@ namespace Entities.Models
     {
         [Column("IdEmpleado")]
         [Key]
-        public int IdEmpleado { get; set; }
+        public Guid IdEmpleado { get; set; }
 
         [Required(ErrorMessage = "Nombres es un campo requerido.")]
         [MaxLength(80, ErrorMessage = "Largo maximo de los nombres es de 80 caracteres")]

@@ -17,7 +17,7 @@ namespace Repository.Configuration
             (
                 new FacturaCompra
                 {
-                    IdFacturaCompra = new int("a1a26fe5-39b3-4e71-bc0a-725e7c5b8a99"),
+                    IdFacturaCompra = new Guid("a1a26fe5-39b3-4e71-bc0a-725e7c5b8a99"),
                     FechaGeneracion = new DateTime(1995, 5, 15),
                     FechaExpedicion = new DateTime(1995, 5, 15),
                     FechaVencimiento = new DateTime(1995, 5, 15),
@@ -28,7 +28,7 @@ namespace Repository.Configuration
                 },
                 new FacturaCompra
                 {
-                    IdFacturaCompra = new int("b3d8ca9e-968f-4c5a-9b9e-8247123df605"),
+                    IdFacturaCompra = new Guid("b3d8ca9e-968f-4c5a-9b9e-8247123df605"),
                     FechaGeneracion = new DateTime(2000, 10, 03),
                     FechaExpedicion = new DateTime(2000, 10, 03),
                     FechaVencimiento = new DateTime(2000, 10, 17),

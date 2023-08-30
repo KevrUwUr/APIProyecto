@@ -18,49 +18,49 @@ namespace Repository.Configuration
                 (
                 new Categoria
                 {
-                    IdCategoria = new int("ebed2050-45d0-11ee-be56-0242ac120001"),
+                    IdCategoria = new Guid("ebed2050-45d0-11ee-be56-0242ac120001"),
                     Nombre = "Muebles",
                     Estado = 1
                 },
                 new Categoria
                 {
-                    IdCategoria = new int("ebed2050-45d0-11ee-be56-0242ac120002"),
+                    IdCategoria = new Guid("ebed2050-45d0-11ee-be56-0242ac120002"),
                     Nombre = "Camas",
                     Estado = 1
                 },
                 new Categoria
                 {
-                    IdCategoria = new int("ebed2050-45d0-11ee-be56-0242ac120003"),
+                    IdCategoria = new Guid("ebed2050-45d0-11ee-be56-0242ac120003"),
                     Nombre = "Mesas de Noche",
                     Estado = 1
                 },
                 new Categoria
                 {
-                    IdCategoria = new int("ebed2050-45d0-11ee-be56-0242ac120004"),
+                    IdCategoria = new Guid("ebed2050-45d0-11ee-be56-0242ac120004"),
                     Nombre = "Comedores",
                     Estado = 1
                 },
                 new Categoria
                 {
-                    IdCategoria = new int("ebed2050-45d0-11ee-be56-0242ac120005"),
+                    IdCategoria = new Guid("ebed2050-45d0-11ee-be56-0242ac120005"),
                     Nombre = "Escritorios",
                     Estado = 1
                 },
                 new Categoria
                 {
-                    IdCategoria = new int("ebed2050-45d0-11ee-be56-0242ac120006"),
+                    IdCategoria = new Guid("ebed2050-45d0-11ee-be56-0242ac120006"),
                     Nombre = "Sillas",
                     Estado = 1
                 },
                 new Categoria
                 {
-                    IdCategoria = new int("ebed2050-45d0-11ee-be56-0242ac120007"),
+                    IdCategoria = new Guid("ebed2050-45d0-11ee-be56-0242ac120007"),
                     Nombre = "Armarios",
                     Estado = 1
                 },
                 new Categoria
                 {
-                    IdCategoria = new int("ebed2050-45d0-11ee-be56-0242ac120008"),
+                    IdCategoria = new Guid("ebed2050-45d0-11ee-be56-0242ac120008"),
                     Nombre = "Camarotes",
                     Estado = 1
                 }

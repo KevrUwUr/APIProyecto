@@ -18,7 +18,7 @@ namespace Repository
             _cargoRepository = new Lazy<ICargoRepository>(() => 
             new CargoRepository(repositoryContext));
         }
-        public ICargoRepository Cargo=>_cargoRepository.Value
+        public ICargoRepository Cargo => _cargoRepository.Value;
 
         public void Save() => _repositoryContext.SaveChanges();
     }

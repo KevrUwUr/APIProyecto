@@ -17,7 +17,7 @@ namespace Repository.Configuration
             (
                 new FacturaVenta
                 {
-                    IdFacturaVenta = new int("c5f7d82a-b380-49df-9c2a-61ef92acabc1"),
+                    IdFacturaVenta = new Guid("c5f7d82a-b380-49df-9c2a-61ef92acabc1"),
                     FechaGeneracion = new DateTime(2023, 8, 28),
                     FechaExpedicion = new DateTime(2023, 8, 28),
                     FechaVencimiento = new DateTime(2023, 9, 15),
@@ -29,7 +29,7 @@ namespace Repository.Configuration
 
                 new FacturaVenta
                 {
-                    IdFacturaVenta = new int("d7e0f4c9-5b0c-4ccf-8ae0-b7220e5c693e"),
+                    IdFacturaVenta = new Guid("d7e0f4c9-5b0c-4ccf-8ae0-b7220e5c693e"),
                     FechaGeneracion = new DateTime(2023, 7, 15),
                     FechaExpedicion = new DateTime(2023, 7, 15),
                     FechaVencimiento = new DateTime(2023, 7, 30),
