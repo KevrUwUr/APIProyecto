@@ -40,7 +40,7 @@ namespace Entities.Models
         public int NumDocumento { get; set; }
 
         [Required(ErrorMessage = "Fecha de Nacimiento es un campo requerido.")]
-        public DateTime FechaNacimiento { get; set; }
+        public DateOnly FechaNacimiento { get; set; }
 
         [Required(ErrorMessage = "Estado es un campo requerido.")]
         public int Estado { get; set; }
@@ -51,12 +51,12 @@ namespace Entities.Models
         [Required(ErrorMessage = "Tipo de Usuario es un campo requerido.")]
         public int TipoUsuario { get; set; }
 
-        public DateTime FechaContrato { get; set; }
+        public DateOnly FechaContrato { get; set; }
 
         [MaxLength(80, ErrorMessage = "Largo maximo del cargo es de 80 caracteres")]
         public string? Cargo { get; set; }
 
-        public DateTime FechaFin { get; set; }
+        public DateOnly FechaFin { get; set; }
 
         public string? Contrasena { get; set; }
 

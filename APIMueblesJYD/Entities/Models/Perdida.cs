@@ -19,7 +19,7 @@ namespace Entities.Models
         public Empleado? Empleado { get; set; }
 
         [Required(ErrorMessage = "Fecha de Perdida es un campo requerido.")]
-        public DateTime FechaPerdida { get; set; }
+        public DateOnly FechaPerdida { get; set; }
 
         [Required(ErrorMessage = "Tipo es un campo requerido.")]
         public int Estado { get; set; }

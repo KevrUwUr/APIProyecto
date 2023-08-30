@@ -19,7 +19,7 @@ namespace Entities.Models
         public FacturaVenta? FacturaVenta { get; set; }
 
         [Required(ErrorMessage = "Fecha de Transaccion es un campo requerido.")]
-        public DateTime FechaTransaccion { get; set; }
+        public DateOnly FechaTransaccion { get; set; }
 
         [Required(ErrorMessage = "Tipo es un campo requerido.")]
         public int Tipo { get; set; }
