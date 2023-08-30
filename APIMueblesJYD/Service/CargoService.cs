@@ -21,7 +21,7 @@ namespace Service
             _logger = logger;
         }
 
-        public IEnumerable<Cargo> GetAllCargos(bool trackChanges)
+        public IEnumerable<CargoDto> GetAllCargos(bool trackChanges)
         {
             try
             {
