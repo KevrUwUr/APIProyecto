@@ -1,4 +1,5 @@
-﻿using Contracts;
+﻿using AutoMapper;
+using Contracts;
 using Service.Contracts;
 using System;
 using System.Collections.Generic;
@@ -12,10 +13,11 @@ namespace Service
     {
         private readonly Lazy<ICargoService> _cargoService;
 
-        public ServiceManager(IRepositoryManager repositoryManager, ILoggerManager logger)
+        public ServiceManager(IRepositoryManager repositoryManager, ILoggerManager logger
+            , IMapper mapper)
         {
             _cargoService = new Lazy<ICargoService>(() => 
-            new CargoService(repositoryManager, logger));
+            new CargoService(repositoryManager, logger, mapper));
         }
         public ICargoService CargoService => _cargoService.Value;
     }

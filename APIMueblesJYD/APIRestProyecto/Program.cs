@@ -23,7 +23,18 @@ builder.Services.AddControllers()
 
 // Add services to the container.
 
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
 var app = builder.Build();
+
+var logger = app.Services.GetRequiredService<ILoggerManager>();
+app.ConfigureExceptionHandler(logger);
+
+if (app.Environment.IsProduction())
+{
+    app.UseHsts();
+}
 
 if (app.Environment.IsDevelopment())
 {
@@ -34,6 +45,11 @@ if (app.Environment.IsDevelopment())
 }
 
 // Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
 
 app.UseHttpsRedirection();
 
@@ -46,42 +62,6 @@ app.UseForwardedHeaders(new ForwardedHeadersOptions{
 app.UseCors("CorsPolicy");
 
 app.UseAuthorization();
-
-app.Use(async (context, next) =>
-{
-    Console.WriteLine($"Logica antes de ejecutar el siguiente delegado en el metodo use");
-    await next.Invoke();
-    Console.WriteLine($"Logica despues de ejecutar el delegado en el metodo use");
-});
-
-app.Map("/usingmapbranch", builder =>
-{
-    builder.Use(async (context, next) =>
-    {
-        Console.WriteLine("Map branch Logica antes de ejecutar el siguiente delegado en el metodo use");
-        await next.Invoke();
-        Console.WriteLine("Map branch Logica despues de ejecutar el siguiente delegado en el metodo use");
-    });
-    builder.Run(async context =>
-    {
-        Console.WriteLine($"Map branch Respuesta al cliente en el metodo Run");
-        await context.Response.WriteAsync("Bienvenido al MapBranch");
-    });
-});
-
-app.MapWhen(context => context.Request.Query.ContainsKey("testquerystring"), builder =>
-    {
-        builder.Run(async context =>
-    {
-        await context.Response.WriteAsync("Bienvenido a la rama del MapWhen");
-    });
-});
-
-app.Run(async context =>
-{
-    Console.WriteLine($"Escribiendo la respuesta al cliente desde el metodo Run");
-    await context.Response.WriteAsync("Bienvenido al componente delñ Middleware");
-});
 
 app.MapControllers();
 

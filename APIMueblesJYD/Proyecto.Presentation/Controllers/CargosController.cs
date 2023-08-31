@@ -17,16 +17,9 @@ namespace Proyect.Presentation.Controllers
         [HttpGet]
         public IActionResult GetCargos()
         {
-            try
-            {
-                var cargos =
-                _service.CargoService.GetAllCargos(trackChanges: false);
-                return Ok(cargos);
-            }
-            catch
-            {
-                return StatusCode(500, "Internal server error");
-            }
+
+            var cargos = _service.CargoService.GetAllCargos(trackChanges: false);
+            return Ok(cargos);
         }
 
     }
