@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proyecto.Presentation", "Proyecto.Presentation\Proyecto.Presentation.csproj", "{11022F97-0E83-4C84-911B-35687C8BA2FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{9F5B9B22-D3BB-4A81-BB34-56B7CAE6CBEF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{11022F97-0E83-4C84-911B-35687C8BA2FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11022F97-0E83-4C84-911B-35687C8BA2FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11022F97-0E83-4C84-911B-35687C8BA2FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F5B9B22-D3BB-4A81-BB34-56B7CAE6CBEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F5B9B22-D3BB-4A81-BB34-56B7CAE6CBEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F5B9B22-D3BB-4A81-BB34-56B7CAE6CBEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F5B9B22-D3BB-4A81-BB34-56B7CAE6CBEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
