@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Contracts;
+using Entities.Exceptions;
 using Entities.Models;
 using Service.Contracts;
 using Shared.DataTransferObjects;
@@ -32,9 +33,13 @@ namespace Service
             return cargosDto;
         }
 
-        public CargoDto GetCargo(Guid cargoId, bool trackChanges)
+        public CargoDto GetCargo(Guid Id, bool trackChanges)
         {
-            var cargo = _repository.Cargo.GetCargo(cargoId, trackChanges);
+            var cargo = _repository.Cargo.GetCargo(Id, trackChanges);
+            if(cargo == null)
+            {
+                throw new CargoNotFoundException(Id);
+            }
 
             var cargoDto = _mapper.Map<CargoDto>(cargo);
             return cargoDto;
