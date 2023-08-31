@@ -4112,11 +4112,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Proyecto.Presentation\\Proyecto.Presentation.csproj",
-      "projectName": "Proyecto.Presentation",
-      "projectPath": "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Proyecto.Presentation\\Proyecto.Presentation.csproj",
+      "projectUniqueName": "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Proyecto.Presentation\\Proyect.Presentation.csproj",
+      "projectName": "Proyect.Presentation",
+      "projectPath": "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Proyecto.Presentation\\Proyect.Presentation.csproj",
       "packagesPath": "C:\\Users\\Aprendiz\\.nuget\\packages\\",
-      "outputPath": "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Proyecto.Presentation\\obj\\",
+      "outputPath": "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Proyecto.Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4138,8 +4138,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj": {
-              "projectPath": "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj"
+            "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj": {
+              "projectPath": "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj"
             }
           }
         }

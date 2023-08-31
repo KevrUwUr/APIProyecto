@@ -13,13 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entiti
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{20F38127-266C-43C0-82C0-B2C2E54A75C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service.Contracts", "Service.Contracts\Service.Contracts.csproj", "{04F8EBD2-0F89-4FDA-98B5-8D74DCAA714A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service.Contracts", "Service.Contracts\Service.Contracts.csproj", "{04F8EBD2-0F89-4FDA-98B5-8D74DCAA714A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{CE8A0655-53E8-490D-B432-357842FF385A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "Service\Service.csproj", "{CE8A0655-53E8-490D-B432-357842FF385A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proyecto.Presentation", "Proyecto.Presentation\Proyecto.Presentation.csproj", "{11022F97-0E83-4C84-911B-35687C8BA2FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Proyect.Presentation", "Proyecto.Presentation\Proyect.Presentation.csproj", "{11022F97-0E83-4C84-911B-35687C8BA2FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{9F5B9B22-D3BB-4A81-BB34-56B7CAE6CBEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csproj", "{9F5B9B22-D3BB-4A81-BB34-56B7CAE6CBEF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

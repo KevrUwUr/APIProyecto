@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj": {}
+    "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj": {}
   },
   "projects": {
-    "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj": {
+    "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj",
         "projectName": "Contracts",
-        "projectPath": "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj",
+        "projectPath": "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj",
         "packagesPath": "C:\\Users\\Aprendiz\\.nuget\\packages\\",
-        "outputPath": "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Contracts\\obj\\",
+        "outputPath": "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj"
+              "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj"
               }
             }
           }
@@ -68,14 +68,14 @@
         }
       }
     },
-    "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj": {
+    "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\Aprendiz\\.nuget\\packages\\",
-        "outputPath": "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -128,14 +128,14 @@
         }
       }
     },
-    "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj": {
+    "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj",
+        "projectUniqueName": "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj",
         "projectName": "LoggerService",
-        "projectPath": "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj",
+        "projectPath": "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj",
         "packagesPath": "C:\\Users\\Aprendiz\\.nuget\\packages\\",
-        "outputPath": "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\LoggerService\\obj\\",
+        "outputPath": "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\LoggerService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -157,8 +157,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj": {
-                "projectPath": "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj"
+              "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj"
               }
             }
           }

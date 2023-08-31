@@ -1694,7 +1694,7 @@
           "bin/placeholder/LoggerService.dll": {}
         }
       },
-      "Proyecto.Presentation/1.0.0": {
+      "Proyect.Presentation/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
@@ -1702,10 +1702,10 @@
           "Service.Contracts": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Proyecto.Presentation.dll": {}
+          "bin/placeholder/Proyect.Presentation.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Proyecto.Presentation.dll": {}
+          "bin/placeholder/Proyect.Presentation.dll": {}
         }
       },
       "Repository/1.0.0": {
@@ -1728,6 +1728,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "Contracts": "1.0.0",
           "Service.Contracts": "1.0.0"
         },
@@ -4788,10 +4789,10 @@
       "path": "../LoggerService/LoggerService.csproj",
       "msbuildProject": "../LoggerService/LoggerService.csproj"
     },
-    "Proyecto.Presentation/1.0.0": {
+    "Proyect.Presentation/1.0.0": {
       "type": "project",
-      "path": "../Proyecto.Presentation/Proyecto.Presentation.csproj",
-      "msbuildProject": "../Proyecto.Presentation/Proyecto.Presentation.csproj"
+      "path": "../Proyecto.Presentation/Proyect.Presentation.csproj",
+      "msbuildProject": "../Proyecto.Presentation/Proyect.Presentation.csproj"
     },
     "Repository/1.0.0": {
       "type": "project",
@@ -4821,7 +4822,7 @@
       "Microsoft.AspNetCore.OpenApi >= 7.0.10",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.10",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.10",
-      "Proyecto.Presentation >= 1.0.0",
+      "Proyect.Presentation >= 1.0.0",
       "Repository >= 1.0.0",
       "Service >= 1.0.0",
       "Service.Contracts >= 1.0.0",
@@ -4835,11 +4836,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\APIRestProyecto\\APIRestProyecto.csproj",
+      "projectUniqueName": "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\APIRestProyecto\\APIRestProyecto.csproj",
       "projectName": "APIRestProyecto",
-      "projectPath": "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\APIRestProyecto\\APIRestProyecto.csproj",
+      "projectPath": "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\APIRestProyecto\\APIRestProyecto.csproj",
       "packagesPath": "C:\\Users\\Aprendiz\\.nuget\\packages\\",
-      "outputPath": "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\APIRestProyecto\\obj\\",
+      "outputPath": "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\APIRestProyecto\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4862,20 +4863,20 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj": {
-              "projectPath": "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj"
+            "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj": {
+              "projectPath": "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj"
             },
-            "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Proyecto.Presentation\\Proyecto.Presentation.csproj": {
-              "projectPath": "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Proyecto.Presentation\\Proyecto.Presentation.csproj"
+            "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Proyecto.Presentation\\Proyect.Presentation.csproj": {
+              "projectPath": "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Proyecto.Presentation\\Proyect.Presentation.csproj"
             },
-            "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Repository\\Repository.csproj": {
-              "projectPath": "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Repository\\Repository.csproj"
+            "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Repository\\Repository.csproj": {
+              "projectPath": "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Repository\\Repository.csproj"
             },
-            "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj": {
-              "projectPath": "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj"
+            "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj": {
+              "projectPath": "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj"
             },
-            "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Service\\Service.csproj": {
-              "projectPath": "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Service\\Service.csproj"
+            "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Service\\Service.csproj": {
+              "projectPath": "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Service\\Service.csproj"
             }
           }
         }

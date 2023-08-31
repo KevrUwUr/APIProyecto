@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Proyecto.Presentation
+namespace Proyect.Presentation
 {
     public static class AssemblyReference
     {

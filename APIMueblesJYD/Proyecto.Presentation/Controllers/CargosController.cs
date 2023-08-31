@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Service.Contracts;
 
-namespace Proyecto.Presentation.Controllers
+namespace Proyect.Presentation.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

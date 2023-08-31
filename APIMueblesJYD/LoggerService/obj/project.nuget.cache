@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8oh5zh2tbTQhXd4yJZ304BsAmx1QT7J3+ugkCW6X+WbZbOGx9PitheGrN166Gi5iR6voZaV8Zq0/XEFP2HMfnA==",
+  "dgSpecHash": "Eiwk4+W+F01HZmZ2N7UaSEK74pDgLSgFvE6CAMSVLQEuthL/7JXZMg9VU5ANIfBQ9pXcQvLXHB3OTCbn/6GJhQ==",
   "success": true,
-  "projectFilePath": "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj",
+  "projectFilePath": "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aprendiz\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Aprendiz\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
