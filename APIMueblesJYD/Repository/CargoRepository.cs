@@ -19,5 +19,9 @@ namespace Repository
             FindAll(trackChanges)
                 .OrderBy(c => c.NombreCargo)
                 .ToList();
+
+        public Cargo GetCargo(Guid cargoId, bool trackChanges) =>
+            FindByCondition(c => c.IdCargo.Equals(cargoId), trackChanges)
+            .SingleOrDefault();
     }
 }

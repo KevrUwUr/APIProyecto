@@ -11,5 +11,6 @@ namespace Service.Contracts
     public interface ICargoService
     {
         IEnumerable<CargoDto> GetAllCargos(bool trackChanges);
+        CargoDto GetCargo(Guid cargoId, bool trackChanges);
     }
 }

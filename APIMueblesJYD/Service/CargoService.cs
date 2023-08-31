@@ -31,5 +31,13 @@ namespace Service
 
             return cargosDto;
         }
+
+        public CargoDto GetCargo(Guid cargoId, bool trackChanges)
+        {
+            var cargo = _repository.Cargo.GetCargo(cargoId, trackChanges);
+
+            var cargoDto = _mapper.Map<CargoDto>(cargo);
+            return cargoDto;
+        }
     }
 }
