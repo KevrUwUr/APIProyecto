@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Shared.DataTransferObjects
 {
-    public record FacturaCompraDTO(Guid IdFacturaCompra, int NFactura, DateTime? FechaGeneracion, DateTime? FechaExpedicion,
-        DateTime? FechaVencimiento, float TotalBruto, float TotalIVA, float TotalRefuete, float TotalPago, Guid IdProveedor);
+    public record FacturaCompraDTO(int IdFacturaCompra, int NFactura, DateTime? FechaGeneracion, DateTime? FechaExpedicion,
+        DateTime? FechaVencimiento, float TotalBruto, float TotalIVA, float TotalRefuete, float TotalPago, int IdProveedor);
 
 
 }

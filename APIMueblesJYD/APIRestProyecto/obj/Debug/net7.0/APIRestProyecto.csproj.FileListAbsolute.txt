@@ -192,3 +192,13 @@ C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\APIRestProyecto\o
 C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\APIRestProyecto\obj\Debug\net7.0\ref\APIRestProyecto.dll
 C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\APIRestProyecto\bin\Debug\net7.0\Proyect.Presentation.dll
 C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\APIRestProyecto\bin\Debug\net7.0\Proyect.Presentation.pdb
+C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\APIRestProyecto\obj\Debug\net7.0\APIRestProyecto.csproj.AssemblyReference.cache
+C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\APIRestProyecto\obj\Debug\net7.0\APIRestProyecto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\APIRestProyecto\obj\Debug\net7.0\APIRestProyecto.AssemblyInfoInputs.cache
+C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\APIRestProyecto\obj\Debug\net7.0\APIRestProyecto.AssemblyInfo.cs
+C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\APIRestProyecto\obj\Debug\net7.0\APIRestProyecto.csproj.CoreCompileInputs.cache
+C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\APIRestProyecto\obj\Debug\net7.0\APIRestProyecto.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\APIRestProyecto\obj\Debug\net7.0\APIRestProyecto.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\APIRestProyecto\obj\Debug\net7.0\APIRestProyecto.dll
+C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\APIRestProyecto\obj\Debug\net7.0\refint\APIRestProyecto.dll
+C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\APIRestProyecto\obj\Debug\net7.0\APIRestProyecto.pdb

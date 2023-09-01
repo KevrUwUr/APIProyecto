@@ -10,9 +10,9 @@ namespace Entities.Models
 {
     public class Empleado
     {
-        [Column("IdEmpleado")]
+        [Column("EmpleadoId")]
         [Key]
-        public Guid IdEmpleado { get; set; }
+        public int EmpleadoId { get; set; }
 
         [Required(ErrorMessage = "Nombres es un campo requerido.")]
         [MaxLength(80, ErrorMessage = "Largo maximo de los nombres es de 80 caracteres")]
@@ -33,7 +33,7 @@ namespace Entities.Models
         public int Estado { get; set; }
 
         public ICollection<ContactoEmpleado>? ContactoEmpleados { get; set; }
-        public ICollection<Empleado_Cargo>? Empleados_Cargos { get; set; }
+        public ICollection<EmpleadoCargo>? Empleados_Cargos { get; set; }
         public ICollection<Perdida>? Perdidas { get; set; }
     }
 }

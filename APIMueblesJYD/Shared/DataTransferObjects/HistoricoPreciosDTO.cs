@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Shared.DataTransferObjects
 {
-    public record HistoricoPreciosDTO(Guid IdHistoricoPrecios, float PrecioVenta, 
-        DateTime FechaPrecioInicial, DateTime FechaPrecioFinal, int Estado, Guid IdProducto);
+    public record HistoricoPreciosDTO(int IdHistoricoPrecios, float PrecioVenta, 
+        DateTime FechaPrecioInicial, DateTime FechaPrecioFinal, int Estado, int IdProducto);
 
 }

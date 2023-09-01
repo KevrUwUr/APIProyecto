@@ -21,11 +21,11 @@ namespace Entities.Models
         public string? Motivo { get; set; }
 
         [ForeignKey(nameof(Perdida))]
-        public Guid IdPerdida { get; set; }
+        public int IdPerdida { get; set; }
         public Perdida? Perdida { get; set; }
 
         [ForeignKey(nameof(Producto))]
-        public Guid IdProducto { get; set; }
+        public int IdProducto { get; set; }
         public Producto? Producto { get; set; }
     }
 }

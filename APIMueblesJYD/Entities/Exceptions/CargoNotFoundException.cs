@@ -8,7 +8,7 @@ namespace Entities.Exceptions
 {
     public sealed class CargoNotFoundException : NotFoundException
     {
-        public CargoNotFoundException(Guid cargoId)
+        public CargoNotFoundException(int cargoId)
             :base ($"El cargo con el Id: {cargoId} no existe en la Base de Datos.") { }
     }
 }

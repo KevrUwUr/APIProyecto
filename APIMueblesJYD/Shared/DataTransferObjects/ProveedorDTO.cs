@@ -6,6 +6,6 @@ using System.Threading.Tasks;
 
 namespace Shared.DataTransferObjects
 {
-    public record ProveedorDTO(Guid IdProveedor, string RazonSocial, int Estado);
+    public record ProveedorDTO(int IdProveedor, string RazonSocial, int Estado);
 
 }

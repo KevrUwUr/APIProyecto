@@ -25,7 +25,7 @@ namespace Repository
             modelBuilder.ApplyConfiguration(new ContactoUsuarioConfiguration());
             modelBuilder.ApplyConfiguration(new DetalleFacturaCompraConfiguration());
             modelBuilder.ApplyConfiguration(new DetalleFacturaVentaConfiguration());
-            modelBuilder.ApplyConfiguration(new Empleado_CargoConfiguration());
+            modelBuilder.ApplyConfiguration(new EmpleadoCargoConfiguration());
             modelBuilder.ApplyConfiguration(new EmpleadoConfiguration());
             modelBuilder.ApplyConfiguration(new FacturaCompraConfiguration());
             modelBuilder.ApplyConfiguration(new FacturaVentaConfiguration());
