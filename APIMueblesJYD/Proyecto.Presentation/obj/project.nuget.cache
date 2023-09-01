@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/e7eDjGOXr5TufxN9XtjCZwKc0uJd1lHBDvKURX1CtzwljDUTgUMtNRoOvoskIdhIpMDOXR1hWu8iPxtF1/kmg==",
+  "dgSpecHash": "Rd8J08NIiqQZHpxogEWL8UkJDSaKbFz47WqFXCwRtzDj3Xuqs4PYOg2NaMfGvpDlZlr6Ma3cB6cI+NTzbolQgQ==",
   "success": true,
-  "projectFilePath": "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Proyecto.Presentation\\Proyect.Presentation.csproj",
+  "projectFilePath": "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Proyecto.Presentation\\Proyect.Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aprendiz\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Aprendiz\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",

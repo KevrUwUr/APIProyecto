@@ -17,30 +17,26 @@ namespace Repository.Configuration
             (
                 new FacturaVenta
                 {
-                    IdFacturaVenta = 1,
-                    NFactura = 1,
+                    IdFacturaVenta = new Guid("c5f7d82a-b380-49df-9c2a-61ef92acabc1"),
                     FechaGeneracion = new DateTime(2023, 8, 28),
                     FechaExpedicion = new DateTime(2023, 8, 28),
                     FechaVencimiento = new DateTime(2023, 9, 15),
                     TotalBruto = 85000,
                     TotalIVA = 16150,
                     TotalRefuete = 12000,
-                    TotalPago = 113150,
-                    IdUsuario = 1
+                    TotalPago = 113150
                 },
 
                 new FacturaVenta
                 {
-                    IdFacturaVenta = 2,
-                    NFactura = 2,
+                    IdFacturaVenta = new Guid("d7e0f4c9-5b0c-4ccf-8ae0-b7220e5c693e"),
                     FechaGeneracion = new DateTime(2023, 7, 15),
                     FechaExpedicion = new DateTime(2023, 7, 15),
                     FechaVencimiento = new DateTime(2023, 7, 30),
                     TotalBruto = 120000,
                     TotalIVA = 22800,
                     TotalRefuete = 15000,
-                    TotalPago = 157800,
-                    IdUsuario = 2
+                    TotalPago = 157800
                 }
             );
         }

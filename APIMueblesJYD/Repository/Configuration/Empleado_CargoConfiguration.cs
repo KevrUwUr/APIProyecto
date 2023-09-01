@@ -9,56 +9,60 @@ using System.Threading.Tasks;
 
 namespace Repository.Configuration
 {
-    public class Empleado_CargoConfiguration : IEntityTypeConfiguration<EmpleadoCargo>
+    public class Empleado_CargoConfiguration : IEntityTypeConfiguration<Empleado_Cargo>
     {
-        public void Configure(EntityTypeBuilder<EmpleadoCargo> builder)
+        public void Configure(EntityTypeBuilder<Empleado_Cargo> builder)
         {
             builder.HasData
             (
-            new EmpleadoCargo
+            new Empleado_Cargo
             {
                 FechaInicio = new DateTime(1995, 5, 15),
                 FechaFin = new DateTime(2015, 5, 15),
-                NumeroContrato = 1,
-                CargoId = 1,
-                EmpleadoId = 1
+                NumeroContrato = 1
             },
-            new EmpleadoCargo
+            new Empleado_Cargo
             {
                 FechaInicio = new DateTime(2000, 10, 03),
                 FechaFin = new DateTime(2010, 12, 31),
-                NumeroContrato = 2,
-                CargoId = 2,
-                EmpleadoId = 2
+                NumeroContrato = 2
             },
 
-            new EmpleadoCargo
+            new Empleado_Cargo
             {
                 FechaInicio = new DateTime(2005, 3, 20),
-                FechaFin = new DateTime(2010, 12, 31),
-                NumeroContrato = 3,
-                CargoId = 3,
-                EmpleadoId = 3
+                FechaFin = null,
+                NumeroContrato = 3
             },
 
-            new EmpleadoCargo
+            new Empleado_Cargo
             {
                 FechaInicio = new DateTime(2012, 8, 10),
-                FechaFin = new DateTime(2010, 12, 31),
-                NumeroContrato = 4,
-                CargoId = 4,
-                EmpleadoId = 4
+                FechaFin = null,
+                NumeroContrato = 4
             },
 
-            new EmpleadoCargo
+            new Empleado_Cargo
             {
                 FechaInicio = new DateTime(2010, 6, 15),
                 FechaFin = new DateTime(2018, 9, 30),
-                NumeroContrato = 5,
-                CargoId = 5,
-                EmpleadoId = 5
-            });
+                NumeroContrato = 5
+            },
 
+            new Empleado_Cargo
+            {
+                FechaInicio = new DateTime(2017, 2, 25),
+                FechaFin = new DateTime(2022, 4, 15),
+                NumeroContrato = 6
+            },
+
+            new Empleado_Cargo
+            {
+                FechaInicio = new DateTime(2019, 11, 5),
+                FechaFin = null,
+                NumeroContrato = 7
+            }
+            );
         }
     }
 }

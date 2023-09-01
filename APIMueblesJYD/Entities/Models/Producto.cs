@@ -12,7 +12,7 @@ namespace Entities.Models
     {
         [Column("IdProducto")]
         [Key]
-        public int IdProducto { get; set; }
+        public Guid IdProducto { get; set; }
 
         [Required(ErrorMessage = "Nombre es un campo requerido.")]
         [MaxLength(80, ErrorMessage = "Largo maximo del nombre es de 80 caracteres")]
@@ -41,8 +41,8 @@ namespace Entities.Models
         public string? OrigenMateriaPrima { get; set; }
 
         [ForeignKey(nameof(Categoria))]
-        public int IdCategoria { get; set; }
-        public Categoria? Categoria { get; set; }
+        public Guid IdCategoria { get; set; }
+        public Categoria? Categoria{ get; set; }
         public ICollection<HistoricoPrecios>? HistoricoPrecios { get; set; }
         public ICollection<DetalleFacturaCompra>? detalleFacturaCompras { get; set; }
         public ICollection<Perdida_Producto>? perdida_Productos { get; set; }

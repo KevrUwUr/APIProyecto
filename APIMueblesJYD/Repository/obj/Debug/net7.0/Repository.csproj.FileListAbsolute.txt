@@ -20,20 +20,45 @@ C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\Repository\obj\
 C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.AssemblyInfoInputs.cache
 C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.AssemblyInfo.cs
 C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.csproj.CoreCompileInputs.cache
-C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Repository\bin\Debug\net7.0\Repository.deps.json
-C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Repository\bin\Debug\net7.0\Repository.dll
-C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Repository\bin\Debug\net7.0\Repository.pdb
-C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Repository\bin\Debug\net7.0\Contracts.dll
-C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Repository\bin\Debug\net7.0\Entities.dll
-C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Repository\bin\Debug\net7.0\Contracts.pdb
-C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Repository\bin\Debug\net7.0\Entities.pdb
-C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.csproj.AssemblyReference.cache
-C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.AssemblyInfoInputs.cache
-C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.AssemblyInfo.cs
-C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.csproj.CoreCompileInputs.cache
-C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.csproj.CopyComplete
-C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.dll
-C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\refint\Repository.dll
-C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.pdb
-C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\ref\Repository.dll
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Repository\bin\Debug\net7.0\Repository.deps.json
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Repository\bin\Debug\net7.0\Repository.dll
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Repository\bin\Debug\net7.0\Repository.pdb
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Repository\bin\Debug\net7.0\Contracts.dll
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Repository\bin\Debug\net7.0\Entities.dll
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Repository\bin\Debug\net7.0\Contracts.pdb
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Repository\bin\Debug\net7.0\Entities.pdb
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.csproj.AssemblyReference.cache
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.AssemblyInfoInputs.cache
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.AssemblyInfo.cs
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.csproj.CoreCompileInputs.cache
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.csproj.CopyComplete
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.dll
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\refint\Repository.dll
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.pdb
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\ref\Repository.dll
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.csproj.AssemblyReference.cache
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.AssemblyInfoInputs.cache
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.AssemblyInfo.cs
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.csproj.CoreCompileInputs.cache
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.dll
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\refint\Repository.dll
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.pdb
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Repository\bin\Debug\net7.0\Repository.deps.json
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Repository\bin\Debug\net7.0\Repository.dll
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Repository\bin\Debug\net7.0\Repository.pdb
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Repository\bin\Debug\net7.0\Contracts.dll
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Repository\bin\Debug\net7.0\Entities.dll
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Repository\bin\Debug\net7.0\Contracts.pdb
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Repository\bin\Debug\net7.0\Entities.pdb
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.csproj.AssemblyReference.cache
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.AssemblyInfoInputs.cache
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.AssemblyInfo.cs
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.csproj.CoreCompileInputs.cache
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.csproj.CopyComplete
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.dll
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\refint\Repository.dll
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.pdb
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\ref\Repository.dll

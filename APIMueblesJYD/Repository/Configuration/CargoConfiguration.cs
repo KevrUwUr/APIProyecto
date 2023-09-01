@@ -18,32 +18,32 @@ namespace Repository.Configuration
             (
             new Cargo
             {
-                CargoId = 1,
-                NombreCargo = "Carpintero",
+                IdCargo = new Guid("81ef2c34-7eb7-4891-8e5b-172e5786e687"),
+                NombreCargo = "CarpGuidero",
                 Estado = 1,
             },
             new Cargo
             {
-                CargoId = 2,
+                IdCargo = new Guid("ef3f0aae-804f-4e7c-9633-212a439d0960"),
                 NombreCargo = "Diseñador de Muebles",
                 Estado = 1,
             },
             new Cargo
             {
-                CargoId = 3,
+                IdCargo = new Guid("2954f19b-36e5-4a69-996b-dc3911df74b2"),
                 NombreCargo = "Vendedor de Muebles",
                 Estado = 1,
             },
             new Cargo
             {
-                CargoId = 4,
+                IdCargo = new Guid("8d8330ee-16ed-41ba-89d3-599651cddb34"),
                 NombreCargo = "Técnico de Acabados",
                 Estado = 1,
             },
             new Cargo
             {
-                CargoId = 5,
-                NombreCargo = "Asistente de carpinteria",
+                IdCargo = new Guid("2d2df54e-e3ff-45e3-915d-ac2f53d371f2"),
+                NombreCargo = "Asistente de carpGuideria",
                 Estado = 1
             }
             );

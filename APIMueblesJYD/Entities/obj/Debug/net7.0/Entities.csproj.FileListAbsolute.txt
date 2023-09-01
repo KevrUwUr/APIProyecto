@@ -14,15 +14,38 @@ C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\Entities\obj\De
 C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.AssemblyInfoInputs.cache
 C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.AssemblyInfo.cs
 C:\Users\migue\OneDrive\Escritorio\API\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.csproj.CoreCompileInputs.cache
-C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Entities\bin\Debug\net7.0\Entities.deps.json
-C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Entities\bin\Debug\net7.0\Entities.dll
-C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Entities\bin\Debug\net7.0\Entities.pdb
-C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.csproj.AssemblyReference.cache
-C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.AssemblyInfoInputs.cache
-C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.AssemblyInfo.cs
-C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.csproj.CoreCompileInputs.cache
-C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.dll
-C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\refint\Entities.dll
-C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.pdb
-C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\ref\Entities.dll
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Entities\bin\Debug\net7.0\Entities.deps.json
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Entities\bin\Debug\net7.0\Entities.dll
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Entities\bin\Debug\net7.0\Entities.pdb
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.AssemblyInfoInputs.cache
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.AssemblyInfo.cs
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.dll
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\refint\Entities.dll
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.pdb
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\ref\Entities.dll
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\Entities\bin\Debug\net7.0\Entities.deps.json
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\Entities\bin\Debug\net7.0\Entities.dll
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\Entities\bin\Debug\net7.0\Entities.pdb
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.csproj.AssemblyReference.cache
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.AssemblyInfoInputs.cache
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.AssemblyInfo.cs
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.csproj.CoreCompileInputs.cache
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.dll
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\refint\Entities.dll
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.pdb
+C:\MueblesJ&D\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\ref\Entities.dll
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Entities\bin\Debug\net7.0\Entities.deps.json
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Entities\bin\Debug\net7.0\Entities.dll
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Entities\bin\Debug\net7.0\Entities.pdb
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.csproj.AssemblyReference.cache
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.AssemblyInfoInputs.cache
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.AssemblyInfo.cs
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.dll
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\refint\Entities.dll
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.pdb
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\ref\Entities.dll
