@@ -12,12 +12,12 @@ namespace Repository
     {
         public ContactoProveedorRepository(RepositoryContext repositoryContext)
             : base(repositoryContext) { }
-        public IEnumerable<ContactoProveedor> GetAllSupplierContact(bool trackChanges) =>
+        public IEnumerable<ContactoProveedor> GetAllSupplierContacts(bool trackChanges) =>
             FindAll(trackChanges)
             .OrderBy(c => c.Proveedor)
             .ToList();
 
-        public ContactoProveedor GetContactoProveedor(Guid Id, bool trackChanges) =>
+        public ContactoProveedor GetSuplierContact(Guid Id, bool trackChanges) =>
             FindByCondition(c => c.IdContactoProveedor.Equals(Id), trackChanges)
             .SingleOrDefault();
     }

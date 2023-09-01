@@ -9,6 +9,7 @@ namespace Contracts
 {
     public interface IHistoricoPreciosRepository
     {
-        IEnumerable<HistoricoPrecios> GetAllPriceHistory(bool trackChanges);
+        IEnumerable<HistoricoPrecios> GetAllPriceHistories(bool trackChanges);
+        HistoricoPrecios GetPriceHistory(Guid priceHistoryId, bool trackChanges);
     }
 }

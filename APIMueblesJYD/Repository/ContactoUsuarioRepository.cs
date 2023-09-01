@@ -16,5 +16,9 @@ namespace Repository
             FindAll(trackChanges)
             .OrderBy(c => c.Usuario)
             .ToList();
+
+        public ContactoUsuario GetUserContact(Guid Id, bool trackChanges) =>
+            FindByCondition(c => c.IdContactoCliente.Equals(Id), trackChanges)
+            .SingleOrDefault();
     }
 }

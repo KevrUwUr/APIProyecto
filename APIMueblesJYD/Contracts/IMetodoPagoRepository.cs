@@ -10,5 +10,6 @@ namespace Contracts
     public interface IMetodoPagoRepository
     {
         IEnumerable<MetodoPago> GetAllPayMethods(bool trackChanges);
+        MetodoPago GetPayMethod(Guid payMethodId, bool trackChanges);
     }
 }

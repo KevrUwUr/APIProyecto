@@ -48,43 +48,60 @@ namespace Repository
             _contactoUsuarioRepository = new Lazy<IContactoUsuarioRepository>(() =>
             new ContactoUsuarioRepository(repositoryContext));
 
-            //_detFacturaCompraRepository = new Lazy<IDetFacturaCompraRepository>(() =>
-            //new DetFacturaCompraRepository(repositoryContext));
+            _detFacturaCompraRepository = new Lazy<IDetFacturaCompraRepository>(() =>
+            new DetFacturaCompraRepository(repositoryContext));
 
-            //_detFacturaVentaRepository = new Lazy<IDetFacturaVentaRepository>(() =>
-            //new DetFacturaCompraRepository(repositoryContext));
+            _detFacturaVentaRepository = new Lazy<IDetFacturaVentaRepository>(() =>
+            new DetFacturaCompraRepository(repositoryContext));
 
-            //_empleadoCargoRepository = new Lazy<IEmpleadoCargoRepository>(() =>
-            //new EmpleadoCargoRepository(repositoryContext));
+            _empleadoCargoRepository = new Lazy<IEmpleadoCargoRepository>(() =>
+            new EmpleadoCargoRepository(repositoryContext));
 
-            //_empleadoRepository = new Lazy<IEmpleadoRepository>(() =>
-            //new EmpleadoRepository(repositoryContext));
+            _empleadoRepository = new Lazy<IEmpleadoRepository>(() =>
+            new EmpleadoRepository(repositoryContext));
 
-            //_facturaCompraRepository = new Lazy<IFacturaCompraRepository>(() =>
-            //new FacturaCompraRepository(repositoryContext));
+            _facturaCompraRepository = new Lazy<IFacturaCompraRepository>(() =>
+            new FacturaCompraRepository(repositoryContext));
 
-            //_facturaVentaRepository = new Lazy<IFacturaVentaRepository>(() =>
-            //new FacturaVentaRepository(repositoryContext));
+            _facturaVentaRepository = new Lazy<IFacturaVentaRepository>(() =>
+            new FacturaVentaRepository(repositoryContext));
 
-            //_historicoPreciosRepository = new Lazy<IHistoricoPreciosRepository>(() =>
-            //new HistoricoPreciosRepository(repositoryContext));
+            _historicoPreciosRepository = new Lazy<IHistoricoPreciosRepository>(() =>
+            new HistoricoPreciosRepository(repositoryContext));
 
-            //_metodoPagoRepository = new Lazy<IMetodoPagoRepository>(() =>
-            //new MetodoPagoRepository(repositoryContext));
+            _metodoPagoRepository = new Lazy<IMetodoPagoRepository>(() =>
+            new MetodoPagoRepository(repositoryContext));
 
-            //_perdidaProductoRepository = new Lazy<IPerdidaProductoRepository>(() =>
-            //new PerdidaProductoRepository(repositoryContext));
+            _perdidaProductoRepository = new Lazy<IPerdidaProductoRepository>(() =>
+            new PerdidaProductoRepository(repositoryContext));
 
-            //_perdidaRepository = new Lazy<IPerdidaRepository>(() =>
-            //new PerdidaRepository(repositoryContext));
+            _perdidaRepository = new Lazy<IPerdidaRepository>(() =>
+            new PerdidaRepository(repositoryContext));
 
-            //_productoRepository = new Lazy<IPerdidaRepository>(() =>
-            //new ProductoRepository(repositoryContext));
+            _productoRepository = new Lazy<IPerdidaRepository>(() =>
+            new ProductoRepository(repositoryContext));
 
-            //_proveedorRepository = new Lazy<IProveedorRepository>(() =>
-            //new ProveedorRepository(repositoryContext));
+            _proveedorRepository = new Lazy<IProveedorRepository>(() =>
+            new ProveedorRepository(repositoryContext));
         }
         public ICargoRepository Cargo => _cargoRepository.Value;
+        public ICategoriaRepository Categoria => _categoriaRepository.Value;
+        public IContactoEmpleadoRepository ContactoEmpleado => _contactoEmpleadoRepository.Value;
+        public IContactoProveedorRepository ProveedorRepository => _contactoProveedorRepository.Value;
+        public IContactoUsuarioRepository UsuarioRepository => _contactoUsuarioRepository.Value;
+        public IDetFacturaCompraRepository DetFacturaCompraRepository => _detFacturaCompraRepository.Value;
+        public IDetFacturaVentaRepository DetFacturaVentaRepository => _detFacturaVentaRepository.Value;
+        public IEmpleadoCargoRepository EmpleadoCargo => _empleadoCargoRepository.Value;
+        public IEmpleadoRepository Empleado => _empleadoRepository.Value;
+        public IFacturaCompraRepository FacturaCompra => _facturaCompraRepository.Value;
+        public IFacturaVentaRepository FacturaVenta => _facturaVentaRepository.Value;
+        public IHistoricoPreciosRepository HistoricoPrecios => _historicoPreciosRepository.Value;
+        public IMetodoPagoRepository MetodoPago => _metodoPagoRepository.Value;
+        public IPerdidaProductoRepository PerdidaProducto => _perdidaProductoRepository.Value;
+        public IPerdidaRepository Perdida => _perdidaRepository.Value;
+        public IProductoRepository Producto => _productoRepository.Value;
+        public IUsuarioRepository Usuario => _UsuarioRepository.Value;
+
 
         public void Save() => _repositoryContext.SaveChanges();
     }

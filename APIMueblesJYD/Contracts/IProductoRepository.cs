@@ -10,5 +10,6 @@ namespace Contracts
     public interface IProductoRepository
     {
         IEnumerable<Producto> GetAllProducts(bool trackChanges);
+        Producto GetProduct(Guid productId, bool trackChanges);
     }
 }

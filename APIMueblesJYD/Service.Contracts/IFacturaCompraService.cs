@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace Service.Contracts
 {
-    public interface IDetFacturaCompraService
+    public interface IFacturaCompraService
     {
-        IEnumerable<DFacturaCompraDTO> GetAllDetBuyBills(bool trackChanges);
-        DFacturaCompraDTO GetDetBuyBill(Guid Id, bool trackChanges);
+        IEnumerable<FacturaCompraDTO> GetAllBuyBills(bool trackChanges);
+        FacturaCompraDTO GetBuyBill(Guid Id, bool trackChanges);
     }
 }

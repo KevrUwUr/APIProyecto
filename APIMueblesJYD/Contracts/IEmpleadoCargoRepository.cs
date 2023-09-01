@@ -1,4 +1,5 @@
 ﻿using Entities.Models;
+using Shared.DataTransferObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,7 @@ namespace Contracts
 {
     public interface IEmpleadoCargoRepository
     {
-        IEnumerable<Empleado_Cargo> GetAllEmployeeJob(bool trackChanges);
+        IEnumerable<EmpleadoDTO> GetAllEmployeeJobs(bool trackChanges);
+        EmpleadoDTO GetEmployeeJob(int NumeroContrato, bool trackChanges);
     }
 }

@@ -135,6 +135,9 @@
             "projectReferences": {
               "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj": {
                 "projectPath": "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj"
+              },
+              "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Shared\\Shared.csproj"
               }
             }
           }

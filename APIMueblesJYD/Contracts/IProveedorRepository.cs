@@ -10,5 +10,6 @@ namespace Contracts
     public interface IProveedorRepository
     {
         IEnumerable<Proveedor> GetAllSuppliers(bool trackChanges);
+        Proveedor GetSuplier(Guid suplierId, bool trackChanges);
     }
 }
