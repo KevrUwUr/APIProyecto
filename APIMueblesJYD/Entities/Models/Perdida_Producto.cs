@@ -10,6 +10,9 @@ namespace Entities.Models
 {
     public class Perdida_Producto
     {
+        [Column("PerdidaProductoId")]
+        [Key]
+        public int PerdidaProductoId { get; set; }
         public float PrecioUnitario { get; set; }
 
         [Required(ErrorMessage = "Cantidad es un campo requerido.")]

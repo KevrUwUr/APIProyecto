@@ -17,6 +17,7 @@ namespace Repository.Configuration
                 (
                 new Perdida_Producto
                 {
+                    PerdidaProductoId=1,
                     IdPerdida =1,
                     IdProducto = 1,
                     PrecioUnitario = 30000,
@@ -25,6 +26,7 @@ namespace Repository.Configuration
                 }, 
                 new Perdida_Producto
                 {
+                    PerdidaProductoId=2,
                     IdPerdida = 2,
                     IdProducto = 2,
                     PrecioUnitario = 20000,
@@ -33,6 +35,7 @@ namespace Repository.Configuration
                 }, 
                 new Perdida_Producto
                 {
+                    PerdidaProductoId=3,
                     IdPerdida = 3,
                     IdProducto = 3,
                     PrecioUnitario = 35000,
@@ -41,6 +44,7 @@ namespace Repository.Configuration
                 }, 
                 new Perdida_Producto
                 {
+                    PerdidaProductoId=4,
                     IdPerdida = 4,
                     IdProducto = 4,
                     PrecioUnitario = 50000,
@@ -49,6 +53,7 @@ namespace Repository.Configuration
                 }, 
                 new Perdida_Producto
                 {
+                    PerdidaProductoId=5,
                     IdPerdida = 5,
                     IdProducto = 5,
                     PrecioUnitario = 10000,

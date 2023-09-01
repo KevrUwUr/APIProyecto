@@ -8,7 +8,7 @@ using Service.Contracts;
 
 namespace Proyect.Presentation.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/cargo")]
     [ApiController]
     public class CargosController : ControllerBase
     {
