@@ -24,7 +24,7 @@ namespace Repository
         private readonly Lazy<IHistoricoPreciosRepository> _historicoPreciosRepository;
         private readonly Lazy<IMetodoPagoRepository> _metodoPagoRepository;
         private readonly Lazy<IPerdidaProductoRepository> _perdidaProductoRepository;
-        private readonly Lazy<IPerdidaRepository> _perdidaRepository;
+        private readonly Lazy<IPerdidaProductoRepository> _perdidaRepository;
         private readonly Lazy<IProductoRepository> _productoRepository;
         private readonly Lazy<IProveedorRepository> _proveedorRepository;
         private readonly Lazy<IUsuarioRepository> _UsuarioRepository;
