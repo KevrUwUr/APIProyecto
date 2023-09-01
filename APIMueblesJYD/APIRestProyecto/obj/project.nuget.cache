@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QhSQ7FGWSyluocJY4jsBDNuJuBDLNr9nJMMTMdbFTCpkepNXIkedcvUo7fgzbqTCz0qeZ/PzfwS0nSpQf9Dy+Q==",
+  "dgSpecHash": "J7bpZmIRAyxjHsjqQsabKEg4xgB6AYe1aPdfiw6XmFQyl16FxXSV3+3ErygxeKN+7PrPou6rGv5tufFcKLBOWw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\APIRestProyecto\\APIRestProyecto.csproj",
+  "projectFilePath": "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\APIRestProyecto\\APIRestProyecto.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aprendiz\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Aprendiz\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

@@ -10,6 +10,5 @@ namespace Contracts
     public interface ICargoRepository
     {
         IEnumerable<Cargo> GetAllCargos(bool trackChanges);
-        Cargo GetCargo(Guid cargoId, bool trackChanges);
     }
 }

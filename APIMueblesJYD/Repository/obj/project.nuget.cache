@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "P3MMbx/hoNVr09IgClj3DVovuDRHUytElqbeMmg8qzO8OfKoRHnM8vZkM1d/ASFrfLw9mvrdtkRFDtBDtm32wQ==",
+  "dgSpecHash": "aW8d8u3RXk/+Zx6EjU/r32d2mQOiSV7MMkeu5cb16QfjsCOF9WL8aN6iDKAcvW6qkGxXyT90FbTXuApSoVJ43w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\Repository\\Repository.csproj",
+  "projectFilePath": "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Repository\\Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aprendiz\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Aprendiz\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
