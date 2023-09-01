@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nIWIIY1DYzGJzoh1aNDaQnnEMYfChm2TNtvr3J+znKfAm4F/OIlaGYrZ6p7zZ+xk3NQBDSmmNTnlCn6KQpVHEA==",
+  "dgSpecHash": "p210ENMP++rr6ohbd6UypahmUXULCF68K5MezlG3/d8mbavkUqt1m6smAk/LVqz6HXcPgHm6y1Ta3R6Uwju6cA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\APIRestProyecto\\APIRestProyecto.csproj",
+  "projectFilePath": "C:\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\APIRestProyecto\\APIRestProyecto.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aprendiz\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Aprendiz\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
