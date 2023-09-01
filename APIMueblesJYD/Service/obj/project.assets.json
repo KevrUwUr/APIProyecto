@@ -387,11 +387,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Service\\Service.csproj",
+      "projectUniqueName": "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Service\\Service.csproj",
       "projectName": "Service",
-      "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Service\\Service.csproj",
+      "projectPath": "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Service\\Service.csproj",
       "packagesPath": "C:\\Users\\Aprendiz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Service\\obj\\",
+      "outputPath": "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Service\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -413,11 +413,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj": {
-              "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj"
+            "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj": {
+              "projectPath": "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj"
             },
-            "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj": {
-              "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj"
+            "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj": {
+              "projectPath": "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj"
             }
           }
         }

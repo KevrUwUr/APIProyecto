@@ -32,8 +32,57 @@ namespace Repository
         public RepositoryManager(RepositoryContext repositoryContext)
         {
             _repositoryContext = repositoryContext;
-            _cargoRepository = new Lazy<ICargoRepository>(() => 
+
+            _cargoRepository = new Lazy<ICargoRepository>(() =>
             new CargoRepository(repositoryContext));
+
+            _categoriaRepository = new Lazy<ICategoriaRepository>(() =>
+            new CategoriaRepository(repositoryContext));
+
+            _contactoEmpleadoRepository = new Lazy<IContactoEmpleadoRepository>(() =>
+            new ContactoEmpleadoRepository(repositoryContext));
+
+            _contactoProveedorRepository = new Lazy<IContactoProveedorRepository>(() =>
+            new ContactoProveedorRepository(repositoryContext));
+
+            _contactoUsuarioRepository = new Lazy<IContactoUsuarioRepository>(() =>
+            new ContactoUsuarioRepository(repositoryContext));
+
+            //_detFacturaCompraRepository = new Lazy<IDetFacturaCompraRepository>(() =>
+            //new DetFacturaCompraRepository(repositoryContext));
+
+            //_detFacturaVentaRepository = new Lazy<IDetFacturaVentaRepository>(() =>
+            //new DetFacturaCompraRepository(repositoryContext));
+
+            //_empleadoCargoRepository = new Lazy<IEmpleadoCargoRepository>(() =>
+            //new EmpleadoCargoRepository(repositoryContext));
+
+            //_empleadoRepository = new Lazy<IEmpleadoRepository>(() =>
+            //new EmpleadoRepository(repositoryContext));
+
+            //_facturaCompraRepository = new Lazy<IFacturaCompraRepository>(() =>
+            //new FacturaCompraRepository(repositoryContext));
+
+            //_facturaVentaRepository = new Lazy<IFacturaVentaRepository>(() =>
+            //new FacturaVentaRepository(repositoryContext));
+
+            //_historicoPreciosRepository = new Lazy<IHistoricoPreciosRepository>(() =>
+            //new HistoricoPreciosRepository(repositoryContext));
+
+            //_metodoPagoRepository = new Lazy<IMetodoPagoRepository>(() =>
+            //new MetodoPagoRepository(repositoryContext));
+
+            //_perdidaProductoRepository = new Lazy<IPerdidaProductoRepository>(() =>
+            //new PerdidaProductoRepository(repositoryContext));
+
+            //_perdidaRepository = new Lazy<IPerdidaRepository>(() =>
+            //new PerdidaRepository(repositoryContext));
+
+            //_productoRepository = new Lazy<IPerdidaRepository>(() =>
+            //new ProductoRepository(repositoryContext));
+
+            //_proveedorRepository = new Lazy<IProveedorRepository>(() =>
+            //new ProveedorRepository(repositoryContext));
         }
         public ICargoRepository Cargo => _cargoRepository.Value;
 

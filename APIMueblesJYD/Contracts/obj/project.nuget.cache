@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iBiJEGYGNyqX+EkYdaFND+gZJyph6FF9qH5ADvutSWRJf4pX7/IVPvDuHYFnG0xqWKg49GZwu+K0/nACHcGMsg==",
+  "dgSpecHash": "oj3QhGdaX5LB9JszaIwTlt+9sHjWjMXVMdn1BXz/FmMSzV4SY1yK08rVsmxFxZtszGo1BohVuabkjuVK+Aq02Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj",
+  "projectFilePath": "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

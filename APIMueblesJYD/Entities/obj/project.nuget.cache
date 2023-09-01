@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UI4HckiEvCZZmOj8xi9Fj706zprb5W2JNaimNIWYS3dTE59sY9VcJpID0GfB1mwmk21yF8aQJw4bfqO8N9Hs9g==",
+  "dgSpecHash": "YPlnL1TFI4636MvQDFq3I4Zd3B5zRFCsRSJGyYyqSShvy2xDI3Cc6Z7KqqQLw+z89QzkEaxQ/42x6KCLU2gRgg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj",
+  "projectFilePath": "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

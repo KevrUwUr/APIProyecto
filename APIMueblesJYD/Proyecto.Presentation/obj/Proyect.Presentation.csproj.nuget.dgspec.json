@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Proyecto.Presentation\\Proyect.Presentation.csproj": {}
+    "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Proyecto.Presentation\\Proyect.Presentation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj": {
+    "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj",
+        "projectPath": "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\Aprendiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Entities\\obj\\",
+        "outputPath": "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -64,14 +64,14 @@
         }
       }
     },
-    "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Proyecto.Presentation\\Proyect.Presentation.csproj": {
+    "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Proyecto.Presentation\\Proyect.Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Proyecto.Presentation\\Proyect.Presentation.csproj",
+        "projectUniqueName": "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Proyecto.Presentation\\Proyect.Presentation.csproj",
         "projectName": "Proyect.Presentation",
-        "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Proyecto.Presentation\\Proyect.Presentation.csproj",
+        "projectPath": "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Proyecto.Presentation\\Proyect.Presentation.csproj",
         "packagesPath": "C:\\Users\\Aprendiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Proyecto.Presentation\\obj\\",
+        "outputPath": "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Proyecto.Presentation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -93,8 +93,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj": {
-                "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj"
+              "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj": {
+                "projectPath": "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj"
               }
             }
           }
@@ -134,14 +134,14 @@
         }
       }
     },
-    "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj": {
+    "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj",
+        "projectUniqueName": "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj",
         "projectName": "Service.Contracts",
-        "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj",
+        "projectPath": "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj",
         "packagesPath": "C:\\Users\\Aprendiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\obj\\",
+        "outputPath": "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -163,11 +163,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj"
+              "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj"
               },
-              "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Shared\\Shared.csproj": {
-                "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Shared\\Shared.csproj"
+              "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Shared\\Shared.csproj"
               }
             }
           }
@@ -201,14 +201,14 @@
         }
       }
     },
-    "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Shared\\Shared.csproj": {
+    "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Shared\\Shared.csproj",
+        "projectUniqueName": "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Shared\\Shared.csproj",
         "projectName": "Shared",
-        "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Shared\\Shared.csproj",
+        "projectPath": "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Shared\\Shared.csproj",
         "packagesPath": "C:\\Users\\Aprendiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Shared\\obj\\",
+        "outputPath": "C:\\MueblesJyD\\APIProyecto\\APIMueblesJYD\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
