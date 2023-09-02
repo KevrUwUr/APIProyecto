@@ -1,4 +1,5 @@
 ﻿using Entities.Models;
+using Shared.DataTransferObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace Contracts
 {
     public interface IProductoRepository
     {
-        IEnumerable<Producto> GetAllProducts(bool trackChanges);
-        Producto GetProduct(Guid productId, bool trackChanges);
+        IEnumerable<ProveedorDTO> GetAllProducts(bool trackChanges);
+        ProveedorDTO GetProduct(Guid productId, bool trackChanges);
     }
 }

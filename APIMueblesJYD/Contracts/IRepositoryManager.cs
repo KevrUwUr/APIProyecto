@@ -23,7 +23,7 @@ namespace Contracts
         IMetodoPagoRepository MetodoPago { get; }
         IPerdidaProductoRepository PerdidaProducto { get; }
         IPerdidaRepository Perdida { get; }
-        IProductoRepository producto { get; }
+        IProductoRepository Producto { get; }
         IProveedorRepository Proveedor { get; }
         IUsuarioRepository Usuario { get; }
         void Save();

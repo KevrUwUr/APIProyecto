@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Shared.DataTransferObjects
 {
-    public record ProductoDTO(Guid IdProducto, string Nombre, float Precio, int Stock, string Descripcion, 
+    public record ProveedorDTO(Guid IdProducto, string Nombre, float Precio, int Stock, string Descripcion, 
         int Estado, string Color, int Tipo, string OrigenMateriaPrima, Guid IdCategoria);
 
 }

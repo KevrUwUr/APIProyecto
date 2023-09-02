@@ -1,4 +1,5 @@
 ﻿using Entities.Models;
+using Shared.DataTransferObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace Contracts
 {
     public interface IMetodoPagoRepository
     {
-        IEnumerable<MetodoPago> GetAllPayMethods(bool trackChanges);
-        MetodoPago GetPayMethod(Guid payMethodId, bool trackChanges);
+        IEnumerable<MetodoPagoDTO> GetAllPayMethods(bool trackChanges);
+        MetodoPagoDTO GetPayMethod(Guid payMethodId, bool trackChanges);
     }
 }

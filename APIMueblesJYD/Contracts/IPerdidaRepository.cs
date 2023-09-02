@@ -1,4 +1,5 @@
 ﻿using Entities.Models;
+using Shared.DataTransferObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace Contracts
 {
     public interface IPerdidaRepository
     {
-        IEnumerable<Perdida> GetAllLosts(bool trackChanges);
-        Perdida GetLost(Guid lostId, bool trackChanges);
+        IEnumerable<UsuarioDTO> GetAllLoses(bool trackChanges);
+        UsuarioDTO GetLose(Guid lostId, bool trackChanges);
     }
 }

@@ -25,15 +25,15 @@ namespace Service
             _mapper = mapper;
         }
 
-        public IEnumerable<EmpleadoDTO> GetAllEmployeeJobs(bool trackChanges)
+        public IEnumerable<EmpleadoCargoDTO> GetAllEmployeeJobs(bool trackChanges)
         {
             var empleadoCargo = _repository.EmpleadoCargo.GetAllEmployeeJobs(trackChanges);
-            var empleadoCargoDTO = _mapper.Map<IEnumerable<EmpleadoDTO>>(empleadoCargo);
+            var empleadoCargoDTO = _mapper.Map<IEnumerable<EmpleadoCargoDTO>>(empleadoCargo);
 
             return empleadoCargoDTO;
         }
 
-        public EmpleadoDTO GetEmployeeJob(int NumeroContrato, bool trackChanges)
+        public EmpleadoCargoDTO GetEmployeeJob(int NumeroContrato, bool trackChanges)
         {
             var empleadoCargo = _repository.EmpleadoCargo.GetEmployeeJob(NumeroContrato, trackChanges);
             if(empleadoCargo == null)
@@ -41,7 +41,7 @@ namespace Service
                 throw new EmpleadoCargoNotFoundException(NumeroContrato);
             }
 
-            var empleadoCargoDTO = _mapper.Map<EmpleadoDTO>(empleadoCargo);
+            var empleadoCargoDTO = _mapper.Map<EmpleadoCargoDTO>(empleadoCargo);
             return empleadoCargoDTO;
         }
     }

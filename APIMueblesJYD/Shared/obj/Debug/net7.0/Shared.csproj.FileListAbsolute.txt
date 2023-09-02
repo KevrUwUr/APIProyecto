@@ -10,3 +10,15 @@ C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Shared\obj\Debug\
 C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Shared\obj\Debug\net7.0\refint\Shared.dll
 C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Shared\obj\Debug\net7.0\Shared.pdb
 C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Shared\obj\Debug\net7.0\ref\Shared.dll
+C:\Proyecto\APIProyecto\APIProyecto\APIMueblesJYD\Shared\bin\Debug\net7.0\Shared.deps.json
+C:\Proyecto\APIProyecto\APIProyecto\APIMueblesJYD\Shared\bin\Debug\net7.0\Shared.dll
+C:\Proyecto\APIProyecto\APIProyecto\APIMueblesJYD\Shared\bin\Debug\net7.0\Shared.pdb
+C:\Proyecto\APIProyecto\APIProyecto\APIMueblesJYD\Shared\obj\Debug\net7.0\Shared.csproj.AssemblyReference.cache
+C:\Proyecto\APIProyecto\APIProyecto\APIMueblesJYD\Shared\obj\Debug\net7.0\Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Proyecto\APIProyecto\APIProyecto\APIMueblesJYD\Shared\obj\Debug\net7.0\Shared.AssemblyInfoInputs.cache
+C:\Proyecto\APIProyecto\APIProyecto\APIMueblesJYD\Shared\obj\Debug\net7.0\Shared.AssemblyInfo.cs
+C:\Proyecto\APIProyecto\APIProyecto\APIMueblesJYD\Shared\obj\Debug\net7.0\Shared.csproj.CoreCompileInputs.cache
+C:\Proyecto\APIProyecto\APIProyecto\APIMueblesJYD\Shared\obj\Debug\net7.0\Shared.dll
+C:\Proyecto\APIProyecto\APIProyecto\APIMueblesJYD\Shared\obj\Debug\net7.0\refint\Shared.dll
+C:\Proyecto\APIProyecto\APIProyecto\APIMueblesJYD\Shared\obj\Debug\net7.0\Shared.pdb
+C:\Proyecto\APIProyecto\APIProyecto\APIMueblesJYD\Shared\obj\Debug\net7.0\ref\Shared.dll

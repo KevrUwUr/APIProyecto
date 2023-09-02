@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace Shared.DataTransferObjects
 {
-    public record EmpleadoDTO (Guid Id, float ValorUnitario, int Cantidad, float IVA, 
-        float ValorDescuento, Guid IdProducto, Guid IdFacturaVenta);
-    
+    public record UsuarioDTO(float PrecioUnitario, int Cantidad, string Motivo, Guid IdPerdida, Guid IdProducto);
+
 }

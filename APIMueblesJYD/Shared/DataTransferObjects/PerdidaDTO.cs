@@ -6,6 +6,6 @@ using System.Threading.Tasks;
 
 namespace Shared.DataTransferObjects
 {
-    public record PerdidaDTO(Guid IdPerdida, DateTime FechaPerdida, int Estado, float Total, Guid IdEmpleado);
+    public record UsuarioDTO(Guid IdPerdida, DateTime FechaPerdida, int Estado, float Total, Guid IdEmpleado);
 
 }
