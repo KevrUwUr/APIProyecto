@@ -1,4 +1,5 @@
 ﻿using Entities.Models;
+using Shared.DataTransferObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,7 @@ namespace Contracts
 {
     public interface IProveedorRepository
     {
-        IEnumerable<Proveedor> GetAllSuppliers(bool trackChanges);
+        IEnumerable<ProveedorDTO> GetAllSuppliers(bool trackChanges);
+        ProveedorDTO GetSuplier(Guid suplierId, bool trackChanges);
     }
 }

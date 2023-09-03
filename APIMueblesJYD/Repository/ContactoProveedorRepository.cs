@@ -8,20 +8,17 @@ using System.Threading.Tasks;
 
 namespace Repository
 {
-    internal class ContactoProveedorRepository : RepositoryBase<ContactoProveedor>, IContactoProveedorRepository
+    public class ContactoProveedorRepository : RepositoryBase<ContactoProveedor>, IContactoProveedorRepository
     {
         public ContactoProveedorRepository(RepositoryContext repositoryContext)
-            : base(repositoryContext)
-        {
-        }
-
-        public IEnumerable<ContactoProveedor> GetAllSupplierContact(bool trackChanges) =>
+            : base(repositoryContext) { }
+        public IEnumerable<ContactoProveedor> GetAllSupplierContacts(bool trackChanges) =>
             FindAll(trackChanges)
-                .OrderBy(c => c.NombreProv)
-                .ToList();
+            .OrderBy(c => c.Proveedor)
+            .ToList();
 
-        public ContactoProveedor GetSupplierContact(Guid IdContactoProveedor, bool trackChanges) =>
-            FindByCondition(c => c.IdContactoProveedor.Equals(IdContactoProveedor), trackChanges)
+        public ContactoProveedor GetSuplierContact(Guid Id, bool trackChanges) =>
+            FindByCondition(c => c.IdContactoProveedor.Equals(Id), trackChanges)
             .SingleOrDefault();
     }
 }

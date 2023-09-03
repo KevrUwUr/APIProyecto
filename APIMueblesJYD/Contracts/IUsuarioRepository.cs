@@ -1,4 +1,5 @@
 ﻿using Entities.Models;
+using Shared.DataTransferObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,7 @@ namespace Contracts
 {
     public interface IUsuarioRepository
     {
-        IEnumerable<Usuario> GetAllUsers(bool trackChanges);
+        IEnumerable<UsuarioDTO> GetAllUsers(bool trackChanges);
+        UsuarioDTO GetUser(Guid usuarioId, bool trackChanges);
     }
 }

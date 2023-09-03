@@ -11,17 +11,14 @@ namespace Repository
     public class ContactoEmpleadoRepository : RepositoryBase<ContactoEmpleado>, IContactoEmpleadoRepository
     {
         public ContactoEmpleadoRepository(RepositoryContext repositoryContext)
-            : base(repositoryContext)
-        {
-        }
-
+            : base(repositoryContext) { }
         public IEnumerable<ContactoEmpleado> GetAllEmployeesContacts(bool trackChanges) =>
             FindAll(trackChanges)
-                .OrderBy(c => c.Email)
-                .ToList();
+            .OrderBy(c => c.Empleado)
+            .ToList();
 
-        public ContactoEmpleado GetEmployeeContact(Guid IdContactoEmpleado, bool trackChanges) =>
-            FindByCondition(c => c.IdContactoEmpleado.Equals(IdContactoEmpleado), trackChanges)
+        public ContactoEmpleado GetEmployeeContact(Guid Id, bool trackChanges) =>
+            FindByCondition(c => c.IdContactoEmpleado.Equals(Id), trackChanges)
             .SingleOrDefault();
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Entities.Models;
+using Shared.DataTransferObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,5 +11,6 @@ namespace Contracts
     public interface IContactoUsuarioRepository
     {
         IEnumerable<ContactoUsuario> GetAllUserContacts(bool trackChanges);
+        ContactoUsuario GetUserContact(Guid userContactId, bool trackChanges);
     }
 }

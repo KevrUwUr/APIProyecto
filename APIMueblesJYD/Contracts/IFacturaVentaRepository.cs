@@ -1,4 +1,5 @@
 ﻿using Entities.Models;
+using Shared.DataTransferObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,7 @@ namespace Contracts
 {
     public interface IFacturaVentaRepository
     {
-        IEnumerable<FacturaVenta> GetAllSaleBill(bool trackChanges);
+        IEnumerable<FacturaVentaDTO> GetAllSaleBills(bool trackChanges);
+        FacturaVentaDTO GetSaleBill(Guid saleBillId, bool trackChanges);
     }
 }

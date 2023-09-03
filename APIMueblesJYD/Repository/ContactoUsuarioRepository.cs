@@ -11,18 +11,14 @@ namespace Repository
     public class ContactoUsuarioRepository : RepositoryBase<ContactoUsuario>, IContactoUsuarioRepository
     {
         public ContactoUsuarioRepository(RepositoryContext repositoryContext)
-            : base(repositoryContext)
-        {
-        }
-
+            : base(repositoryContext) { }
         public IEnumerable<ContactoUsuario> GetAllUserContacts(bool trackChanges) =>
             FindAll(trackChanges)
-                .OrderBy(c => c.NumeroTelefonico)
-                .ToList();
+            .OrderBy(c => c.Usuario)
+            .ToList();
 
-        public ContactoUsuario GetUserContact(Guid IdContactoCliente, bool trackChanges) =>
-            FindByCondition(c => c.IdContactoCliente.Equals(IdContactoCliente), trackChanges)
+        public ContactoUsuario GetUserContact(Guid Id, bool trackChanges) =>
+            FindByCondition(c => c.IdContactoCliente.Equals(Id), trackChanges)
             .SingleOrDefault();
-
     }
 }

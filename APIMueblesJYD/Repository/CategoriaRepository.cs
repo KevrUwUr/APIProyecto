@@ -11,17 +11,13 @@ namespace Repository
     public class CategoriaRepository : RepositoryBase<Categoria>, ICategoriaRepository
     {
         public CategoriaRepository(RepositoryContext repositoryContext)
-            : base(repositoryContext)
-        {
-        }
-
-        public IEnumerable<Categoria> GetAllCategories(bool trackChanges) =>
+            : base(repositoryContext) { }
+        public IEnumerable<Categoria> GetAllCategories(bool trackChanges)=>
             FindAll(trackChanges)
                 .OrderBy(c => c.Nombre)
                 .ToList();
-
-        public Categoria GetCategory(Guid IdCategoria, bool trackChanges) =>
-            FindByCondition(c => c.IdCategoria.Equals(IdCategoria), trackChanges)
+        public Categoria GetCategory(Guid Id, bool trackChanges) =>
+            FindByCondition(c => c.IdCategoria.Equals(Id), trackChanges)
             .SingleOrDefault();
     }
 }
