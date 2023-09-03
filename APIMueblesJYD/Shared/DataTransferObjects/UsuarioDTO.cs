@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Shared.DataTransferObjects
 {
-    public record UsuarioDTO(Guid IdUsuario, string PrimNombre, string SegNombre, 
+    public record UsuarioDTO(int IdUsuario, string PrimNombre, string SegNombre, 
         string PrimApellido, string SegApellido, string Sexo, string TipoDocumento, 
         int NumDocumento, DateTime FechaNacimiento, int Estado, DateTime FechaRegistro,
         int TipoUsuario, DateTime FechaContrato, string Cargo, DateTime FechaFin,

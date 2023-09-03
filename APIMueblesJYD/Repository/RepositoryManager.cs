@@ -27,7 +27,7 @@ namespace Repository
         private readonly Lazy<IPerdidaProductoRepository> _perdidaRepository;
         private readonly Lazy<IProductoRepository> _productoRepository;
         private readonly Lazy<IProveedorRepository> _proveedorRepository;
-        private readonly Lazy<IUsuarioRepository> _UsuarioRepository;
+        private readonly Lazy<IUsuarioRepository> _usuarioRepository;
 
         public RepositoryManager(RepositoryContext repositoryContext)
         {
@@ -36,6 +36,24 @@ namespace Repository
             new CargoRepository(repositoryContext));
         }
         public ICargoRepository Cargo => _cargoRepository.Value;
+        public ICategoriaRepository Categoria => _categoriaRepository.Value;
+        public IContactoEmpleadoRepository ContactoEmpleado => _contactoEmpleadoRepository.Value;
+        public IContactoProveedorRepository ContactoProveedor => _contactoProveedorRepository.Value;
+        public IContactoUsuarioRepository contactoUsuario => _contactoUsuarioRepository.Value;
+        public IDetFacturaCompraRepository detFacturaCompra => _detFacturaCompraRepository.Value;
+        public IDetFacturaVentaRepository detFacturaVenta => _detFacturaVentaRepository.Value;
+        public IEmpleadoCargoRepository empleadoCargo => _empleadoCargoRepository.Value;
+        public IEmpleadoRepository empleado => _empleadoRepository.Value;
+        public IFacturaCompraRepository facturaCompra => _facturaCompraRepository.Value;
+        public IFacturaVentaRepository facturaVenta => _facturaVentaRepository.Value;
+        public IHistoricoPreciosRepository historicoPrecios => _historicoPreciosRepository.Value;
+        public IMetodoPagoRepository metodoPago => _metodoPagoRepository.Value;
+        public IPerdidaProductoRepository perdidaProducto => _perdidaProductoRepository.Value;
+        public IPerdidaRepository perdida => _perdidaRepository.Value;
+        public IProductoRepository producto => _productoRepository.Value;
+        public IProveedorRepository proveedor => _proveedorRepository.Value;
+        public IUsuarioRepository usuario => _usuarioRepository.Value;
+
 
         public void Save() => _repositoryContext.SaveChanges();
     }

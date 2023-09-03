@@ -12,7 +12,7 @@ namespace Entities.Models
     {
         [Column("IdContactoEmpleado")]
         [Key]
-        public Guid IdContactoEmpleado { get; set; }
+        public int IdContactoEmpleado { get; set; }
 
         [Required(ErrorMessage = "Este es un campo requerido")]
         public int Telefono { get; set; }
@@ -31,7 +31,7 @@ namespace Entities.Models
         public DateTime FechaCreacion { get; set; }
 
         [ForeignKey(nameof(Empleado))]
-        public Guid IdEmpleado { get; set; }
+        public int EmpleadoId { get; set; }
         public Empleado? Empleado { get; set; }
 
     }

@@ -13,7 +13,7 @@ namespace Repository.Configuration
             (
                 new Producto
                 {
-                    IdProducto = new Guid("3e32e739-f4e0-4b3a-8748-118fc4de366b"),
+                    IdProducto = 1,
                     Nombre = "Cama doble",
                     Precio = 500000.0f,
                     Stock = 3,
@@ -21,11 +21,11 @@ namespace Repository.Configuration
                     Estado = 1,
                     Color = "Blanco",
                     Tipo = 2,
-                    IdCategoria = new Guid("ebed2050-45d0-11ee-be56-0242ac120002")
+                    IdCategoria = 1
                 },
                 new Producto
                 {
-                    IdProducto = new Guid("6fc03e94-7f4b-47cc-9df4-73ecaa6ce244"),
+                    IdProducto = 2,
                     Nombre = "Mesa de noche",
                     Precio = 150000.0f,
                     Stock = 5,
@@ -33,11 +33,11 @@ namespace Repository.Configuration
                     Estado = 1,
                     Color = "Negro",
                     Tipo = 2,
-                    IdCategoria = new Guid("ebed2050-45d0-11ee-be56-0242ac120003")
+                    IdCategoria = 2
                 },
                 new Producto
                 {
-                    IdProducto = new Guid("3e242bb6-8959-4b53-933b-c9397d11d0d0"),
+                    IdProducto = 3,
                     Nombre = "Comedor extensible",
                     Precio = 800000.0f,
                     Stock = 2,
@@ -45,11 +45,11 @@ namespace Repository.Configuration
                     Estado = 1,
                     Color = "Marrón",
                     Tipo = 1,
-                    IdCategoria = new Guid("ebed2050-45d0-11ee-be56-0242ac120004")
+                    IdCategoria = 3
                 },
                 new Producto
                 {
-                    IdProducto = new Guid("7ef6aa54-153a-4d94-af65-139d11f5f0f3"),
+                    IdProducto = 4,
                     Nombre = "Silla ergonómica",
                     Precio = 250000.0f,
                     Stock = 8,
@@ -57,11 +57,11 @@ namespace Repository.Configuration
                     Estado = 1,
                     Color = "Gris",
                     Tipo = 2,
-                    IdCategoria = new Guid("ebed2050-45d0-11ee-be56-0242ac120006")
+                    IdCategoria = 4
                 },
                 new Producto
                 {
-                    IdProducto = new Guid("d994f932-cb57-4ff7-8b01-81c12d3ed16b"),
+                    IdProducto = 5,
                     Nombre = "Escritorio moderno",
                     Precio = 350000.0f,
                     Stock = 4,
@@ -69,11 +69,11 @@ namespace Repository.Configuration
                     Estado = 1,
                     Color = "Blanco",
                     Tipo = 1,
-                    IdCategoria = new Guid("ebed2050-45d0-11ee-be56-0242ac120005")
+                    IdCategoria = 5
                 },
                 new Producto
                 {
-                    IdProducto = new Guid("a96c86ce-8916-45c2-a988-ea5e12b8792a"),
+                    IdProducto = 6,
                     Nombre = "Armario de 4 puertas",
                     Precio = 700000.0f,
                     Stock = 1,
@@ -81,11 +81,11 @@ namespace Repository.Configuration
                     Estado = 1,
                     Color = "Café",
                     Tipo = 1,
-                    IdCategoria = new Guid("ebed2050-45d0-11ee-be56-0242ac120007")
+                    IdCategoria = 6
                 },
                 new Producto
                 {
-                    IdProducto = new Guid("9d4d828d-7a48-44a9-b02b-4e1f22abf389"),
+                    IdProducto = 7,
                     Nombre = "Camarote infantil",
                     Precio = 450000.0f,
                     Stock = 6,
@@ -93,19 +93,7 @@ namespace Repository.Configuration
                     Estado = 1,
                     Color = "Azul",
                     Tipo = 2,
-                    IdCategoria = new Guid("ebed2050-45d0-11ee-be56-0242ac120008")
-                },
-                new Producto
-                {
-                    IdProducto = new Guid("b70f72de-7e2c-45ad-a62a-52df8f67c2d2"),
-                    Nombre = "Silla ejecutiva",
-                    Precio = 300000.0f,
-                    Stock = 10,
-                    Descripcion = "Silla de oficina con respaldo alto",
-                    Estado = 1,
-                    Color = "Negro",
-                    Tipo = 1,
-                    IdCategoria = new Guid("ebed2050-45d0-11ee-be56-0242ac120006")
+                    IdCategoria = 7
                 }
             );
         }

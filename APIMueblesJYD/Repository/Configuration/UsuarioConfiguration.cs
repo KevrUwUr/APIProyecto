@@ -17,7 +17,7 @@ namespace Repository.Configuration
                 (
                 new Usuario
                 {
-                    IdUsuario = new Guid("41e399b6-45d2-11ee-be56-0242ac120001"),
+                    IdUsuario = 1,
                     PrimNombre = "Kevin",
                     SegNombre = "Alejandro",
                     PrimApellido = "Marin",
@@ -25,7 +25,9 @@ namespace Repository.Configuration
                     Sexo = "Masculino",
                     TipoDocumento = "C.C",
                     NumDocumento = 1019762822,
-                    FechaNacimiento = new DateTime(2023, 06, 21),
+                    FechaNacimiento = new DateTime(2000, 06, 21),
+                    Estado = 1,
+                    FechaRegistro = new DateTime(2023, 06,20),
                     TipoUsuario = 1,
                     FechaContrato = new DateTime(2023, 06, 21),
                     Cargo = "Administrador",
@@ -35,7 +37,7 @@ namespace Repository.Configuration
                 },
                 new Usuario
                 {
-                    IdUsuario = new Guid("41e399b6-45d2-11ee-be56-0242ac120002"),
+                    IdUsuario = 2,
                     PrimNombre = "Miguel",
                     SegNombre = "Angel",
                     PrimApellido = "Sarmiento",
@@ -43,17 +45,19 @@ namespace Repository.Configuration
                     Sexo = "Masculino",
                     TipoDocumento = "C.C",
                     NumDocumento = 1013100300,
-                    FechaNacimiento = new DateTime(2023, 06, 21),
+                    FechaNacimiento = new DateTime(2000, 06, 21),
+                    Estado = 1,
+                    FechaRegistro = new DateTime(2023, 06, 20),
                     TipoUsuario = 1,
                     FechaContrato = new DateTime(2023, 06, 21),
-                    Cargo = "CarpGuidero",
+                    Cargo = "Carpintero",
                     FechaFin = new DateTime(2023, 06, 21),
                     Contrasena = "",
                     Llave = "ADSO2558108"
                 },
                 new Usuario
                 {
-                    IdUsuario = new Guid("41e399b6-45d2-11ee-be56-0242ac120003"),
+                    IdUsuario = 3,
                     PrimNombre = "David",
                     SegNombre = "Felipe",
                     PrimApellido = "Ramirez",
@@ -61,7 +65,9 @@ namespace Repository.Configuration
                     Sexo = "Masculino",
                     TipoDocumento = "C.C",
                     NumDocumento = 1025445665,
-                    FechaNacimiento = new DateTime(2023, 06, 21),
+                    FechaNacimiento = new DateTime(2000, 06, 21),
+                    Estado = 1,
+                    FechaRegistro = new DateTime(2023, 06, 20),
                     TipoUsuario = 1,
                     FechaContrato = new DateTime(2023, 06, 21),
                     Cargo = "Supervisor de Producción",
@@ -71,7 +77,7 @@ namespace Repository.Configuration
                 },
                 new Usuario
                 {
-                    IdUsuario = new Guid("41e399b6-45d2-11ee-be56-0242ac120004"),
+                    IdUsuario = 4,
                     PrimNombre = "Maria",
                     SegNombre = "Fernanda",
                     PrimApellido = "Velez",
@@ -79,17 +85,19 @@ namespace Repository.Configuration
                     Sexo = "Femenino",
                     TipoDocumento = "C.C",
                     NumDocumento = 1013265449,
-                    FechaNacimiento = new DateTime(2023, 06, 21),
+                    FechaNacimiento = new DateTime(2000, 06, 21),
+                    Estado = 1,
+                    FechaRegistro = new DateTime(2023, 06, 20),
                     TipoUsuario = 1,
                     FechaContrato = new DateTime(2023, 06, 21),
-                    Cargo = "Asistente de carpGuideria",
+                    Cargo = "Asistente de carpinteria",
                     FechaFin = new DateTime(2023, 06, 21),
                     Contrasena = "",
                     Llave = "ADSO2558108"
                 },
                 new Usuario
                 {
-                    IdUsuario = new Guid("41e399b6-45d2-11ee-be56-0242ac120005"),
+                    IdUsuario = 5,
                     PrimNombre = "Lizeth",
                     SegNombre = "Valeria",
                     PrimApellido = "Rivera",
@@ -97,7 +105,9 @@ namespace Repository.Configuration
                     Sexo = "Femenino",
                     TipoDocumento = "C.C",
                     NumDocumento = 1016598778,
-                    FechaNacimiento = new DateTime(2023, 06, 21),
+                    FechaNacimiento = new DateTime(2000, 06, 21),
+                    Estado = 1,
+                    FechaRegistro = new DateTime(2023, 06, 20),
                     TipoUsuario = 1,
                     FechaContrato = new DateTime(2023, 06, 21),
                     Cargo = "Encargado de almacén",

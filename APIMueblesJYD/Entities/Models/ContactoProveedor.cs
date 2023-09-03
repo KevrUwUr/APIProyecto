@@ -12,7 +12,7 @@ namespace Entities.Models
     {
         [Column("IdContactoProveedor")]
         [Key]
-        public Guid IdContactoProveedor{ get; set; }
+        public int IdContactoProveedor { get; set; }
 
         [Required(ErrorMessage = "NombreProv es un campo requerido.")]
         [MaxLength(80, ErrorMessage = "Largo maximo del nombre es de 80 caracteres")]
@@ -35,7 +35,7 @@ namespace Entities.Models
         public DateTime FechaBaja { get; set; }
 
         [ForeignKey(nameof(Proveedor))]
-        public Guid IdProveedor { get; set; }
+        public int IdProveedor { get; set; }
         public Proveedor? Proveedor { get; set; }
     }
 }

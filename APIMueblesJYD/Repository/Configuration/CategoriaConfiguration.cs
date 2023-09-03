@@ -18,49 +18,49 @@ namespace Repository.Configuration
                 (
                 new Categoria
                 {
-                    IdCategoria = new Guid("ebed2050-45d0-11ee-be56-0242ac120001"),
+                    IdCategoria = 1,
                     Nombre = "Muebles",
                     Estado = 1
                 },
                 new Categoria
                 {
-                    IdCategoria = new Guid("ebed2050-45d0-11ee-be56-0242ac120002"),
+                    IdCategoria = 2,
                     Nombre = "Camas",
                     Estado = 1
                 },
                 new Categoria
                 {
-                    IdCategoria = new Guid("ebed2050-45d0-11ee-be56-0242ac120003"),
+                    IdCategoria = 3,
                     Nombre = "Mesas de Noche",
                     Estado = 1
                 },
                 new Categoria
                 {
-                    IdCategoria = new Guid("ebed2050-45d0-11ee-be56-0242ac120004"),
+                    IdCategoria = 4,
                     Nombre = "Comedores",
                     Estado = 1
                 },
                 new Categoria
                 {
-                    IdCategoria = new Guid("ebed2050-45d0-11ee-be56-0242ac120005"),
+                    IdCategoria = 5,
                     Nombre = "Escritorios",
                     Estado = 1
                 },
                 new Categoria
                 {
-                    IdCategoria = new Guid("ebed2050-45d0-11ee-be56-0242ac120006"),
+                    IdCategoria = 6,
                     Nombre = "Sillas",
                     Estado = 1
                 },
                 new Categoria
                 {
-                    IdCategoria = new Guid("ebed2050-45d0-11ee-be56-0242ac120007"),
+                    IdCategoria = 7,
                     Nombre = "Armarios",
                     Estado = 1
                 },
                 new Categoria
                 {
-                    IdCategoria = new Guid("ebed2050-45d0-11ee-be56-0242ac120008"),
+                    IdCategoria = 8,
                     Nombre = "Camarotes",
                     Estado = 1
                 }

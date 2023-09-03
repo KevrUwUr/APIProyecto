@@ -6,5 +6,5 @@ using System.Threading.Tasks;
 
 namespace Shared.DataTransferObjects
 {
-    public record CategoriaDTO (Guid Id, string Nombre, int Estado);
+    public record CategoriaDTO (int Id, string Nombre, int Estado);
 }

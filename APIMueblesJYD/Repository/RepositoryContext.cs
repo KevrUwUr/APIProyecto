@@ -25,7 +25,7 @@ namespace Repository
             modelBuilder.ApplyConfiguration(new ContactoUsuarioConfiguration());
             modelBuilder.ApplyConfiguration(new DetalleFacturaCompraConfiguration());
             modelBuilder.ApplyConfiguration(new DetalleFacturaVentaConfiguration());
-            modelBuilder.ApplyConfiguration(new Empleado_CargoConfiguration());
+            modelBuilder.ApplyConfiguration(new EmpleadoCargoConfiguration());
             modelBuilder.ApplyConfiguration(new EmpleadoConfiguration());
             modelBuilder.ApplyConfiguration(new FacturaCompraConfiguration());
             modelBuilder.ApplyConfiguration(new FacturaVentaConfiguration());
@@ -36,26 +36,46 @@ namespace Repository
             modelBuilder.ApplyConfiguration(new ProductoConfiguration());
             modelBuilder.ApplyConfiguration(new ProveedorConfiguration());
             modelBuilder.ApplyConfiguration(new UsuarioConfiguration());
+
+            //modelBuilder
+            //.Entity<Perdida_Producto>(
+            //    eb =>
+            //    {
+            //        eb.HasNoKey();
+            //    });
+
+            //modelBuilder
+            //.Entity<EmpleadoCargo>(
+            //    eb =>
+            //    {
+            //        eb.HasNoKey();
+            //    });
+
+            modelBuilder.Entity<EmpleadoCargo>()
+                .HasKey(t => new { t.EmpleadoId, t.CargoId });
+            modelBuilder.Entity<Perdida_Producto>()
+                .HasKey(t => new { t.IdPerdida, t.IdProducto });
+
         }
 
 
 
         public DbSet<Cargo>? Cargos { get; set; }
         public DbSet<Categoria>? Categorias { get; set; }
-        public DbSet<ContactoEmpleado>? contactoEmpleados { get; set; }
-        public DbSet<ContactoProveedor>? contactoProveedorConfigurations { get; set; }
-        public DbSet<ContactoUsuario>? contactoUsuarioConfigurations { get; set; }
+        public DbSet<ContactoEmpleado>? ContactoEmpleados { get; set; }
+        public DbSet<ContactoProveedor>? ContactoProveedorConfigurations { get; set; }
+        public DbSet<ContactoUsuario>? ContactoUsuarioConfigurations { get; set; }
         public DbSet<Empleado>? Empleados { get; set; }
-        public DbSet<Empleado_Cargo>? Empleados_Cargos { get; set; }
+        public DbSet<EmpleadoCargo>? EmpleadoCargos { get; set; }
         public DbSet<FacturaCompra>? FacturasCompras { get; set; }
         public DbSet<FacturaVenta>? FacturasVentas { get; set; }
         public DbSet<DetalleFacturaVenta>? DetallesFacturaVentas { get; set; }
         public DbSet<HistoricoPrecios>? HistoricosPrecios { get; set; }
         public DbSet<MetodoPago>? MetodoPagos { get; set; }
         public DbSet<Perdida>? Perdida { get; set; }
-        public DbSet<Perdida_Producto>? perdida_Productos { get; set; }
-        public DbSet<Producto>? productos { get; set; }
-        public DbSet<Proveedor>? proveedors { get; set; }
+        public DbSet<Perdida_Producto>? Perdida_Productos { get; set; }
+        public DbSet<Producto>? Productos { get; set; }
+        public DbSet<Proveedor>? Proveedores { get; set; }
         public DbSet<Usuario>? Usuarios { get; set; }
     }
 }

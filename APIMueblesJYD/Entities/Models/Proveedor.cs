@@ -12,7 +12,7 @@ namespace Entities.Models
     {
         [Column("IdProveedor")]
         [Key]
-        public Guid IdProveedor { get; set; }
+        public int IdProveedor { get; set; }
 
         [Required(ErrorMessage = "Razon Social del proveedor es un campo requerido.")]
         [MaxLength(80, ErrorMessage = "Largo maximo de la RazonSocial es de 80 caracteres")]

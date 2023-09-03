@@ -8,7 +8,7 @@ using Service.Contracts;
 
 namespace Proyect.Presentation.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/cargo")]
     [ApiController]
     public class CargosController : ControllerBase
     {
@@ -22,8 +22,8 @@ namespace Proyect.Presentation.Controllers
             return Ok(cargos);
         }
 
-        [HttpGet("{id:guid}")]
-        public IActionResult GetCargo(Guid Id)
+        [HttpGet("{id:int}")]
+        public IActionResult GetCargo(int Id)
         {
             var cargo = _service.CargoService.GetCargo(Id, trackChanges: false);
             return Ok(cargo);

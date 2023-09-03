@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Entities.Exceptions
+{
+    internal class ContactoProveedorNotFoundException : NotFoundException
+    {
+        public ContactoProveedorNotFoundException(int IdContactoProveedor)
+            : base($"El contacto proveedor con el Id: {IdContactoProveedor} no existe en la Base de Datos.") { }
+    }
+}

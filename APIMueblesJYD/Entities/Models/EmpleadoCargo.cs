@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Entities.Models
 {
-    public class Empleado_Cargo
+    public class EmpleadoCargo
     {
         [Required(ErrorMessage = "FechaInicio es un campo requerido.")]
         public DateTime? FechaInicio { get; set; }
@@ -21,11 +21,11 @@ namespace Entities.Models
         public int? NumeroContrato { get; set; }
 
         [ForeignKey(nameof(Empleado))]
-        public int IdEmpleado { get; set; }
+        public int EmpleadoId { get; set; }
         public Empleado? Empleado { get; set; }
 
         [ForeignKey(nameof(Cargo))]
-        public int idCargo { get; set; }
+        public int CargoId { get; set; }
         public Cargo? Cargos { get; set; }
 
     }

@@ -17,23 +17,23 @@ namespace Repository.Configuration
             (
             new DetalleFacturaCompra
             {
-                IdDetalleacturaCompra = new Guid("93cf50f8-d098-4d3e-8412-edc49a219e7e"),
+                IdDetalleacturaCompra = 1,
                 ValorUnitario = 250000,
                 Cantidad = 2,
                 IVA = 0.30f,
                 ValorDescuento = 0.05f,
-                IdFacturaCompra = new Guid("a1a26fe5-39b3-4e71-bc0a-725e7c5b8a99"),
-                IdProducto = new Guid("3e32e739-f4e0-4b3a-8748-118fc4de366b"),
+                IdFacturaCompra = 1,
+                IdProducto = 1,
             },
             new DetalleFacturaCompra
             {
-                IdDetalleacturaCompra = new Guid("d3e5c3c8-66c7-4e3d-b606-ab3a33626904"),
+                IdDetalleacturaCompra = 2,
                 ValorUnitario = 500000,
                 Cantidad = 4,
                 IVA = 0.30f,
                 ValorDescuento = 0.05f,
-                IdFacturaCompra = new Guid("b3d8ca9e-968f-4c5a-9b9e-8247123df605"),
-                IdProducto = new Guid("578a8bad-c734-4d31-bba7-8099af8ed974"),
+                IdFacturaCompra = 2,
+                IdProducto = 2,
             }
             );
         }
