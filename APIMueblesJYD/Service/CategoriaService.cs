@@ -27,15 +27,15 @@ namespace Service
 
         public IEnumerable<CategoriaDTO> GetAllCategories(bool trackChanges)
         {
-            var categories = _repository.Category.GetAllCategories(trackChanges);
+            var categories = _repository.Categoria.GetAllCategories(trackChanges);
             var categoriesDto = _mapper.Map<IEnumerable<CategoriaDTO>>(categories);
 
             return categoriesDto;
         }
 
-        public CategoriaDTO GetCategory(Guid Id, bool trackChanges)
+        public CategoriaDTO GetCategory(int Id, bool trackChanges)
         {
-            var category = _repository.Category.GetCategory(Id, trackChanges);
+            var category = _repository.Categoria.GetCategory(Id, trackChanges);
             if(category == null)
             {
                 throw new CategoriaNotFoundException(Id);

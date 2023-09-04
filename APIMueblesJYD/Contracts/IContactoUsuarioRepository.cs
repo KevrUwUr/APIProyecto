@@ -10,7 +10,7 @@ namespace Contracts
 {
     public interface IContactoUsuarioRepository
     {
-        IEnumerable<ContactoUsuario> GetAllUserContacts(bool trackChanges);
-        ContactoUsuario GetUserContact(Guid userContactId, bool trackChanges);
+        IEnumerable<ContactoUsuarioDTO> GetAllUserContacts(bool trackChanges);
+        ContactoUsuarioDTO GetUserContact(int Id, bool trackChanges);
     }
 }

@@ -11,6 +11,6 @@ namespace Service.Contracts
     public interface IDetFacturaCompraService
     {
         IEnumerable<DFacturaCompraDTO> GetAllDetBuyBills(bool trackChanges);
-        DFacturaCompraDTO GetDetBuyBill(Guid Id, bool trackChanges);
+        DFacturaCompraDTO GetDetBuyBill(int Id, bool trackChanges);
     }
 }

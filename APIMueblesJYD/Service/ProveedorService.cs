@@ -33,9 +33,9 @@ namespace Service
             return proveedorDTO;
         }
 
-        public ProveedorDTO GetSuplier(Guid Id, bool trackChanges)
+        public ProveedorDTO GetSupplier(int Id, bool trackChanges)
         {
-            var proveedor = _repository.Proveedor.GetSuplier(Id, trackChanges);
+            var proveedor = _repository.Proveedor.GetSupplier(Id, trackChanges);
             if (proveedor == null)
             {
                 throw new ProveedorNotFoundException(Id);

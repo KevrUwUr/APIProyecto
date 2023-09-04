@@ -33,17 +33,16 @@ namespace Service
             return contactoUsuarioDTO;
         }
 
-        public ContactoUsuarioDTO GetUserContact(Guid userContactId, bool trackChanges)
+        public ContactoUsuarioDTO GetUserContact(int Id, bool trackChanges)
         {
-            var contactoUsuario = _repository.ContactoUsuario.GetUserContact(userContactId, trackChanges);
+            var contactoUsuario = _repository.ContactoUsuario.GetUserContact(Id, trackChanges);
             if(contactoUsuario == null)
             {
-                throw new ContactoUsuarioNotFoundException(userContactId);
+                throw new ContactoUsuarioNotFoundException(Id);
             }
 
             var contactoUsuarioDTO = _mapper.Map<ContactoUsuarioDTO>(contactoUsuario);
             return contactoUsuarioDTO;
         }
-
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Contracts;
 using Entities.Models;
+using Shared.DataTransferObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,19 +9,19 @@ using System.Threading.Tasks;
 
 namespace Repository
 {
-    public class MetodoPagoRepository : RepositoryBase<MetodoPago>, IMetodoPagoRepository
+    public class MetodoPagoRepository : RepositoryBase<MetodoPagoDTO>, IMetodoPagoRepository
     {
         public MetodoPagoRepository(RepositoryContext repositoryContext)
             : base(repositoryContext)
         {
         }
 
-        public IEnumerable<MetodoPago> GetAllPayMethods(bool trackChanges) =>
+        public IEnumerable<MetodoPagoDTO> GetAllPayMethods(bool trackChanges) =>
             FindAll(trackChanges)
                 .OrderBy(c => c.NombrePlataforma)
                 .ToList();
 
-        public MetodoPago GetPayMethod(Guid IdMetodoPago, bool trackChanges) =>
+        public MetodoPagoDTO GetPayMethod(int IdMetodoPago, bool trackChanges) =>
             FindByCondition(c => c.IdMetodoPago.Equals(IdMetodoPago), trackChanges)
             .SingleOrDefault();
 

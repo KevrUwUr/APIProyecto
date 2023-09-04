@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\TheGamerXD\\.nuget\\packages\\": {}
+    "C:\\Users\\Kev UwU\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Proyecto\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Shared\\Shared.csproj",
+      "projectUniqueName": "C:\\Users\\Kev UwU\\Desktop\\Proyecto\\APIProyecto\\APIMueblesJYD\\Shared\\Shared.csproj",
       "projectName": "Shared",
-      "projectPath": "C:\\Proyecto\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Shared\\Shared.csproj",
-      "packagesPath": "C:\\Users\\TheGamerXD\\.nuget\\packages\\",
-      "outputPath": "C:\\Proyecto\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Shared\\obj\\",
+      "projectPath": "C:\\Users\\Kev UwU\\Desktop\\Proyecto\\APIProyecto\\APIMueblesJYD\\Shared\\Shared.csproj",
+      "packagesPath": "C:\\Users\\Kev UwU\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Kev UwU\\Desktop\\Proyecto\\APIProyecto\\APIMueblesJYD\\Shared\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\TheGamerXD\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Kev UwU\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

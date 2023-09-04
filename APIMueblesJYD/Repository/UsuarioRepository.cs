@@ -1,5 +1,6 @@
 ﻿using Contracts;
 using Entities.Models;
+using Shared.DataTransferObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,19 +9,19 @@ using System.Threading.Tasks;
 
 namespace Repository
 {
-    public class UsuarioRepository : RepositoryBase<Usuario>, IUsuarioRepository
+    public class UsuarioRepository : RepositoryBase<UsuarioDTO>, IUsuarioRepository
     {
         public UsuarioRepository(RepositoryContext repositoryContext)
             : base(repositoryContext)
         {
         }
 
-        public IEnumerable<Usuario> GetAllUsers(bool trackChanges) =>
+        public IEnumerable<UsuarioDTO> GetAllUsers(bool trackChanges) =>
             FindAll(trackChanges)
                 .OrderBy(c => c.NumDocumento)
                 .ToList();
 
-        public Usuario GetUser(Guid IdUsuario, bool trackChanges) =>
+        public UsuarioDTO GetUser(int IdUsuario, bool trackChanges) =>
             FindByCondition(c => c.IdUsuario.Equals(IdUsuario), trackChanges)
             .SingleOrDefault();
 

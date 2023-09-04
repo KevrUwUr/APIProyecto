@@ -33,7 +33,7 @@ namespace Service
             return facturaVentaDTO;
         }
 
-        public FacturaVentaDTO GetSaleBill(Guid Id, bool trackChanges)
+        public FacturaVentaDTO GetSaleBill(int Id, bool trackChanges)
         {
             var facturaVenta = _repository.FacturaVenta.GetSaleBill(Id, trackChanges);
             if(facturaVenta == null)

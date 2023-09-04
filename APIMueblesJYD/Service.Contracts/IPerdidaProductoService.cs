@@ -11,6 +11,6 @@ namespace Service.Contracts
     public interface IPerdidaProductoService
     {
         IEnumerable<UsuarioDTO> GetAllProductLoses(bool trackChanges);
-        UsuarioDTO GetProductLose(Guid Id, bool trackChanges);
+        UsuarioDTO GetProductLose(int Id, bool trackChanges);
     }
 }

@@ -25,15 +25,15 @@ namespace Service
             _mapper = mapper;
         }
 
-        public IEnumerable<UsuarioDTO> GetAllProductLoses(bool trackChanges)
+        public IEnumerable<PerdidaProductoDTO> GetAllProductLoses(bool trackChanges)
         {
             var perdidaProducto = _repository.PerdidaProducto.GetAllProductLoses(trackChanges);
-            var perdidaProductoDTO = _mapper.Map<IEnumerable<UsuarioDTO>>(perdidaProducto);
+            var perdidaProductoDTO = _mapper.Map<IEnumerable<PerdidaProductoDTO>>(perdidaProducto);
 
             return perdidaProductoDTO;
         }
 
-        public UsuarioDTO GetProductLose(Guid Id, bool trackChanges)
+        public PerdidaProductoDTO GetProductLose(int Id, bool trackChanges)
         {
             var perdidaProducto = _repository.PerdidaProducto.GetProductLose(Id, trackChanges);
             if(perdidaProducto == null)
@@ -41,7 +41,7 @@ namespace Service
                 throw new PerdidaProductoNotFoundException(Id);
             }
 
-            var perdidaProductoDTO = _mapper.Map<UsuarioDTO>(perdidaProducto);
+            var perdidaProductoDTO = _mapper.Map<PerdidaProductoDTO>(perdidaProducto);
             return perdidaProductoDTO;
         }
     }

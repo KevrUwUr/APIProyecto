@@ -9,7 +9,7 @@ namespace Contracts
     public interface IRepositoryManager
     {
         ICargoRepository Cargo {  get; }
-        ICategoriaRepository Category { get; }
+        ICategoriaRepository Categoria { get; }
         IContactoEmpleadoRepository ContactoEmpleado { get; }
         IContactoProveedorRepository ContactoProveedor { get; }
         IContactoUsuarioRepository ContactoUsuario { get; }

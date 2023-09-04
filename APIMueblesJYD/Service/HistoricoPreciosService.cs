@@ -33,7 +33,7 @@ namespace Service
             return historicoPreciosDTO;
         }
 
-        public HistoricoPreciosDTO GetPriceHistory(Guid Id, bool trackChanges)
+        public HistoricoPreciosDTO GetPriceHistory(int Id, bool trackChanges)
         {
             var historicoPrecios = _repository.HistoricoPrecios.GetPriceHistory(Id, trackChanges);
             if(historicoPrecios == null)

@@ -10,7 +10,7 @@ namespace Contracts
 {
     public interface IPerdidaProductoRepository
     {
-        IEnumerable<UsuarioDTO> GetAllProductLoses(bool trackChanges);
-        UsuarioDTO GetProductLose(Guid productLostId, bool trackChanges);
+        IEnumerable<PerdidaProductoDTO> GetAllProductLoses(bool trackChanges);
+        PerdidaProductoDTO GetProductLose(int IdPerdidaProducto, bool trackChanges);
     }
 }

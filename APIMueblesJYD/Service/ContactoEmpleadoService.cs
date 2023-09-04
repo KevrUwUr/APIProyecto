@@ -33,7 +33,7 @@ namespace Service
             return contactoEmpleadoDto;
         }
 
-        public ContactoEmpleadoDTO GetEmployeeContact(Guid Id, bool trackChanges)
+        public ContactoEmpleadoDTO GetEmployeeContact(int Id, bool trackChanges)
         {
             var contactoEmpleado = _repository.ContactoEmpleado.GetEmployeeContact(Id, trackChanges);
             if(contactoEmpleado == null)

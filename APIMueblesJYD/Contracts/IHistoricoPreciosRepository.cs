@@ -11,6 +11,6 @@ namespace Contracts
     public interface IHistoricoPreciosRepository
     {
         IEnumerable<HistoricoPreciosDTO> GetAllPriceHistories(bool trackChanges);
-        HistoricoPreciosDTO GetPriceHistory(Guid priceHistoryId, bool trackChanges);
+        HistoricoPreciosDTO GetPriceHistory(int priceHistoryId, bool trackChanges);
     }
 }

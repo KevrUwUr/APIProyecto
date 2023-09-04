@@ -11,6 +11,6 @@ namespace Service.Contracts
     public interface IProveedorService
     {
         IEnumerable<ProveedorDTO> GetAllProducts(bool trackChanges);
-        ProveedorDTO GetProduct(Guid Id, bool trackChanges);
+        ProveedorDTO GetProduct(int Id, bool trackChanges);
     }
 }

@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "APIRestProyecto": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:33381;http://localhost:33382"
+    }
+  }
+}

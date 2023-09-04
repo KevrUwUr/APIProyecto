@@ -33,7 +33,7 @@ namespace Service
             return empleadoDTO;
         }
 
-        public EmpleadoDTO GetEmployee(Guid Id, bool trackChanges)
+        public EmpleadoDTO GetEmployee(int Id, bool trackChanges)
         {
             var empleado = _repository.Empleado.GetEmployee(Id, trackChanges);
             if(empleado == null)

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entities.Exceptions
 {
-    internal class ContactoProveedorNotFoundException : NotFoundException
+    public sealed class ContactoProveedorNotFoundException : NotFoundException
     {
         public ContactoProveedorNotFoundException(int IdContactoProveedor)
             : base($"El contacto proveedor con el Id: {IdContactoProveedor} no existe en la Base de Datos.") { }

@@ -33,7 +33,7 @@ namespace Service
             return dFacturaCompraDTO;
         }
 
-        public DFacturaCompraDTO GetDetBuyBill(Guid Id, bool trackChanges)
+        public DFacturaCompraDTO GetDetBuyBill(int Id, bool trackChanges)
         {
             var dFacturaCompra = _repository.DetFacturaCompra.GetDetBuyBill(Id, trackChanges);
             if(dFacturaCompra == null)

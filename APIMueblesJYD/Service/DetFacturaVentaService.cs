@@ -25,15 +25,15 @@ namespace Service
             _mapper = mapper;
         }
 
-        public IEnumerable<EmpleadoDTO> GetAllDSaleBills(bool trackChanges)
+        public IEnumerable<DFacturaVentaDTO> GetAllDSaleBills(bool trackChanges)
         {
             var dFacturaCompra = _repository.DetFacturaVenta.GetAllDSaleBills(trackChanges);
-            var DFacturaVentaDTO = _mapper.Map<IEnumerable<EmpleadoDTO>>(dFacturaCompra);
+            var DFacturaVentaDTO = _mapper.Map<IEnumerable<DFacturaVentaDTO>>(dFacturaCompra);
 
             return DFacturaVentaDTO;
         }
 
-        public EmpleadoDTO GetDetSaleBill(Guid Id, bool trackChanges)
+        public DFacturaVentaDTO GetDetSaleBill(int Id, bool trackChanges)
         {
             var dFacturaCompra = _repository.DetFacturaVenta.GetDetSaleBill(Id, trackChanges);
             if(dFacturaCompra == null)
@@ -41,7 +41,7 @@ namespace Service
                 throw new DetalleFacturaVentaNotFoundException(Id);
             }
 
-            var DFacturaVentaDTO = _mapper.Map<EmpleadoDTO>(dFacturaCompra);
+            var DFacturaVentaDTO = _mapper.Map<DFacturaVentaDTO>(dFacturaCompra);
             return DFacturaVentaDTO;
         }
     }

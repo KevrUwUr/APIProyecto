@@ -17,7 +17,7 @@ namespace Repository
             .OrderBy(c => c.Proveedor)
             .ToList();
 
-        public ContactoProveedor GetSuplierContact(Guid Id, bool trackChanges) =>
+        public ContactoProveedor GetSuplierContact(int Id, bool trackChanges) =>
             FindByCondition(c => c.IdContactoProveedor.Equals(Id), trackChanges)
             .SingleOrDefault();
     }

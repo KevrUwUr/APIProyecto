@@ -16,7 +16,7 @@ namespace Repository
             FindAll(trackChanges)
                 .OrderBy(c => c.Nombre)
                 .ToList();
-        public Categoria GetCategory(Guid Id, bool trackChanges) =>
+        public Categoria GetCategory(int Id, bool trackChanges) =>
             FindByCondition(c => c.IdCategoria.Equals(Id), trackChanges)
             .SingleOrDefault();
     }

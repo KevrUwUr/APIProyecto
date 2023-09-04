@@ -33,7 +33,7 @@ namespace Service
             return usuarioDTO;
         }
 
-        public UsuarioDTO GetUser(Guid Id, bool trackChanges)
+        public UsuarioDTO GetUser(int Id, bool trackChanges)
         {
             var usuario = _repository.Usuario.GetUser(Id, trackChanges);
             if(usuario == null)

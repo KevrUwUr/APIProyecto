@@ -25,23 +25,23 @@ namespace Service
             _mapper = mapper;
         }
 
-        public IEnumerable<UsuarioDTO> GetAllLoses(bool trackChanges)
+        public IEnumerable<PerdidaDTO> GetAllLoses(bool trackChanges)
         {
             var perdida = _repository.Perdida.GetAllLoses(trackChanges);
-            var perdidaDTO = _mapper.Map<IEnumerable<UsuarioDTO>>(perdida);
+            var perdidaDTO = _mapper.Map<IEnumerable<PerdidaDTO>>(perdida);
 
             return perdidaDTO;
         }
 
-        public UsuarioDTO GetLose(Guid Id, bool trackChanges)
+        public PerdidaDTO GetLose(int lostId, bool trackChanges)
         {
-            var perdida = _repository.Perdida.GetLose(Id, trackChanges);
+            var perdida = _repository.Perdida.GetLose(lostId, trackChanges);
             if (perdida == null)
             {
-                throw new PerdidaNotFoundException(Id);
+                throw new PerdidaNotFoundException(lostId);
             }
 
-            var perdidaDTO = _mapper.Map<UsuarioDTO>(perdida);
+            var perdidaDTO = _mapper.Map<PerdidaDTO>(perdida);
             return perdidaDTO;
         }
     }

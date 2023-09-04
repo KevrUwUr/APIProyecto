@@ -1,5 +1,6 @@
 ﻿using Contracts;
 using Entities.Models;
+using Shared.DataTransferObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,20 +9,20 @@ using System.Threading.Tasks;
 
 namespace Repository
 {
-    public class DetalleFacturaVentaRepository : RepositoryBase<DetalleFacturaVenta>, IDetFacturaVentaRepository
+    public class DetalleFacturaVentaRepository : RepositoryBase<DFacturaVentaDTO>, IDetFacturaVentaRepository
     {
         public DetalleFacturaVentaRepository(RepositoryContext repositoryContext)
             : base(repositoryContext)
         {
         }
 
-        public IEnumerable<DetalleFacturaVenta> GetAllDSaleBill(bool trackChanges) =>
+        public IEnumerable<DFacturaVentaDTO> GetAllDSaleBills(bool trackChanges) =>
             FindAll(trackChanges)
-                .OrderBy(c => c.DetalleFacturaVentaID)
+                .OrderBy(c => c.IdFacturaVenta)
                 .ToList();
 
-        public DetalleFacturaVenta GetDSalesBill(Guid DetalleFacturaVentaID, bool trackChanges) =>
-            FindByCondition(c => c.DetalleFacturaVentaID.Equals(DetalleFacturaVentaID), trackChanges)
+        public DFacturaVentaDTO GetDetSaleBill(int IdFacturaVenta, bool trackChanges) =>
+            FindByCondition(c => c.IdFacturaVenta.Equals(IdFacturaVenta), trackChanges)
             .SingleOrDefault();
     
     }

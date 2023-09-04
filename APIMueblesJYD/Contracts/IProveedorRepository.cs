@@ -11,6 +11,6 @@ namespace Contracts
     public interface IProveedorRepository
     {
         IEnumerable<ProveedorDTO> GetAllSuppliers(bool trackChanges);
-        ProveedorDTO GetSuplier(Guid suplierId, bool trackChanges);
+        ProveedorDTO GetSupplier(int IdProveedor, bool trackChanges);
     }
 }

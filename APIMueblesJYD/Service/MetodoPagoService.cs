@@ -33,7 +33,7 @@ namespace Service
             return metodoPagoDTO;
         }
 
-        public MetodoPagoDTO GetPayMethod(Guid Id, bool trackChanges)
+        public MetodoPagoDTO GetPayMethod(int Id, bool trackChanges)
         {
             var metodoPago = _repository.MetodoPago.GetPayMethod(Id, trackChanges);
             if(metodoPago == null)

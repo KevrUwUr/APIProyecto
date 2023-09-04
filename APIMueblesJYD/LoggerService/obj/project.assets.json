@@ -196,7 +196,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "Entities": "1.0.0"
+          "Entities": "1.0.0",
+          "Shared": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Contracts.dll": {}
@@ -213,6 +214,16 @@
         },
         "runtime": {
           "bin/placeholder/Entities.dll": {}
+        }
+      },
+      "Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.dll": {}
         }
       }
     }
@@ -514,6 +525,11 @@
       "type": "project",
       "path": "../Entities/Entities.csproj",
       "msbuildProject": "../Entities/Entities.csproj"
+    },
+    "Shared/1.0.0": {
+      "type": "project",
+      "path": "../Shared/Shared.csproj",
+      "msbuildProject": "../Shared/Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -523,24 +539,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Aprendiz\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Kev UwU\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj",
+      "projectUniqueName": "C:\\Users\\Kev UwU\\Desktop\\Proyecto\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj",
       "projectName": "LoggerService",
-      "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj",
-      "packagesPath": "C:\\Users\\Aprendiz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\LoggerService\\obj\\",
+      "projectPath": "C:\\Users\\Kev UwU\\Desktop\\Proyecto\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj",
+      "packagesPath": "C:\\Users\\Kev UwU\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Kev UwU\\Desktop\\Proyecto\\APIProyecto\\APIMueblesJYD\\LoggerService\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Aprendiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Kev UwU\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -548,15 +559,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj": {
-              "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj"
+            "C:\\Users\\Kev UwU\\Desktop\\Proyecto\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj": {
+              "projectPath": "C:\\Users\\Kev UwU\\Desktop\\Proyecto\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj"
             }
           }
         }
@@ -592,7 +602,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

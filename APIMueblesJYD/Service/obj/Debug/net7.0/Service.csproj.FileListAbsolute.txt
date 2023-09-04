@@ -27,3 +27,24 @@ C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Service\obj\Debu
 C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\Service.dll
 C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\refint\Service.dll
 C:\Users\Aprendiz\Desktop\APIProyecto\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\Service.pdb
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Service\bin\Debug\net7.0\Service.deps.json
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Service\bin\Debug\net7.0\Service.dll
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Service\bin\Debug\net7.0\Service.pdb
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Service\bin\Debug\net7.0\Contracts.dll
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Service\bin\Debug\net7.0\Entities.dll
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Service\bin\Debug\net7.0\Service.Contracts.dll
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Service\bin\Debug\net7.0\Shared.dll
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Service\bin\Debug\net7.0\Contracts.pdb
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Service\bin\Debug\net7.0\Service.Contracts.pdb
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Service\bin\Debug\net7.0\Entities.pdb
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Service\bin\Debug\net7.0\Shared.pdb
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\Service.csproj.AssemblyReference.cache
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\Service.AssemblyInfoInputs.cache
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\Service.AssemblyInfo.cs
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\Service.csproj.CoreCompileInputs.cache
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\Service.csproj.CopyComplete
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\Service.dll
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\refint\Service.dll
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\Service.pdb
+C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\ref\Service.dll

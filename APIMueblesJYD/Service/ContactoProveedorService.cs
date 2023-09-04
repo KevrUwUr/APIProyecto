@@ -33,7 +33,7 @@ namespace Service
             return contactoProveedorDto;
         }
 
-        public ContactoProveedorDTO GetSuplierContact(Guid Id, bool trackChanges)
+        public ContactoProveedorDTO GetSuplierContact(int Id, bool trackChanges)
         {
             var contactoProveedor = _repository.ContactoProveedor.GetSuplierContact(Id, trackChanges);
             if(contactoProveedor == null)

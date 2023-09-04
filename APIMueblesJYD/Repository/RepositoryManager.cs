@@ -49,10 +49,10 @@ namespace Repository
             new ContactoUsuarioRepository(repositoryContext));
 
             _detFacturaCompraRepository = new Lazy<IDetFacturaCompraRepository>(() =>
-            new DetFacturaCompraRepository(repositoryContext));
+            new DetalleFacturaCompraRepository(repositoryContext));
 
             _detFacturaVentaRepository = new Lazy<IDetFacturaVentaRepository>(() =>
-            new DetFacturaCompraRepository(repositoryContext));
+            new DetalleFacturaVentaRepository(repositoryContext));
 
             _empleadoCargoRepository = new Lazy<IEmpleadoCargoRepository>(() =>
             new EmpleadoCargoRepository(repositoryContext));
@@ -78,7 +78,7 @@ namespace Repository
             _perdidaRepository = new Lazy<IPerdidaRepository>(() =>
             new PerdidaRepository(repositoryContext));
 
-            _productoRepository = new Lazy<IPerdidaRepository>(() =>
+            _productoRepository = new Lazy<IProductoRepository>(() =>
             new ProductoRepository(repositoryContext));
 
             _proveedorRepository = new Lazy<IProveedorRepository>(() =>
@@ -87,10 +87,10 @@ namespace Repository
         public ICargoRepository Cargo => _cargoRepository.Value;
         public ICategoriaRepository Categoria => _categoriaRepository.Value;
         public IContactoEmpleadoRepository ContactoEmpleado => _contactoEmpleadoRepository.Value;
-        public IContactoProveedorRepository ProveedorRepository => _contactoProveedorRepository.Value;
-        public IContactoUsuarioRepository UsuarioRepository => _contactoUsuarioRepository.Value;
-        public IDetFacturaCompraRepository DetFacturaCompraRepository => _detFacturaCompraRepository.Value;
-        public IDetFacturaVentaRepository DetFacturaVentaRepository => _detFacturaVentaRepository.Value;
+        public IContactoProveedorRepository ContactoProveedor => _contactoProveedorRepository.Value;
+        public IContactoUsuarioRepository ContactoUsuario => _contactoUsuarioRepository.Value;
+        public IDetFacturaCompraRepository DetFacturaCompra => _detFacturaCompraRepository.Value;
+        public IDetFacturaVentaRepository DetFacturaVenta => _detFacturaVentaRepository.Value;
         public IEmpleadoCargoRepository EmpleadoCargo => _empleadoCargoRepository.Value;
         public IEmpleadoRepository Empleado => _empleadoRepository.Value;
         public IFacturaCompraRepository FacturaCompra => _facturaCompraRepository.Value;
@@ -100,8 +100,8 @@ namespace Repository
         public IPerdidaProductoRepository PerdidaProducto => _perdidaProductoRepository.Value;
         public IPerdidaRepository Perdida => _perdidaRepository.Value;
         public IProductoRepository Producto => _productoRepository.Value;
+        public IProveedorRepository Proveedor => _proveedorRepository.Value;
         public IUsuarioRepository Usuario => _UsuarioRepository.Value;
-
 
         public void Save() => _repositoryContext.SaveChanges();
     }
