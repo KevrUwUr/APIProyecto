@@ -19,11 +19,6 @@ C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Service\obj\Debug
 C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\refint\Service.dll
 C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\Service.pdb
 C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\ref\Service.dll
-C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\Service.csproj.AssemblyReference.cache
-C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\Service.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\Service.AssemblyInfoInputs.cache
-C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\Service.AssemblyInfo.cs
-C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\Service.csproj.CoreCompileInputs.cache
 C:\Proyecto\APIProyecto\APIProyecto\APIMueblesJYD\Service\bin\Debug\net7.0\Service.deps.json
 C:\Proyecto\APIProyecto\APIProyecto\APIMueblesJYD\Service\bin\Debug\net7.0\Service.dll
 C:\Proyecto\APIProyecto\APIProyecto\APIMueblesJYD\Service\bin\Debug\net7.0\Service.pdb
@@ -45,9 +40,6 @@ C:\Proyecto\APIProyecto\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\Servi
 C:\Proyecto\APIProyecto\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\refint\Service.dll
 C:\Proyecto\APIProyecto\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\Service.pdb
 C:\Proyecto\APIProyecto\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\ref\Service.dll
-C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\Service.dll
-C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\refint\Service.dll
-C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\Service.pdb
 C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\Service\bin\Debug\net7.0\Service.deps.json
 C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\Service\bin\Debug\net7.0\Service.dll
 C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\Service\bin\Debug\net7.0\Service.pdb
@@ -59,5 +51,13 @@ C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\Service\bin\Debu
 C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\Service\bin\Debug\net7.0\Service.Contracts.pdb
 C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\Service\bin\Debug\net7.0\Entities.pdb
 C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\Service\bin\Debug\net7.0\Shared.pdb
+C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\Service.csproj.AssemblyReference.cache
+C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\Service.AssemblyInfoInputs.cache
+C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\Service.AssemblyInfo.cs
+C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\Service.csproj.CoreCompileInputs.cache
 C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\Service.csproj.CopyComplete
+C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\Service.dll
+C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\refint\Service.dll
+C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\Service.pdb
 C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\Service\obj\Debug\net7.0\ref\Service.dll

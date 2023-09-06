@@ -9,6 +9,7 @@ namespace APIRestProyecto
         public MappingProfile()
         {
             CreateMap<Cargo, CargoDto>();
+            CreateMap<Categoria, CategoriaDTO>();
         }
     }
 }

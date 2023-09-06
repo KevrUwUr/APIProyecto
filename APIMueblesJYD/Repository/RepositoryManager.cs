@@ -10,6 +10,7 @@ namespace Repository
     public sealed class RepositoryManager : IRepositoryManager
     {
         private readonly RepositoryContext _repositoryContext;
+
         private readonly Lazy<ICargoRepository> _cargoRepository;
         private readonly Lazy<ICategoriaRepository> _categoriaRepository;
         private readonly Lazy<IContactoEmpleadoRepository> _contactoEmpleadoRepository;
@@ -27,7 +28,7 @@ namespace Repository
         private readonly Lazy<IPerdidaRepository> _perdidaRepository;
         private readonly Lazy<IProductoRepository> _productoRepository;
         private readonly Lazy<IProveedorRepository> _proveedorRepository;
-        private readonly Lazy<IUsuarioRepository> _UsuarioRepository;
+        private readonly Lazy<IUsuarioRepository> _usuarioRepository;
 
         public RepositoryManager(RepositoryContext repositoryContext)
         {
@@ -83,6 +84,9 @@ namespace Repository
 
             _proveedorRepository = new Lazy<IProveedorRepository>(() =>
             new ProveedorRepository(repositoryContext));
+
+            _usuarioRepository = new Lazy<IUsuarioRepository>(() =>
+            new UsuarioRepository(repositoryContext));
         }
         public ICargoRepository Cargo => _cargoRepository.Value;
         public ICategoriaRepository Categoria => _categoriaRepository.Value;
@@ -101,7 +105,7 @@ namespace Repository
         public IPerdidaRepository Perdida => _perdidaRepository.Value;
         public IProductoRepository Producto => _productoRepository.Value;
         public IProveedorRepository Proveedor => _proveedorRepository.Value;
-        public IUsuarioRepository Usuario => _UsuarioRepository.Value;
+        public IUsuarioRepository Usuario => _usuarioRepository.Value;
 
         public void Save() => _repositoryContext.SaveChanges();
     }

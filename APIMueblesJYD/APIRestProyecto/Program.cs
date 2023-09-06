@@ -1,10 +1,13 @@
 using Contracts;
 using APIRestProyecto.Extensions;
 using Microsoft.AspNetCore.HttpOverrides;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using NLog;
-using Entities.Models;
 using Repository;
+using Microsoft.AspNetCore.Mvc.Formatters;
+using Microsoft.Extensions.Options;
 
 var builder = WebApplication.CreateBuilder(args);
 LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(),
@@ -18,13 +21,17 @@ builder.Services.ConfigureServiceManager();
 builder.Services.ConfigureSqlContext(builder.Configuration);
 builder.Services.AddAutoMapper(typeof(Program));
 
-builder.Services.AddControllers()
-    .AddApplicationPart(typeof(Proyect.Presentation.AssemblyReference).Assembly);
+builder.Services.Configure<ApiBehaviorOptions>(options => {
+    options.SuppressModelStateInvalidFilter = true;
+});
 
-// Add services to the container.
-
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddControllers(config =>
+{
+    config.RespectBrowserAcceptHeader = true;
+    config.ReturnHttpNotAcceptable = true;
+}).AddXmlDataContractSerializerFormatters()
+.AddCustomCSVFormatter()
+.AddApplicationPart(typeof(Proyect.Presentation.AssemblyReference).Assembly);
 
 var app = builder.Build();
 
@@ -34,21 +41,6 @@ app.ConfigureExceptionHandler(logger);
 if (app.Environment.IsProduction())
 {
     app.UseHsts();
-}
-
-if (app.Environment.IsDevelopment())
-{
-    app.UseDeveloperExceptionPage();
-} else
-{
-    app.UseHsts();
-}
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();

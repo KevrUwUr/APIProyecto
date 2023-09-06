@@ -37,28 +37,11 @@ namespace Repository
             modelBuilder.ApplyConfiguration(new ProveedorConfiguration());
             modelBuilder.ApplyConfiguration(new UsuarioConfiguration());
 
-            //modelBuilder
-            //.Entity<Perdida_Producto>(
-            //    eb =>
-            //    {
-            //        eb.HasNoKey();
-            //    });
-
-            //modelBuilder
-            //.Entity<EmpleadoCargo>(
-            //    eb =>
-            //    {
-            //        eb.HasNoKey();
-            //    });
-
             modelBuilder.Entity<EmpleadoCargo>()
                 .HasKey(t => new { t.EmpleadoId, t.CargoId });
             modelBuilder.Entity<PerdidaProducto>()
                 .HasKey(t => new { t.IdPerdida, t.ProductoId });
-
         }
-
-
 
         public DbSet<Cargo>? Cargos { get; set; }
         public DbSet<Categoria>? Categorias { get; set; }

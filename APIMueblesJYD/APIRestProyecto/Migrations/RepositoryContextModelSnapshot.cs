@@ -24,12 +24,10 @@ namespace APIRestProyecto.Migrations
 
             modelBuilder.Entity("Entities.Models.Cargo", b =>
                 {
-                    b.Property<int>("CargoId")
+                    b.Property<Guid>("CargoId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
+                        .HasColumnType("uniqueidentifier")
                         .HasColumnName("CargoId");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CargoId"));
 
                     b.Property<int>("Estado")
                         .HasColumnType("int");
@@ -46,31 +44,31 @@ namespace APIRestProyecto.Migrations
                     b.HasData(
                         new
                         {
-                            CargoId = 1,
+                            CargoId = new Guid("5e74a02d-a99f-40e3-8c4c-a4c58a78ad04"),
                             Estado = 1,
                             NombreCargo = "Carpintero"
                         },
                         new
                         {
-                            CargoId = 2,
+                            CargoId = new Guid("24254ac3-4379-41ba-ab1d-d4c31ffc4855"),
                             Estado = 1,
                             NombreCargo = "Diseñador de Muebles"
                         },
                         new
                         {
-                            CargoId = 3,
+                            CargoId = new Guid("1cb1de39-40fe-472b-bdb7-d37db36387fb"),
                             Estado = 1,
                             NombreCargo = "Vendedor de Muebles"
                         },
                         new
                         {
-                            CargoId = 4,
+                            CargoId = new Guid("201b4cc5-5647-44b8-8664-08f49c8ebcf6"),
                             Estado = 1,
                             NombreCargo = "Técnico de Acabados"
                         },
                         new
                         {
-                            CargoId = 5,
+                            CargoId = new Guid("8d9b73ec-049b-483a-8d48-36e29c25021e"),
                             Estado = 1,
                             NombreCargo = "Asistente de carpinteria"
                         });
@@ -78,12 +76,10 @@ namespace APIRestProyecto.Migrations
 
             modelBuilder.Entity("Entities.Models.Categoria", b =>
                 {
-                    b.Property<int>("IdCategoria")
+                    b.Property<Guid>("IdCategoria")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
+                        .HasColumnType("uniqueidentifier")
                         .HasColumnName("IdCategoria");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdCategoria"));
 
                     b.Property<int>("Estado")
                         .HasColumnType("int");
@@ -100,49 +96,49 @@ namespace APIRestProyecto.Migrations
                     b.HasData(
                         new
                         {
-                            IdCategoria = 1,
+                            IdCategoria = new Guid("dd412b15-5220-43cd-90a8-228827cd4988"),
                             Estado = 1,
                             Nombre = "Muebles"
                         },
                         new
                         {
-                            IdCategoria = 2,
+                            IdCategoria = new Guid("0e371e3e-50c3-48c5-a583-db1016fb209c"),
                             Estado = 1,
                             Nombre = "Camas"
                         },
                         new
                         {
-                            IdCategoria = 3,
+                            IdCategoria = new Guid("8a10a022-bcac-4d4a-9926-a2b4ba8bc993"),
                             Estado = 1,
                             Nombre = "Mesas de Noche"
                         },
                         new
                         {
-                            IdCategoria = 4,
+                            IdCategoria = new Guid("c48f9793-637f-4f19-ac65-0cc5ecebcfd8"),
                             Estado = 1,
                             Nombre = "Comedores"
                         },
                         new
                         {
-                            IdCategoria = 5,
+                            IdCategoria = new Guid("3be4073a-8614-400e-bdce-2730059d9e76"),
                             Estado = 1,
                             Nombre = "Escritorios"
                         },
                         new
                         {
-                            IdCategoria = 6,
+                            IdCategoria = new Guid("2c9308f6-b13f-4714-b8c0-6b24d9b97389"),
                             Estado = 1,
                             Nombre = "Sillas"
                         },
                         new
                         {
-                            IdCategoria = 7,
+                            IdCategoria = new Guid("21c0ab55-caf3-4636-882b-741d1fa2e352"),
                             Estado = 1,
                             Nombre = "Armarios"
                         },
                         new
                         {
-                            IdCategoria = 8,
+                            IdCategoria = new Guid("1ec8da08-607c-442c-82bd-2671992c080f"),
                             Estado = 1,
                             Nombre = "Camarotes"
                         });
@@ -150,12 +146,10 @@ namespace APIRestProyecto.Migrations
 
             modelBuilder.Entity("Entities.Models.ContactoEmpleado", b =>
                 {
-                    b.Property<int>("IdContactoEmpleado")
+                    b.Property<Guid>("IdContactoEmpleado")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
+                        .HasColumnType("uniqueidentifier")
                         .HasColumnName("IdContactoEmpleado");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdContactoEmpleado"));
 
                     b.Property<string>("Direccion")
                         .IsRequired()
@@ -167,8 +161,8 @@ namespace APIRestProyecto.Migrations
                         .HasMaxLength(80)
                         .HasColumnType("nvarchar(80)");
 
-                    b.Property<int>("EmpleadoId")
-                        .HasColumnType("int");
+                    b.Property<Guid>("EmpleadoId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("FechaCreacion")
                         .HasColumnType("datetime2");
@@ -185,46 +179,46 @@ namespace APIRestProyecto.Migrations
                     b.HasData(
                         new
                         {
-                            IdContactoEmpleado = 1,
+                            IdContactoEmpleado = new Guid("319b841c-0573-416a-8754-fcd82aee04bc"),
                             Direccion = "Cra15B #13-52",
                             Email = "ContactoE1@gmail.com",
-                            EmpleadoId = 1,
+                            EmpleadoId = new Guid("41fff2b6-9886-40bc-ab38-d34cfaae3f96"),
                             FechaCreacion = new DateTime(2023, 8, 28, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Telefono = 312546845
                         },
                         new
                         {
-                            IdContactoEmpleado = 2,
+                            IdContactoEmpleado = new Guid("07b892ef-0511-4cf4-b2c6-9cc4932418dd"),
                             Direccion = "Av. 7 de Septiembre #25-10",
                             Email = "ContactoE2@gmail.com",
-                            EmpleadoId = 2,
+                            EmpleadoId = new Guid("1f03e9da-4f5a-4c01-a74b-5484a0622a88"),
                             FechaCreacion = new DateTime(2023, 8, 28, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Telefono = 315874920
                         },
                         new
                         {
-                            IdContactoEmpleado = 3,
+                            IdContactoEmpleado = new Guid("66a5c506-ca79-4323-9826-2719d047d961"),
                             Direccion = "Calle 24 #18-15",
                             Email = "ContactoE3@gmail.com",
-                            EmpleadoId = 3,
+                            EmpleadoId = new Guid("aad28fbf-f3e8-43b2-97d4-9eab3d59597a"),
                             FechaCreacion = new DateTime(2023, 8, 29, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Telefono = 318657489
                         },
                         new
                         {
-                            IdContactoEmpleado = 4,
+                            IdContactoEmpleado = new Guid("e385b218-e55b-4c17-ae51-58fa9343483e"),
                             Direccion = "Cra 10A #5-30",
                             Email = "ContactoE4@gmail.com",
-                            EmpleadoId = 4,
+                            EmpleadoId = new Guid("06e66a66-1840-4a55-abcf-475e8218963f"),
                             FechaCreacion = new DateTime(2023, 8, 29, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Telefono = 314985632
                         },
                         new
                         {
-                            IdContactoEmpleado = 5,
+                            IdContactoEmpleado = new Guid("6215be00-b0a6-4df5-bf6f-481f8089c441"),
                             Direccion = "Cra 20 #8-45",
                             Email = "ContactoE5@gmail.com",
-                            EmpleadoId = 5,
+                            EmpleadoId = new Guid("da511896-b59c-4052-9103-6bf83a9f4b0a"),
                             FechaCreacion = new DateTime(2023, 8, 30, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Telefono = 317654987
                         });
@@ -232,12 +226,10 @@ namespace APIRestProyecto.Migrations
 
             modelBuilder.Entity("Entities.Models.ContactoProveedor", b =>
                 {
-                    b.Property<int>("IdContactoProveedor")
+                    b.Property<Guid>("IdContactoProveedor")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
+                        .HasColumnType("uniqueidentifier")
                         .HasColumnName("IdContactoProveedor");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdContactoProveedor"));
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -253,8 +245,8 @@ namespace APIRestProyecto.Migrations
                     b.Property<DateTime>("FechaBaja")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("IdProveedor")
-                        .HasColumnType("int");
+                    b.Property<Guid>("IdProveedor")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("NombreProv")
                         .IsRequired()
@@ -273,100 +265,100 @@ namespace APIRestProyecto.Migrations
                     b.HasData(
                         new
                         {
-                            IdContactoProveedor = 1,
+                            IdContactoProveedor = new Guid("11b72f91-f5a9-4e6a-8c48-624a0729941d"),
                             Email = "ContactP1@gmail.com",
                             Estado = 1,
                             FechaAlta = new DateTime(2020, 3, 13, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaBaja = new DateTime(2023, 5, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IdProveedor = 1,
+                            IdProveedor = new Guid("d0a22af1-85b2-4ea6-9daa-d0e321c07964"),
                             NombreProv = "Sam Raiden",
                             Telefono = 314526948
                         },
                         new
                         {
-                            IdContactoProveedor = 2,
+                            IdContactoProveedor = new Guid("42dc025f-3e80-4768-930d-6ef208faac3e"),
                             Email = "ContactP2@gmail.com",
                             Estado = 1,
                             FechaAlta = new DateTime(2022, 8, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaBaja = new DateTime(2023, 6, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IdProveedor = 2,
+                            IdProveedor = new Guid("6e6d4c81-9958-44ff-bf39-838a4940c822"),
                             NombreProv = "Laura Montoya",
                             Telefono = 310987654
                         },
                         new
                         {
-                            IdContactoProveedor = 3,
+                            IdContactoProveedor = new Guid("6299ae61-9578-4898-a9d6-8697a84b9c84"),
                             Email = "ContactP3@gmail.com",
                             Estado = 2,
                             FechaAlta = new DateTime(2021, 5, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaBaja = new DateTime(2023, 4, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IdProveedor = 3,
+                            IdProveedor = new Guid("303504ff-9312-4d2b-9d52-8d16ef08eb69"),
                             NombreProv = "Carlos Rivera",
                             Telefono = 317895623
                         },
                         new
                         {
-                            IdContactoProveedor = 4,
+                            IdContactoProveedor = new Guid("d6e22b76-d99f-4376-9dee-b542ee7aa729"),
                             Email = "ContactP4@gmail.com",
                             Estado = 1,
                             FechaAlta = new DateTime(2023, 2, 18, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaBaja = new DateTime(2023, 7, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IdProveedor = 4,
+                            IdProveedor = new Guid("0dd8f80d-4df6-4fe9-bb72-28c7f5561e7c"),
                             NombreProv = "Elena Gómez",
                             Telefono = 312589764
                         },
                         new
                         {
-                            IdContactoProveedor = 5,
+                            IdContactoProveedor = new Guid("aaec0a58-444b-48bc-9291-6aaa50f27008"),
                             Email = "ContactP5@gmail.com",
                             Estado = 1,
                             FechaAlta = new DateTime(2022, 6, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaBaja = new DateTime(2023, 6, 30, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IdProveedor = 5,
+                            IdProveedor = new Guid("be2c0877-d46b-46e3-b793-cb5711f214c7"),
                             NombreProv = "Ana Martínez",
                             Telefono = 319875634
                         },
                         new
                         {
-                            IdContactoProveedor = 6,
+                            IdContactoProveedor = new Guid("136ad92b-614d-41fa-90d7-1f0f4a6c6d6e"),
                             Email = "ContactP6@gmail.com",
                             Estado = 1,
                             FechaAlta = new DateTime(2021, 9, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaBaja = new DateTime(2023, 7, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IdProveedor = 6,
+                            IdProveedor = new Guid("9abc8d3b-3bd1-49c3-84e2-35c59447b0f3"),
                             NombreProv = "Juan Soto",
                             Telefono = 316547896
                         },
                         new
                         {
-                            IdContactoProveedor = 7,
+                            IdContactoProveedor = new Guid("8a91ebd3-d855-4be0-af6d-5dd91d3a4811"),
                             Email = "ContactP7@gmail.com",
                             Estado = 1,
                             FechaAlta = new DateTime(2020, 12, 8, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaBaja = new DateTime(2023, 6, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IdProveedor = 7,
+                            IdProveedor = new Guid("7a1429e1-c547-4f00-a33a-d27d402bca3f"),
                             NombreProv = "María Salas",
                             Telefono = 318564237
                         },
                         new
                         {
-                            IdContactoProveedor = 8,
+                            IdContactoProveedor = new Guid("35ce9ea9-6aed-459e-9fde-c02b768ddbec"),
                             Email = "ContactP8@gmail.com",
                             Estado = 2,
                             FechaAlta = new DateTime(2021, 3, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaBaja = new DateTime(2023, 6, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IdProveedor = 8,
+                            IdProveedor = new Guid("e630fb8f-a34d-4b4d-9de1-6808fe6a6edf"),
                             NombreProv = "Luis Gutiérrez",
                             Telefono = 313258741
                         },
                         new
                         {
-                            IdContactoProveedor = 9,
+                            IdContactoProveedor = new Guid("6f562b34-cee6-4684-be79-4a3638de30f0"),
                             Email = "ContactP9@gmail.com",
                             Estado = 1,
                             FechaAlta = new DateTime(2022, 4, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaBaja = new DateTime(2023, 7, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IdProveedor = 9,
+                            IdProveedor = new Guid("7f740088-b8c7-4094-90b3-9c6385e58597"),
                             NombreProv = "Fernando López",
                             Telefono = 317896542
                         });
@@ -374,12 +366,10 @@ namespace APIRestProyecto.Migrations
 
             modelBuilder.Entity("Entities.Models.ContactoUsuario", b =>
                 {
-                    b.Property<int>("IdContactoCliente")
+                    b.Property<Guid>("IdContactoCliente")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
+                        .HasColumnType("uniqueidentifier")
                         .HasColumnName("IdContactoCliente");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdContactoCliente"));
 
                     b.Property<string>("Barrio_Localidad")
                         .IsRequired()
@@ -401,8 +391,8 @@ namespace APIRestProyecto.Migrations
                         .HasMaxLength(80)
                         .HasColumnType("nvarchar(80)");
 
-                    b.Property<int>("IdUsuario")
-                        .HasColumnType("int");
+                    b.Property<Guid>("IdUsuario")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("IndicativoCiudad")
                         .IsRequired()
@@ -426,48 +416,48 @@ namespace APIRestProyecto.Migrations
                     b.HasData(
                         new
                         {
-                            IdContactoCliente = 1,
+                            IdContactoCliente = new Guid("03b22d58-4a3d-4ab1-93d3-143686897a49"),
                             Barrio_Localidad = "Usme",
                             Ciudad = "Bogotá D.C.",
                             Direccion = "Cra 12C #53-08",
                             Email = "ContactoC1@gmail.com",
-                            IdUsuario = 1,
+                            IdUsuario = new Guid("1449f86e-3988-43c6-9210-252136156e7e"),
                             IndicativoCiudad = "601",
                             NumeroTelefonico = 5614248,
                             TipoTelefono = "Fijo"
                         },
                         new
                         {
-                            IdContactoCliente = 2,
+                            IdContactoCliente = new Guid("9d1a4bd6-e6eb-40bd-8333-a8745c90ae58"),
                             Barrio_Localidad = "El Poblado",
                             Ciudad = "Medellín",
                             Direccion = "Av. 7 de Septiembre #25-10",
                             Email = "ContactoC2@gmail.com",
-                            IdUsuario = 2,
+                            IdUsuario = new Guid("e0aac839-d3e4-4b5c-9b6e-dbf0303db2b2"),
                             IndicativoCiudad = "301",
                             NumeroTelefonico = 315874920,
                             TipoTelefono = "Celular"
                         },
                         new
                         {
-                            IdContactoCliente = 3,
+                            IdContactoCliente = new Guid("06dc8c36-d46e-4eb1-97d5-92355ba32b9f"),
                             Barrio_Localidad = "San Fernando",
                             Ciudad = "Cali",
                             Direccion = "Calle 24 #18-15",
                             Email = "ContactoC3@gmail.com",
-                            IdUsuario = 3,
+                            IdUsuario = new Guid("58d04fc7-e269-4e8b-aea4-3f6da3fea9bc"),
                             IndicativoCiudad = "571",
                             NumeroTelefonico = 317895623,
                             TipoTelefono = "Fijo"
                         },
                         new
                         {
-                            IdContactoCliente = 4,
+                            IdContactoCliente = new Guid("9f355a72-89f6-47c8-aaab-931e4d5d40a5"),
                             Barrio_Localidad = "Granada",
                             Ciudad = "Cali",
                             Direccion = "Cra 10A #5-30",
                             Email = "ContactoC4@gmail.com",
-                            IdUsuario = 4,
+                            IdUsuario = new Guid("e5f2abb9-bcd0-422b-9e8c-9597bb21bec1"),
                             IndicativoCiudad = "571",
                             NumeroTelefonico = 318564237,
                             TipoTelefono = "Celular"
@@ -476,24 +466,22 @@ namespace APIRestProyecto.Migrations
 
             modelBuilder.Entity("Entities.Models.DetalleFacturaCompra", b =>
                 {
-                    b.Property<int>("DetalleacturaCompraId")
+                    b.Property<Guid>("DetalleacturaCompraId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
+                        .HasColumnType("uniqueidentifier")
                         .HasColumnName("DetalleacturaCompraId");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DetalleacturaCompraId"));
 
                     b.Property<int>("Cantidad")
                         .HasColumnType("int");
 
+                    b.Property<Guid>("FacturaCompraId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<float>("IVA")
                         .HasColumnType("real");
 
-                    b.Property<int>("FacturaCompraId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ProductoId")
-                        .HasColumnType("int");
+                    b.Property<Guid>("ProductoId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<float>("ValorDescuento")
                         .HasColumnType("real");
@@ -512,21 +500,21 @@ namespace APIRestProyecto.Migrations
                     b.HasData(
                         new
                         {
-                            DetalleacturaCompraId = 1,
+                            DetalleacturaCompraId = new Guid("ab7dcddf-f549-4ae2-9c0d-e2237b831f76"),
                             Cantidad = 2,
+                            FacturaCompraId = new Guid("5c5b2abf-5de1-49cb-98b8-6c13fddc7a6e"),
                             IVA = 0.3f,
-                            FacturaCompraId = 1,
-                            ProductoId = 1,
+                            ProductoId = new Guid("ce7dc2ea-5931-49a1-8946-9782a5843612"),
                             ValorDescuento = 0.05f,
                             ValorUnitario = 250000f
                         },
                         new
                         {
-                            DetalleacturaCompraId = 2,
+                            DetalleacturaCompraId = new Guid("5aec0acf-8b05-40bb-a874-c244487b56af"),
                             Cantidad = 4,
+                            FacturaCompraId = new Guid("6e922ba7-f823-4a3b-81ef-65a55a981c60"),
                             IVA = 0.3f,
-                            FacturaCompraId = 2,
-                            ProductoId = 2,
+                            ProductoId = new Guid("30d27e06-251c-4911-819a-59a9a3966f78"),
                             ValorDescuento = 0.05f,
                             ValorUnitario = 500000f
                         });
@@ -534,30 +522,25 @@ namespace APIRestProyecto.Migrations
 
             modelBuilder.Entity("Entities.Models.DetalleFacturaVenta", b =>
                 {
-                    b.Property<int>("DetalleFacturaVentaID")
+                    b.Property<Guid>("DetalleFacturaVentaID")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
+                        .HasColumnType("uniqueidentifier")
                         .HasColumnName("DetalleFacturaVentaID");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DetalleFacturaVentaID"));
 
                     b.Property<int>("Cantidad")
                         .HasColumnType("int");
 
-                    b.Property<int?>("FacturaCompraIdFacturaCompra")
-                        .HasColumnType("int");
+                    b.Property<Guid?>("FacturaCompraId")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<int?>("FacturasVentaIdFacturaVenta")
-                        .HasColumnType("int");
+                    b.Property<Guid>("FacturaVentaId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<float>("IVA")
                         .HasColumnType("real");
 
-                    b.Property<int>("FacturaVentaId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ProductoId")
-                        .HasColumnType("int");
+                    b.Property<Guid>("ProductoId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<float>("ValorDescuento")
                         .HasColumnType("real");
@@ -567,9 +550,9 @@ namespace APIRestProyecto.Migrations
 
                     b.HasKey("DetalleFacturaVentaID");
 
-                    b.HasIndex("FacturaCompraIdFacturaCompra");
+                    b.HasIndex("FacturaCompraId");
 
-                    b.HasIndex("FacturasVentaIdFacturaVenta");
+                    b.HasIndex("FacturaVentaId");
 
                     b.HasIndex("ProductoId");
 
@@ -578,21 +561,21 @@ namespace APIRestProyecto.Migrations
                     b.HasData(
                         new
                         {
-                            DetalleFacturaVentaID = 1,
+                            DetalleFacturaVentaID = new Guid("636e9434-f3aa-44d1-9ef0-8470d72a5bee"),
                             Cantidad = 2,
+                            FacturaVentaId = new Guid("ceda0177-4b48-4379-8907-b75c4f0aa10f"),
                             IVA = 8075f,
-                            FacturaVentaId = 1,
-                            ProductoId = 1,
+                            ProductoId = new Guid("dd6b62dc-f917-4379-9955-1c244ee78c4b"),
                             ValorDescuento = 0f,
                             ValorUnitario = 42500f
                         },
                         new
                         {
-                            DetalleFacturaVentaID = 2,
+                            DetalleFacturaVentaID = new Guid("21980b54-0dd3-46b0-b77a-29eb80caa3c8"),
                             Cantidad = 2,
+                            FacturaVentaId = new Guid("a6cf357e-205e-45f4-be76-25c8e08aac16"),
                             IVA = 1534f,
-                            FacturaVentaId = 2,
-                            ProductoId = 2,
+                            ProductoId = new Guid("edf59c51-6384-422f-b941-ce879c82dcdc"),
                             ValorDescuento = 0f,
                             ValorUnitario = 60000f
                         });
@@ -600,12 +583,10 @@ namespace APIRestProyecto.Migrations
 
             modelBuilder.Entity("Entities.Models.Empleado", b =>
                 {
-                    b.Property<int>("EmpleadoId")
+                    b.Property<Guid>("EmpleadoId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
+                        .HasColumnType("uniqueidentifier")
                         .HasColumnName("EmpleadoId");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EmpleadoId"));
 
                     b.Property<string>("Apellidos")
                         .IsRequired()
@@ -636,7 +617,7 @@ namespace APIRestProyecto.Migrations
                     b.HasData(
                         new
                         {
-                            EmpleadoId = 1,
+                            EmpleadoId = new Guid("41fff2b6-9886-40bc-ab38-d34cfaae3f96"),
                             Apellidos = "González",
                             Estado = 1,
                             FechaNacimiento = new DateTime(1995, 5, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -645,7 +626,7 @@ namespace APIRestProyecto.Migrations
                         },
                         new
                         {
-                            EmpleadoId = 2,
+                            EmpleadoId = new Guid("1f03e9da-4f5a-4c01-a74b-5484a0622a88"),
                             Apellidos = "Ramírez",
                             Estado = 1,
                             FechaNacimiento = new DateTime(1987, 8, 27, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -654,7 +635,7 @@ namespace APIRestProyecto.Migrations
                         },
                         new
                         {
-                            EmpleadoId = 3,
+                            EmpleadoId = new Guid("aad28fbf-f3e8-43b2-97d4-9eab3d59597a"),
                             Apellidos = "López",
                             Estado = 1,
                             FechaNacimiento = new DateTime(1999, 2, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -663,7 +644,7 @@ namespace APIRestProyecto.Migrations
                         },
                         new
                         {
-                            EmpleadoId = 4,
+                            EmpleadoId = new Guid("06e66a66-1840-4a55-abcf-475e8218963f"),
                             Apellidos = "Hernández",
                             Estado = 1,
                             FechaNacimiento = new DateTime(1983, 11, 8, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -672,7 +653,7 @@ namespace APIRestProyecto.Migrations
                         },
                         new
                         {
-                            EmpleadoId = 5,
+                            EmpleadoId = new Guid("da511896-b59c-4052-9103-6bf83a9f4b0a"),
                             Apellidos = "Martínez",
                             Estado = 1,
                             FechaNacimiento = new DateTime(2001, 7, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -683,11 +664,11 @@ namespace APIRestProyecto.Migrations
 
             modelBuilder.Entity("Entities.Models.EmpleadoCargo", b =>
                 {
-                    b.Property<int>("EmpleadoId")
-                        .HasColumnType("int");
+                    b.Property<Guid>("EmpleadoId")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("CargoId")
-                        .HasColumnType("int");
+                    b.Property<Guid>("CargoId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime?>("FechaFin")
                         .IsRequired()
@@ -711,40 +692,40 @@ namespace APIRestProyecto.Migrations
                     b.HasData(
                         new
                         {
-                            EmpleadoId = 1,
-                            CargoId = 1,
+                            EmpleadoId = new Guid("41fff2b6-9886-40bc-ab38-d34cfaae3f96"),
+                            CargoId = new Guid("5e74a02d-a99f-40e3-8c4c-a4c58a78ad04"),
                             FechaFin = new DateTime(2015, 5, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaInicio = new DateTime(1995, 5, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             NumeroContrato = 1
                         },
                         new
                         {
-                            EmpleadoId = 2,
-                            CargoId = 2,
+                            EmpleadoId = new Guid("1f03e9da-4f5a-4c01-a74b-5484a0622a88"),
+                            CargoId = new Guid("1cb1de39-40fe-472b-bdb7-d37db36387fb"),
                             FechaFin = new DateTime(2010, 12, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaInicio = new DateTime(2000, 10, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             NumeroContrato = 2
                         },
                         new
                         {
-                            EmpleadoId = 3,
-                            CargoId = 3,
+                            EmpleadoId = new Guid("aad28fbf-f3e8-43b2-97d4-9eab3d59597a"),
+                            CargoId = new Guid("24254ac3-4379-41ba-ab1d-d4c31ffc4855"),
                             FechaFin = new DateTime(2010, 12, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaInicio = new DateTime(2005, 3, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             NumeroContrato = 3
                         },
                         new
                         {
-                            EmpleadoId = 4,
-                            CargoId = 4,
+                            EmpleadoId = new Guid("06e66a66-1840-4a55-abcf-475e8218963f"),
+                            CargoId = new Guid("8d9b73ec-049b-483a-8d48-36e29c25021e"),
                             FechaFin = new DateTime(2010, 12, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaInicio = new DateTime(2012, 8, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             NumeroContrato = 4
                         },
                         new
                         {
-                            EmpleadoId = 5,
-                            CargoId = 5,
+                            EmpleadoId = new Guid("da511896-b59c-4052-9103-6bf83a9f4b0a"),
+                            CargoId = new Guid("201b4cc5-5647-44b8-8664-08f49c8ebcf6"),
                             FechaFin = new DateTime(2018, 9, 30, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaInicio = new DateTime(2010, 6, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             NumeroContrato = 5
@@ -753,12 +734,10 @@ namespace APIRestProyecto.Migrations
 
             modelBuilder.Entity("Entities.Models.FacturaCompra", b =>
                 {
-                    b.Property<int>("FacturaCompraId")
+                    b.Property<Guid>("FacturaCompraId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
+                        .HasColumnType("uniqueidentifier")
                         .HasColumnName("FacturaCompraId");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FacturaCompraId"));
 
                     b.Property<DateTime?>("FechaExpedicion")
                         .IsRequired()
@@ -772,14 +751,14 @@ namespace APIRestProyecto.Migrations
                         .IsRequired()
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("IdProveedor")
-                        .HasColumnType("int");
+                    b.Property<Guid>("IdProveedor")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("NFactura")
                         .HasColumnType("int");
 
-                    b.Property<int?>("ProveedoresIdProveedor")
-                        .HasColumnType("int");
+                    b.Property<Guid?>("ProveedoresIdProveedor")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<float>("TotalBruto")
                         .HasColumnType("real");
@@ -802,11 +781,11 @@ namespace APIRestProyecto.Migrations
                     b.HasData(
                         new
                         {
-                            FacturaCompraId = 1,
+                            FacturaCompraId = new Guid("5c5b2abf-5de1-49cb-98b8-6c13fddc7a6e"),
                             FechaExpedicion = new DateTime(1995, 5, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaGeneracion = new DateTime(1995, 5, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaVencimiento = new DateTime(1995, 5, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IdProveedor = 1,
+                            IdProveedor = new Guid("9abc8d3b-3bd1-49c3-84e2-35c59447b0f3"),
                             NFactura = 1,
                             TotalBruto = 100000f,
                             TotalIVA = 19000f,
@@ -815,11 +794,11 @@ namespace APIRestProyecto.Migrations
                         },
                         new
                         {
-                            FacturaCompraId = 2,
+                            FacturaCompraId = new Guid("6e922ba7-f823-4a3b-81ef-65a55a981c60"),
                             FechaExpedicion = new DateTime(2000, 10, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaGeneracion = new DateTime(2000, 10, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaVencimiento = new DateTime(2000, 10, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IdProveedor = 2,
+                            IdProveedor = new Guid("6e6d4c81-9958-44ff-bf39-838a4940c822"),
                             NFactura = 2,
                             TotalBruto = 150000f,
                             TotalIVA = 2850f,
@@ -830,12 +809,10 @@ namespace APIRestProyecto.Migrations
 
             modelBuilder.Entity("Entities.Models.FacturaVenta", b =>
                 {
-                    b.Property<int>("FacturaVentaId")
+                    b.Property<Guid>("FacturaVentaId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
+                        .HasColumnType("uniqueidentifier")
                         .HasColumnName("FacturaVentaId");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FacturaVentaId"));
 
                     b.Property<DateTime?>("FechaExpedicion")
                         .IsRequired()
@@ -849,8 +826,8 @@ namespace APIRestProyecto.Migrations
                         .IsRequired()
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("IdUsuario")
-                        .HasColumnType("int");
+                    b.Property<Guid>("IdUsuario")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("NFactura")
                         .HasColumnType("int");
@@ -867,8 +844,8 @@ namespace APIRestProyecto.Migrations
                     b.Property<float>("TotalRefuete")
                         .HasColumnType("real");
 
-                    b.Property<int?>("UsuariosIdUsuario")
-                        .HasColumnType("int");
+                    b.Property<Guid?>("UsuariosIdUsuario")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("FacturaVentaId");
 
@@ -879,11 +856,11 @@ namespace APIRestProyecto.Migrations
                     b.HasData(
                         new
                         {
-                            FacturaVentaId = 1,
+                            FacturaVentaId = new Guid("ceda0177-4b48-4379-8907-b75c4f0aa10f"),
                             FechaExpedicion = new DateTime(2023, 8, 28, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaGeneracion = new DateTime(2023, 8, 28, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaVencimiento = new DateTime(2023, 9, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IdUsuario = 1,
+                            IdUsuario = new Guid("e0aac839-d3e4-4b5c-9b6e-dbf0303db2b2"),
                             NFactura = 1,
                             TotalBruto = 85000f,
                             TotalIVA = 16150f,
@@ -892,11 +869,11 @@ namespace APIRestProyecto.Migrations
                         },
                         new
                         {
-                            FacturaVentaId = 2,
+                            FacturaVentaId = new Guid("a6cf357e-205e-45f4-be76-25c8e08aac16"),
                             FechaExpedicion = new DateTime(2023, 7, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaGeneracion = new DateTime(2023, 7, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaVencimiento = new DateTime(2023, 7, 30, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IdUsuario = 2,
+                            IdUsuario = new Guid("1449f86e-3988-43c6-9210-252136156e7e"),
                             NFactura = 2,
                             TotalBruto = 120000f,
                             TotalIVA = 22800f,
@@ -907,12 +884,10 @@ namespace APIRestProyecto.Migrations
 
             modelBuilder.Entity("Entities.Models.HistoricoPrecios", b =>
                 {
-                    b.Property<int>("IdHistoricoPrecios")
+                    b.Property<Guid>("IdHistoricoPrecios")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
+                        .HasColumnType("uniqueidentifier")
                         .HasColumnName("IdHistoricoPrecios");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdHistoricoPrecios"));
 
                     b.Property<int>("Estado")
                         .HasColumnType("int");
@@ -925,11 +900,11 @@ namespace APIRestProyecto.Migrations
                         .IsRequired()
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("ProductoId")
-                        .HasColumnType("int");
-
                     b.Property<float>("PrecioVenta")
                         .HasColumnType("real");
+
+                    b.Property<Guid>("ProductoId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("IdHistoricoPrecios");
 
@@ -940,83 +915,81 @@ namespace APIRestProyecto.Migrations
                     b.HasData(
                         new
                         {
-                            IdHistoricoPrecios = 1,
+                            IdHistoricoPrecios = new Guid("2cdc7499-0d1e-4413-9565-9d337d612b45"),
                             Estado = 1,
                             FechaPrecioFinal = new DateTime(2023, 10, 28, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaPrecioInicial = new DateTime(2023, 8, 28, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            ProductoId = 1,
-                            PrecioVenta = 42500f
+                            PrecioVenta = 42500f,
+                            ProductoId = new Guid("edf59c51-6384-422f-b941-ce879c82dcdc")
                         },
                         new
                         {
-                            IdHistoricoPrecios = 2,
+                            IdHistoricoPrecios = new Guid("74604bcd-34f7-4bbc-90da-cd955c2a5117"),
                             Estado = 1,
                             FechaPrecioFinal = new DateTime(2023, 11, 29, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaPrecioInicial = new DateTime(2023, 9, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            ProductoId = 2,
-                            PrecioVenta = 60000f
+                            PrecioVenta = 60000f,
+                            ProductoId = new Guid("dd6b62dc-f917-4379-9955-1c244ee78c4b")
                         },
                         new
                         {
-                            IdHistoricoPrecios = 3,
+                            IdHistoricoPrecios = new Guid("0db01178-1ee0-4b73-9e6c-fb51972517ec"),
                             Estado = 1,
                             FechaPrecioFinal = new DateTime(2023, 9, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaPrecioInicial = new DateTime(2023, 8, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            ProductoId = 3,
-                            PrecioVenta = 38500f
+                            PrecioVenta = 38500f,
+                            ProductoId = new Guid("5650a477-c720-4438-8dd4-44bc58e5cdda")
                         },
                         new
                         {
-                            IdHistoricoPrecios = 4,
+                            IdHistoricoPrecios = new Guid("5d3d5dc3-fbe5-43ea-875b-3447e32c9e52"),
                             Estado = 1,
                             FechaPrecioFinal = new DateTime(2023, 9, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaPrecioInicial = new DateTime(2023, 7, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            ProductoId = 4,
-                            PrecioVenta = 50000f
+                            PrecioVenta = 50000f,
+                            ProductoId = new Guid("ce7dc2ea-5931-49a1-8946-9782a5843612")
                         },
                         new
                         {
-                            IdHistoricoPrecios = 5,
+                            IdHistoricoPrecios = new Guid("6549ac0e-d34b-43b3-9fed-9847a2b17149"),
                             Estado = 1,
                             FechaPrecioFinal = new DateTime(2023, 7, 30, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaPrecioInicial = new DateTime(2023, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            ProductoId = 5,
-                            PrecioVenta = 70000f
+                            PrecioVenta = 70000f,
+                            ProductoId = new Guid("3fa14058-d693-4ba9-8b10-f242599f40ea")
                         },
                         new
                         {
-                            IdHistoricoPrecios = 6,
+                            IdHistoricoPrecios = new Guid("1c230e78-c12c-4bd8-a4b1-ca7fbc2d0549"),
                             Estado = 1,
                             FechaPrecioFinal = new DateTime(2023, 6, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaPrecioInicial = new DateTime(2023, 5, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            ProductoId = 7,
-                            PrecioVenta = 55000f
+                            PrecioVenta = 55000f,
+                            ProductoId = new Guid("8b538521-a513-4f5a-b4e6-ae3c57912499")
                         },
                         new
                         {
-                            IdHistoricoPrecios = 7,
+                            IdHistoricoPrecios = new Guid("a8cb8414-2308-4f71-a09a-6976dd23f396"),
                             Estado = 1,
                             FechaPrecioFinal = new DateTime(2023, 5, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaPrecioInicial = new DateTime(2023, 4, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            ProductoId = 7,
-                            PrecioVenta = 42000f
+                            PrecioVenta = 42000f,
+                            ProductoId = new Guid("30d27e06-251c-4911-819a-59a9a3966f78")
                         });
                 });
 
             modelBuilder.Entity("Entities.Models.MetodoPago", b =>
                 {
-                    b.Property<int>("IdMetodoPago")
+                    b.Property<Guid>("IdMetodoPago")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
+                        .HasColumnType("uniqueidentifier")
                         .HasColumnName("IdMetodoPago");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdMetodoPago"));
+                    b.Property<Guid>("FacturaVentaId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("FechaTransaccion")
                         .HasColumnType("datetime2");
-
-                    b.Property<int>("FacturaVentaId")
-                        .HasColumnType("int");
 
                     b.Property<string>("NombrePlataforma")
                         .HasMaxLength(80)
@@ -1034,17 +1007,17 @@ namespace APIRestProyecto.Migrations
                     b.HasData(
                         new
                         {
-                            IdMetodoPago = 1,
+                            IdMetodoPago = new Guid("5ef90d94-ca4a-49fe-ba78-e42e1c527606"),
+                            FacturaVentaId = new Guid("ceda0177-4b48-4379-8907-b75c4f0aa10f"),
                             FechaTransaccion = new DateTime(2023, 6, 21, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            FacturaVentaId = 1,
                             NombrePlataforma = "Nequi",
                             Tipo = 2
                         },
                         new
                         {
-                            IdMetodoPago = 2,
+                            IdMetodoPago = new Guid("37292a3a-0a69-41a5-a038-1795fa541cf9"),
+                            FacturaVentaId = new Guid("a6cf357e-205e-45f4-be76-25c8e08aac16"),
                             FechaTransaccion = new DateTime(2023, 6, 21, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            FacturaVentaId = 2,
                             NombrePlataforma = "Daviplata",
                             Tipo = 2
                         });
@@ -1052,15 +1025,13 @@ namespace APIRestProyecto.Migrations
 
             modelBuilder.Entity("Entities.Models.Perdida", b =>
                 {
-                    b.Property<int>("IdPerdida")
+                    b.Property<Guid>("IdPerdida")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
+                        .HasColumnType("uniqueidentifier")
                         .HasColumnName("IdPerdida");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdPerdida"));
-
-                    b.Property<int>("EmpleadoId")
-                        .HasColumnType("int");
+                    b.Property<Guid>("EmpleadoId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("Estado")
                         .HasColumnType("int");
@@ -1080,53 +1051,53 @@ namespace APIRestProyecto.Migrations
                     b.HasData(
                         new
                         {
-                            IdPerdida = 1,
-                            EmpleadoId = 1,
+                            IdPerdida = new Guid("5ffa39ba-fd0e-4556-aebc-c62d3fcc0823"),
+                            EmpleadoId = new Guid("41fff2b6-9886-40bc-ab38-d34cfaae3f96"),
                             Estado = 1,
                             FechaPerdida = new DateTime(2023, 6, 21, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Total = 300000f
                         },
                         new
                         {
-                            IdPerdida = 2,
-                            EmpleadoId = 2,
+                            IdPerdida = new Guid("556e454f-6ae9-4996-8344-95bd3c76ad36"),
+                            EmpleadoId = new Guid("1f03e9da-4f5a-4c01-a74b-5484a0622a88"),
                             Estado = 2,
                             FechaPerdida = new DateTime(2023, 6, 21, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Total = 200000f
                         },
                         new
                         {
-                            IdPerdida = 3,
-                            EmpleadoId = 3,
+                            IdPerdida = new Guid("2dabb8f6-c2ef-4c37-8b6d-3f306241d100"),
+                            EmpleadoId = new Guid("aad28fbf-f3e8-43b2-97d4-9eab3d59597a"),
                             Estado = 2,
                             FechaPerdida = new DateTime(2023, 6, 21, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Total = 350000f
                         },
                         new
                         {
-                            IdPerdida = 4,
-                            EmpleadoId = 4,
+                            IdPerdida = new Guid("42f9ca61-b335-421b-bc21-de794a40aed0"),
+                            EmpleadoId = new Guid("06e66a66-1840-4a55-abcf-475e8218963f"),
                             Estado = 1,
                             FechaPerdida = new DateTime(2023, 6, 21, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Total = 500000f
                         },
                         new
                         {
-                            IdPerdida = 5,
-                            EmpleadoId = 5,
+                            IdPerdida = new Guid("0a730c0e-c85f-4765-974c-cafc13ac4f57"),
+                            EmpleadoId = new Guid("da511896-b59c-4052-9103-6bf83a9f4b0a"),
                             Estado = 1,
                             FechaPerdida = new DateTime(2023, 6, 21, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Total = 100000f
                         });
                 });
 
-            modelBuilder.Entity("Entities.Models.Perdida_Producto", b =>
+            modelBuilder.Entity("Entities.Models.PerdidaProducto", b =>
                 {
-                    b.Property<int>("IdPerdida")
-                        .HasColumnType("int");
+                    b.Property<Guid>("IdPerdida")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("ProductoId")
-                        .HasColumnType("int");
+                    b.Property<Guid>("ProductoId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("Cantidad")
                         .HasColumnType("int");
@@ -1136,8 +1107,8 @@ namespace APIRestProyecto.Migrations
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)");
 
-                    b.Property<int>("PerdidaProductoId")
-                        .HasColumnType("int")
+                    b.Property<Guid>("PerdidaProductoId")
+                        .HasColumnType("uniqueidentifier")
                         .HasColumnName("PerdidaProductoId");
 
                     b.Property<float>("PrecioUnitario")
@@ -1152,59 +1123,57 @@ namespace APIRestProyecto.Migrations
                     b.HasData(
                         new
                         {
-                            IdPerdida = 1,
-                            ProductoId = 1,
+                            IdPerdida = new Guid("5ffa39ba-fd0e-4556-aebc-c62d3fcc0823"),
+                            ProductoId = new Guid("ce7dc2ea-5931-49a1-8946-9782a5843612"),
                             Cantidad = 5,
                             Motivo = "Robo",
-                            PerdidaProductoId = 1,
-                            PrecioUnitario = 30000f
+                            PerdidaProductoId = new Guid("00000000-0000-0000-0000-000000000000"),
+                            PrecioUnitario = 300000f
                         },
                         new
                         {
-                            IdPerdida = 2,
-                            ProductoId = 2,
+                            IdPerdida = new Guid("556e454f-6ae9-4996-8344-95bd3c76ad36"),
+                            ProductoId = new Guid("dd6b62dc-f917-4379-9955-1c244ee78c4b"),
                             Cantidad = 5,
                             Motivo = "Roto",
-                            PerdidaProductoId = 2,
-                            PrecioUnitario = 20000f
+                            PerdidaProductoId = new Guid("00000000-0000-0000-0000-000000000000"),
+                            PrecioUnitario = 200000f
                         },
                         new
                         {
-                            IdPerdida = 3,
-                            ProductoId = 3,
+                            IdPerdida = new Guid("2dabb8f6-c2ef-4c37-8b6d-3f306241d100"),
+                            ProductoId = new Guid("edf59c51-6384-422f-b941-ce879c82dcdc"),
                             Cantidad = 5,
                             Motivo = "Mal Estado",
-                            PerdidaProductoId = 3,
-                            PrecioUnitario = 35000f
+                            PerdidaProductoId = new Guid("00000000-0000-0000-0000-000000000000"),
+                            PrecioUnitario = 350000f
                         },
                         new
                         {
-                            IdPerdida = 4,
-                            ProductoId = 4,
+                            IdPerdida = new Guid("42f9ca61-b335-421b-bc21-de794a40aed0"),
+                            ProductoId = new Guid("30d27e06-251c-4911-819a-59a9a3966f78"),
                             Cantidad = 5,
                             Motivo = "Daño",
-                            PerdidaProductoId = 4,
-                            PrecioUnitario = 50000f
+                            PerdidaProductoId = new Guid("00000000-0000-0000-0000-000000000000"),
+                            PrecioUnitario = 500000f
                         },
                         new
                         {
-                            IdPerdida = 5,
-                            ProductoId = 5,
+                            IdPerdida = new Guid("0a730c0e-c85f-4765-974c-cafc13ac4f57"),
+                            ProductoId = new Guid("8b538521-a513-4f5a-b4e6-ae3c57912499"),
                             Cantidad = 5,
                             Motivo = "Perdida",
-                            PerdidaProductoId = 5,
-                            PrecioUnitario = 10000f
+                            PerdidaProductoId = new Guid("00000000-0000-0000-0000-000000000000"),
+                            PrecioUnitario = 100000f
                         });
                 });
 
             modelBuilder.Entity("Entities.Models.Producto", b =>
                 {
-                    b.Property<int>("ProductoId")
+                    b.Property<Guid>("ProductoId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
+                        .HasColumnType("uniqueidentifier")
                         .HasColumnName("ProductoId");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProductoId"));
 
                     b.Property<string>("Color")
                         .IsRequired()
@@ -1219,8 +1188,8 @@ namespace APIRestProyecto.Migrations
                     b.Property<int>("Estado")
                         .HasColumnType("int");
 
-                    b.Property<int>("IdCategoria")
-                        .HasColumnType("int");
+                    b.Property<Guid>("IdCategoria")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
@@ -1248,35 +1217,35 @@ namespace APIRestProyecto.Migrations
                     b.HasData(
                         new
                         {
-                            ProductoId = 1,
+                            ProductoId = new Guid("edf59c51-6384-422f-b941-ce879c82dcdc"),
                             Color = "Blanco",
                             Descripcion = "Cama doble de madera",
                             Estado = 1,
-                            IdCategoria = 1,
+                            IdCategoria = new Guid("0e371e3e-50c3-48c5-a583-db1016fb209c"),
                             Nombre = "Cama doble",
-                            Precio = 500000f,
+                            Precio = 60000f,
                             Stock = 3,
                             Tipo = 2
                         },
                         new
                         {
-                            ProductoId = 2,
+                            ProductoId = new Guid("dd6b62dc-f917-4379-9955-1c244ee78c4b"),
                             Color = "Negro",
                             Descripcion = "Mesa de noche de estilo moderno",
                             Estado = 1,
-                            IdCategoria = 2,
+                            IdCategoria = new Guid("8a10a022-bcac-4d4a-9926-a2b4ba8bc993"),
                             Nombre = "Mesa de noche",
-                            Precio = 150000f,
+                            Precio = 42500f,
                             Stock = 5,
                             Tipo = 2
                         },
                         new
                         {
-                            ProductoId = 3,
+                            ProductoId = new Guid("5650a477-c720-4438-8dd4-44bc58e5cdda"),
                             Color = "Marrón",
                             Descripcion = "Comedor de madera con capacidad para 6 personas",
                             Estado = 1,
-                            IdCategoria = 3,
+                            IdCategoria = new Guid("c48f9793-637f-4f19-ac65-0cc5ecebcfd8"),
                             Nombre = "Comedor extensible",
                             Precio = 800000f,
                             Stock = 2,
@@ -1284,11 +1253,11 @@ namespace APIRestProyecto.Migrations
                         },
                         new
                         {
-                            ProductoId = 4,
+                            ProductoId = new Guid("ce7dc2ea-5931-49a1-8946-9782a5843612"),
                             Color = "Gris",
                             Descripcion = "Silla cómoda con soporte lumbar",
                             Estado = 1,
-                            IdCategoria = 4,
+                            IdCategoria = new Guid("2c9308f6-b13f-4714-b8c0-6b24d9b97389"),
                             Nombre = "Silla ergonómica",
                             Precio = 250000f,
                             Stock = 8,
@@ -1296,11 +1265,11 @@ namespace APIRestProyecto.Migrations
                         },
                         new
                         {
-                            ProductoId = 5,
+                            ProductoId = new Guid("3fa14058-d693-4ba9-8b10-f242599f40ea"),
                             Color = "Blanco",
                             Descripcion = "Escritorio de diseño minimalista",
                             Estado = 1,
-                            IdCategoria = 5,
+                            IdCategoria = new Guid("3be4073a-8614-400e-bdce-2730059d9e76"),
                             Nombre = "Escritorio moderno",
                             Precio = 350000f,
                             Stock = 4,
@@ -1308,11 +1277,11 @@ namespace APIRestProyecto.Migrations
                         },
                         new
                         {
-                            ProductoId = 6,
+                            ProductoId = new Guid("8b538521-a513-4f5a-b4e6-ae3c57912499"),
                             Color = "Café",
                             Descripcion = "Armario espacioso con compartimentos",
                             Estado = 1,
-                            IdCategoria = 6,
+                            IdCategoria = new Guid("21c0ab55-caf3-4636-882b-741d1fa2e352"),
                             Nombre = "Armario de 4 puertas",
                             Precio = 700000f,
                             Stock = 1,
@@ -1320,11 +1289,11 @@ namespace APIRestProyecto.Migrations
                         },
                         new
                         {
-                            ProductoId = 7,
+                            ProductoId = new Guid("30d27e06-251c-4911-819a-59a9a3966f78"),
                             Color = "Azul",
                             Descripcion = "Camarote con temática de caricaturas",
                             Estado = 1,
-                            IdCategoria = 7,
+                            IdCategoria = new Guid("1ec8da08-607c-442c-82bd-2671992c080f"),
                             Nombre = "Camarote infantil",
                             Precio = 450000f,
                             Stock = 6,
@@ -1334,12 +1303,10 @@ namespace APIRestProyecto.Migrations
 
             modelBuilder.Entity("Entities.Models.Proveedor", b =>
                 {
-                    b.Property<int>("IdProveedor")
+                    b.Property<Guid>("IdProveedor")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
+                        .HasColumnType("uniqueidentifier")
                         .HasColumnName("IdProveedor");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdProveedor"));
 
                     b.Property<int>("Estado")
                         .HasColumnType("int");
@@ -1356,55 +1323,55 @@ namespace APIRestProyecto.Migrations
                     b.HasData(
                         new
                         {
-                            IdProveedor = 1,
+                            IdProveedor = new Guid("d0a22af1-85b2-4ea6-9daa-d0e321c07964"),
                             Estado = 1,
                             RazonSocial = "La Guitarra, S.A"
                         },
                         new
                         {
-                            IdProveedor = 2,
+                            IdProveedor = new Guid("6e6d4c81-9958-44ff-bf39-838a4940c822"),
                             Estado = 1,
                             RazonSocial = "Sol Dorado"
                         },
                         new
                         {
-                            IdProveedor = 3,
+                            IdProveedor = new Guid("303504ff-9312-4d2b-9d52-8d16ef08eb69"),
                             Estado = 1,
                             RazonSocial = "Marena"
                         },
                         new
                         {
-                            IdProveedor = 4,
+                            IdProveedor = new Guid("0dd8f80d-4df6-4fe9-bb72-28c7f5561e7c"),
                             Estado = 1,
                             RazonSocial = "Juguetes Vikingos"
                         },
                         new
                         {
-                            IdProveedor = 5,
+                            IdProveedor = new Guid("be2c0877-d46b-46e3-b793-cb5711f214c7"),
                             Estado = 2,
                             RazonSocial = "Lima & Álvarez"
                         },
                         new
                         {
-                            IdProveedor = 6,
+                            IdProveedor = new Guid("9abc8d3b-3bd1-49c3-84e2-35c59447b0f3"),
                             Estado = 1,
                             RazonSocial = "Arcos Dorados, C.A"
                         },
                         new
                         {
-                            IdProveedor = 7,
+                            IdProveedor = new Guid("7a1429e1-c547-4f00-a33a-d27d402bca3f"),
                             Estado = 1,
                             RazonSocial = "Carlos Fernández, E.I.R"
                         },
                         new
                         {
-                            IdProveedor = 8,
+                            IdProveedor = new Guid("e630fb8f-a34d-4b4d-9de1-6808fe6a6edf"),
                             Estado = 1,
                             RazonSocial = "Chascomús, S.A"
                         },
                         new
                         {
-                            IdProveedor = 9,
+                            IdProveedor = new Guid("7f740088-b8c7-4094-90b3-9c6385e58597"),
                             Estado = 2,
                             RazonSocial = "Grupo Fernández S.A"
                         });
@@ -1412,12 +1379,10 @@ namespace APIRestProyecto.Migrations
 
             modelBuilder.Entity("Entities.Models.Usuario", b =>
                 {
-                    b.Property<int>("IdUsuario")
+                    b.Property<Guid>("IdUsuario")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
+                        .HasColumnType("uniqueidentifier")
                         .HasColumnName("IdUsuario");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdUsuario"));
 
                     b.Property<string>("Cargo")
                         .HasMaxLength(80)
@@ -1486,7 +1451,7 @@ namespace APIRestProyecto.Migrations
                     b.HasData(
                         new
                         {
-                            IdUsuario = 1,
+                            IdUsuario = new Guid("1449f86e-3988-43c6-9210-252136156e7e"),
                             Cargo = "Administrador",
                             Contrasena = "",
                             Estado = 1,
@@ -1506,7 +1471,7 @@ namespace APIRestProyecto.Migrations
                         },
                         new
                         {
-                            IdUsuario = 2,
+                            IdUsuario = new Guid("fd1820f2-b0f0-47a0-af34-d6d465734f65"),
                             Cargo = "Carpintero",
                             Contrasena = "",
                             Estado = 1,
@@ -1526,7 +1491,7 @@ namespace APIRestProyecto.Migrations
                         },
                         new
                         {
-                            IdUsuario = 3,
+                            IdUsuario = new Guid("e0aac839-d3e4-4b5c-9b6e-dbf0303db2b2"),
                             Cargo = "Supervisor de Producción",
                             Contrasena = "",
                             Estado = 1,
@@ -1546,7 +1511,7 @@ namespace APIRestProyecto.Migrations
                         },
                         new
                         {
-                            IdUsuario = 4,
+                            IdUsuario = new Guid("58d04fc7-e269-4e8b-aea4-3f6da3fea9bc"),
                             Cargo = "Asistente de carpinteria",
                             Contrasena = "",
                             Estado = 1,
@@ -1566,7 +1531,7 @@ namespace APIRestProyecto.Migrations
                         },
                         new
                         {
-                            IdUsuario = 5,
+                            IdUsuario = new Guid("e5f2abb9-bcd0-422b-9e8c-9597bb21bec1"),
                             Cargo = "Encargado de almacén",
                             Contrasena = "",
                             Estado = 1,
@@ -1642,11 +1607,13 @@ namespace APIRestProyecto.Migrations
                 {
                     b.HasOne("Entities.Models.FacturaCompra", null)
                         .WithMany("detalleFacturaVentas")
-                        .HasForeignKey("FacturaCompraIdFacturaCompra");
+                        .HasForeignKey("FacturaCompraId");
 
                     b.HasOne("Entities.Models.FacturaVenta", "FacturasVenta")
                         .WithMany("DetalleFacturaVentas")
-                        .HasForeignKey("FacturasVentaIdFacturaVenta");
+                        .HasForeignKey("FacturaVentaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("Entities.Models.Producto", "Producto")
                         .WithMany("detalleFacturaVentas")
@@ -1729,7 +1696,7 @@ namespace APIRestProyecto.Migrations
                     b.Navigation("Empleado");
                 });
 
-            modelBuilder.Entity("Entities.Models.Perdida_Producto", b =>
+            modelBuilder.Entity("Entities.Models.PerdidaProducto", b =>
                 {
                     b.HasOne("Entities.Models.Perdida", "Perdida")
                         .WithMany("perdida_Productos")
