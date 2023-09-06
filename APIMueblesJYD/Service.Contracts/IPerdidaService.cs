@@ -10,7 +10,7 @@ namespace Service.Contracts
 {
     public interface IPerdidaService
     {
-        IEnumerable<UsuarioDTO> GetAllLoses(bool trackChanges);
-        UsuarioDTO GetLose(int Id, bool trackChanges);
+        IEnumerable<PerdidaDTO> GetAllLoses(bool trackChanges);
+        PerdidaDTO GetLose(Guid Id, bool trackChanges);
     }
 }

@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Service
 {
-    internal sealed class ContactoUsuarioService : IContactoUsuarioRepository
+    internal sealed class ContactoUsuarioService : IContactoUsuarioService
     {
         private readonly IRepositoryManager _repository;
         private readonly ILoggerManager _logger;
@@ -33,16 +33,17 @@ namespace Service
             return contactoUsuarioDTO;
         }
 
-        public ContactoUsuarioDTO GetUserContact(int Id, bool trackChanges)
+        public ContactoUsuarioDTO GetUserContact(Guid userContactId, bool trackChanges)
         {
-            var contactoUsuario = _repository.ContactoUsuario.GetUserContact(Id, trackChanges);
+            var contactoUsuario = _repository.ContactoUsuario.GetUserContact(userContactId, trackChanges);
             if(contactoUsuario == null)
             {
-                throw new ContactoUsuarioNotFoundException(Id);
+                throw new ContactoUsuarioNotFoundException(userContactId);
             }
 
             var contactoUsuarioDTO = _mapper.Map<ContactoUsuarioDTO>(contactoUsuario);
             return contactoUsuarioDTO;
         }
+
     }
 }

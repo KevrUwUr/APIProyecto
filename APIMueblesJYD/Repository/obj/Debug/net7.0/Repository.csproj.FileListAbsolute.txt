@@ -81,3 +81,5 @@ C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Repository\obj\Debug
 C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\refint\Repository.dll
 C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\Repository.pdb
 C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Repository\obj\Debug\net7.0\ref\Repository.dll
+C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\Repository\bin\Debug\net7.0\Shared.dll
+C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\Repository\bin\Debug\net7.0\Shared.pdb

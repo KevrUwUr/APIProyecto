@@ -10,9 +10,9 @@ namespace Entities.Models
 {
     public class DetalleFacturaCompra
     {
-        [Column("IdDetalleacturaCompra")]
+        [Column("DetalleacturaCompraId")]
         [Key]
-        public int IdDetalleacturaCompra { get; set; }
+        public Guid DetalleacturaCompraId { get; set; }
 
         [Required(ErrorMessage = "Este es un campo requerido")]
         public float ValorUnitario { get; set; }
@@ -27,11 +27,11 @@ namespace Entities.Models
         public float ValorDescuento { get; set; }
 
         [ForeignKey(nameof(FacturaCompra))]
-        public int IdFacturaCompra { get; set; }
+        public Guid FacturaCompraId { get; set; }
         public FacturaCompra? FacturaCompra { get; set; }
 
         [ForeignKey(nameof(Producto))]
-        public int IdProducto { get; set; }
+        public Guid ProductoId { get; set; }
         public Producto? Producto { get; set; }
     }
 }

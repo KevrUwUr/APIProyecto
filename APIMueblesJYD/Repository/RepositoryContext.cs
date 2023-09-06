@@ -53,8 +53,8 @@ namespace Repository
 
             modelBuilder.Entity<EmpleadoCargo>()
                 .HasKey(t => new { t.EmpleadoId, t.CargoId });
-            modelBuilder.Entity<Perdida_Producto>()
-                .HasKey(t => new { t.IdPerdida, t.IdProducto });
+            modelBuilder.Entity<PerdidaProducto>()
+                .HasKey(t => new { t.IdPerdida, t.ProductoId });
 
         }
 
@@ -73,7 +73,7 @@ namespace Repository
         public DbSet<HistoricoPrecios>? HistoricosPrecios { get; set; }
         public DbSet<MetodoPago>? MetodoPagos { get; set; }
         public DbSet<Perdida>? Perdida { get; set; }
-        public DbSet<Perdida_Producto>? Perdida_Productos { get; set; }
+        public DbSet<PerdidaProducto>? Perdida_Productos { get; set; }
         public DbSet<Producto>? Productos { get; set; }
         public DbSet<Proveedor>? Proveedores { get; set; }
         public DbSet<Usuario>? Usuarios { get; set; }

@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Service
 {
-    internal sealed class EmpleadoService : IEmpleadoRepository
+    internal sealed class EmpleadoService : IEmpleadoService
     {
         private readonly IRepositoryManager _repository;
         private readonly ILoggerManager _logger;
@@ -33,7 +33,7 @@ namespace Service
             return empleadoDTO;
         }
 
-        public EmpleadoDTO GetEmployee(int Id, bool trackChanges)
+        public EmpleadoDTO GetEmployee(Guid Id, bool trackChanges)
         {
             var empleado = _repository.Empleado.GetEmployee(Id, trackChanges);
             if(empleado == null)

@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Service
 {
-    internal sealed class PerdidaService : IPerdidaRepository
+    internal sealed class PerdidaService : IPerdidaService
     {
         private readonly IRepositoryManager _repository;
         private readonly ILoggerManager _logger;
@@ -33,12 +33,12 @@ namespace Service
             return perdidaDTO;
         }
 
-        public PerdidaDTO GetLose(int lostId, bool trackChanges)
+        public PerdidaDTO GetLose(Guid Id, bool trackChanges)
         {
-            var perdida = _repository.Perdida.GetLose(lostId, trackChanges);
+            var perdida = _repository.Perdida.GetLose(Id, trackChanges);
             if (perdida == null)
             {
-                throw new PerdidaNotFoundException(lostId);
+                throw new PerdidaNotFoundException(Id);
             }
 
             var perdidaDTO = _mapper.Map<PerdidaDTO>(perdida);

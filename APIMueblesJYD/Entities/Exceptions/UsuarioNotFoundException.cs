@@ -8,7 +8,7 @@ namespace Entities.Exceptions
 {
     public sealed class UsuarioNotFoundException : NotFoundException
     {
-        public UsuarioNotFoundException(int IdUsuario)
+        public UsuarioNotFoundException(Guid IdUsuario)
            : base($"El usuario con el Id: {IdUsuario} no existe en la Base de Datos.") { }
     }
 }

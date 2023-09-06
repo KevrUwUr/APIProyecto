@@ -12,7 +12,7 @@ namespace Entities.Models
     {
         [Column("IdPerdida")]
         [Key]
-        public int IdPerdida { get; set; }
+        public Guid IdPerdida { get; set; }
 
         [Required(ErrorMessage = "Fecha de Perdida es un campo requerido.")]
         public DateTime FechaPerdida { get; set; }
@@ -22,10 +22,10 @@ namespace Entities.Models
 
         [Required(ErrorMessage = "Total es un campo requerido.")]
         public float Total { get; set; }
-        public ICollection<Perdida_Producto>? perdida_Productos { get; set; }
+        public ICollection<PerdidaProducto>? perdida_Productos { get; set; }
 
         [ForeignKey(nameof(Empleado))]
-        public int EmpleadoId { get; set; }
+        public Guid EmpleadoId { get; set; }
         public Empleado? Empleado { get; set; }
     }
 }

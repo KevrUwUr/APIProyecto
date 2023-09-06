@@ -17,7 +17,7 @@ namespace Repository.Configuration
                 (
                 new Usuario
                 {
-                    IdUsuario = 1,
+                    IdUsuario = new Guid("1449F86E-3988-43C6-9210-252136156E7E"),
                     PrimNombre = "Kevin",
                     SegNombre = "Alejandro",
                     PrimApellido = "Marin",
@@ -37,7 +37,7 @@ namespace Repository.Configuration
                 },
                 new Usuario
                 {
-                    IdUsuario = 2,
+                    IdUsuario = new Guid("FD1820F2-B0F0-47A0-AF34-D6D465734F65"),
                     PrimNombre = "Miguel",
                     SegNombre = "Angel",
                     PrimApellido = "Sarmiento",
@@ -57,7 +57,7 @@ namespace Repository.Configuration
                 },
                 new Usuario
                 {
-                    IdUsuario = 3,
+                    IdUsuario = new Guid("E0AAC839-D3E4-4B5C-9B6E-DBF0303DB2B2"),
                     PrimNombre = "David",
                     SegNombre = "Felipe",
                     PrimApellido = "Ramirez",
@@ -77,7 +77,7 @@ namespace Repository.Configuration
                 },
                 new Usuario
                 {
-                    IdUsuario = 4,
+                    IdUsuario = new Guid("58D04FC7-E269-4E8B-AEA4-3F6DA3FEA9BC"),
                     PrimNombre = "Maria",
                     SegNombre = "Fernanda",
                     PrimApellido = "Velez",
@@ -97,7 +97,7 @@ namespace Repository.Configuration
                 },
                 new Usuario
                 {
-                    IdUsuario = 5,
+                    IdUsuario = new Guid("E5F2ABB9-BCD0-422B-9E8C-9597BB21BEC1"),
                     PrimNombre = "Lizeth",
                     SegNombre = "Valeria",
                     PrimApellido = "Rivera",

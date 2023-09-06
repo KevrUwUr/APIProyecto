@@ -8,7 +8,7 @@ namespace Entities.Exceptions
 {
     public sealed class CategoriaNotFoundException : NotFoundException
     {
-        public CategoriaNotFoundException(int IdCategoria)
+        public CategoriaNotFoundException(Guid IdCategoria)
             : base($"La categoria con el Id: {IdCategoria} no existe en la Base de Datos.") { }
     }
 }

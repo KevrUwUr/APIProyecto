@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace Entities.Models
 {
-    public class Perdida_Producto
+    public class PerdidaProducto
     {
         [Column("PerdidaProductoId")]
         [Key]
-        public int PerdidaProductoId { get; set; }
+        public Guid PerdidaProductoId { get; set; }
         public float PrecioUnitario { get; set; }
 
         [Required(ErrorMessage = "Cantidad es un campo requerido.")]
@@ -24,11 +24,11 @@ namespace Entities.Models
         public string? Motivo { get; set; }
 
         [ForeignKey(nameof(Perdida))]
-        public int IdPerdida { get; set; }
+        public Guid IdPerdida { get; set; }
         public Perdida? Perdida { get; set; }
 
         [ForeignKey(nameof(Producto))]
-        public int IdProducto { get; set; }
+        public Guid ProductoId { get; set; }
         public Producto? Producto { get; set; }
     }
 }

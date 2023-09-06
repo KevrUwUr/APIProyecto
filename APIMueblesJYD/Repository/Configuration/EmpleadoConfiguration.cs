@@ -17,7 +17,7 @@ namespace Repository.Configuration
             (
                 new Empleado
                 {
-                    EmpleadoId = 1,
+                    EmpleadoId = new Guid("41FFF2B6-9886-40BC-AB38-D34CFAAE3F96"),
                     Nombres = "Ana María",
                     Apellidos = "González",
                     Sexo = "Femenino",
@@ -27,7 +27,7 @@ namespace Repository.Configuration
 
                 new Empleado
                 {
-                    EmpleadoId = 2,
+                    EmpleadoId = new Guid("1F03E9DA-4F5A-4C01-A74B-5484A0622A88"),
                     Nombres = "Carlos Alberto",
                     Apellidos = "Ramírez",
                     Sexo = "Masculino",
@@ -37,7 +37,7 @@ namespace Repository.Configuration
 
                 new Empleado
                 {
-                    EmpleadoId = 3,
+                    EmpleadoId = new Guid("AAD28FBF-F3E8-43B2-97D4-9EAB3D59597A"),
                     Nombres = "Laura",
                     Apellidos = "López",
                     Sexo = "Femenino",
@@ -47,7 +47,7 @@ namespace Repository.Configuration
 
                 new Empleado
                 {
-                    EmpleadoId = 4,
+                    EmpleadoId = new Guid("06E66A66-1840-4A55-ABCF-475E8218963F"),
                     Nombres = "Roberto",
                     Apellidos = "Hernández",
                     Sexo = "Masculino",
@@ -57,7 +57,7 @@ namespace Repository.Configuration
 
                 new Empleado
                 {
-                    EmpleadoId =5,
+                    EmpleadoId = new Guid("DA511896-B59C-4052-9103-6BF83A9F4B0A"),
                     Nombres = "María José",
                     Apellidos = "Martínez",
                     Sexo = "Femenino",

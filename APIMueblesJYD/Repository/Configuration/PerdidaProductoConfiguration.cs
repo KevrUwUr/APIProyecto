@@ -9,54 +9,49 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Repository.Configuration
 {
-    public class PerdidaProductoConfiguration : IEntityTypeConfiguration<Perdida_Producto>
+    public class PerdidaProductoConfiguration : IEntityTypeConfiguration<PerdidaProducto>
     {
-        public void Configure(EntityTypeBuilder<Perdida_Producto> builder)
+        public void Configure(EntityTypeBuilder<PerdidaProducto> builder)
         {
             builder.HasData
                 (
-                new Perdida_Producto
+                new PerdidaProducto
                 {
-                    PerdidaProductoId=1,
-                    IdPerdida =1,
-                    IdProducto = 1,
-                    PrecioUnitario = 30000,
+                    IdPerdida = new Guid("5FFA39BA-FD0E-4556-AEBC-C62D3FCC0823"),
+                    ProductoId = new Guid("CE7DC2EA-5931-49A1-8946-9782A5843612"),
+                    PrecioUnitario = 300000,
                     Cantidad = 5,
                     Motivo = ("Robo")
                 }, 
-                new Perdida_Producto
+                new PerdidaProducto
                 {
-                    PerdidaProductoId=2,
-                    IdPerdida = 2,
-                    IdProducto = 2,
-                    PrecioUnitario = 20000,
+                    IdPerdida = new Guid("556E454F-6AE9-4996-8344-95BD3C76AD36"),
+                    ProductoId = new Guid("DD6B62DC-F917-4379-9955-1C244EE78C4B"),
+                    PrecioUnitario = 200000,
                     Cantidad = 5,
                     Motivo = ("Roto")
                 }, 
-                new Perdida_Producto
+                new PerdidaProducto
                 {
-                    PerdidaProductoId=3,
-                    IdPerdida = 3,
-                    IdProducto = 3,
-                    PrecioUnitario = 35000,
+                    IdPerdida = new Guid("2DABB8F6-C2EF-4C37-8B6D-3F306241D100"),
+                    ProductoId = new Guid("EDF59C51-6384-422F-B941-CE879C82DCDC"),
+                    PrecioUnitario = 350000,
                     Cantidad = 5,
                     Motivo = ("Mal Estado")
                 }, 
-                new Perdida_Producto
+                new PerdidaProducto
                 {
-                    PerdidaProductoId=4,
-                    IdPerdida = 4,
-                    IdProducto = 4,
-                    PrecioUnitario = 50000,
+                    IdPerdida = new Guid("42F9CA61-B335-421B-BC21-DE794A40AED0"),
+                    ProductoId = new Guid("30D27E06-251C-4911-819A-59A9A3966F78"),
+                    PrecioUnitario = 500000,
                     Cantidad = 5,
                     Motivo = ("Daño")
                 }, 
-                new Perdida_Producto
+                new PerdidaProducto
                 {
-                    PerdidaProductoId=5,
-                    IdPerdida = 5,
-                    IdProducto = 5,
-                    PrecioUnitario = 10000,
+                    IdPerdida = new Guid("0A730C0E-C85F-4765-974C-CAFC13AC4F57"),
+                    ProductoId = new Guid("8B538521-A513-4F5A-B4E6-AE3C57912499"),
+                    PrecioUnitario = 100000,
                     Cantidad = 5,
                     Motivo = ("Perdida")
                 }

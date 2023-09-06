@@ -33,7 +33,7 @@ namespace Service
             return cargosDto;
         }
 
-        public CargoDto GetCargo(int Id, bool trackChanges)
+        public CargoDto GetCargo(Guid Id, bool trackChanges)
         {
             var cargo = _repository.Cargo.GetCargo(Id, trackChanges);
             if(cargo == null)

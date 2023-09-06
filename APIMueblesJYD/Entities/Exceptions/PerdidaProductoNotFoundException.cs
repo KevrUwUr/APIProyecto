@@ -8,7 +8,7 @@ namespace Entities.Exceptions
 {
     public sealed class PerdidaProductoNotFoundException : NotFoundException
     {
-        public PerdidaProductoNotFoundException(int PerdidaProductoId)
+        public PerdidaProductoNotFoundException(Guid PerdidaProductoId)
            : base($"La perdida de productocon el Id: {PerdidaProductoId} no existe en la Base de Datos.") { }
     }
 }

@@ -19,11 +19,11 @@ namespace Repository
 
         public IEnumerable<DFacturaCompraDTO> GetAllDetBuyBills(bool trackChanges) =>
             FindAll(trackChanges)
-                .OrderBy(c => c.IdFacturaCompra)
+                .OrderBy(c => c.FacturaCompraId)
                 .ToList();
 
-        public DFacturaCompraDTO GetDetBuyBill(int IdFacturaCompra, bool trackChanges) =>
-            FindByCondition(c => c.IdFacturaCompra.Equals(IdFacturaCompra), trackChanges)
+        public DFacturaCompraDTO GetDetBuyBill(Guid FacturaCompraId, bool trackChanges) =>
+            FindByCondition(c => c.FacturaCompraId.Equals(FacturaCompraId), trackChanges)
             .SingleOrDefault();
     
     }

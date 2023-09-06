@@ -21,7 +21,7 @@ namespace Repository
                 .OrderBy(c => c.NumDocumento)
                 .ToList();
 
-        public UsuarioDTO GetUser(int IdUsuario, bool trackChanges) =>
+        public UsuarioDTO GetUser(Guid IdUsuario, bool trackChanges) =>
             FindByCondition(c => c.IdUsuario.Equals(IdUsuario), trackChanges)
             .SingleOrDefault();
 

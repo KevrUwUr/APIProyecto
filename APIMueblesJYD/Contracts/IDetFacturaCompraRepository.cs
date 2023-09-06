@@ -11,6 +11,6 @@ namespace Contracts
     public interface IDetFacturaCompraRepository
     {
         IEnumerable<DFacturaCompraDTO> GetAllDetBuyBills(bool trackChanges);
-        DFacturaCompraDTO GetDetBuyBill(int IdFacturaCompra, bool trackChanges);
+        DFacturaCompraDTO GetDetBuyBill(Guid FacturaCompraId, bool trackChanges);
     }
 }

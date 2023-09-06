@@ -18,11 +18,11 @@ namespace Repository
 
         public IEnumerable<FacturaVentaDTO> GetAllSaleBills(bool trackChanges) =>
             FindAll(trackChanges)
-                .OrderBy(c => c.IdFacturaVenta)
+                .OrderBy(c => c.FacturaVentaId)
                 .ToList();
 
-        public FacturaVentaDTO GetSaleBill(int IdFacturaVenta, bool trackChanges) =>
-            FindByCondition(c => c.IdFacturaVenta.Equals(IdFacturaVenta), trackChanges)
+        public FacturaVentaDTO GetSaleBill(Guid FacturaVentaId, bool trackChanges) =>
+            FindByCondition(c => c.FacturaVentaId.Equals(FacturaVentaId), trackChanges)
             .SingleOrDefault();
 
     }

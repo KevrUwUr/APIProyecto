@@ -21,8 +21,8 @@ namespace Repository
                 .OrderBy(c => c.NFactura)
                 .ToList();
 
-        public FacturaCompraDTO GetBuyBill(int IdFacturaCompra, bool trackChanges) =>
-            FindByCondition(c => c.IdFacturaCompra.Equals(IdFacturaCompra), trackChanges)
+        public FacturaCompraDTO GetBuyBill(Guid FacturaCompraId, bool trackChanges) =>
+            FindByCondition(c => c.FacturaCompraId.Equals(FacturaCompraId), trackChanges)
             .SingleOrDefault();
 
     }

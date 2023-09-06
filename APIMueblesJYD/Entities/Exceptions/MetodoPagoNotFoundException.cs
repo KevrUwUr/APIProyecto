@@ -8,7 +8,7 @@ namespace Entities.Exceptions
 {
     public sealed class MetodoPagoNotFoundException : NotFoundException
     {
-        public MetodoPagoNotFoundException(int IdMetodoPago)
+        public MetodoPagoNotFoundException(Guid IdMetodoPago)
            : base($"El metodo de pago con el Id: {IdMetodoPago} no existe en la Base de Datos.") { }
     }
 }

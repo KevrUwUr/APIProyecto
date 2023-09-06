@@ -21,7 +21,7 @@ namespace Repository
                 .OrderBy(c => c.RazonSocial)
                 .ToList();
 
-        public ProveedorDTO GetSupplier(int IdProveedor, bool trackChanges) =>
+        public ProveedorDTO GetSupplier(Guid IdProveedor, bool trackChanges) =>
             FindByCondition(c => c.IdProveedor.Equals(IdProveedor), trackChanges)
             .SingleOrDefault();
 

@@ -21,7 +21,7 @@ namespace Repository
                 .OrderBy(c => c.IdHistoricoPrecios)
                 .ToList();
 
-        public HistoricoPreciosDTO GetPriceHistory(int IdHistoricoPrecios, bool trackChanges) =>
+        public HistoricoPreciosDTO GetPriceHistory(Guid IdHistoricoPrecios, bool trackChanges) =>
             FindByCondition(c => c.IdHistoricoPrecios.Equals(IdHistoricoPrecios), trackChanges)
             .SingleOrDefault();
 

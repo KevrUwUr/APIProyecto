@@ -11,6 +11,6 @@ namespace Contracts
     public interface IUsuarioRepository
     {
         IEnumerable<UsuarioDTO> GetAllUsers(bool trackChanges);
-        UsuarioDTO GetUser(int usuarioId, bool trackChanges);
+        UsuarioDTO GetUser(Guid usuarioId, bool trackChanges);
     }
 }

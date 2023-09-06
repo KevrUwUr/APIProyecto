@@ -11,19 +11,19 @@ namespace Service.Contracts
         ICargoService CargoService { get; }
         ICategoriaService CategoriaService { get; }
         IContactoEmpleadoService ContactoEmpleadoService { get; }
-        IContactoProveedorService ContactoProveedorService { get; }
+        IContactoProveedorService ContactoProveedorService { get;}
         IContactoUsuarioService ContactoUsuarioService { get; }
         IDetFacturaCompraService DetFacturaCompraService { get; }
         IDetFacturaVentaService DetFacturaVentaService { get; }
         IEmpleadoCargoService IEmpleadoCargoService { get; }
         IEmpleadoService IEmpleadoService { get; }
         IFacturaCompraService FacturaCompraService { get; }
-        IFacturaVentaService FacturaVentaService { get; }
+        IFacturaVentaService FacturaVentaService { get;}
         IHistoricoPreciosService HistoricoPreciosService { get; }
         IMetodoPagoService MetodoPagoService { get; }
         IPerdidaProductoService PerdidaProductoService { get; }
         IPerdidaService PerdidaService { get; }
-        IProductoService ProductoService { get;}
+        IProductoService ProductoService { get; }
         IProveedorService ProveedorService { get; }
         IUsuarioService UsuarioService { get; }
     }

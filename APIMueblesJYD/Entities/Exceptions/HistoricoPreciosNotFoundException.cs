@@ -8,7 +8,7 @@ namespace Entities.Exceptions
 {
     public sealed class HistoricoPreciosNotFoundException : NotFoundException
     {
-        public HistoricoPreciosNotFoundException(int IdHistoricoPrecios)
+        public HistoricoPreciosNotFoundException(Guid IdHistoricoPrecios)
            : base($"El historico de precios con el Id: {IdHistoricoPrecios} no existe en la Base de Datos.") { }
     }
 }

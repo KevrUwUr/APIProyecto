@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Service
 {
-    internal sealed class DetFacturaCompraService : IDetFacturaCompraRepository
+    internal sealed class DetFacturaCompraService : IDetFacturaCompraService
     {
         private readonly IRepositoryManager _repository;
         private readonly ILoggerManager _logger;
@@ -33,7 +33,7 @@ namespace Service
             return dFacturaCompraDTO;
         }
 
-        public DFacturaCompraDTO GetDetBuyBill(int Id, bool trackChanges)
+        public DFacturaCompraDTO GetDetBuyBill(Guid Id, bool trackChanges)
         {
             var dFacturaCompra = _repository.DetFacturaCompra.GetDetBuyBill(Id, trackChanges);
             if(dFacturaCompra == null)

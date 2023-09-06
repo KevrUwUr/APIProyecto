@@ -12,7 +12,7 @@ namespace Entities.Models
     {
         [Column("IdMetodoPago")]
         [Key]
-        public int IdMetodoPago { get; set; }
+        public Guid IdMetodoPago { get; set; }
 
         [Required(ErrorMessage = "Fecha de Transaccion es un campo requerido.")]
         public DateTime FechaTransaccion { get; set; }
@@ -24,7 +24,7 @@ namespace Entities.Models
         public string? NombrePlataforma { get; set; }
 
         [ForeignKey(nameof(FacturaVenta))]
-        public int IdFacturaVenta { get; set; }
+        public Guid FacturaVentaId { get; set; }
         public FacturaVenta? FacturaVenta { get; set; }
     }
 }

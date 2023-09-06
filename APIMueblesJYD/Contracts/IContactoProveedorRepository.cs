@@ -10,6 +10,6 @@ namespace Contracts
     public interface IContactoProveedorRepository
     {
         IEnumerable<ContactoProveedor> GetAllSupplierContacts(bool trackChanges);
-        ContactoProveedor GetSuplierContact(int suplierContactId, bool trackChanges);
+        ContactoProveedor GetSupplierContact(Guid suplierContactId, bool trackChanges);
     }
 }

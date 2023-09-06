@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Service
 {
-    internal sealed class FacturaVentaService : IFacturaVentaRepository
+    internal sealed class FacturaVentaService : IFacturaVentaService
     {
         private readonly IRepositoryManager _repository;
         private readonly ILoggerManager _logger;
@@ -33,7 +33,7 @@ namespace Service
             return facturaVentaDTO;
         }
 
-        public FacturaVentaDTO GetSaleBill(int Id, bool trackChanges)
+        public FacturaVentaDTO GetSaleBill(Guid Id, bool trackChanges)
         {
             var facturaVenta = _repository.FacturaVenta.GetSaleBill(Id, trackChanges);
             if(facturaVenta == null)

@@ -96,3 +96,5 @@ C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\LoggerService\obj\De
 C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\refint\LoggerService.dll
 C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\LoggerService.pdb
 C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\LoggerService\obj\Debug\net7.0\ref\LoggerService.dll
+C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\LoggerService\bin\Debug\net7.0\Shared.dll
+C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\LoggerService\bin\Debug\net7.0\Shared.pdb

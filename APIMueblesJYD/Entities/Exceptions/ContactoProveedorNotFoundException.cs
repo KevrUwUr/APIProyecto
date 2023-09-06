@@ -8,7 +8,7 @@ namespace Entities.Exceptions
 {
     public sealed class ContactoProveedorNotFoundException : NotFoundException
     {
-        public ContactoProveedorNotFoundException(int IdContactoProveedor)
+        public ContactoProveedorNotFoundException(Guid IdContactoProveedor)
             : base($"El contacto proveedor con el Id: {IdContactoProveedor} no existe en la Base de Datos.") { }
     }
 }

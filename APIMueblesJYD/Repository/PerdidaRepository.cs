@@ -21,7 +21,7 @@ namespace Repository
                 .OrderBy(c => c.IdPerdida)
                 .ToList();
 
-        public PerdidaDTO GetLose(int IdPerdida, bool trackChanges) =>
+        public PerdidaDTO GetLose(Guid IdPerdida, bool trackChanges) =>
             FindByCondition(c => c.IdPerdida.Equals(IdPerdida), trackChanges)
             .SingleOrDefault();
 

@@ -11,6 +11,6 @@ namespace Service.Contracts
     public interface IContactoUsuarioService
     {
         IEnumerable<ContactoUsuarioDTO> GetAllUserContacts(bool trackChanges);
-        ContactoUsuarioDTO GetUserContact(int Id, bool trackChanges);
+        ContactoUsuarioDTO GetUserContact(Guid Id, bool trackChanges);
     }
 }

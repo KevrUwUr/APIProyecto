@@ -479,12 +479,12 @@ namespace APIRestProyecto.Migrations
 
             modelBuilder.Entity("Entities.Models.DetalleFacturaCompra", b =>
                 {
-                    b.Property<int>("IdDetalleacturaCompra")
+                    b.Property<int>("DetalleacturaCompraId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .HasColumnName("IdDetalleacturaCompra");
+                        .HasColumnName("DetalleacturaCompraId");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdDetalleacturaCompra"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DetalleacturaCompraId"));
 
                     b.Property<int>("Cantidad")
                         .HasColumnType("int");
@@ -492,10 +492,10 @@ namespace APIRestProyecto.Migrations
                     b.Property<float>("IVA")
                         .HasColumnType("real");
 
-                    b.Property<int>("IdFacturaCompra")
+                    b.Property<int>("FacturaCompraId")
                         .HasColumnType("int");
 
-                    b.Property<int>("IdProducto")
+                    b.Property<int>("ProductoId")
                         .HasColumnType("int");
 
                     b.Property<float>("ValorDescuento")
@@ -504,32 +504,32 @@ namespace APIRestProyecto.Migrations
                     b.Property<float>("ValorUnitario")
                         .HasColumnType("real");
 
-                    b.HasKey("IdDetalleacturaCompra");
+                    b.HasKey("DetalleacturaCompraId");
 
-                    b.HasIndex("IdFacturaCompra");
+                    b.HasIndex("FacturaCompraId");
 
-                    b.HasIndex("IdProducto");
+                    b.HasIndex("ProductoId");
 
                     b.ToTable("DetalleFacturaCompra");
 
                     b.HasData(
                         new
                         {
-                            IdDetalleacturaCompra = 1,
+                            DetalleacturaCompraId = 1,
                             Cantidad = 2,
                             IVA = 0.3f,
-                            IdFacturaCompra = 1,
-                            IdProducto = 1,
+                            FacturaCompraId = 1,
+                            ProductoId = 1,
                             ValorDescuento = 0.05f,
                             ValorUnitario = 250000f
                         },
                         new
                         {
-                            IdDetalleacturaCompra = 2,
+                            DetalleacturaCompraId = 2,
                             Cantidad = 4,
                             IVA = 0.3f,
-                            IdFacturaCompra = 2,
-                            IdProducto = 2,
+                            FacturaCompraId = 2,
+                            ProductoId = 2,
                             ValorDescuento = 0.05f,
                             ValorUnitario = 500000f
                         });
@@ -556,10 +556,10 @@ namespace APIRestProyecto.Migrations
                     b.Property<float>("IVA")
                         .HasColumnType("real");
 
-                    b.Property<int>("IdFacturaVenta")
+                    b.Property<int>("FacturaVentaId")
                         .HasColumnType("int");
 
-                    b.Property<int>("IdProducto")
+                    b.Property<int>("ProductoId")
                         .HasColumnType("int");
 
                     b.Property<float>("ValorDescuento")
@@ -574,7 +574,7 @@ namespace APIRestProyecto.Migrations
 
                     b.HasIndex("FacturasVentaIdFacturaVenta");
 
-                    b.HasIndex("IdProducto");
+                    b.HasIndex("ProductoId");
 
                     b.ToTable("DetallesFacturaVentas");
 
@@ -584,8 +584,8 @@ namespace APIRestProyecto.Migrations
                             DetalleFacturaVentaID = 1,
                             Cantidad = 2,
                             IVA = 8075f,
-                            IdFacturaVenta = 1,
-                            IdProducto = 1,
+                            FacturaVentaId = 1,
+                            ProductoId = 1,
                             ValorDescuento = 0f,
                             ValorUnitario = 42500f
                         },
@@ -594,8 +594,8 @@ namespace APIRestProyecto.Migrations
                             DetalleFacturaVentaID = 2,
                             Cantidad = 2,
                             IVA = 1534f,
-                            IdFacturaVenta = 2,
-                            IdProducto = 2,
+                            FacturaVentaId = 2,
+                            ProductoId = 2,
                             ValorDescuento = 0f,
                             ValorUnitario = 60000f
                         });
@@ -758,12 +758,12 @@ namespace APIRestProyecto.Migrations
 
             modelBuilder.Entity("Entities.Models.FacturaCompra", b =>
                 {
-                    b.Property<int>("IdFacturaCompra")
+                    b.Property<int>("FacturaCompraId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .HasColumnName("IdFacturaCompra");
+                        .HasColumnName("FacturaCompraId");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdFacturaCompra"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FacturaCompraId"));
 
                     b.Property<DateTime?>("FechaExpedicion")
                         .IsRequired()
@@ -798,7 +798,7 @@ namespace APIRestProyecto.Migrations
                     b.Property<float>("TotalRefuete")
                         .HasColumnType("real");
 
-                    b.HasKey("IdFacturaCompra");
+                    b.HasKey("FacturaCompraId");
 
                     b.HasIndex("ProveedoresIdProveedor");
 
@@ -807,7 +807,7 @@ namespace APIRestProyecto.Migrations
                     b.HasData(
                         new
                         {
-                            IdFacturaCompra = 1,
+                            FacturaCompraId = 1,
                             FechaExpedicion = new DateTime(1995, 5, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaGeneracion = new DateTime(1995, 5, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaVencimiento = new DateTime(1995, 5, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -820,7 +820,7 @@ namespace APIRestProyecto.Migrations
                         },
                         new
                         {
-                            IdFacturaCompra = 2,
+                            FacturaCompraId = 2,
                             FechaExpedicion = new DateTime(2000, 10, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaGeneracion = new DateTime(2000, 10, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaVencimiento = new DateTime(2000, 10, 17, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -835,12 +835,12 @@ namespace APIRestProyecto.Migrations
 
             modelBuilder.Entity("Entities.Models.FacturaVenta", b =>
                 {
-                    b.Property<int>("IdFacturaVenta")
+                    b.Property<int>("FacturaVentaId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .HasColumnName("IdFacturaVenta");
+                        .HasColumnName("FacturaVentaId");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdFacturaVenta"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FacturaVentaId"));
 
                     b.Property<DateTime?>("FechaExpedicion")
                         .IsRequired()
@@ -875,7 +875,7 @@ namespace APIRestProyecto.Migrations
                     b.Property<int?>("UsuariosIdUsuario")
                         .HasColumnType("int");
 
-                    b.HasKey("IdFacturaVenta");
+                    b.HasKey("FacturaVentaId");
 
                     b.HasIndex("UsuariosIdUsuario");
 
@@ -884,7 +884,7 @@ namespace APIRestProyecto.Migrations
                     b.HasData(
                         new
                         {
-                            IdFacturaVenta = 1,
+                            FacturaVentaId = 1,
                             FechaExpedicion = new DateTime(2023, 8, 28, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaGeneracion = new DateTime(2023, 8, 28, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaVencimiento = new DateTime(2023, 9, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -897,7 +897,7 @@ namespace APIRestProyecto.Migrations
                         },
                         new
                         {
-                            IdFacturaVenta = 2,
+                            FacturaVentaId = 2,
                             FechaExpedicion = new DateTime(2023, 7, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaGeneracion = new DateTime(2023, 7, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaVencimiento = new DateTime(2023, 7, 30, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -930,7 +930,7 @@ namespace APIRestProyecto.Migrations
                         .IsRequired()
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("IdProducto")
+                    b.Property<int>("ProductoId")
                         .HasColumnType("int");
 
                     b.Property<float>("PrecioVenta")
@@ -938,7 +938,7 @@ namespace APIRestProyecto.Migrations
 
                     b.HasKey("IdHistoricoPrecios");
 
-                    b.HasIndex("IdProducto");
+                    b.HasIndex("ProductoId");
 
                     b.ToTable("HistoricosPrecios");
 
@@ -949,7 +949,7 @@ namespace APIRestProyecto.Migrations
                             Estado = 1,
                             FechaPrecioFinal = new DateTime(2023, 10, 28, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaPrecioInicial = new DateTime(2023, 8, 28, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IdProducto = 1,
+                            ProductoId = 1,
                             PrecioVenta = 42500f
                         },
                         new
@@ -958,7 +958,7 @@ namespace APIRestProyecto.Migrations
                             Estado = 1,
                             FechaPrecioFinal = new DateTime(2023, 11, 29, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaPrecioInicial = new DateTime(2023, 9, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IdProducto = 2,
+                            ProductoId = 2,
                             PrecioVenta = 60000f
                         },
                         new
@@ -967,7 +967,7 @@ namespace APIRestProyecto.Migrations
                             Estado = 1,
                             FechaPrecioFinal = new DateTime(2023, 9, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaPrecioInicial = new DateTime(2023, 8, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IdProducto = 3,
+                            ProductoId = 3,
                             PrecioVenta = 38500f
                         },
                         new
@@ -976,7 +976,7 @@ namespace APIRestProyecto.Migrations
                             Estado = 1,
                             FechaPrecioFinal = new DateTime(2023, 9, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaPrecioInicial = new DateTime(2023, 7, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IdProducto = 4,
+                            ProductoId = 4,
                             PrecioVenta = 50000f
                         },
                         new
@@ -985,7 +985,7 @@ namespace APIRestProyecto.Migrations
                             Estado = 1,
                             FechaPrecioFinal = new DateTime(2023, 7, 30, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaPrecioInicial = new DateTime(2023, 6, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IdProducto = 5,
+                            ProductoId = 5,
                             PrecioVenta = 70000f
                         },
                         new
@@ -994,7 +994,7 @@ namespace APIRestProyecto.Migrations
                             Estado = 1,
                             FechaPrecioFinal = new DateTime(2023, 6, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaPrecioInicial = new DateTime(2023, 5, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IdProducto = 7,
+                            ProductoId = 7,
                             PrecioVenta = 55000f
                         },
                         new
@@ -1003,7 +1003,7 @@ namespace APIRestProyecto.Migrations
                             Estado = 1,
                             FechaPrecioFinal = new DateTime(2023, 5, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaPrecioInicial = new DateTime(2023, 4, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IdProducto = 7,
+                            ProductoId = 7,
                             PrecioVenta = 42000f
                         });
                 });
@@ -1020,7 +1020,7 @@ namespace APIRestProyecto.Migrations
                     b.Property<DateTime>("FechaTransaccion")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("IdFacturaVenta")
+                    b.Property<int>("FacturaVentaId")
                         .HasColumnType("int");
 
                     b.Property<string>("NombrePlataforma")
@@ -1032,7 +1032,7 @@ namespace APIRestProyecto.Migrations
 
                     b.HasKey("IdMetodoPago");
 
-                    b.HasIndex("IdFacturaVenta");
+                    b.HasIndex("FacturaVentaId");
 
                     b.ToTable("MetodoPagos");
 
@@ -1041,7 +1041,7 @@ namespace APIRestProyecto.Migrations
                         {
                             IdMetodoPago = 1,
                             FechaTransaccion = new DateTime(2023, 6, 21, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IdFacturaVenta = 1,
+                            FacturaVentaId = 1,
                             NombrePlataforma = "Nequi",
                             Tipo = 2
                         },
@@ -1049,7 +1049,7 @@ namespace APIRestProyecto.Migrations
                         {
                             IdMetodoPago = 2,
                             FechaTransaccion = new DateTime(2023, 6, 21, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IdFacturaVenta = 2,
+                            FacturaVentaId = 2,
                             NombrePlataforma = "Daviplata",
                             Tipo = 2
                         });
@@ -1130,7 +1130,7 @@ namespace APIRestProyecto.Migrations
                     b.Property<int>("IdPerdida")
                         .HasColumnType("int");
 
-                    b.Property<int>("IdProducto")
+                    b.Property<int>("ProductoId")
                         .HasColumnType("int");
 
                     b.Property<int>("Cantidad")
@@ -1144,9 +1144,9 @@ namespace APIRestProyecto.Migrations
                     b.Property<float>("PrecioUnitario")
                         .HasColumnType("real");
 
-                    b.HasKey("IdPerdida", "IdProducto");
+                    b.HasKey("IdPerdida", "ProductoId");
 
-                    b.HasIndex("IdProducto");
+                    b.HasIndex("ProductoId");
 
                     b.ToTable("Perdida_Productos");
 
@@ -1154,7 +1154,7 @@ namespace APIRestProyecto.Migrations
                         new
                         {
                             IdPerdida = 1,
-                            IdProducto = 1,
+                            ProductoId = 1,
                             Cantidad = 5,
                             Motivo = "Robo",
                             PrecioUnitario = 30000f
@@ -1162,7 +1162,7 @@ namespace APIRestProyecto.Migrations
                         new
                         {
                             IdPerdida = 2,
-                            IdProducto = 2,
+                            ProductoId = 2,
                             Cantidad = 5,
                             Motivo = "Roto",
                             PrecioUnitario = 20000f
@@ -1170,7 +1170,7 @@ namespace APIRestProyecto.Migrations
                         new
                         {
                             IdPerdida = 3,
-                            IdProducto = 3,
+                            ProductoId = 3,
                             Cantidad = 5,
                             Motivo = "Mal Estado",
                             PrecioUnitario = 35000f
@@ -1178,7 +1178,7 @@ namespace APIRestProyecto.Migrations
                         new
                         {
                             IdPerdida = 4,
-                            IdProducto = 4,
+                            ProductoId = 4,
                             Cantidad = 5,
                             Motivo = "Daño",
                             PrecioUnitario = 50000f
@@ -1186,7 +1186,7 @@ namespace APIRestProyecto.Migrations
                         new
                         {
                             IdPerdida = 5,
-                            IdProducto = 5,
+                            ProductoId = 5,
                             Cantidad = 5,
                             Motivo = "Perdida",
                             PrecioUnitario = 10000f
@@ -1195,12 +1195,12 @@ namespace APIRestProyecto.Migrations
 
             modelBuilder.Entity("Entities.Models.Producto", b =>
                 {
-                    b.Property<int>("IdProducto")
+                    b.Property<int>("ProductoId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .HasColumnName("IdProducto");
+                        .HasColumnName("ProductoId");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdProducto"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProductoId"));
 
                     b.Property<string>("Color")
                         .IsRequired()
@@ -1235,7 +1235,7 @@ namespace APIRestProyecto.Migrations
                     b.Property<int>("Tipo")
                         .HasColumnType("int");
 
-                    b.HasKey("IdProducto");
+                    b.HasKey("ProductoId");
 
                     b.HasIndex("IdCategoria");
 
@@ -1244,7 +1244,7 @@ namespace APIRestProyecto.Migrations
                     b.HasData(
                         new
                         {
-                            IdProducto = 1,
+                            ProductoId = 1,
                             Color = "Blanco",
                             Descripcion = "Cama doble de madera",
                             Estado = 1,
@@ -1256,7 +1256,7 @@ namespace APIRestProyecto.Migrations
                         },
                         new
                         {
-                            IdProducto = 2,
+                            ProductoId = 2,
                             Color = "Negro",
                             Descripcion = "Mesa de noche de estilo moderno",
                             Estado = 1,
@@ -1268,7 +1268,7 @@ namespace APIRestProyecto.Migrations
                         },
                         new
                         {
-                            IdProducto = 3,
+                            ProductoId = 3,
                             Color = "Marrón",
                             Descripcion = "Comedor de madera con capacidad para 6 personas",
                             Estado = 1,
@@ -1280,7 +1280,7 @@ namespace APIRestProyecto.Migrations
                         },
                         new
                         {
-                            IdProducto = 4,
+                            ProductoId = 4,
                             Color = "Gris",
                             Descripcion = "Silla cómoda con soporte lumbar",
                             Estado = 1,
@@ -1292,7 +1292,7 @@ namespace APIRestProyecto.Migrations
                         },
                         new
                         {
-                            IdProducto = 5,
+                            ProductoId = 5,
                             Color = "Blanco",
                             Descripcion = "Escritorio de diseño minimalista",
                             Estado = 1,
@@ -1304,7 +1304,7 @@ namespace APIRestProyecto.Migrations
                         },
                         new
                         {
-                            IdProducto = 6,
+                            ProductoId = 6,
                             Color = "Café",
                             Descripcion = "Armario espacioso con compartimentos",
                             Estado = 1,
@@ -1316,7 +1316,7 @@ namespace APIRestProyecto.Migrations
                         },
                         new
                         {
-                            IdProducto = 7,
+                            ProductoId = 7,
                             Color = "Azul",
                             Descripcion = "Camarote con temática de caricaturas",
                             Estado = 1,
@@ -1619,13 +1619,13 @@ namespace APIRestProyecto.Migrations
                 {
                     b.HasOne("Entities.Models.FacturaCompra", "FacturaCompra")
                         .WithMany("DetalleFacturaCompras")
-                        .HasForeignKey("IdFacturaCompra")
+                        .HasForeignKey("FacturaCompraId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Entities.Models.Producto", "Producto")
                         .WithMany("detalleFacturaCompras")
-                        .HasForeignKey("IdProducto")
+                        .HasForeignKey("ProductoId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -1646,7 +1646,7 @@ namespace APIRestProyecto.Migrations
 
                     b.HasOne("Entities.Models.Producto", "Producto")
                         .WithMany("detalleFacturaVentas")
-                        .HasForeignKey("IdProducto")
+                        .HasForeignKey("ProductoId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -1696,7 +1696,7 @@ namespace APIRestProyecto.Migrations
                 {
                     b.HasOne("Entities.Models.Producto", "Producto")
                         .WithMany("HistoricoPrecios")
-                        .HasForeignKey("IdProducto")
+                        .HasForeignKey("ProductoId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -1707,7 +1707,7 @@ namespace APIRestProyecto.Migrations
                 {
                     b.HasOne("Entities.Models.FacturaVenta", "FacturaVenta")
                         .WithMany("MetodoPago")
-                        .HasForeignKey("IdFacturaVenta")
+                        .HasForeignKey("FacturaVentaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -1735,7 +1735,7 @@ namespace APIRestProyecto.Migrations
 
                     b.HasOne("Entities.Models.Producto", "Producto")
                         .WithMany("perdida_Productos")
-                        .HasForeignKey("IdProducto")
+                        .HasForeignKey("ProductoId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

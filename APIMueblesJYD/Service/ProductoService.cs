@@ -12,13 +12,13 @@ using System.Threading.Tasks;
 
 namespace Service
 {
-    internal sealed class ProductoService : IProductoRepository
+    internal sealed class ProductoService : IProductoService
     {
         private readonly IRepositoryManager _repository;
         private readonly ILoggerManager _logger;
         private readonly IMapper _mapper;
 
-        public ProductoService (IRepositoryManager repository, ILoggerManager logger, IMapper mapper)
+        public ProductoService(IRepositoryManager repository, ILoggerManager logger, IMapper mapper)
         {
             _repository = repository;
             _logger = logger;
@@ -33,12 +33,12 @@ namespace Service
             return productoDTO;
         }
 
-        public ProductoDTO GetProduct (int IdProducto, bool trackChanges)
+        public ProductoDTO GetProduct(Guid Id, bool trackChanges)
         {
-            var producto = _repository.Producto.GetProduct(IdProducto, trackChanges);
+            var producto = _repository.Producto.GetProduct(Id, trackChanges);
             if(producto == null)
             {
-                throw new ProductoNotFoundException(IdProducto);
+                throw new ProductoNotFoundException(Id);
             }
 
             var productoDTO = _mapper.Map<ProductoDTO>(producto);

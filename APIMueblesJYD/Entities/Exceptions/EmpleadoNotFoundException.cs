@@ -8,7 +8,7 @@ namespace Entities.Exceptions
 {
     public sealed class EmpleadoNotFoundException : NotFoundException
     {
-        public EmpleadoNotFoundException(int EmpleadoId)
+        public EmpleadoNotFoundException(Guid EmpleadoId)
            : base($"El empleado con el Id: {EmpleadoId} no existe en la Base de Datos.") { }
     }
 }

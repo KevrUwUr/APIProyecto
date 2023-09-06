@@ -10,7 +10,7 @@ namespace Service.Contracts
 {
     public interface IDetFacturaVentaService
     {
-        IEnumerable<EmpleadoDTO> GetAllDetSaleBills(bool trackChanges);
-        EmpleadoDTO GetDetSaleBill(int Id, bool trackChanges);
+        IEnumerable<DFacturaVentaDTO> GetAllDetSaleBills(bool trackChanges);
+        DFacturaVentaDTO GetDetSaleBill(Guid Id, bool trackChanges);
     }
 }

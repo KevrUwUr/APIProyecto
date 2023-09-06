@@ -21,11 +21,11 @@ namespace Entities.Models
         public int? NumeroContrato { get; set; }
 
         [ForeignKey(nameof(Empleado))]
-        public int EmpleadoId { get; set; }
+        public Guid EmpleadoId { get; set; }
         public Empleado? Empleado { get; set; }
 
         [ForeignKey(nameof(Cargo))]
-        public int CargoId { get; set; }
+        public Guid CargoId { get; set; }
         public Cargo? Cargos { get; set; }
 
     }

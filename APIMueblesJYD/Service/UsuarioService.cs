@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Service
 {
-    internal sealed class UsuarioService : IUsuarioRepository
+    internal sealed class UsuarioService : IUsuarioService
     {
         private readonly IRepositoryManager _repository;
         private readonly ILoggerManager _logger;
@@ -33,7 +33,7 @@ namespace Service
             return usuarioDTO;
         }
 
-        public UsuarioDTO GetUser(int Id, bool trackChanges)
+        public UsuarioDTO GetUser(Guid Id, bool trackChanges)
         {
             var usuario = _repository.Usuario.GetUser(Id, trackChanges);
             if(usuario == null)

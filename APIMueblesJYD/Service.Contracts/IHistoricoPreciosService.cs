@@ -11,6 +11,6 @@ namespace Service.Contracts
     public interface IHistoricoPreciosService
     {
         IEnumerable<HistoricoPreciosDTO> GetAllPriceHistories(bool trackChanges);
-        HistoricoPreciosDTO GetPriceHistory(int Id, bool trackChanges);
+        HistoricoPreciosDTO GetPriceHistory(Guid Id, bool trackChanges);
     }
 }

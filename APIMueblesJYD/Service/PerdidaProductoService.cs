@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Service
 {
-    internal sealed class PerdidaProductoService : IPerdidaProductoRepository
+    internal sealed class PerdidaProductoService : IPerdidaProductoService
     {
         private readonly IRepositoryManager _repository;
         private readonly ILoggerManager _logger;
@@ -33,7 +33,7 @@ namespace Service
             return perdidaProductoDTO;
         }
 
-        public PerdidaProductoDTO GetProductLose(int Id, bool trackChanges)
+        public PerdidaProductoDTO GetProductLose(Guid Id, bool trackChanges)
         {
             var perdidaProducto = _repository.PerdidaProducto.GetProductLose(Id, trackChanges);
             if(perdidaProducto == null)

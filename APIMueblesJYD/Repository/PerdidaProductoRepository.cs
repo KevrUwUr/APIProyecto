@@ -21,7 +21,7 @@ namespace Repository
                 .OrderBy(c => c.Id)
                 .ToList();
 
-        public PerdidaProductoDTO GetProductLose(int IdPerdidaProducto, bool trackChanges) =>
+        public PerdidaProductoDTO GetProductLose(Guid IdPerdidaProducto, bool trackChanges) =>
             FindByCondition(c => c.Id.Equals(IdPerdidaProducto), trackChanges)
             .SingleOrDefault();
 

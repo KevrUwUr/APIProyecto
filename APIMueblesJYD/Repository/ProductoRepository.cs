@@ -21,8 +21,8 @@ namespace Repository
                 .OrderBy(c => c.Nombre)
                 .ToList();
 
-        public ProductoDTO GetProduct(int IdProducto, bool trackChanges) =>
-            FindByCondition(c => c.IdProducto.Equals(IdProducto), trackChanges)
+        public ProductoDTO GetProduct(Guid ProductoId, bool trackChanges) =>
+            FindByCondition(c => c.ProductoId.Equals(ProductoId), trackChanges)
             .SingleOrDefault();
 
     }

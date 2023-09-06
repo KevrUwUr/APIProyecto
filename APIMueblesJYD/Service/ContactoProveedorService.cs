@@ -33,9 +33,9 @@ namespace Service
             return contactoProveedorDto;
         }
 
-        public ContactoProveedorDTO GetSuplierContact(int Id, bool trackChanges)
+        public ContactoProveedorDTO GetSupplierContact(Guid Id, bool trackChanges)
         {
-            var contactoProveedor = _repository.ContactoProveedor.GetSuplierContact(Id, trackChanges);
+            var contactoProveedor = _repository.ContactoProveedor.GetSupplierContact(Id, trackChanges);
             if(contactoProveedor == null)
             {
                 throw new ContactoProveedorNotFoundException(Id);

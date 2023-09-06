@@ -10,6 +10,6 @@ namespace Contracts
     public interface IContactoEmpleadoRepository
     {
         IEnumerable<ContactoEmpleado> GetAllEmployeesContacts(bool trackChanges);
-        ContactoEmpleado GetEmployeeContact(int employeeContactId, bool trackChanges);
+        ContactoEmpleado GetEmployeeContact(Guid employeeContactId, bool trackChanges);
     }
 }

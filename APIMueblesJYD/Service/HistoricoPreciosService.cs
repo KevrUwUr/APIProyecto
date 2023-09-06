@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Service
 {
-    internal sealed class HistoricoPreciosService : IHistoricoPreciosRepository
+    internal sealed class HistoricoPreciosService : IHistoricoPreciosService
     {
         private readonly IRepositoryManager _repository;
         private readonly ILoggerManager _logger;
@@ -33,7 +33,7 @@ namespace Service
             return historicoPreciosDTO;
         }
 
-        public HistoricoPreciosDTO GetPriceHistory(int Id, bool trackChanges)
+        public HistoricoPreciosDTO GetPriceHistory(Guid Id, bool trackChanges)
         {
             var historicoPrecios = _repository.HistoricoPrecios.GetPriceHistory(Id, trackChanges);
             if(historicoPrecios == null)

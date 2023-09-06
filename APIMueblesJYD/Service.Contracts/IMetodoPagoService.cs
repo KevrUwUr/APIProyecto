@@ -11,6 +11,6 @@ namespace Service.Contracts
     public interface IMetodoPagoService
     {
         IEnumerable<MetodoPagoDTO> GetAllPaymentMethods(bool trackChanges);
-        MetodoPagoDTO GetPaymentMethod(int Id, bool trackChanges);
+        MetodoPagoDTO GetPaymentMethod(Guid Id, bool trackChanges);
     }
 }

@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Service
 {
-    internal sealed class ProveedorService : IProveedorRepository
+    internal sealed class ProveedorService : IProveedorService
     {
         private readonly IRepositoryManager _repository;
         private readonly ILoggerManager _logger;
@@ -33,7 +33,7 @@ namespace Service
             return proveedorDTO;
         }
 
-        public ProveedorDTO GetSupplier(int Id, bool trackChanges)
+        public ProveedorDTO GetSupplier(Guid Id, bool trackChanges)
         {
             var proveedor = _repository.Proveedor.GetSupplier(Id, trackChanges);
             if (proveedor == null)

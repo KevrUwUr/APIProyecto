@@ -10,7 +10,7 @@ namespace Service.Contracts
 {
     public interface IProveedorService
     {
-        IEnumerable<ProveedorDTO> GetAllProducts(bool trackChanges);
-        ProveedorDTO GetProduct(int Id, bool trackChanges);
+        IEnumerable<ProveedorDTO> GetAllSuppliers(bool trackChanges);
+        ProveedorDTO GetSupplier(Guid Id, bool trackChanges);
     }
 }

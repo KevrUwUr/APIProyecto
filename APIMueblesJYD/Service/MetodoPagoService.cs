@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Service
 {
-    internal sealed class MetodoPagoService : IMetodoPagoRepository
+    internal sealed class MetodoPagoService : IMetodoPagoService
     {
         private readonly IRepositoryManager _repository;
         private readonly ILoggerManager _logger;
@@ -25,17 +25,17 @@ namespace Service
             _mapper = mapper;
         }
 
-        public IEnumerable<MetodoPagoDTO> GetAllPayMethods(bool trackChanges)
+        public IEnumerable<MetodoPagoDTO> GetAllPaymentMethods(bool trackChanges)
         {
-            var metodoPago = _repository.MetodoPago.GetAllPayMethods(trackChanges);
+            var metodoPago = _repository.MetodoPago.GetAllPaymentMethods(trackChanges);
             var metodoPagoDTO = _mapper.Map<IEnumerable<MetodoPagoDTO>>(metodoPago);
 
             return metodoPagoDTO;
         }
 
-        public MetodoPagoDTO GetPayMethod(int Id, bool trackChanges)
+        public MetodoPagoDTO GetPaymentMethod(Guid Id, bool trackChanges)
         {
-            var metodoPago = _repository.MetodoPago.GetPayMethod(Id, trackChanges);
+            var metodoPago = _repository.MetodoPago.GetPaymentMethod(Id, trackChanges);
             if(metodoPago == null)
             {
                 throw new MetodoPagoNotFoundException(Id);

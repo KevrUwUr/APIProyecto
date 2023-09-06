@@ -8,7 +8,7 @@ namespace Entities.Exceptions
 {
     public sealed class PerdidaNotFoundException : NotFoundException
     {
-        public PerdidaNotFoundException(int IdPerdida)
+        public PerdidaNotFoundException(Guid IdPerdida)
            : base($"La perdida con el Id: {IdPerdida} no existe en la Base de Datos.") { }
     }
 }

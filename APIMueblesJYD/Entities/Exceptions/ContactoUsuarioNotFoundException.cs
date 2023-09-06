@@ -8,7 +8,7 @@ namespace Entities.Exceptions
 {
     public sealed class ContactoUsuarioNotFoundException : NotFoundException
     {
-        public ContactoUsuarioNotFoundException(int IdContactoCliente)
+        public ContactoUsuarioNotFoundException(Guid IdContactoCliente)
             : base($"El contacto usuario con el Id: {IdContactoCliente} no existe en la Base de Datos."){}
     }
 }

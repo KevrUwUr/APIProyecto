@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Service
 {
-    internal sealed class FacturaCompraService : IFacturaVentaRepository
+    internal sealed class FacturaCompraService : IFacturaCompraService
     {
         private readonly IRepositoryManager _repository;
         private readonly ILoggerManager _logger;
@@ -25,23 +25,23 @@ namespace Service
             _mapper = mapper;
         }
 
-        public IEnumerable<FacturaVentaDTO> GetAllSaleBills(bool trackChanges)
+        public IEnumerable<FacturaCompraDTO> GetAllBuyBills(bool trackChanges)
         {
-            var facturaVenta = _repository.FacturaVenta.GetAllSaleBills(trackChanges);
-            var facturaVentaDTO = _mapper.Map<IEnumerable<FacturaVentaDTO>>(facturaVenta);
+            var facturaVenta = _repository.FacturaCompra.GetAllBuyBills(trackChanges);
+            var facturaVentaDTO = _mapper.Map<IEnumerable<FacturaCompraDTO>>(facturaVenta);
 
             return facturaVentaDTO;
         }
 
-        public FacturaVentaDTO GetSaleBill(int Id, bool trackChanges)
+        public FacturaCompraDTO GetBuyBill(Guid Id, bool trackChanges)
         {
-            var facturaVenta = _repository.FacturaVenta.GetSaleBill(Id, trackChanges);
+            var facturaVenta = _repository.FacturaCompra.GetBuyBill(Id, trackChanges);
             if(facturaVenta == null)
             {
                 throw new FacturaCompraNotFoundException(Id);
             }
 
-            var facturaVentaDTO = _mapper.Map<FacturaVentaDTO>(facturaVenta);
+            var facturaVentaDTO = _mapper.Map<FacturaCompraDTO>(facturaVenta);
             return facturaVentaDTO;
         }
     }

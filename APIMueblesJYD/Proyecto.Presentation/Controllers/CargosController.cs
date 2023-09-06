@@ -23,7 +23,7 @@ namespace Proyect.Presentation.Controllers
         }
 
         [HttpGet("{id:int}")]
-        public IActionResult GetCargo(int Id)
+        public IActionResult GetCargo(Guid Id)
         {
             var cargo = _service.CargoService.GetCargo(Id, trackChanges: false);
             return Ok(cargo);

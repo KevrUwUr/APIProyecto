@@ -16,13 +16,13 @@ namespace Repository
         {
         }
 
-        public IEnumerable<DFacturaVentaDTO> GetAllDSaleBills(bool trackChanges) =>
+        public IEnumerable<DFacturaVentaDTO> GetAllDetSaleBills(bool trackChanges) =>
             FindAll(trackChanges)
-                .OrderBy(c => c.IdFacturaVenta)
+                .OrderBy(c => c.FacturaVentaId)
                 .ToList();
 
-        public DFacturaVentaDTO GetDetSaleBill(int IdFacturaVenta, bool trackChanges) =>
-            FindByCondition(c => c.IdFacturaVenta.Equals(IdFacturaVenta), trackChanges)
+        public DFacturaVentaDTO GetDetSaleBill(Guid FacturaVentaId, bool trackChanges) =>
+            FindByCondition(c => c.FacturaVentaId.Equals(FacturaVentaId), trackChanges)
             .SingleOrDefault();
     
     }

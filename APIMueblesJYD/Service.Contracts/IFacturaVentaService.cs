@@ -11,6 +11,6 @@ namespace Service.Contracts
     public interface IFacturaVentaService
     {
         IEnumerable<FacturaVentaDTO> GetAllSaleBills(bool trackChanges);
-        FacturaVentaDTO GetSaleBill(int Id, bool trackChanges);
+        FacturaVentaDTO GetSaleBill(Guid Id, bool trackChanges);
     }
 }

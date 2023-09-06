@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Service
 {
-    internal sealed class EmpleadoCargoService : IEmpleadoCargoRepository
+    internal sealed class EmpleadoCargoService : IEmpleadoCargoService
     {
         private readonly IRepositoryManager _repository;
         private readonly ILoggerManager _logger;

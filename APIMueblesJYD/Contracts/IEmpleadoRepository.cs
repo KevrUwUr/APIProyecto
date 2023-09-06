@@ -11,6 +11,6 @@ namespace Contracts
     public interface IEmpleadoRepository
     {
         IEnumerable<EmpleadoDTO> GetAllEmployees(bool trackChanges);
-        EmpleadoDTO GetEmployee(int employeeId, bool trackChanges);
+        EmpleadoDTO GetEmployee(Guid employeeId, bool trackChanges);
     }
 }

@@ -16,12 +16,12 @@ namespace Repository
         {
         }
 
-        public IEnumerable<MetodoPagoDTO> GetAllPayMethods(bool trackChanges) =>
+        public IEnumerable<MetodoPagoDTO> GetAllPaymentMethods(bool trackChanges) =>
             FindAll(trackChanges)
                 .OrderBy(c => c.NombrePlataforma)
                 .ToList();
 
-        public MetodoPagoDTO GetPayMethod(int IdMetodoPago, bool trackChanges) =>
+        public MetodoPagoDTO GetPaymentMethod(Guid IdMetodoPago, bool trackChanges) =>
             FindByCondition(c => c.IdMetodoPago.Equals(IdMetodoPago), trackChanges)
             .SingleOrDefault();
 

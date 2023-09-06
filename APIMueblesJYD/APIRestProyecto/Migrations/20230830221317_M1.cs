@@ -104,7 +104,7 @@ namespace APIRestProyecto.Migrations
                 name: "Productos",
                 columns: table => new
                 {
-                    IdProducto = table.Column<int>(type: "int", nullable: false)
+                    ProductoId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nombre = table.Column<string>(type: "nvarchar(80)", maxLength: 80, nullable: false),
                     Precio = table.Column<float>(type: "real", nullable: false),
@@ -118,7 +118,7 @@ namespace APIRestProyecto.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Productos", x => x.IdProducto);
+                    table.PrimaryKey("PK_Productos", x => x.ProductoId);
                     table.ForeignKey(
                         name: "FK_Productos_Categorias_IdCategoria",
                         column: x => x.IdCategoria,
@@ -228,7 +228,7 @@ namespace APIRestProyecto.Migrations
                 name: "FacturasCompras",
                 columns: table => new
                 {
-                    IdFacturaCompra = table.Column<int>(type: "int", nullable: false)
+                    FacturaCompraId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     NFactura = table.Column<int>(type: "int", nullable: false),
                     FechaGeneracion = table.Column<DateTime>(type: "datetime2", nullable: false),
@@ -243,7 +243,7 @@ namespace APIRestProyecto.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_FacturasCompras", x => x.IdFacturaCompra);
+                    table.PrimaryKey("PK_FacturasCompras", x => x.FacturaCompraId);
                     table.ForeignKey(
                         name: "FK_FacturasCompras_Proveedores_ProveedoresIdProveedor",
                         column: x => x.ProveedoresIdProveedor,
@@ -281,7 +281,7 @@ namespace APIRestProyecto.Migrations
                 name: "FacturasVentas",
                 columns: table => new
                 {
-                    IdFacturaVenta = table.Column<int>(type: "int", nullable: false)
+                    FacturaVentaId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     NFactura = table.Column<int>(type: "int", nullable: false),
                     FechaGeneracion = table.Column<DateTime>(type: "datetime2", nullable: false),
@@ -296,7 +296,7 @@ namespace APIRestProyecto.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_FacturasVentas", x => x.IdFacturaVenta);
+                    table.PrimaryKey("PK_FacturasVentas", x => x.FacturaVentaId);
                     table.ForeignKey(
                         name: "FK_FacturasVentas_Usuarios_UsuariosIdUsuario",
                         column: x => x.UsuariosIdUsuario,
@@ -314,16 +314,16 @@ namespace APIRestProyecto.Migrations
                     FechaPrecioInicial = table.Column<DateTime>(type: "datetime2", nullable: false),
                     FechaPrecioFinal = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Estado = table.Column<int>(type: "int", nullable: false),
-                    IdProducto = table.Column<int>(type: "int", nullable: false)
+                    ProductoId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_HistoricosPrecios", x => x.IdHistoricoPrecios);
                     table.ForeignKey(
                         name: "FK_HistoricosPrecios_Productos_IdProducto",
-                        column: x => x.IdProducto,
+                        column: x => x.ProductoId,
                         principalTable: "Productos",
-                        principalColumn: "IdProducto",
+                        principalColumn: "ProductoId",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -332,14 +332,14 @@ namespace APIRestProyecto.Migrations
                 columns: table => new
                 {
                     IdPerdida = table.Column<int>(type: "int", nullable: false),
-                    IdProducto = table.Column<int>(type: "int", nullable: false),
+                    ProductoId = table.Column<int>(type: "int", nullable: false),
                     PrecioUnitario = table.Column<float>(type: "real", nullable: false),
                     Cantidad = table.Column<int>(type: "int", nullable: false),
                     Motivo = table.Column<string>(type: "nvarchar(250)", maxLength: 250, nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Perdida_Productos", x => new { x.IdPerdida, x.IdProducto });
+                    table.PrimaryKey("PK_Perdida_Productos", x => new { x.IdPerdida, x.ProductoId });
                     table.ForeignKey(
                         name: "FK_Perdida_Productos_Perdida_IdPerdida",
                         column: x => x.IdPerdida,
@@ -348,9 +348,9 @@ namespace APIRestProyecto.Migrations
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Perdida_Productos_Productos_IdProducto",
-                        column: x => x.IdProducto,
+                        column: x => x.ProductoId,
                         principalTable: "Productos",
-                        principalColumn: "IdProducto",
+                        principalColumn: "ProductoId",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -358,29 +358,29 @@ namespace APIRestProyecto.Migrations
                 name: "DetalleFacturaCompra",
                 columns: table => new
                 {
-                    IdDetalleacturaCompra = table.Column<int>(type: "int", nullable: false)
+                    DetalleacturaCompraId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     ValorUnitario = table.Column<float>(type: "real", nullable: false),
                     Cantidad = table.Column<int>(type: "int", nullable: false),
                     IVA = table.Column<float>(type: "real", nullable: false),
                     ValorDescuento = table.Column<float>(type: "real", nullable: false),
-                    IdFacturaCompra = table.Column<int>(type: "int", nullable: false),
-                    IdProducto = table.Column<int>(type: "int", nullable: false)
+                    FacturaCompraId = table.Column<int>(type: "int", nullable: false),
+                    ProductoId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_DetalleFacturaCompra", x => x.IdDetalleacturaCompra);
+                    table.PrimaryKey("PK_DetalleFacturaCompra", x => x.DetalleacturaCompraId);
                     table.ForeignKey(
                         name: "FK_DetalleFacturaCompra_FacturasCompras_IdFacturaCompra",
-                        column: x => x.IdFacturaCompra,
+                        column: x => x.FacturaCompraId,
                         principalTable: "FacturasCompras",
-                        principalColumn: "IdFacturaCompra",
+                        principalColumn: "FacturaCompraId",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_DetalleFacturaCompra_Productos_IdProducto",
-                        column: x => x.IdProducto,
+                        column: x => x.ProductoId,
                         principalTable: "Productos",
-                        principalColumn: "IdProducto",
+                        principalColumn: "ProductoId",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -394,8 +394,8 @@ namespace APIRestProyecto.Migrations
                     Cantidad = table.Column<int>(type: "int", nullable: false),
                     IVA = table.Column<float>(type: "real", nullable: false),
                     ValorDescuento = table.Column<float>(type: "real", nullable: false),
-                    IdProducto = table.Column<int>(type: "int", nullable: false),
-                    IdFacturaVenta = table.Column<int>(type: "int", nullable: false),
+                    ProductoId = table.Column<int>(type: "int", nullable: false),
+                    FacturaVentaId = table.Column<int>(type: "int", nullable: false),
                     FacturasVentaIdFacturaVenta = table.Column<int>(type: "int", nullable: true),
                     FacturaCompraIdFacturaCompra = table.Column<int>(type: "int", nullable: true)
                 },
@@ -406,17 +406,17 @@ namespace APIRestProyecto.Migrations
                         name: "FK_DetallesFacturaVentas_FacturasCompras_FacturaCompraIdFacturaCompra",
                         column: x => x.FacturaCompraIdFacturaCompra,
                         principalTable: "FacturasCompras",
-                        principalColumn: "IdFacturaCompra");
+                        principalColumn: "FacturaCompraId");
                     table.ForeignKey(
                         name: "FK_DetallesFacturaVentas_FacturasVentas_FacturasVentaIdFacturaVenta",
                         column: x => x.FacturasVentaIdFacturaVenta,
                         principalTable: "FacturasVentas",
-                        principalColumn: "IdFacturaVenta");
+                        principalColumn: "FacturaVentaId");
                     table.ForeignKey(
                         name: "FK_DetallesFacturaVentas_Productos_IdProducto",
-                        column: x => x.IdProducto,
+                        column: x => x.ProductoId,
                         principalTable: "Productos",
-                        principalColumn: "IdProducto",
+                        principalColumn: "ProductoId",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -429,16 +429,16 @@ namespace APIRestProyecto.Migrations
                     FechaTransaccion = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Tipo = table.Column<int>(type: "int", nullable: false),
                     NombrePlataforma = table.Column<string>(type: "nvarchar(80)", maxLength: 80, nullable: true),
-                    IdFacturaVenta = table.Column<int>(type: "int", nullable: false)
+                    FacturaVentaId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_MetodoPagos", x => x.IdMetodoPago);
                     table.ForeignKey(
                         name: "FK_MetodoPagos_FacturasVentas_IdFacturaVenta",
-                        column: x => x.IdFacturaVenta,
+                        column: x => x.FacturaVentaId,
                         principalTable: "FacturasVentas",
-                        principalColumn: "IdFacturaVenta",
+                        principalColumn: "FacturaVentaId",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -483,7 +483,7 @@ namespace APIRestProyecto.Migrations
 
             migrationBuilder.InsertData(
                 table: "FacturasCompras",
-                columns: new[] { "IdFacturaCompra", "FechaExpedicion", "FechaGeneracion", "FechaVencimiento", "IdProveedor", "NFactura", "ProveedoresIdProveedor", "TotalBruto", "TotalIVA", "TotalPago", "TotalRefuete" },
+                columns: new[] { "FacturaCompraId", "FechaExpedicion", "FechaGeneracion", "FechaVencimiento", "IdProveedor", "NFactura", "ProveedoresIdProveedor", "TotalBruto", "TotalIVA", "TotalPago", "TotalRefuete" },
                 values: new object[,]
                 {
                     { 1, new DateTime(1995, 5, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1995, 5, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1995, 5, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, 1, null, 100000f, 19000f, 139000f, 20000f },
@@ -492,7 +492,7 @@ namespace APIRestProyecto.Migrations
 
             migrationBuilder.InsertData(
                 table: "FacturasVentas",
-                columns: new[] { "IdFacturaVenta", "FechaExpedicion", "FechaGeneracion", "FechaVencimiento", "IdUsuario", "NFactura", "TotalBruto", "TotalIVA", "TotalPago", "TotalRefuete", "UsuariosIdUsuario" },
+                columns: new[] { "FacturaVentaId", "FechaExpedicion", "FechaGeneracion", "FechaVencimiento", "IdUsuario", "NFactura", "TotalBruto", "TotalIVA", "TotalPago", "TotalRefuete", "UsuariosIdUsuario" },
                 values: new object[,]
                 {
                     { 1, new DateTime(2023, 8, 28, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2023, 8, 28, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2023, 9, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, 1, 85000f, 16150f, 113150f, 12000f, null },
@@ -580,7 +580,7 @@ namespace APIRestProyecto.Migrations
 
             migrationBuilder.InsertData(
                 table: "MetodoPagos",
-                columns: new[] { "IdMetodoPago", "FechaTransaccion", "IdFacturaVenta", "NombrePlataforma", "Tipo" },
+                columns: new[] { "IdMetodoPago", "FechaTransaccion", "FacturaVentaId", "NombrePlataforma", "Tipo" },
                 values: new object[,]
                 {
                     { 1, new DateTime(2023, 6, 21, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, "Nequi", 2 },
@@ -601,7 +601,7 @@ namespace APIRestProyecto.Migrations
 
             migrationBuilder.InsertData(
                 table: "Productos",
-                columns: new[] { "IdProducto", "Color", "Descripcion", "Estado", "IdCategoria", "Nombre", "OrigenMateriaPrima", "Precio", "Stock", "Tipo" },
+                columns: new[] { "ProductoId", "Color", "Descripcion", "Estado", "IdCategoria", "Nombre", "OrigenMateriaPrima", "Precio", "Stock", "Tipo" },
                 values: new object[,]
                 {
                     { 1, "Blanco", "Cama doble de madera", 1, 1, "Cama doble", null, 500000f, 3, 2 },
@@ -615,7 +615,7 @@ namespace APIRestProyecto.Migrations
 
             migrationBuilder.InsertData(
                 table: "DetalleFacturaCompra",
-                columns: new[] { "IdDetalleacturaCompra", "Cantidad", "IVA", "IdFacturaCompra", "IdProducto", "ValorDescuento", "ValorUnitario" },
+                columns: new[] { "DetalleacturaCompraId", "Cantidad", "IVA", "FacturaCompraId", "ProductoId", "ValorDescuento", "ValorUnitario" },
                 values: new object[,]
                 {
                     { 1, 2, 0.3f, 1, 1, 0.05f, 250000f },
@@ -624,7 +624,7 @@ namespace APIRestProyecto.Migrations
 
             migrationBuilder.InsertData(
                 table: "DetallesFacturaVentas",
-                columns: new[] { "DetalleFacturaVentaID", "Cantidad", "FacturaCompraIdFacturaCompra", "FacturasVentaIdFacturaVenta", "IVA", "IdFacturaVenta", "IdProducto", "ValorDescuento", "ValorUnitario" },
+                columns: new[] { "DetalleFacturaVentaID", "Cantidad", "FacturaCompraIdFacturaCompra", "FacturasVentaIdFacturaVenta", "IVA", "FacturaVentaId", "ProductoId", "ValorDescuento", "ValorUnitario" },
                 values: new object[,]
                 {
                     { 1, 2, null, null, 8075f, 1, 1, 0f, 42500f },
@@ -633,7 +633,7 @@ namespace APIRestProyecto.Migrations
 
             migrationBuilder.InsertData(
                 table: "HistoricosPrecios",
-                columns: new[] { "IdHistoricoPrecios", "Estado", "FechaPrecioFinal", "FechaPrecioInicial", "IdProducto", "PrecioVenta" },
+                columns: new[] { "IdHistoricoPrecios", "Estado", "FechaPrecioFinal", "FechaPrecioInicial", "ProductoId", "PrecioVenta" },
                 values: new object[,]
                 {
                     { 1, 1, new DateTime(2023, 10, 28, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2023, 8, 28, 0, 0, 0, 0, DateTimeKind.Unspecified), 1, 42500f },
@@ -647,7 +647,7 @@ namespace APIRestProyecto.Migrations
 
             migrationBuilder.InsertData(
                 table: "Perdida_Productos",
-                columns: new[] { "IdPerdida", "IdProducto", "Cantidad", "Motivo", "PrecioUnitario" },
+                columns: new[] { "IdPerdida", "ProductoId", "Cantidad", "Motivo", "PrecioUnitario" },
                 values: new object[,]
                 {
                     { 1, 1, 5, "Robo", 30000f },
@@ -675,12 +675,12 @@ namespace APIRestProyecto.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_DetalleFacturaCompra_IdFacturaCompra",
                 table: "DetalleFacturaCompra",
-                column: "IdFacturaCompra");
+                column: "FacturaCompraId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_DetalleFacturaCompra_IdProducto",
                 table: "DetalleFacturaCompra",
-                column: "IdProducto");
+                column: "ProductoId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_DetallesFacturaVentas_FacturaCompraIdFacturaCompra",
@@ -695,7 +695,7 @@ namespace APIRestProyecto.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_DetallesFacturaVentas_IdProducto",
                 table: "DetallesFacturaVentas",
-                column: "IdProducto");
+                column: "ProductoId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_EmpleadoCargos_CargoId",
@@ -715,12 +715,12 @@ namespace APIRestProyecto.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_HistoricosPrecios_IdProducto",
                 table: "HistoricosPrecios",
-                column: "IdProducto");
+                column: "ProductoId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_MetodoPagos_IdFacturaVenta",
                 table: "MetodoPagos",
-                column: "IdFacturaVenta");
+                column: "FacturaVentaId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Perdida_EmpleadoId",
@@ -730,7 +730,7 @@ namespace APIRestProyecto.Migrations
             migrationBuilder.CreateIndex(
                 name: "IX_Perdida_Productos_IdProducto",
                 table: "Perdida_Productos",
-                column: "IdProducto");
+                column: "ProductoId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Productos_IdCategoria",

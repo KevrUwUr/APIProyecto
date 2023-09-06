@@ -59,3 +59,7 @@ C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Contracts\obj\Debug\
 C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Contracts\obj\Debug\net7.0\Contracts.pdb
 C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Contracts\obj\Debug\net7.0\Contracts.genruntimeconfig.cache
 C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Contracts\obj\Debug\net7.0\ref\Contracts.dll
+C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\Contracts\bin\Debug\net7.0\Contracts.runtimeconfig.json
+C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\Contracts\bin\Debug\net7.0\Shared.dll
+C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\Contracts\bin\Debug\net7.0\Shared.pdb
+C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\Contracts\obj\Debug\net7.0\Contracts.genruntimeconfig.cache

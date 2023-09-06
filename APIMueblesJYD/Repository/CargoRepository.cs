@@ -20,7 +20,7 @@ namespace Repository
                 .OrderBy(c => c.NombreCargo)
                 .ToList();
 
-        public Cargo GetCargo(int cargoId, bool trackChanges) =>
+        public Cargo GetCargo(Guid cargoId, bool trackChanges) =>
             FindByCondition(c => c.CargoId.Equals(cargoId), trackChanges)
             .SingleOrDefault();
     }

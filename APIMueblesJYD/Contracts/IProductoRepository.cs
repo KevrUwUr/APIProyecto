@@ -11,6 +11,6 @@ namespace Contracts
     public interface IProductoRepository
     {
         IEnumerable<ProductoDTO> GetAllProducts(bool trackChanges);
-        ProductoDTO GetProduct(int IdProducto, bool trackChanges);
+        ProductoDTO GetProduct(Guid ProductoId, bool trackChanges);
     }
 }

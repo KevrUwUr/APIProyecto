@@ -17,7 +17,7 @@ namespace Repository
             .OrderBy(c => c.Empleado)
             .ToList();
 
-        public ContactoEmpleado GetEmployeeContact(int Id, bool trackChanges) =>
+        public ContactoEmpleado GetEmployeeContact(Guid Id, bool trackChanges) =>
             FindByCondition(c => c.IdContactoEmpleado.Equals(Id), trackChanges)
             .SingleOrDefault();
     }

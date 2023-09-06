@@ -17,7 +17,7 @@ namespace Repository.Configuration
             (
                 new FacturaVenta
                 {
-                    IdFacturaVenta = 1,
+                    FacturaVentaId = new Guid("CEDA0177-4B48-4379-8907-B75C4F0AA10F"),
                     NFactura = 1,
                     FechaGeneracion = new DateTime(2023, 8, 28),
                     FechaExpedicion = new DateTime(2023, 8, 28),
@@ -26,12 +26,12 @@ namespace Repository.Configuration
                     TotalIVA = 16150,
                     TotalRefuete = 12000,
                     TotalPago = 113150,
-                    IdUsuario = 1
+                    IdUsuario = new Guid("E0AAC839-D3E4-4B5C-9B6E-DBF0303DB2B2")
                 },
 
                 new FacturaVenta
                 {
-                    IdFacturaVenta = 2,
+                    FacturaVentaId = new Guid("A6CF357E-205E-45F4-BE76-25C8E08AAC16"),
                     NFactura = 2,
                     FechaGeneracion = new DateTime(2023, 7, 15),
                     FechaExpedicion = new DateTime(2023, 7, 15),
@@ -40,7 +40,7 @@ namespace Repository.Configuration
                     TotalIVA = 22800,
                     TotalRefuete = 15000,
                     TotalPago = 157800,
-                    IdUsuario = 2
+                    IdUsuario = new Guid("1449F86E-3988-43C6-9210-252136156E7E")
                 }
             );
         }

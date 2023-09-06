@@ -23,7 +23,7 @@ namespace Proyect.Presentation.Controllers
         }
 
         [HttpGet("{id:int}")]
-        public IActionResult GetCategory(int Id)
+        public IActionResult GetCategory(Guid Id)
         {
             var cargo = _service.CategoriaService.GetCategory(Id, trackChanges: false);
             return Ok(cargo);
