@@ -28,9 +28,9 @@ namespace Service
         public IEnumerable<ContactoEmpleadoDTO> GetAllEmployeeContacts(bool trackChanges)
         {
             var contactoEmpleado = _repository.ContactoEmpleado.GetAllEmployeesContacts(trackChanges);
-            var contactoEmpleadoDto = _mapper.Map<IEnumerable<ContactoEmpleadoDTO>>(contactoEmpleado);
+            var contactoEmpleadoDTO = _mapper.Map<IEnumerable<ContactoEmpleadoDTO>>(contactoEmpleado);
 
-            return contactoEmpleadoDto;
+            return contactoEmpleadoDTO;
         }
 
         public ContactoEmpleadoDTO GetEmployeeContact(Guid Id, bool trackChanges)
@@ -41,8 +41,8 @@ namespace Service
                 throw new ContactoEmpleadoNotFoundException(Id);
             }
 
-            var contactoEmpleadoDto = _mapper.Map<ContactoEmpleadoDTO>(contactoEmpleado);
-            return contactoEmpleadoDto;
+            var contactoEmpleadoDTO = _mapper.Map<ContactoEmpleadoDTO>(contactoEmpleado);
+            return contactoEmpleadoDTO;
         }
     }
 }

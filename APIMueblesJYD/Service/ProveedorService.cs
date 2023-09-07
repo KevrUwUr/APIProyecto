@@ -46,12 +46,12 @@ namespace Service
         }
         public ProveedorDTO CreateSupplier(ProveedorForCreationDTO supplier)
         {
-            var categoriaEntity = _mapper.Map<Proveedor>(supplier);
+            var proveedorEntity = _mapper.Map<Proveedor>(supplier);
 
-            _repository.Proveedor.CreateSupplier(categoriaEntity);
+            _repository.Proveedor.CreateSupplier(proveedorEntity);
             _repository.Save();
 
-            var supplierToReturn = _mapper.Map<ProveedorDTO>(categoriaEntity);
+            var supplierToReturn = _mapper.Map<ProveedorDTO>(proveedorEntity);
             return supplierToReturn;
         }
         public IEnumerable<ProveedorDTO> GetByIds(IEnumerable<Guid> ids, bool trackChanges)

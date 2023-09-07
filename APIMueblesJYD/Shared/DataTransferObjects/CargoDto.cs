@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Shared.DataTransferObjects
 {
-    public record CargoDto
+    public record CargoDTO
     {
         public Guid Id { get; init; }
         public string? NombreCargo { get; init; }

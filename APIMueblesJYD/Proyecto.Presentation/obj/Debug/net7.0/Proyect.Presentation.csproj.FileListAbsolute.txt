@@ -1,22 +1,3 @@
-C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\bin\Debug\net7.0\Proyect.Presentation.deps.json
-C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\bin\Debug\net7.0\Proyect.Presentation.dll
-C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\bin\Debug\net7.0\Proyect.Presentation.pdb
-C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\bin\Debug\net7.0\Entities.dll
-C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\bin\Debug\net7.0\Service.Contracts.dll
-C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\bin\Debug\net7.0\Shared.dll
-C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\bin\Debug\net7.0\Service.Contracts.pdb
-C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\bin\Debug\net7.0\Entities.pdb
-C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\bin\Debug\net7.0\Shared.pdb
-C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\obj\Debug\net7.0\Proyect.Presentation.csproj.AssemblyReference.cache
-C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\obj\Debug\net7.0\Proyect.Presentation.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\obj\Debug\net7.0\Proyect.Presentation.AssemblyInfoInputs.cache
-C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\obj\Debug\net7.0\Proyect.Presentation.AssemblyInfo.cs
-C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\obj\Debug\net7.0\Proyect.Presentation.csproj.CoreCompileInputs.cache
-C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\obj\Debug\net7.0\Proyect.Presentation.csproj.CopyComplete
-C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\obj\Debug\net7.0\Proyect.Presentation.dll
-C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\obj\Debug\net7.0\refint\Proyect.Presentation.dll
-C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\obj\Debug\net7.0\Proyect.Presentation.pdb
-C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\obj\Debug\net7.0\ref\Proyect.Presentation.dll
 C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Proyecto.Presentation\bin\Debug\net7.0\Proyect.Presentation.deps.json
 C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Proyecto.Presentation\bin\Debug\net7.0\Proyect.Presentation.dll
 C:\Users\Kev UwU\Desktop\Proyecto\APIProyecto\APIMueblesJYD\Proyecto.Presentation\bin\Debug\net7.0\Proyect.Presentation.pdb
@@ -93,3 +74,22 @@ C:\Proyecto\ProyectoMuebles J&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\
 C:\Proyecto\ProyectoMuebles J&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\obj\Debug\net7.0\refint\Proyect.Presentation.dll
 C:\Proyecto\ProyectoMuebles J&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\obj\Debug\net7.0\Proyect.Presentation.pdb
 C:\Proyecto\ProyectoMuebles J&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\obj\Debug\net7.0\ref\Proyect.Presentation.dll
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\bin\Debug\net7.0\Proyect.Presentation.deps.json
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\bin\Debug\net7.0\Proyect.Presentation.dll
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\bin\Debug\net7.0\Proyect.Presentation.pdb
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\bin\Debug\net7.0\Entities.dll
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\bin\Debug\net7.0\Service.Contracts.dll
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\bin\Debug\net7.0\Shared.dll
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\bin\Debug\net7.0\Service.Contracts.pdb
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\bin\Debug\net7.0\Entities.pdb
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\bin\Debug\net7.0\Shared.pdb
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\obj\Debug\net7.0\Proyect.Presentation.csproj.AssemblyReference.cache
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\obj\Debug\net7.0\Proyect.Presentation.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\obj\Debug\net7.0\Proyect.Presentation.AssemblyInfoInputs.cache
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\obj\Debug\net7.0\Proyect.Presentation.AssemblyInfo.cs
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\obj\Debug\net7.0\Proyect.Presentation.csproj.CoreCompileInputs.cache
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\obj\Debug\net7.0\Proyect.Presentation.csproj.CopyComplete
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\obj\Debug\net7.0\Proyect.Presentation.dll
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\obj\Debug\net7.0\refint\Proyect.Presentation.dll
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\obj\Debug\net7.0\Proyect.Presentation.pdb
+C:\Users\Aprendiz\Desktop\MueblesJ&D\APIProyecto\APIMueblesJYD\Proyecto.Presentation\obj\Debug\net7.0\ref\Proyect.Presentation.dll

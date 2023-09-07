@@ -9,19 +9,19 @@ using System.Threading.Tasks;
 
 namespace Repository
 {
-    public class UsuarioRepository : RepositoryBase<UsuarioDTO>, IUsuarioRepository
+    public class UsuarioRepository : RepositoryBase<Usuario>, IUsuarioRepository
     {
         public UsuarioRepository(RepositoryContext repositoryContext)
             : base(repositoryContext)
         {
         }
 
-        public IEnumerable<UsuarioDTO> GetAllUsers(bool trackChanges) =>
+        public IEnumerable<Usuario> GetAllUsers(bool trackChanges) =>
             FindAll(trackChanges)
                 .OrderBy(c => c.NumDocumento)
                 .ToList();
 
-        public UsuarioDTO GetUser(Guid IdUsuario, bool trackChanges) =>
+        public Usuario GetUser(Guid IdUsuario, bool trackChanges) =>
             FindByCondition(c => c.IdUsuario.Equals(IdUsuario), trackChanges)
             .SingleOrDefault();
 

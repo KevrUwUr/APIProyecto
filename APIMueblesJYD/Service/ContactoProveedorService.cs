@@ -28,9 +28,9 @@ namespace Service
         public IEnumerable<ContactoProveedorDTO> GetAllSuplierContacts(bool trackChanges)
         {
             var contactoProveedor = _repository.ContactoProveedor.GetAllSupplierContacts(trackChanges);
-            var contactoProveedorDto = _mapper.Map<IEnumerable<ContactoProveedorDTO>>(contactoProveedor);
+            var contactoProveedorDTO = _mapper.Map<IEnumerable<ContactoProveedorDTO>>(contactoProveedor);
 
-            return contactoProveedorDto;
+            return contactoProveedorDTO;
         }
 
         public ContactoProveedorDTO GetSupplierContact(Guid Id, bool trackChanges)
@@ -41,8 +41,8 @@ namespace Service
                 throw new ContactoProveedorNotFoundException(Id);
             }
 
-            var contactoProveedorDto = _mapper.Map<ContactoProveedorDTO>(contactoProveedor);
-            return contactoProveedorDto;
+            var contactoProveedorDTO = _mapper.Map<ContactoProveedorDTO>(contactoProveedor);
+            return contactoProveedorDTO;
         }
     }
 }

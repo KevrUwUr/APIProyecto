@@ -44,5 +44,60 @@ namespace Service
             var perdidaDTO = _mapper.Map<PerdidaDTO>(perdida);
             return perdidaDTO;
         }
+        public PerdidaDTO CreateLose(PerdidaForCreationDTO lose)
+        {
+            var perdidaEntity = _mapper.Map<Perdida>(lose);
+
+            _repository.Perdida.CreateLose(perdidaEntity);
+            _repository.Save();
+
+            var loseToReturn = _mapper.Map<PerdidaDTO>(perdidaEntity);
+            return loseToReturn;
+        }
+        public IEnumerable<PerdidaDTO> GetByIds(IEnumerable<Guid> ids, bool trackChanges)
+        {
+            if (ids is null)
+                throw new IdParametersBadRequestException();
+            var loseEntities = _repository.Perdida.GetByIds(ids, trackChanges);
+            if (ids.Count() != loseEntities.Count())
+                throw new CollectionByIdsBadRequestException();
+            var companiesToReturn = _mapper.Map<IEnumerable<PerdidaDTO>>(loseEntities);
+
+            return companiesToReturn;
+        }
+        public (IEnumerable<PerdidaDTO> perdidas, string ids) CreateLoseCollection
+            (IEnumerable<PerdidaForCreationDTO> loseCollection)
+        {
+            if (loseCollection is null)
+                throw new PerdidaCollectionBadRequest();
+            var loseEntities = _mapper.Map<IEnumerable<Perdida>>(loseCollection);
+            foreach (var lose in loseEntities)
+            {
+                _repository.Perdida.CreateLose(lose);
+            }
+            _repository.Save();
+            var loseCollectionToReturn =
+            _mapper.Map<IEnumerable<PerdidaDTO>>(loseEntities);
+            var ids = string.Join(",", loseCollectionToReturn.Select(c => c.IdPerdida));
+            return (loses: loseCollectionToReturn, ids: ids);
+        }
+        public void DeleteLose(Guid loseId, bool trackChanges)
+        {
+            var lose = _repository.Perdida.GetLose(loseId, trackChanges);
+            if (lose == null)
+                throw new PerdidaNotFoundException(loseId);
+
+            _repository.Perdida.DeleteLose(lose);
+            _repository.Save();
+        }
+        public void UpdateLose(Guid loseId, PerdidaForUpdateDTO loseForUpdate, bool trackChanges)
+        {
+            var loseEntity = _repository.Perdida.GetLose(loseId, trackChanges);
+            if (loseEntity == null)
+                throw new PerdidaNotFoundException(loseId);
+
+            _mapper.Map(loseForUpdate, loseEntity);
+            _repository.Save();
+        }
     }
 }

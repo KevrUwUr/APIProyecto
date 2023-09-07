@@ -9,19 +9,19 @@ using System.Threading.Tasks;
 
 namespace Repository
 {
-    public class MetodoPagoRepository : RepositoryBase<MetodoPagoDTO>, IMetodoPagoRepository
+    public class MetodoPagoRepository : RepositoryBase<MetodoPago>, IMetodoPagoRepository
     {
         public MetodoPagoRepository(RepositoryContext repositoryContext)
             : base(repositoryContext)
         {
         }
 
-        public IEnumerable<MetodoPagoDTO> GetAllPaymentMethods(bool trackChanges) =>
+        public IEnumerable<MetodoPago> GetAllPaymentMethods(bool trackChanges) =>
             FindAll(trackChanges)
                 .OrderBy(c => c.NombrePlataforma)
                 .ToList();
 
-        public MetodoPagoDTO GetPaymentMethod(Guid IdMetodoPago, bool trackChanges) =>
+        public MetodoPago GetPaymentMethod(Guid IdMetodoPago, bool trackChanges) =>
             FindByCondition(c => c.IdMetodoPago.Equals(IdMetodoPago), trackChanges)
             .SingleOrDefault();
 

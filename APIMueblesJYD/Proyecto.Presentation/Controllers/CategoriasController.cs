@@ -36,7 +36,7 @@ namespace Proyect.Presentation.Controllers
         {
             if (category == null)
             {
-                return BadRequest("CategoriaForCreationDto object is null");
+                return BadRequest("CategoriaForCreationDTO object is null");
             }
             var createdcategory = _service.CategoriaService.CreateCategory(category);
 
@@ -72,7 +72,7 @@ namespace Proyect.Presentation.Controllers
         public IActionResult UpdateCategory(Guid id, [FromBody] CategoriaForUpdateDTO category)
         {
             if (category == null)
-                return BadRequest("categoryForUpdateDto object is null");
+                return BadRequest("categoryForUpdateDTO object is null");
 
             _service.CategoriaService.UpdateCategory(id, category, trackChanges: true);
             return NoContent();

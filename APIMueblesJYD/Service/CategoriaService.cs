@@ -28,9 +28,9 @@ namespace Service
         public IEnumerable<CategoriaDTO> GetAllCategories(bool trackChanges)
         {
             var categories = _repository.Categoria.GetAllCategories(trackChanges);
-            var categoriesDto = _mapper.Map<IEnumerable<CategoriaDTO>>(categories);
+            var categoriesDTO = _mapper.Map<IEnumerable<CategoriaDTO>>(categories);
 
-            return categoriesDto;
+            return categoriesDTO;
         }
 
 
@@ -42,8 +42,8 @@ namespace Service
                 throw new CategoriaNotFoundException(Id);
             }
 
-            var categoryDto = _mapper.Map<CategoriaDTO>(category);
-            return categoryDto;
+            var categoryDTO = _mapper.Map<CategoriaDTO>(category);
+            return categoryDTO;
         }
         public CategoriaDTO CreateCategory(CategoriaForCreationDTO category)
         {

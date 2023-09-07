@@ -9,20 +9,20 @@ using System.Threading.Tasks;
 
 namespace Repository
 {
-    public class EmpleadoRepository : RepositoryBase<EmpleadoDTO>, IEmpleadoRepository
+    public class EmpleadoRepository : RepositoryBase<Empleado>, IEmpleadoRepository
     {
         public EmpleadoRepository(RepositoryContext repositoryContext)
             : base(repositoryContext)
         {
         }
 
-        public IEnumerable<EmpleadoDTO> GetAllEmployees(bool trackChanges) =>
+        public IEnumerable<Empleado> GetAllEmployees(bool trackChanges) =>
               FindAll(trackChanges)
                   .OrderBy(c => c.Nombres)
                   .ToList();
 
-        public EmpleadoDTO GetEmployee(Guid IdEmpleado, bool trackChanges) =>
-            FindByCondition(c => c.Id.Equals(IdEmpleado), trackChanges)
+        public Empleado GetEmployee(Guid IdEmpleado, bool trackChanges) =>
+            FindByCondition(c => c.EmpleadoId.Equals(IdEmpleado), trackChanges)
             .SingleOrDefault();
 
     }

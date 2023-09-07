@@ -9,20 +9,20 @@ using System.Threading.Tasks;
 
 namespace Repository
 {
-    public class PerdidaProductoRepository : RepositoryBase<PerdidaProductoDTO>, IPerdidaProductoRepository
+    public class PerdidaProductoRepository : RepositoryBase<PerdidaProducto>, IPerdidaProductoRepository
     {
         public PerdidaProductoRepository(RepositoryContext repositoryContext)
             : base(repositoryContext)
         {
         }
 
-        public IEnumerable<PerdidaProductoDTO> GetAllProductLoses(bool trackChanges) =>
+        public IEnumerable<PerdidaProducto> GetAllProductLoses(bool trackChanges) =>
             FindAll(trackChanges)
-                .OrderBy(c => c.Id)
+                .OrderBy(c => c.IdPerdida)
                 .ToList();
 
-        public PerdidaProductoDTO GetProductLose(Guid IdPerdidaProducto, bool trackChanges) =>
-            FindByCondition(c => c.Id.Equals(IdPerdidaProducto), trackChanges)
+        public PerdidaProducto GetProductLose(Guid IdPerdidaProducto, bool trackChanges) =>
+            FindByCondition(c => c.IdPerdida.Equals(IdPerdidaProducto), trackChanges)
             .SingleOrDefault();
 
     }

@@ -9,19 +9,19 @@ using System.Threading.Tasks;
 
 namespace Repository
 {
-    public class FacturaCompraRepository : RepositoryBase<FacturaCompraDTO>, IFacturaCompraRepository
+    public class FacturaCompraRepository : RepositoryBase<FacturaCompra>, IFacturaCompraRepository
     {
         public FacturaCompraRepository(RepositoryContext repositoryContext)
             : base(repositoryContext)
         {
         }
 
-        public IEnumerable<FacturaCompraDTO> GetAllBuyBills(bool trackChanges) =>
+        public IEnumerable<FacturaCompra> GetAllBuyBills(bool trackChanges) =>
             FindAll(trackChanges)
                 .OrderBy(c => c.NFactura)
                 .ToList();
 
-        public FacturaCompraDTO GetBuyBill(Guid FacturaCompraId, bool trackChanges) =>
+        public FacturaCompra GetBuyBill(Guid FacturaCompraId, bool trackChanges) =>
             FindByCondition(c => c.FacturaCompraId.Equals(FacturaCompraId), trackChanges)
             .SingleOrDefault();
 

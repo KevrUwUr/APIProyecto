@@ -10,7 +10,7 @@ namespace Contracts
 {
     public interface IEmpleadoCargoRepository
     {
-        IEnumerable<EmpleadoCargoDTO> GetAllEmployeeJobs(bool trackChanges);
-        EmpleadoCargoDTO GetEmployeeJob(int NumeroContrato, bool trackChanges);
+        IEnumerable<EmpleadoCargo> GetAllEmployeeJobs(bool trackChanges);
+        EmpleadoCargo GetEmployeeJob(int NumeroContrato, bool trackChanges);
     }
 }

@@ -9,19 +9,19 @@ using System.Threading.Tasks;
 
 namespace Repository
 {
-    public class HistoricoPreciosRepository : RepositoryBase<HistoricoPreciosDTO>, IHistoricoPreciosRepository
+    public class HistoricoPreciosRepository : RepositoryBase<HistoricoPrecios>, IHistoricoPreciosRepository
     {
         public HistoricoPreciosRepository(RepositoryContext repositoryContext)
             : base(repositoryContext)
         {
         }
 
-        public IEnumerable<HistoricoPreciosDTO> GetAllPriceHistories(bool trackChanges) =>
+        public IEnumerable<HistoricoPrecios> GetAllPriceHistories(bool trackChanges) =>
             FindAll(trackChanges)
                 .OrderBy(c => c.IdHistoricoPrecios)
                 .ToList();
 
-        public HistoricoPreciosDTO GetPriceHistory(Guid IdHistoricoPrecios, bool trackChanges) =>
+        public HistoricoPrecios GetPriceHistory(Guid IdHistoricoPrecios, bool trackChanges) =>
             FindByCondition(c => c.IdHistoricoPrecios.Equals(IdHistoricoPrecios), trackChanges)
             .SingleOrDefault();
 

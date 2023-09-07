@@ -23,8 +23,8 @@ namespace Repository
             .SingleOrDefault();
 
         public void CreateCategory(Categoria category) => Create(category);
-        public IEnumerable<Categoria> GetByIds(IEnumerable<Guid> ids, bool trackChanges)=>
-            FindByCondition(x=>ids.Contains(x.IdCategoria), trackChanges)
+        public IEnumerable<Categoria> GetByIds(IEnumerable<Guid> ids, bool trackChanges) =>
+            FindByCondition(x => ids.Contains(x.IdCategoria), trackChanges)
             .ToList();
         public void DeleteCategory(Categoria category) => Delete(category);
     }

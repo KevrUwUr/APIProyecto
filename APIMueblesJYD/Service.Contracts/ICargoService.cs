@@ -10,7 +10,18 @@ namespace Service.Contracts
 {
     public interface ICargoService
     {
-        IEnumerable<CargoDto> GetAllCargos(bool trackChanges);
-        CargoDto GetCargo(Guid cargoId, bool trackChanges);
+        IEnumerable<CargoDTO> GetAllCargos(bool trackChanges);
+        CargoDTO GetCargo(Guid cargoId, bool trackChanges);
+
+        CargoDTO CreateCargo(CargoForCreationDTO cargo);
+
+        IEnumerable<CargoDTO> GetByIds(IEnumerable<Guid> ids, bool trackChanges);
+
+        (IEnumerable<CargoDTO> cargos, string ids) CreateCargoCollection
+                (IEnumerable<CargoForCreationDTO> cargoCollection);
+
+        void DeleteCargo(Guid cargoId, bool trackChanges);
+
+        void UpdateCargo(Guid cargoId, CargoForUpdateDTO cargoForUpdate, bool trackChanges);
     }
 }

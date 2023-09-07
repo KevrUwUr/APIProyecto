@@ -13,10 +13,10 @@ namespace Proyect.Presentation.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ProveedorController : ControllerBase
+    public class ProveedoresController : ControllerBase
     {
         private readonly IServiceManager _service;
-        public ProveedorController(IServiceManager service) => _service = service;
+        public ProveedoresController(IServiceManager service) => _service = service;
 
         [HttpGet]
         public IActionResult GetAllSuppliers()
@@ -36,7 +36,7 @@ namespace Proyect.Presentation.Controllers
         {
             if (Proveedor == null)
             {
-                return BadRequest("ProveedorForCreationDto object is null");
+                return BadRequest("ProveedorForCreationDTO object is null");
             }
             var createdProveedor = _service.ProveedorService.CreateSupplier(Proveedor);
 
@@ -47,8 +47,8 @@ namespace Proyect.Presentation.Controllers
         [HttpGet("collection/({ids})", Name = "ProveedorCollection")]
         public IActionResult GetProveedorCollection([ModelBinder(BinderType = typeof(ArrayModelBinder))] IEnumerable<Guid> ids)
         {
-            var categories = _service.ProveedorService.GetByIds(ids, trackChanges: false);
-            return Ok(categories);
+            var suppliers = _service.ProveedorService.GetByIds(ids, trackChanges: false);
+            return Ok(suppliers);
         }
 
         [HttpPost("collection")]
@@ -72,7 +72,7 @@ namespace Proyect.Presentation.Controllers
         public IActionResult UpdateProveedor(Guid id, [FromBody] ProveedorForUpdateDTO Proveedor)
         {
             if (Proveedor == null)
-                return BadRequest("ProveedorForUpdateDto object is null");
+                return BadRequest("ProveedorForUpdateDTO object is null");
 
             _service.ProveedorService.UpdateSupplier(id, Proveedor, trackChanges: true);
             return NoContent();

@@ -9,21 +9,27 @@ using System.Threading.Tasks;
 
 namespace Repository
 {
-    public class PerdidaRepository : RepositoryBase<PerdidaDTO>, IPerdidaRepository
+    public class PerdidaRepository : RepositoryBase<Perdida>, IPerdidaRepository
     {
         public PerdidaRepository(RepositoryContext repositoryContext)
             : base(repositoryContext)
         {
         }
 
-        public IEnumerable<PerdidaDTO> GetAllLoses(bool trackChanges) =>
+        public IEnumerable<Perdida> GetAllLoses(bool trackChanges) =>
             FindAll(trackChanges)
                 .OrderBy(c => c.IdPerdida)
                 .ToList();
 
-        public PerdidaDTO GetLose(Guid IdPerdida, bool trackChanges) =>
+        public Perdida GetLose(Guid IdPerdida, bool trackChanges) =>
             FindByCondition(c => c.IdPerdida.Equals(IdPerdida), trackChanges)
             .SingleOrDefault();
+
+        public void CreateLose(Perdida lose) => Create(lose);
+        public IEnumerable<Perdida> GetByIds(IEnumerable<Guid> ids, bool trackChanges) =>
+            FindByCondition(x => ids.Contains(x.IdPerdida), trackChanges)
+            .ToList();
+        public void DeleteLose(Perdida lose) => Delete(lose);
 
     }
 }

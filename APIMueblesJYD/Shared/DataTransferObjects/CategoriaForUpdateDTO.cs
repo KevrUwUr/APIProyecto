@@ -6,6 +6,6 @@ using System.Threading.Tasks;
 
 namespace Shared.DataTransferObjects
 {
-    public record CategoriaForUpdateDTO (string Nombre, int Estado
-        /*IEnumerable<ProductoForCreationDTO>Productos*/);
+    public record CategoriaForUpdateDTO (string Nombre, int Estado,
+        IEnumerable<ProductoForCreationDTO>Productos);
 }

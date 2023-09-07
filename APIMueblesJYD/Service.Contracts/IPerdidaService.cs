@@ -12,5 +12,11 @@ namespace Service.Contracts
     {
         IEnumerable<PerdidaDTO> GetAllLoses(bool trackChanges);
         PerdidaDTO GetLose(Guid Id, bool trackChanges);
+        PerdidaDTO CreateLose(PerdidaForCreationDTO lose);
+        IEnumerable<PerdidaDTO> GetByIds(IEnumerable<Guid> ids, bool trackChanges);
+        (IEnumerable<PerdidaDTO> perdidas, string ids) CreateLoseCollection
+            (IEnumerable<PerdidaForCreationDTO> loseCollection);
+        void DeleteLose(Guid loseId, bool trackChanges);
+        void UpdateLose(Guid loseId, PerdidaForUpdateDTO loseForUpdate, bool trackChanges);
     }
 }

@@ -11,7 +11,7 @@ namespace Repository
     public class CargoRepository : RepositoryBase<Cargo>, ICargoRepository
     {
         public CargoRepository(RepositoryContext repositoryContext)
-            :base(repositoryContext)
+            : base(repositoryContext)
         {
         }
 
@@ -23,5 +23,13 @@ namespace Repository
         public Cargo GetCargo(Guid cargoId, bool trackChanges) =>
             FindByCondition(c => c.CargoId.Equals(cargoId), trackChanges)
             .SingleOrDefault();
+
+        public void CreateCargo(Cargo cargo) => Create(cargo);
+
+        public IEnumerable<Cargo> GetByIds(IEnumerable<Guid> ids, bool trackChanges) =>
+            FindByCondition(x => ids.Contains(x.CargoId), trackChanges);
+
+
+        public void DeleteCargo(Cargo cargo) => Delete(cargo);
     }
 }

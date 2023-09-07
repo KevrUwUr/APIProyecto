@@ -17,8 +17,8 @@ namespace APIRestProyecto
         }
         protected override bool CanWriteType(Type? type)
         {
-            if(typeof(CargoDto).IsAssignableFrom(type) ||
-                typeof(IEnumerable<CargoDto>).IsAssignableFrom(type))
+            if(typeof(CargoDTO).IsAssignableFrom(type) ||
+                typeof(IEnumerable<CargoDTO>).IsAssignableFrom(type))
             {
                 return base.CanWriteType(type);
             }
@@ -28,20 +28,20 @@ namespace APIRestProyecto
         {
             var response = context.HttpContext.Response;
             var buffer = new StringBuilder();
-            if(context.Object is IEnumerable<CargoDto>)
+            if(context.Object is IEnumerable<CargoDTO>)
             {
-                foreach (var cargo in (IEnumerable<CargoDto>)context.Object)
+                foreach (var cargo in (IEnumerable<CargoDTO>)context.Object)
                 {
                     FormatCsv(buffer, cargo);
                 }
             }
             else
             {
-                FormatCsv(buffer, (CargoDto)context.Object);
+                FormatCsv(buffer, (CargoDTO)context.Object);
             }
             await response.WriteAsync(buffer.ToString());
         }
-        private static void FormatCsv(StringBuilder buffer, CargoDto cargo)
+        private static void FormatCsv(StringBuilder buffer, CargoDTO cargo)
         {
             buffer.AppendLine($"{cargo.Id},\"{cargo.NombreCargo},\"{cargo.Estado}\"");
         }

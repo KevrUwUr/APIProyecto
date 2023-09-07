@@ -10,7 +10,7 @@ namespace Contracts
 {
     public interface IFacturaCompraRepository
     {
-        IEnumerable<FacturaCompraDTO> GetAllBuyBills(bool trackChanges);
-        FacturaCompraDTO GetBuyBill(Guid buyBillId, bool trackChanges);
+        IEnumerable<FacturaCompra> GetAllBuyBills(bool trackChanges);
+        FacturaCompra GetBuyBill(Guid buyBillId, bool trackChanges);
     }
 }

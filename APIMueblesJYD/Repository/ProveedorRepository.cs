@@ -9,20 +9,20 @@ using System.Threading.Tasks;
 
 namespace Repository
 {
-    public class ProveedorRepository : RepositoryBase<ProveedorDTO>, IProveedorRepository
+    public class ProveedorRepository : RepositoryBase<Proveedor>, IProveedorRepository
     {
         public ProveedorRepository(RepositoryContext repositoryContext)
             : base(repositoryContext)
         {
         }
 
-        public IEnumerable<ProveedorDTO> GetAllSuppliers(bool trackChanges) =>
+        public IEnumerable<Proveedor> GetAllSuppliers(bool trackChanges) =>
             FindAll(trackChanges)
                 .OrderBy(c => c.RazonSocial)
                 .ToList();
 
-        public ProveedorDTO GetSupplier(Guid IdProveedor, bool trackChanges) =>
-            FindByCondition(c => c.IdProveedor.Equals(IdProveedor), trackChanges)
+        public Proveedor GetSupplier(Guid Id, bool trackChanges) =>
+            FindByCondition(c => c.IdProveedor.Equals(Id), trackChanges)
             .SingleOrDefault();
 
         public void CreateSupplier(Proveedor supplier) => Create(supplier);
