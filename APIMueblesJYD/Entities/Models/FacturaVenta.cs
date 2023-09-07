@@ -38,8 +38,6 @@ namespace Entities.Models
         [Required(ErrorMessage = "TotalPago es un campo requerido.")]
         public float TotalPago { get; set; }
 
-        public ICollection<DetalleFacturaVenta>? DetalleFacturaVentas { get; set; }
-
         [ForeignKey(nameof(Usuario))]
         public Guid IdUsuario  { get; set; }
         public Usuario? Usuarios { get; set; }

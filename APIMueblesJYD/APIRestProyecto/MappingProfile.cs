@@ -8,7 +8,9 @@ namespace APIRestProyecto
     {
         public MappingProfile()
         {
-            CreateMap<Cargo, CargoDto>();
+            CreateMap<Cargo, CargoDto>()
+                .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.CargoId));
+    
             CreateMap<Categoria, CategoriaDTO>();
         }
     }

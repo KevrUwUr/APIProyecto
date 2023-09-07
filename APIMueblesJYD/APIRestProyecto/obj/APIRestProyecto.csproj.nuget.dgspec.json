@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\APIRestProyecto\\APIRestProyecto.csproj": {}
+    "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\APIRestProyecto\\APIRestProyecto.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\APIRestProyecto\\APIRestProyecto.csproj": {
+    "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\APIRestProyecto\\APIRestProyecto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\APIRestProyecto\\APIRestProyecto.csproj",
+        "projectUniqueName": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\APIRestProyecto\\APIRestProyecto.csproj",
         "projectName": "APIRestProyecto",
-        "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\APIRestProyecto\\APIRestProyecto.csproj",
-        "packagesPath": "C:\\Users\\Aprendiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\APIRestProyecto\\obj\\",
+        "projectPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\APIRestProyecto\\APIRestProyecto.csproj",
+        "packagesPath": "C:\\Users\\EQUIPO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\APIRestProyecto\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Aprendiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\EQUIPO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,28 +26,26 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj": {
-                "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj"
+              "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj": {
+                "projectPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj"
               },
-              "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Proyecto.Presentation\\Proyect.Presentation.csproj": {
-                "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Proyecto.Presentation\\Proyect.Presentation.csproj"
+              "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Proyecto.Presentation\\Proyect.Presentation.csproj": {
+                "projectPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Proyecto.Presentation\\Proyect.Presentation.csproj"
               },
-              "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Repository\\Repository.csproj": {
-                "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Repository\\Repository.csproj"
+              "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Repository\\Repository.csproj": {
+                "projectPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Repository\\Repository.csproj"
               },
-              "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj": {
-                "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj"
+              "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj": {
+                "projectPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj"
               },
-              "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Service\\Service.csproj": {
-                "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Service\\Service.csproj"
+              "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Service\\Service.csproj": {
+                "projectPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Service\\Service.csproj"
               }
             }
           }
@@ -100,24 +98,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj": {
+    "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj",
         "projectName": "Contracts",
-        "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj",
-        "packagesPath": "C:\\Users\\Aprendiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Contracts\\obj\\",
+        "projectPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj",
+        "packagesPath": "C:\\Users\\EQUIPO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Aprendiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\EQUIPO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -126,18 +124,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj"
+              "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj"
               },
-              "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Shared\\Shared.csproj": {
-                "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Shared\\Shared.csproj"
+              "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Shared\\Shared.csproj"
               }
             }
           }
@@ -175,24 +172,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj": {
+    "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\Aprendiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Entities\\obj\\",
+        "projectPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\EQUIPO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Aprendiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\EQUIPO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -201,7 +198,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -235,24 +231,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj": {
+    "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj",
+        "projectUniqueName": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj",
         "projectName": "LoggerService",
-        "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj",
-        "packagesPath": "C:\\Users\\Aprendiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\LoggerService\\obj\\",
+        "projectPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj",
+        "packagesPath": "C:\\Users\\EQUIPO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\LoggerService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Aprendiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\EQUIPO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -261,15 +257,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj": {
-                "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj"
+              "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj"
               }
             }
           }
@@ -305,24 +300,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Proyecto.Presentation\\Proyect.Presentation.csproj": {
+    "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Proyecto.Presentation\\Proyect.Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Proyecto.Presentation\\Proyect.Presentation.csproj",
+        "projectUniqueName": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Proyecto.Presentation\\Proyect.Presentation.csproj",
         "projectName": "Proyect.Presentation",
-        "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Proyecto.Presentation\\Proyect.Presentation.csproj",
-        "packagesPath": "C:\\Users\\Aprendiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Proyecto.Presentation\\obj\\",
+        "projectPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Proyecto.Presentation\\Proyect.Presentation.csproj",
+        "packagesPath": "C:\\Users\\EQUIPO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Proyecto.Presentation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Aprendiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\EQUIPO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -331,15 +326,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj": {
-                "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj"
+              "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj": {
+                "projectPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj"
               }
             }
           }
@@ -375,24 +369,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Repository\\Repository.csproj": {
+    "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Repository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\Aprendiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Repository\\obj\\",
+        "projectPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\EQUIPO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Aprendiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\EQUIPO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -401,18 +395,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj": {
-                "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj"
+              "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj"
               },
-              "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj"
+              "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj"
               }
             }
           }
@@ -452,24 +445,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj": {
+    "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj",
         "projectName": "Service.Contracts",
-        "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj",
-        "packagesPath": "C:\\Users\\Aprendiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\obj\\",
+        "projectPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj",
+        "packagesPath": "C:\\Users\\EQUIPO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Aprendiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\EQUIPO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -478,18 +471,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj"
+              "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj"
               },
-              "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Shared\\Shared.csproj": {
-                "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Shared\\Shared.csproj"
+              "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Shared\\Shared.csproj": {
+                "projectPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Shared\\Shared.csproj"
               }
             }
           }
@@ -519,24 +511,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Service\\Service.csproj": {
+    "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Service\\Service.csproj",
+        "projectUniqueName": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Service\\Service.csproj",
-        "packagesPath": "C:\\Users\\Aprendiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Service\\obj\\",
+        "projectPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Service\\Service.csproj",
+        "packagesPath": "C:\\Users\\EQUIPO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Aprendiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\EQUIPO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -545,18 +537,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj": {
-                "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj"
+              "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj": {
+                "projectPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj"
               },
-              "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj": {
-                "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj"
+              "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj": {
+                "projectPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj"
               }
             }
           }
@@ -592,24 +583,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Shared\\Shared.csproj": {
+    "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Shared\\Shared.csproj",
+        "projectUniqueName": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Shared\\Shared.csproj",
         "projectName": "Shared",
-        "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Shared\\Shared.csproj",
-        "packagesPath": "C:\\Users\\Aprendiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aprendiz\\Desktop\\APIPROYECTO\\APIProyecto\\APIMueblesJYD\\Shared\\obj\\",
+        "projectPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Shared\\Shared.csproj",
+        "packagesPath": "C:\\Users\\EQUIPO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Aprendiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\EQUIPO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -618,7 +609,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -652,7 +642,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

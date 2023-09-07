@@ -44,6 +44,5 @@ namespace Entities.Models
         public Guid IdProveedor { get; set; }
         public Proveedor? Proveedores { get; set; }
 
-        public ICollection<DetalleFacturaVenta>? detalleFacturaVentas { get; set; }
     }
 }

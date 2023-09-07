@@ -530,9 +530,6 @@ namespace APIRestProyecto.Migrations
                     b.Property<int>("Cantidad")
                         .HasColumnType("int");
 
-                    b.Property<Guid?>("FacturaCompraId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<Guid>("FacturaVentaId")
                         .HasColumnType("uniqueidentifier");
 
@@ -549,8 +546,6 @@ namespace APIRestProyecto.Migrations
                         .HasColumnType("real");
 
                     b.HasKey("DetalleFacturaVentaID");
-
-                    b.HasIndex("FacturaCompraId");
 
                     b.HasIndex("FacturaVentaId");
 
@@ -1605,12 +1600,8 @@ namespace APIRestProyecto.Migrations
 
             modelBuilder.Entity("Entities.Models.DetalleFacturaVenta", b =>
                 {
-                    b.HasOne("Entities.Models.FacturaCompra", null)
-                        .WithMany("detalleFacturaVentas")
-                        .HasForeignKey("FacturaCompraId");
-
                     b.HasOne("Entities.Models.FacturaVenta", "FacturasVenta")
-                        .WithMany("DetalleFacturaVentas")
+                        .WithMany()
                         .HasForeignKey("FacturaVentaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -1748,14 +1739,10 @@ namespace APIRestProyecto.Migrations
             modelBuilder.Entity("Entities.Models.FacturaCompra", b =>
                 {
                     b.Navigation("DetalleFacturaCompras");
-
-                    b.Navigation("detalleFacturaVentas");
                 });
 
             modelBuilder.Entity("Entities.Models.FacturaVenta", b =>
                 {
-                    b.Navigation("DetalleFacturaVentas");
-
                     b.Navigation("MetodoPago");
                 });
 

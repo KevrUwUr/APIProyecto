@@ -12,7 +12,7 @@ using Repository;
 namespace APIRestProyecto.Migrations
 {
     [DbContext(typeof(RepositoryContext))]
-    [Migration("20230906220129_M1")]
+    [Migration("20230907031254_M1")]
     partial class M1
     {
         /// <inheritdoc />

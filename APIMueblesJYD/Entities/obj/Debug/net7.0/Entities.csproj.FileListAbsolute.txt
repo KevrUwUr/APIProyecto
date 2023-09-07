@@ -61,3 +61,14 @@ C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\Entities\obj\Deb
 C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\refint\Entities.dll
 C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.pdb
 C:\Users\Aprendiz\Desktop\APIPROYECTO\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\ref\Entities.dll
+C:\Users\EQUIPO\Desktop\ProyectoKev\APIProyecto\APIMueblesJYD\Entities\bin\Debug\net7.0\Entities.deps.json
+C:\Users\EQUIPO\Desktop\ProyectoKev\APIProyecto\APIMueblesJYD\Entities\bin\Debug\net7.0\Entities.dll
+C:\Users\EQUIPO\Desktop\ProyectoKev\APIProyecto\APIMueblesJYD\Entities\bin\Debug\net7.0\Entities.pdb
+C:\Users\EQUIPO\Desktop\ProyectoKev\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EQUIPO\Desktop\ProyectoKev\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.AssemblyInfoInputs.cache
+C:\Users\EQUIPO\Desktop\ProyectoKev\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.AssemblyInfo.cs
+C:\Users\EQUIPO\Desktop\ProyectoKev\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\EQUIPO\Desktop\ProyectoKev\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.dll
+C:\Users\EQUIPO\Desktop\ProyectoKev\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\refint\Entities.dll
+C:\Users\EQUIPO\Desktop\ProyectoKev\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\Entities.pdb
+C:\Users\EQUIPO\Desktop\ProyectoKev\APIProyecto\APIMueblesJYD\Entities\obj\Debug\net7.0\ref\Entities.dll
