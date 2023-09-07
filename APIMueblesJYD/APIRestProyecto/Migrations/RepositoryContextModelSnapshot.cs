@@ -659,10 +659,15 @@ namespace APIRestProyecto.Migrations
 
             modelBuilder.Entity("Entities.Models.EmpleadoCargo", b =>
                 {
-                    b.Property<Guid>("EmpleadoId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<Guid>("EmpleadoCargoId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("EmpleadoCargoId");
 
                     b.Property<Guid>("CargoId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("EmpleadoId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime?>("FechaFin")
@@ -678,49 +683,56 @@ namespace APIRestProyecto.Migrations
                         .HasMaxLength(80)
                         .HasColumnType("int");
 
-                    b.HasKey("EmpleadoId", "CargoId");
+                    b.HasKey("EmpleadoCargoId");
 
                     b.HasIndex("CargoId");
+
+                    b.HasIndex("EmpleadoId");
 
                     b.ToTable("EmpleadoCargos");
 
                     b.HasData(
                         new
                         {
-                            EmpleadoId = new Guid("41fff2b6-9886-40bc-ab38-d34cfaae3f96"),
+                            EmpleadoCargoId = new Guid("90f05cd7-6f17-460c-9bcb-3c63ce3a4410"),
                             CargoId = new Guid("5e74a02d-a99f-40e3-8c4c-a4c58a78ad04"),
+                            EmpleadoId = new Guid("41fff2b6-9886-40bc-ab38-d34cfaae3f96"),
                             FechaFin = new DateTime(2015, 5, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaInicio = new DateTime(1995, 5, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             NumeroContrato = 1
                         },
                         new
                         {
-                            EmpleadoId = new Guid("1f03e9da-4f5a-4c01-a74b-5484a0622a88"),
+                            EmpleadoCargoId = new Guid("50a17a3d-d802-4c47-9bdd-2fad36872396"),
                             CargoId = new Guid("1cb1de39-40fe-472b-bdb7-d37db36387fb"),
+                            EmpleadoId = new Guid("1f03e9da-4f5a-4c01-a74b-5484a0622a88"),
                             FechaFin = new DateTime(2010, 12, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaInicio = new DateTime(2000, 10, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             NumeroContrato = 2
                         },
                         new
                         {
-                            EmpleadoId = new Guid("aad28fbf-f3e8-43b2-97d4-9eab3d59597a"),
+                            EmpleadoCargoId = new Guid("a7ee5fb7-dee6-4b4e-91c8-b13364295b26"),
                             CargoId = new Guid("24254ac3-4379-41ba-ab1d-d4c31ffc4855"),
+                            EmpleadoId = new Guid("aad28fbf-f3e8-43b2-97d4-9eab3d59597a"),
                             FechaFin = new DateTime(2010, 12, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaInicio = new DateTime(2005, 3, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             NumeroContrato = 3
                         },
                         new
                         {
-                            EmpleadoId = new Guid("06e66a66-1840-4a55-abcf-475e8218963f"),
+                            EmpleadoCargoId = new Guid("76bf7cad-c62d-4d64-a0c8-b85287300bce"),
                             CargoId = new Guid("8d9b73ec-049b-483a-8d48-36e29c25021e"),
+                            EmpleadoId = new Guid("06e66a66-1840-4a55-abcf-475e8218963f"),
                             FechaFin = new DateTime(2010, 12, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaInicio = new DateTime(2012, 8, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             NumeroContrato = 4
                         },
                         new
                         {
-                            EmpleadoId = new Guid("da511896-b59c-4052-9103-6bf83a9f4b0a"),
+                            EmpleadoCargoId = new Guid("dbcc8132-59f5-4df7-9ad8-a43c73f3e3a0"),
                             CargoId = new Guid("201b4cc5-5647-44b8-8664-08f49c8ebcf6"),
+                            EmpleadoId = new Guid("da511896-b59c-4052-9103-6bf83a9f4b0a"),
                             FechaFin = new DateTime(2018, 9, 30, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             FechaInicio = new DateTime(2010, 6, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             NumeroContrato = 5

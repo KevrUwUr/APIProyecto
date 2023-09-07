@@ -539,23 +539,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\EQUIPO\\.nuget\\packages\\": {},
+    "C:\\Users\\Aprendiz\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj",
+      "projectUniqueName": "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj",
       "projectName": "LoggerService",
-      "projectPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj",
-      "packagesPath": "C:\\Users\\EQUIPO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\LoggerService\\obj\\",
+      "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj",
+      "packagesPath": "C:\\Users\\Aprendiz\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIMueblesJYD\\LoggerService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\EQUIPO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Aprendiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -564,14 +564,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj": {
-              "projectPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj"
+            "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj": {
+              "projectPath": "C:\\Users\\Aprendiz\\Desktop\\APIProyecto\\APIMueblesJYD\\Contracts\\Contracts.csproj"
             }
           }
         }
@@ -607,7 +608,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

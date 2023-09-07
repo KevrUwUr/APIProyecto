@@ -10,12 +10,22 @@ namespace APIRestProyecto
         {
             CreateMap<Cargo, CargoDto>()
                 .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.CargoId));
-    
-            CreateMap<Categoria, CategoriaDTO>();
-
             CreateMap<CargoForCreationDto, Cargo>();
             CreateMap<CargoForUpdateDTO, Cargo>();
-            
+
+
+            CreateMap<EmpleadoForCreationDTO, Empleado>();
+            CreateMap<EmpleadoCargoForUpdateDTO,  Empleado>();
+            CreateMap<Empleado, EmpleadoDTO>()
+                .ForMember(dest => dest.EmpleadoId, opt => opt.MapFrom(src => src.EmpleadoId));
+
+            CreateMap<EmpleadoCargo, EmpleadoCargoDTO>()
+                .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.EmpleadoCargoId));
+            CreateMap<EmpleadoCargoForCreationDTO, Empleado>();
+            CreateMap<EmpleadoCargoForUpdateDTO, Empleado>();
+
+            CreateMap<Categoria, CategoriaDTO>();
+
         }
     }
 }

@@ -18,13 +18,20 @@ namespace Repository
 
         public IEnumerable<EmpleadoCargo> GetAllEmployeeJobs(bool trackChanges) =>
             FindAll(trackChanges)
-                .OrderBy(c => c.NumeroContrato)
+                .OrderBy(c => c.EmpleadoCargoId)
                 .ToList();
 
-        public EmpleadoCargo GetEmployeeJob(int NumeroContrato, bool trackChanges) =>
-            FindByCondition(c => c.NumeroContrato.Equals(NumeroContrato), trackChanges)
+        public EmpleadoCargo GetEmployeeJob(Guid EmpleadoCargoId, bool trackChanges) =>
+            FindByCondition(c => c.EmpleadoCargoId.Equals(EmpleadoCargoId), trackChanges)
             .SingleOrDefault();
 
+        public void CreateEmployeeJob(EmpleadoCargo empleadoCargo) => Create(empleadoCargo);
+
+        public IEnumerable<EmpleadoCargo> GetByIds(IEnumerable<Guid> ids, bool trackChanges) =>
+            FindByCondition(x => ids.Contains(x.EmpleadoCargoId), trackChanges);
+
+
+        public void DeleteEmployeeJob(EmpleadoCargo empleadoCargo) => Delete(empleadoCargo);
 
     }
 }

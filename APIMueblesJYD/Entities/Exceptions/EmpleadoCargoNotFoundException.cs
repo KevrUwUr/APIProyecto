@@ -8,7 +8,7 @@ namespace Entities.Exceptions
 {
     public sealed class EmpleadoCargoNotFoundException : NotFoundException
     {
-        public EmpleadoCargoNotFoundException(int NumeroContrato)
-            : base($"El empleado con el numero de contrato: {NumeroContrato} no existe en la Base de Datos.") { }
+        public EmpleadoCargoNotFoundException(Guid EmpleadoCargoId)
+            : base($"El empleado con el numero de contrato: {EmpleadoCargoId} no existe en la Base de Datos.") { }
     }
 }

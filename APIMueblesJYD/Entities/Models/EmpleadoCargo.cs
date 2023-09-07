@@ -10,6 +10,10 @@ namespace Entities.Models
 {
     public class EmpleadoCargo
     {
+        [Column("EmpleadoCargoId")]
+        [Key]
+        public Guid EmpleadoCargoId { get; set; }
+
         [Required(ErrorMessage = "FechaInicio es un campo requerido.")]
         public DateTime? FechaInicio { get; set; }
 

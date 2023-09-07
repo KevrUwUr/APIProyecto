@@ -37,8 +37,8 @@ namespace Repository
             modelBuilder.ApplyConfiguration(new ProveedorConfiguration());
             modelBuilder.ApplyConfiguration(new UsuarioConfiguration());
 
-            modelBuilder.Entity<EmpleadoCargo>()
-                .HasKey(t => new { t.EmpleadoId, t.CargoId });
+            //modelBuilder.Entity<EmpleadoCargo>()
+            //    .HasKey(t => new { t.EmpleadoId, t.CargoId,t.EmpleadoCargoId });
             modelBuilder.Entity<PerdidaProducto>()
                 .HasKey(t => new { t.IdPerdida, t.ProductoId });
         }

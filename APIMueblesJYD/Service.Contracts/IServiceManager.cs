@@ -15,8 +15,8 @@ namespace Service.Contracts
         IContactoUsuarioService ContactoUsuarioService { get; }
         IDetFacturaCompraService DetFacturaCompraService { get; }
         IDetFacturaVentaService DetFacturaVentaService { get; }
-        IEmpleadoCargoService IEmpleadoCargoService { get; }
-        IEmpleadoService IEmpleadoService { get; }
+        IEmpleadoCargoService EmpleadoCargoService { get; }
+        IEmpleadoService EmpleadoService { get; }
         IFacturaCompraService FacturaCompraService { get; }
         IFacturaVentaService FacturaVentaService { get;}
         IHistoricoPreciosService HistoricoPreciosService { get; }

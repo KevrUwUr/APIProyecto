@@ -4,6 +4,7 @@ using Entities.Exceptions;
 using Entities.Models;
 using Service.Contracts;
 using Shared.DataTransferObjects;
+using Shared.DataTransferObjects.Shared.DataTransferObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;

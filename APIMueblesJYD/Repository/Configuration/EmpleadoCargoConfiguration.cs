@@ -17,6 +17,7 @@ namespace Repository.Configuration
             (
             new EmpleadoCargo
             {
+                EmpleadoCargoId = new Guid("90F05CD7-6F17-460C-9BCB-3C63CE3A4410"),
                 FechaInicio = new DateTime(1995, 5, 15),
                 FechaFin = new DateTime(2015, 5, 15),
                 NumeroContrato = 1,
@@ -25,6 +26,7 @@ namespace Repository.Configuration
             },
             new EmpleadoCargo
             {
+                EmpleadoCargoId = new Guid("50A17A3D-D802-4C47-9BDD-2FAD36872396"),
                 FechaInicio = new DateTime(2000, 10, 03),
                 FechaFin = new DateTime(2010, 12, 31),
                 NumeroContrato = 2,
@@ -34,6 +36,7 @@ namespace Repository.Configuration
 
             new EmpleadoCargo
             {
+                EmpleadoCargoId = new Guid("A7EE5FB7-DEE6-4B4E-91C8-B13364295B26"),
                 FechaInicio = new DateTime(2005, 3, 20),
                 FechaFin = new DateTime(2010, 12, 31),
                 NumeroContrato = 3,
@@ -43,6 +46,7 @@ namespace Repository.Configuration
 
             new EmpleadoCargo
             {
+                EmpleadoCargoId = new Guid("76BF7CAD-C62D-4D64-A0C8-B85287300BCE"),
                 FechaInicio = new DateTime(2012, 8, 10),
                 FechaFin = new DateTime(2010, 12, 31),
                 NumeroContrato = 4,
@@ -52,6 +56,7 @@ namespace Repository.Configuration
 
             new EmpleadoCargo
             {
+                EmpleadoCargoId = new Guid("DBCC8132-59F5-4DF7-9AD8-A43C73F3E3A0"),
                 FechaInicio = new DateTime(2010, 6, 15),
                 FechaFin = new DateTime(2018, 9, 30),
                 NumeroContrato = 5,

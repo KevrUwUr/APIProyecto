@@ -9,19 +9,19 @@ using System.Threading.Tasks;
 
 namespace Repository
 {
-    public class ProductoRepository : RepositoryBase<ProductoDTO>, IProductoRepository
+    public class ProductoRepository : RepositoryBase<Producto>, IProductoRepository
     {
         public ProductoRepository(RepositoryContext repositoryContext)
             : base(repositoryContext)
         {
         }
 
-        public IEnumerable<ProductoDTO> GetAllProducts(bool trackChanges) =>
+        public IEnumerable<Producto> GetAllProducts(bool trackChanges) =>
             FindAll(trackChanges)
                 .OrderBy(c => c.Nombre)
                 .ToList();
 
-        public ProductoDTO GetProduct(Guid ProductoId, bool trackChanges) =>
+        public Producto GetProduct(Guid ProductoId, bool trackChanges) =>
             FindByCondition(c => c.ProductoId.Equals(ProductoId), trackChanges)
             .SingleOrDefault();
 

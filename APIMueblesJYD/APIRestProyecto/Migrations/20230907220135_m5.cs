@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace APIRestProyecto.Migrations
 {
     /// <inheritdoc />
-    public partial class M1 : Migration
+    public partial class m5 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -147,15 +147,16 @@ namespace APIRestProyecto.Migrations
                 name: "EmpleadoCargos",
                 columns: table => new
                 {
-                    EmpleadoId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    CargoId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    EmpleadoCargoId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     FechaInicio = table.Column<DateTime>(type: "datetime2", nullable: false),
                     FechaFin = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    NumeroContrato = table.Column<int>(type: "int", maxLength: 80, nullable: false)
+                    NumeroContrato = table.Column<int>(type: "int", maxLength: 80, nullable: false),
+                    EmpleadoId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    CargoId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_EmpleadoCargos", x => new { x.EmpleadoId, x.CargoId });
+                    table.PrimaryKey("PK_EmpleadoCargos", x => x.EmpleadoCargoId);
                     table.ForeignKey(
                         name: "FK_EmpleadoCargos_Cargos_CargoId",
                         column: x => x.CargoId,
@@ -381,17 +382,11 @@ namespace APIRestProyecto.Migrations
                     IVA = table.Column<float>(type: "real", nullable: false),
                     ValorDescuento = table.Column<float>(type: "real", nullable: false),
                     ProductoId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    FacturaVentaId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    FacturaCompraId = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
+                    FacturaVentaId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_DetallesFacturaVentas", x => x.DetalleFacturaVentaID);
-                    table.ForeignKey(
-                        name: "FK_DetallesFacturaVentas_FacturasCompras_FacturaCompraId",
-                        column: x => x.FacturaCompraId,
-                        principalTable: "FacturasCompras",
-                        principalColumn: "FacturaCompraId");
                     table.ForeignKey(
                         name: "FK_DetallesFacturaVentas_FacturasVentas_FacturaVentaId",
                         column: x => x.FacturaVentaId,
@@ -553,14 +548,14 @@ namespace APIRestProyecto.Migrations
 
             migrationBuilder.InsertData(
                 table: "EmpleadoCargos",
-                columns: new[] { "CargoId", "EmpleadoId", "FechaFin", "FechaInicio", "NumeroContrato" },
+                columns: new[] { "EmpleadoCargoId", "CargoId", "EmpleadoId", "FechaFin", "FechaInicio", "NumeroContrato" },
                 values: new object[,]
                 {
-                    { new Guid("8d9b73ec-049b-483a-8d48-36e29c25021e"), new Guid("06e66a66-1840-4a55-abcf-475e8218963f"), new DateTime(2010, 12, 31, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2012, 8, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), 4 },
-                    { new Guid("1cb1de39-40fe-472b-bdb7-d37db36387fb"), new Guid("1f03e9da-4f5a-4c01-a74b-5484a0622a88"), new DateTime(2010, 12, 31, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2000, 10, 3, 0, 0, 0, 0, DateTimeKind.Unspecified), 2 },
-                    { new Guid("5e74a02d-a99f-40e3-8c4c-a4c58a78ad04"), new Guid("41fff2b6-9886-40bc-ab38-d34cfaae3f96"), new DateTime(2015, 5, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1995, 5, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), 1 },
-                    { new Guid("24254ac3-4379-41ba-ab1d-d4c31ffc4855"), new Guid("aad28fbf-f3e8-43b2-97d4-9eab3d59597a"), new DateTime(2010, 12, 31, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2005, 3, 20, 0, 0, 0, 0, DateTimeKind.Unspecified), 3 },
-                    { new Guid("201b4cc5-5647-44b8-8664-08f49c8ebcf6"), new Guid("da511896-b59c-4052-9103-6bf83a9f4b0a"), new DateTime(2018, 9, 30, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2010, 6, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), 5 }
+                    { new Guid("50a17a3d-d802-4c47-9bdd-2fad36872396"), new Guid("1cb1de39-40fe-472b-bdb7-d37db36387fb"), new Guid("1f03e9da-4f5a-4c01-a74b-5484a0622a88"), new DateTime(2010, 12, 31, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2000, 10, 3, 0, 0, 0, 0, DateTimeKind.Unspecified), 2 },
+                    { new Guid("76bf7cad-c62d-4d64-a0c8-b85287300bce"), new Guid("8d9b73ec-049b-483a-8d48-36e29c25021e"), new Guid("06e66a66-1840-4a55-abcf-475e8218963f"), new DateTime(2010, 12, 31, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2012, 8, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), 4 },
+                    { new Guid("90f05cd7-6f17-460c-9bcb-3c63ce3a4410"), new Guid("5e74a02d-a99f-40e3-8c4c-a4c58a78ad04"), new Guid("41fff2b6-9886-40bc-ab38-d34cfaae3f96"), new DateTime(2015, 5, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1995, 5, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), 1 },
+                    { new Guid("a7ee5fb7-dee6-4b4e-91c8-b13364295b26"), new Guid("24254ac3-4379-41ba-ab1d-d4c31ffc4855"), new Guid("aad28fbf-f3e8-43b2-97d4-9eab3d59597a"), new DateTime(2010, 12, 31, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2005, 3, 20, 0, 0, 0, 0, DateTimeKind.Unspecified), 3 },
+                    { new Guid("dbcc8132-59f5-4df7-9ad8-a43c73f3e3a0"), new Guid("201b4cc5-5647-44b8-8664-08f49c8ebcf6"), new Guid("da511896-b59c-4052-9103-6bf83a9f4b0a"), new DateTime(2018, 9, 30, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(2010, 6, 15, 0, 0, 0, 0, DateTimeKind.Unspecified), 5 }
                 });
 
             migrationBuilder.InsertData(
@@ -609,11 +604,11 @@ namespace APIRestProyecto.Migrations
 
             migrationBuilder.InsertData(
                 table: "DetallesFacturaVentas",
-                columns: new[] { "DetalleFacturaVentaID", "Cantidad", "FacturaCompraId", "FacturaVentaId", "IVA", "ProductoId", "ValorDescuento", "ValorUnitario" },
+                columns: new[] { "DetalleFacturaVentaID", "Cantidad", "FacturaVentaId", "IVA", "ProductoId", "ValorDescuento", "ValorUnitario" },
                 values: new object[,]
                 {
-                    { new Guid("21980b54-0dd3-46b0-b77a-29eb80caa3c8"), 2, null, new Guid("a6cf357e-205e-45f4-be76-25c8e08aac16"), 1534f, new Guid("edf59c51-6384-422f-b941-ce879c82dcdc"), 0f, 60000f },
-                    { new Guid("636e9434-f3aa-44d1-9ef0-8470d72a5bee"), 2, null, new Guid("ceda0177-4b48-4379-8907-b75c4f0aa10f"), 8075f, new Guid("dd6b62dc-f917-4379-9955-1c244ee78c4b"), 0f, 42500f }
+                    { new Guid("21980b54-0dd3-46b0-b77a-29eb80caa3c8"), 2, new Guid("a6cf357e-205e-45f4-be76-25c8e08aac16"), 1534f, new Guid("edf59c51-6384-422f-b941-ce879c82dcdc"), 0f, 60000f },
+                    { new Guid("636e9434-f3aa-44d1-9ef0-8470d72a5bee"), 2, new Guid("ceda0177-4b48-4379-8907-b75c4f0aa10f"), 8075f, new Guid("dd6b62dc-f917-4379-9955-1c244ee78c4b"), 0f, 42500f }
                 });
 
             migrationBuilder.InsertData(
@@ -668,11 +663,6 @@ namespace APIRestProyecto.Migrations
                 column: "ProductoId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_DetallesFacturaVentas_FacturaCompraId",
-                table: "DetallesFacturaVentas",
-                column: "FacturaCompraId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_DetallesFacturaVentas_FacturaVentaId",
                 table: "DetallesFacturaVentas",
                 column: "FacturaVentaId");
@@ -686,6 +676,11 @@ namespace APIRestProyecto.Migrations
                 name: "IX_EmpleadoCargos_CargoId",
                 table: "EmpleadoCargos",
                 column: "CargoId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_EmpleadoCargos_EmpleadoId",
+                table: "EmpleadoCargos",
+                column: "EmpleadoId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_FacturasCompras_ProveedoresIdProveedor",

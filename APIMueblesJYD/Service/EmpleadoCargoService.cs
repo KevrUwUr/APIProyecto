@@ -33,16 +33,103 @@ namespace Service
             return empleadoCargoDTO;
         }
 
-        public EmpleadoCargoDTO GetEmployeeJob(int NumeroContrato, bool trackChanges)
+        public EmpleadoCargoDTO GetEmployeeJob(Guid EmpleadoCargoId, bool trackChanges)
         {
-            var empleadoCargo = _repository.EmpleadoCargo.GetEmployeeJob(NumeroContrato, trackChanges);
-            if(empleadoCargo == null)
+            var empleadoCargo = _repository.EmpleadoCargo.GetEmployeeJob(EmpleadoCargoId, trackChanges);
+            if (empleadoCargo == null)
             {
-                throw new EmpleadoCargoNotFoundException(NumeroContrato);
+                throw new EmpleadoCargoNotFoundException(EmpleadoCargoId);
             }
 
             var empleadoCargoDTO = _mapper.Map<EmpleadoCargoDTO>(empleadoCargo);
             return empleadoCargoDTO;
+        }
+
+        public EmpleadoCargoDTO CreateEmployeeJob(EmpleadoCargoForCreationDTO empleadoCargo)
+        {
+            var empleadoCargoEntity = _mapper.Map<EmpleadoCargo>(empleadoCargo);
+
+            _repository.EmpleadoCargo.CreateEmployeeJob(empleadoCargoEntity);
+            _repository.Save();
+
+            var empleadoCargoToReturn = _mapper.Map<EmpleadoCargoDTO>(empleadoCargoEntity);
+
+            return empleadoCargoToReturn;
+        }
+
+        public IEnumerable<EmpleadoCargoDTO> GetByIds(IEnumerable<Guid> ids, bool trackChanges)
+        {
+            if (ids == null)
+                throw new IdParametersBadRequestException();
+
+            var empleadoCargoEntities = _repository.EmpleadoCargo.GetByIds(ids, trackChanges);
+
+            if (ids.Count() != empleadoCargoEntities.Count())
+                throw new CollectionByIdsBadRequestException();
+
+            var empleadoCargosToReturn = _mapper.Map<IEnumerable<EmpleadoCargoDTO>>(empleadoCargoEntities);
+
+            return empleadoCargosToReturn;
+
+        }
+
+
+
+
+
+
+
+
+
+
+        public (IEnumerable<EmpleadoCargoDTO> empleadoCargos, string ids) CreateEmployeeJobCollection
+            (IEnumerable<EmpleadoCargoForCreationDTO> empleadoCargoCollection)
+        {
+            if (empleadoCargoCollection == null)
+                throw new CargoCollectionBadRequest();
+
+            var empleadoCargoEntities = _mapper.Map<IEnumerable<EmpleadoCargo>>(empleadoCargoCollection);
+            foreach (var empleadoCargo in empleadoCargoEntities)
+            {
+                _repository.EmpleadoCargo.CreateEmployeeJob(empleadoCargo);
+            }
+
+            _repository.Save();
+
+            var empleadoCargoCollectionToReturn = _mapper.Map<IEnumerable<EmpleadoCargoDTO>>(empleadoCargoEntities);
+
+            var ids = string.Join(",", empleadoCargoCollectionToReturn.Select(c => c.Id));
+
+            return (empleadoCargos: empleadoCargoCollectionToReturn, ids: ids);
+
+        }
+
+        public void DeleteEmployeeJob(Guid empleadoId, bool trackChanges)
+        {
+            var empleadoCargo = _repository.EmpleadoCargo.GetEmployeeJob(empleadoId, trackChanges);
+            if (empleadoCargo == null)
+            {
+                throw new EmpleadoCargoNotFoundException(empleadoId);
+            }
+
+            _repository.EmpleadoCargo.DeleteEmployeeJob(empleadoCargo);
+            _repository.Save();
+
+        }
+
+        public void UpdateEmployeeJob(Guid empleadoId, EmpleadoCargoForUpdateDTO empleadoCargoForUpdate, bool trackChanches)
+        {
+            var empleadoCargoEntity = _repository.EmpleadoCargo.GetEmployeeJob(empleadoId, trackChanches);
+
+            if (empleadoCargoEntity == null)
+            {
+                throw new CargoNotFoundException(empleadoId);
+            }
+
+            _mapper.Map(empleadoCargoForUpdate, empleadoCargoEntity);
+
+            _repository.Save();
+
         }
     }
 }

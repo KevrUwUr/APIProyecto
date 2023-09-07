@@ -103,9 +103,9 @@ namespace Service
 
         public IDetFacturaVentaService DetFacturaVentaService =>_detFacturaVentaService.Value;
 
-        public IEmpleadoCargoService IEmpleadoCargoService => _empleadoCargoService.Value;
+        public IEmpleadoCargoService EmpleadoCargoService => _empleadoCargoService.Value;
 
-        public IEmpleadoService IEmpleadoService => _empleadoService.Value;
+        public IEmpleadoService EmpleadoService => _empleadoService.Value;
 
         public IFacturaCompraService FacturaCompraService => _facturaCompraService.Value;
 

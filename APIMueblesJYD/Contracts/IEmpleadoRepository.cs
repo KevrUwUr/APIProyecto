@@ -10,7 +10,12 @@ namespace Contracts
 {
     public interface IEmpleadoRepository
     {
-        IEnumerable<EmpleadoDTO> GetAllEmployees(bool trackChanges);
-        EmpleadoDTO GetEmployee(Guid employeeId, bool trackChanges);
+        IEnumerable<Empleado> GetAllEmployees(bool trackChanges);
+        Empleado GetEmployee(Guid employeeId, bool trackChanges);
+        void CreateEmployee(Empleado employee);
+        IEnumerable<Empleado> GetByIds(IEnumerable<Guid> ids, bool trackChanges);
+        void DeleteEmployee(Empleado employee);
+
+
     }
 }
