@@ -12,6 +12,10 @@ namespace APIRestProyecto
                 .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.CargoId));
     
             CreateMap<Categoria, CategoriaDTO>();
+
+            CreateMap<CargoForCreationDto, Cargo>();
+            CreateMap<CargoForUpdateDTO, Cargo>();
+            
         }
     }
 }

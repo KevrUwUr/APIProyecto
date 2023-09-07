@@ -12,4 +12,3 @@ namespace Entities.Exceptions
             : base($"El empleado con el numero de contrato: {NumeroContrato} no existe en la Base de Datos.") { }
     }
 }
-

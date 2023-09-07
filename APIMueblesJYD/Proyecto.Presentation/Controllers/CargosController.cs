@@ -5,10 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Service.Contracts;
+using Shared.DataTransferObjects;
 
 namespace Proyect.Presentation.Controllers
 {
-    [Route("api/cargo")]
+    [Route("api/cargos")]
     [ApiController]
     public class CargosController : ControllerBase
     {
@@ -29,6 +30,40 @@ namespace Proyect.Presentation.Controllers
             return Ok(cargo);
         }
 
+        [HttpPost]
+        public IActionResult CreateCargo([FromBody] CargoForCreationDto cargo)
+        {
+            if (cargo is null)
+                return BadRequest("CargoForCreationDto object is null");
 
+            var createdCargo = _service.CargoService.CreateCargo(cargo);
+
+            return CreatedAtRoute("CargoById", new { id = createdCargo.Id }, createdCargo);
+        }
+
+        [HttpPost("collection")]
+        public IActionResult CreateCargoCollection([FromBody] IEnumerable<CargoForCreationDto> cargoCollection)
+        {
+            var result = _service.CargoService.CreateCargoCollection(cargoCollection);
+
+            return CreatedAtRoute("CargoCollection", new { result.ids }, result.cargos);
+        }
+
+        [HttpDelete("{id:guid}")]
+        public IActionResult DeleteCargo(Guid id)
+        {
+            _service.CargoService.DeleteCargo(id, trackChanges: false);
+            return NoContent();
+        }
+
+        [HttpPut("{id:guid}")]
+        public IActionResult UpdateCargo(Guid id, [FromBody] CargoForUpdateDTO cargo)
+        {
+            if (cargo is null)
+                return BadRequest("CargoForUpdateDto object is null");
+            _service.CargoService.UpdateCargo(id, cargo, trackChanges: true);
+            return NoContent();
+        }
     }
+
 }

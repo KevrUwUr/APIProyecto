@@ -17,8 +17,8 @@ namespace Service.Contracts
 
         IEnumerable<CargoDto> GetByIds(IEnumerable<Guid>ids, bool trackChanges );
 
-        (IEnumerable<CargoDto> cargo, string ids) CreateCargoCollection
-                (IEnumerable<EmpleadoCargoForCreationDTO> cargoCollection);
+        (IEnumerable<CargoDto> cargos, string ids) CreateCargoCollection
+                (IEnumerable<CargoForCreationDto> cargoCollection);
 
         void DeleteCargo(Guid cargoId, bool trackChanges);
         

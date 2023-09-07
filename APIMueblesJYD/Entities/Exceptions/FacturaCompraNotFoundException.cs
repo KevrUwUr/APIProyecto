@@ -8,7 +8,7 @@ namespace Entities.Exceptions
 {
     public sealed class FacturaCompraNotFoundException : NotFoundException
     {
-        public FacturaCompraNotFoundException(Guid FacturaCompraId)
-           : base($"La factura de compra con el Id: {FacturaCompraId} no existe en la Base de Datos.") { }
+        public FacturaCompraNotFoundException(Guid IdFacturaCompra)
+           : base($"La factura de compra con el Id: {IdFacturaCompra} no existe en la Base de Datos.") { }
     }
 }

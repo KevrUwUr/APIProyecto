@@ -8,7 +8,7 @@ namespace Entities.Exceptions
 {
     public sealed class ProductoNotFoundException : NotFoundException
     {
-        public ProductoNotFoundException(Guid ProductoId)
-           : base($"El producto con el Id: {ProductoId} no existe en la Base de Datos.") { }
+        public ProductoNotFoundException(Guid IdProducto)
+           : base($"El producto con el Id: {IdProducto} no existe en la Base de Datos.") { }
     }
 }
