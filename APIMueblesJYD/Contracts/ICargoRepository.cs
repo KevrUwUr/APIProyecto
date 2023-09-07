@@ -11,5 +11,11 @@ namespace Contracts
     {
         IEnumerable<Cargo> GetAllCargos(bool trackChanges);
         Cargo GetCargo(Guid cargoId, bool trackChanges);
+
+        void CreateCargo(Cargo cargo);
+
+        IEnumerable<Cargo> GetByIds(IEnumerable<Guid> ids, bool trackChanges);
+
+        void DeleteCargo(Cargo cargo);
     }
 }

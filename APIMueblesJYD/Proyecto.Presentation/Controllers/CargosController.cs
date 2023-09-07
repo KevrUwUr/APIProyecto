@@ -22,11 +22,13 @@ namespace Proyect.Presentation.Controllers
             return Ok(cargos);
         }
 
-        [HttpGet("{id:int}")]
+        [HttpGet("{id:Guid}", Name = "GetCargo")]
         public IActionResult GetCargo(Guid Id)
         {
             var cargo = _service.CargoService.GetCargo(Id, trackChanges: false);
             return Ok(cargo);
         }
+
+
     }
 }
