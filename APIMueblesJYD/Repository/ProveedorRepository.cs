@@ -25,5 +25,10 @@ namespace Repository
             FindByCondition(c => c.IdProveedor.Equals(IdProveedor), trackChanges)
             .SingleOrDefault();
 
+        public void CreateSupplier(Proveedor supplier) => Create(supplier);
+        public IEnumerable<Proveedor> GetByIds(IEnumerable<Guid> ids, bool trackChanges) =>
+            FindByCondition(x => ids.Contains(x.IdProveedor), trackChanges)
+            .ToList();
+        public void DeleteSupplier(Proveedor supplier) => Delete(supplier);
     }
 }

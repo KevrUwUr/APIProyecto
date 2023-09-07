@@ -12,5 +12,8 @@ namespace Contracts
     {
         IEnumerable<ProveedorDTO> GetAllSuppliers(bool trackChanges);
         ProveedorDTO GetSupplier(Guid IdProveedor, bool trackChanges);
+        void CreateSupplier(Proveedor supplier);
+        IEnumerable<Proveedor> GetByIds(IEnumerable<Guid> ids, bool trackChanges);
+        void DeleteSupplier(Proveedor supplier);
     }
 }

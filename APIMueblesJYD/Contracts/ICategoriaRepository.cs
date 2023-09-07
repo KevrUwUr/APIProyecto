@@ -11,5 +11,8 @@ namespace Contracts
     {
         IEnumerable<Categoria> GetAllCategories(bool trackChanges);
         Categoria GetCategory(Guid categoryId, bool trackChanges);
+        void CreateCategory(Categoria Category);
+        IEnumerable<Categoria> GetByIds(IEnumerable<Guid> ids, bool trackChanges);
+        void DeleteCategory(Categoria Category);
     }
 }

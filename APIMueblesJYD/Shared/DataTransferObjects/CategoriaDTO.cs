@@ -8,7 +8,7 @@ namespace Shared.DataTransferObjects
 {
     public record CategoriaDTO
     {
-        public Guid CategoriaId { get; init; }
+        public Guid Id { get; init; }
         public string? Nombre { get; init; }
         public int Estado { get; init; }
     }

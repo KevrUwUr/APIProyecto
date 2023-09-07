@@ -44,5 +44,60 @@ namespace Service
             var proveedorDTO = _mapper.Map<ProveedorDTO>(proveedor);
             return proveedorDTO;
         }
+        public ProveedorDTO CreateSupplier(ProveedorForCreationDTO supplier)
+        {
+            var categoriaEntity = _mapper.Map<Proveedor>(supplier);
+
+            _repository.Proveedor.CreateSupplier(categoriaEntity);
+            _repository.Save();
+
+            var supplierToReturn = _mapper.Map<ProveedorDTO>(categoriaEntity);
+            return supplierToReturn;
+        }
+        public IEnumerable<ProveedorDTO> GetByIds(IEnumerable<Guid> ids, bool trackChanges)
+        {
+            if (ids is null)
+                throw new IdParametersBadRequestException();
+            var supplierEntities = _repository.Proveedor.GetByIds(ids, trackChanges);
+            if (ids.Count() != supplierEntities.Count())
+                throw new CollectionByIdsBadRequestException();
+            var companiesToReturn = _mapper.Map<IEnumerable<ProveedorDTO>>(supplierEntities);
+
+            return companiesToReturn;
+        }
+        public (IEnumerable<ProveedorDTO> proveedores, string ids) CreateSupplierCollection
+            (IEnumerable<ProveedorForCreationDTO> supplierCollection)
+        {
+            if (supplierCollection is null)
+                throw new ProveedorCollectionBadRequest();
+            var supplierEntities = _mapper.Map<IEnumerable<Proveedor>>(supplierCollection);
+            foreach (var supplier in supplierEntities)
+            {
+                _repository.Proveedor.CreateSupplier(supplier);
+            }
+            _repository.Save();
+            var supplierCollectionToReturn =
+            _mapper.Map<IEnumerable<ProveedorDTO>>(supplierEntities);
+            var ids = string.Join(",", supplierCollectionToReturn.Select(c => c.IdProveedor));
+            return (suppliers: supplierCollectionToReturn, ids: ids);
+        }
+        public void DeleteSupplier(Guid supplierId, bool trackChanges)
+        {
+            var supplier = _repository.Proveedor.GetSupplier(supplierId, trackChanges);
+            if (supplier == null)
+                throw new ProveedorNotFoundException(supplierId);
+
+            _repository.Proveedor.DeleteSupplier(supplier);
+            _repository.Save();
+        }
+        public void UpdateSupplier(Guid supplierId, ProveedorForUpdateDTO supplierForUpdate, bool trackChanges)
+        {
+            var supplierEntity = _repository.Proveedor.GetSupplier(supplierId, trackChanges);
+            if (supplierEntity == null)
+                throw new ProveedorNotFoundException(supplierId);
+
+            _mapper.Map(supplierForUpdate, supplierEntity);
+            _repository.Save();
+        }
     }
 }
