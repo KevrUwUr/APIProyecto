@@ -10,7 +10,16 @@ namespace Service.Contracts
 {
     public interface IPerdidaProductoService
     {
-        IEnumerable<PerdidaProductoDTO> GetAllProductLoses(bool trackChanges);
-        PerdidaProductoDTO GetProductLose(Guid Id, bool trackChanges);
+        IEnumerable<PerdidaProductoDTO> GetAllLoseProducts(bool trackChanges);
+        PerdidaProductoDTO GetLoseProduct(Guid Id, bool trackChanges);
+        IEnumerable<PerdidaProductoDTO> GetLoseProductsByLose(Guid perdidaId, bool trackChanges);
+        PerdidaProductoDTO GetLoseProductByLose(Guid perdidaId, Guid Id, bool trackChanges);
+        PerdidaProductoDTO CreateLoseProductForLoseAndProduct(Guid perdidaId, Guid productoId, PerdidaProductoForCreationDTO perdidaProductoForCreation, bool trackChanges);
+        void DeleteLoseProductForLose(Guid perdidaId, Guid productoId, Guid Id, bool trackChanges);
+        void UpdateLoseProductForLoseAndProduct(Guid perdidaId, Guid productoId, Guid id,
+            PerdidaProductoForUpdateDTO perdidaProductoForUpdate, bool perdProdTrackChanges, bool perdTrackChanges, bool prodTrackChanges);
+
+        IEnumerable<PerdidaProductoDTO> GetLoseProductsByProduct(Guid productoId, bool trackChanges);
+        PerdidaProductoDTO GetLoseProductByProduct(Guid productoId, Guid Id, bool trackChanges);
     }
 }

@@ -28,9 +28,10 @@ namespace Proyect.Presentation.Controllers
         [HttpGet("/api/productos/{id:Guid}", Name = "GetProduct")]
         public IActionResult GetProduct(Guid Id)
         {
-            var proveedor = _service.ProductoService.GetProduct(Id, trackChanges: false);
-            return Ok(proveedor);
+            var producto = _service.ProductoService.GetProduct(Id, trackChanges: false);
+            return Ok(producto);
         }
+
         [HttpGet]
         public IActionResult GetAllProductsForCategory(Guid categoriaId)
         {

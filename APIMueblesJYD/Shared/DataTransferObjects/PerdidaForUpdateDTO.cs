@@ -6,6 +6,5 @@ using System.Threading.Tasks;
 
 namespace Shared.DataTransferObjects
 {
-    public record PerdidaForUpdateDTO(string Nombre, int Estado
-        /*IEnumerable<ProductoForCreationDTO>Productos*/);
+    public record PerdidaForUpdateDTO(string Nombre, int Estado, IEnumerable<ProductoForCreationDTO>Productos);
 }
