@@ -25,5 +25,10 @@ namespace Repository
             FindByCondition(c => c.IdMetodoPago.Equals(IdMetodoPago), trackChanges)
             .SingleOrDefault();
 
+        public void CreatePaymentMethod(MetodoPago metodoPago) => Create(metodoPago);
+        public IEnumerable<MetodoPago> GetByIds(IEnumerable<Guid> ids, bool trackChanges) =>
+            FindByCondition(x => ids.Contains(x.IdMetodoPago), trackChanges)
+            .ToList();
+        public void DeletePaymentMethod(MetodoPago metodoPago) => Delete(metodoPago);
     }
 }

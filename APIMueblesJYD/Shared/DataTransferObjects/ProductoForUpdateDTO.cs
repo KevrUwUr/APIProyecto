@@ -6,6 +6,6 @@ using System.Threading.Tasks;
 
 namespace Shared.DataTransferObjects
 {
-    public record ProductoForUpdateDTO(Guid ProductoId, string Nombre, float Precio, int Stock, string Descripcion,
-        int Estado, string Color, int Tipo, string OrigenMateriaPrima, Guid IdCategoria);
+    public record ProductoForUpdateDTO(string Nombre, float Precio, int Stock, string Descripcion,
+        int Estado, string Color, int Tipo, string OrigenMateriaPrima);
 }

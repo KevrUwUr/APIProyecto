@@ -23,6 +23,9 @@ namespace APIRestProyecto
             CreateMap<MetodoPago, MetodoPagoDTO>()
                 .ForMember(dest => dest.IdMetodoPago, opt => opt.MapFrom(src => src.IdMetodoPago));
 
+            CreateMap<MetodoPagoForCreationDTO, MetodoPago>();
+            CreateMap<MetodoPagoForUpdateDTO, MetodoPago>();
+
             CreateMap<PerdidaProducto, PerdidaProductoDTO>()
                 .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.IdPerdida));//
 
@@ -42,8 +45,7 @@ namespace APIRestProyecto
                 .ForMember(dest => dest.ProductoId, opt => opt.MapFrom(src => src.ProductoId));
 
             CreateMap<ProductoForCreationDTO, Producto>();
-            CreateMap<ProductoForUpdateDTO, Producto>()
-                .ForMember(dest => dest.ProductoId, opt => opt.MapFrom(src => src.ProductoId));
+            CreateMap<ProductoForUpdateDTO, Producto>();
 
             CreateMap<Usuario, UsuarioDTO>()
                 .ForMember(dest => dest.IdUsuario, opt => opt.MapFrom(src => src.IdUsuario));

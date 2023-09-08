@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace Shared.DataTransferObjects
 {
-    public record MetodoPagoDTO(int IdMetodoPago, DateTime FechaTransaccion, int Tipo, string NombrePlataforma, int FacturaVentaId);
-
+    public record MetodoPagoDTO
+    {
+        public Guid IdMetodoPago { get; init; }
+        public DateTime FechaTransaccion { get; init; }
+        public int Tipo { get; init; }
+        public string? NombrePlataforma { get; init; }
+    }
 }

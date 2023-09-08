@@ -12,5 +12,11 @@ namespace Service.Contracts
     {
         IEnumerable<MetodoPagoDTO> GetAllPaymentMethods(bool trackChanges);
         MetodoPagoDTO GetPaymentMethod(Guid Id, bool trackChanges);
+        MetodoPagoDTO CreatePaymentMethod(MetodoPagoForCreationDTO paymentMethod);
+        IEnumerable<MetodoPagoDTO> GetByIds(IEnumerable<Guid> ids, bool trackChanges);
+        (IEnumerable<MetodoPagoDTO> metodoPagos, string ids) CreatePaymentMethodCollection
+            (IEnumerable<MetodoPagoForCreationDTO> paymentMethodCollection);
+        void DeletePaymentMethod(Guid paymentMethodId, bool trackChanges);
+        void UpdatePaymentMethod(Guid paymentMethodId, MetodoPagoForUpdateDTO paymentMethodForUpdate, bool trackChanges);
     }
 }

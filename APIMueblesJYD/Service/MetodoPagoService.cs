@@ -44,5 +44,60 @@ namespace Service
             var metodoPagoDTO = _mapper.Map<MetodoPagoDTO>(metodoPago);
             return metodoPagoDTO;
         }
+        public MetodoPagoDTO CreatePaymentMethod(MetodoPagoForCreationDTO paymentMethod)
+        {
+            var metodoPagoEntity = _mapper.Map<MetodoPago>(paymentMethod);
+
+            _repository.MetodoPago.CreatePaymentMethod(metodoPagoEntity);
+            _repository.Save();
+
+            var paymentMethodToReturn = _mapper.Map<MetodoPagoDTO>(metodoPagoEntity);
+            return paymentMethodToReturn;
+        }
+        public IEnumerable<MetodoPagoDTO> GetByIds(IEnumerable<Guid> ids, bool trackChanges)
+        {
+            if (ids is null)
+                throw new IdParametersBadRequestException();
+            var paymentMethodEntities = _repository.MetodoPago.GetByIds(ids, trackChanges);
+            if (ids.Count() != paymentMethodEntities.Count())
+                throw new CollectionByIdsBadRequestException();
+            var companiesToReturn = _mapper.Map<IEnumerable<MetodoPagoDTO>>(paymentMethodEntities);
+
+            return companiesToReturn;
+        }
+        public (IEnumerable<MetodoPagoDTO> metodoPagos, string ids) CreatePaymentMethodCollection
+            (IEnumerable<MetodoPagoForCreationDTO> paymentMethodCollection)
+        {
+            if (paymentMethodCollection is null)
+                throw new MetodoPagoCollectionBadRequest();
+            var paymentMethodEntities = _mapper.Map<IEnumerable<MetodoPago>>(paymentMethodCollection);
+            foreach (var paymentMethod in paymentMethodEntities)
+            {
+                _repository.MetodoPago.CreatePaymentMethod(paymentMethod);
+            }
+            _repository.Save();
+            var paymentMethodCollectionToReturn =
+            _mapper.Map<IEnumerable<MetodoPagoDTO>>(paymentMethodEntities);
+            var ids = string.Join(",", paymentMethodCollectionToReturn.Select(c => c.IdMetodoPago));
+            return (categories: paymentMethodCollectionToReturn, ids: ids);
+        }
+        public void DeletePaymentMethod(Guid paymentMethodId, bool trackChanges)
+        {
+            var paymentMethod = _repository.MetodoPago.GetPaymentMethod(paymentMethodId, trackChanges);
+            if (paymentMethod == null)
+                throw new MetodoPagoNotFoundException(paymentMethodId);
+
+            _repository.MetodoPago.DeletePaymentMethod(paymentMethod);
+            _repository.Save();
+        }
+        public void UpdatePaymentMethod(Guid paymentMethodId, MetodoPagoForUpdateDTO paymentMethodForUpdate, bool trackChanges)
+        {
+            var paymentMethodEntity = _repository.MetodoPago.GetPaymentMethod(paymentMethodId, trackChanges);
+            if (paymentMethodEntity == null)
+                throw new MetodoPagoNotFoundException(paymentMethodId);
+
+            _mapper.Map(paymentMethodForUpdate, paymentMethodEntity);
+            _repository.Save();
+        }
     }
 }
