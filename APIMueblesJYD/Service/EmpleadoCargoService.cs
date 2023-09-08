@@ -44,19 +44,6 @@ namespace Service
             var empleadoCargoDTO = _mapper.Map<EmpleadoCargoDTO>(empleadoCargo);
             return empleadoCargoDTO;
         }
-
-        public EmpleadoCargoDTO CreateEmployeeJob(EmpleadoCargoForCreationDTO empleadoCargo)
-        {
-            var empleadoCargoEntity = _mapper.Map<EmpleadoCargo>(empleadoCargo);
-
-            _repository.EmpleadoCargo.CreateEmployeeJob(empleadoCargoEntity);
-            _repository.Save();
-
-            var empleadoCargoToReturn = _mapper.Map<EmpleadoCargoDTO>(empleadoCargoEntity);
-
-            return empleadoCargoToReturn;
-        }
-
         public IEnumerable<EmpleadoCargoDTO> GetByIds(IEnumerable<Guid> ids, bool trackChanges)
         {
             if (ids == null)
@@ -70,37 +57,6 @@ namespace Service
             var empleadoCargosToReturn = _mapper.Map<IEnumerable<EmpleadoCargoDTO>>(empleadoCargoEntities);
 
             return empleadoCargosToReturn;
-
-        }
-
-
-
-
-
-
-
-
-
-
-        public (IEnumerable<EmpleadoCargoDTO> empleadoCargos, string ids) CreateEmployeeJobCollection
-            (IEnumerable<EmpleadoCargoForCreationDTO> empleadoCargoCollection)
-        {
-            if (empleadoCargoCollection == null)
-                throw new CargoCollectionBadRequest();
-
-            var empleadoCargoEntities = _mapper.Map<IEnumerable<EmpleadoCargo>>(empleadoCargoCollection);
-            foreach (var empleadoCargo in empleadoCargoEntities)
-            {
-                _repository.EmpleadoCargo.CreateEmployeeJob(empleadoCargo);
-            }
-
-            _repository.Save();
-
-            var empleadoCargoCollectionToReturn = _mapper.Map<IEnumerable<EmpleadoCargoDTO>>(empleadoCargoEntities);
-
-            var ids = string.Join(",", empleadoCargoCollectionToReturn.Select(c => c.Id));
-
-            return (empleadoCargos: empleadoCargoCollectionToReturn, ids: ids);
 
         }
 
@@ -130,6 +86,55 @@ namespace Service
 
             _repository.Save();
 
+        }
+
+        public EmpleadoCargoDTO GetByCargo(Guid CargoId, Guid EmpleadoCargoId, bool trackChanges)
+        {
+            var cargo = _repository.Cargo.GetCargo(CargoId, trackChanges);
+            if (cargo == null)
+                throw new CargoNotFoundException(CargoId);
+
+            var empCargDB = _repository.EmpleadoCargo.GetEmployeeJobByCargo(CargoId, EmpleadoCargoId, trackChanges);
+            if (empCargDB == null)
+                throw new EmpleadoCargoNotFoundException(EmpleadoCargoId);
+
+            var empleadoCargo = _mapper.Map<EmpleadoCargoDTO>(empCargDB);
+            return empleadoCargo;
+        }
+
+        public EmpleadoCargoDTO GetByEmployee(Guid EmpleadoId, Guid EmpleadoCargoId, bool trackChanges)
+        {
+            var empleado = _repository.Empleado.GetEmployee(EmpleadoId, trackChanges);
+            if (empleado == null)
+                throw new EmpleadoNotFoundException(EmpleadoId);
+
+            var empCargDB = _repository.EmpleadoCargo.GetEmployeeJobByCargo(EmpleadoId, EmpleadoCargoId, trackChanges);
+            if (empCargDB == null)
+                throw new EmpleadoCargoNotFoundException(EmpleadoCargoId);
+
+            var empleadoCargo = _mapper.Map<EmpleadoCargoDTO>(empCargDB);
+            return empleadoCargo;
+        }
+
+
+        public EmpleadoCargoDTO CreateEmployeeJobForCargoEmployee(Guid CargoId, Guid EmpleadoId, EmpleadoCargoForCreationDTO employeeCargoForCreation, bool trackChanges)
+        {
+            var empleado = _repository.Empleado.GetEmployee(EmpleadoId, trackChanges);
+            if (empleado == null)
+                throw new EmpleadoNotFoundException(EmpleadoId);
+
+            var cargo = _repository.Cargo.GetCargo(CargoId, trackChanges);
+            if (cargo == null)
+                throw new CargoNotFoundException(CargoId);
+
+            var employeeEntity = _mapper.Map<EmpleadoCargo>(employeeCargoForCreation);
+
+            _repository.EmpleadoCargo.CreateEmployeeJobForCargoEmployee(CargoId, EmpleadoId, employeeEntity);
+            _repository.Save();
+
+            var empleadoCargoToReturn = _mapper.Map<EmpleadoCargoDTO>(employeeEntity);
+
+            return empleadoCargoToReturn;
         }
     }
 }

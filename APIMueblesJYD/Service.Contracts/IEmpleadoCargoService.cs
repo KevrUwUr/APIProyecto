@@ -12,15 +12,11 @@ namespace Service.Contracts
     {
         IEnumerable<EmpleadoCargoDTO> GetAllEmployeeJobs(bool trackChanges);
         EmpleadoCargoDTO GetEmployeeJob(Guid EmpleadoCargoId, bool trackChanges);
-        EmpleadoCargoDTO CreateEmployeeJob(EmpleadoCargoForCreationDTO empleadoCargo);
-
+        EmpleadoCargoDTO GetByCargo(Guid CargoId,Guid EmpleadoCargoId, bool trackChanges);
+        EmpleadoCargoDTO GetByEmployee(Guid EmpleadoId, Guid EmpleadoCargoId, bool trackChanges);
+        EmpleadoCargoDTO CreateEmployeeJobForCargoEmployee(Guid CargoId, Guid EmpleadoId, EmpleadoCargoForCreationDTO employeeForCreation, bool trackChanges);
         IEnumerable<EmpleadoCargoDTO> GetByIds(IEnumerable<Guid> EmpleadoCargoId, bool trackChanges);
-
-        (IEnumerable<EmpleadoCargoDTO> empleadoCargos, string ids) CreateEmployeeJobCollection
-                (IEnumerable<EmpleadoCargoForCreationDTO> cargoCollection);
-
         void DeleteEmployeeJob(Guid EmpleadoCargoId, bool trackChanges);
-
         void UpdateEmployeeJob(Guid EmpleadoCargoId, EmpleadoCargoForUpdateDTO empleadoCargoForUpdate, bool trackChanges);
     }
 }

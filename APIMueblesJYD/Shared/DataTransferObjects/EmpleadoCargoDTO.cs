@@ -8,11 +8,11 @@ namespace Shared.DataTransferObjects
 {
     public record EmpleadoCargoDTO
     {
-        public Guid Id { get; set; }
-        public DateTime FechaInicio { get; set; }
-        public DateTime FechaFin { get; set; }
-        public int NumeroContrato { get; set; }
-        public Guid EmpleadoId { get; }
-        public Guid CargoId { get; }
+        public Guid Id { get; init; }
+        public DateTime FechaInicio { get; init; }
+        public DateTime FechaFin { get; init; }
+        public int NumeroContrato { get; init; }
+        public Guid EmpleadoId { get; init; }
+        public Guid CargoId { get; init; }
     }   
 }

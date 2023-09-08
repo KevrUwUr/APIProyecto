@@ -10,7 +10,7 @@ namespace Contracts
 {
     public interface IPerdidaRepository
     {
-        IEnumerable<PerdidaDTO> GetAllLoses(bool trackChanges);
-        PerdidaDTO GetLose(Guid lostId, bool trackChanges);
+        IEnumerable<Perdida> GetAllLoses(bool trackChanges);
+        Perdida GetLose(Guid lostId, bool trackChanges);
     }
 }

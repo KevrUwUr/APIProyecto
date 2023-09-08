@@ -30,26 +30,6 @@ namespace Proyect.Presentation.Controllers
             var empleadoCargo = _service.EmpleadoCargoService.GetEmployeeJob(Id, trackChanges: false);
             return Ok(empleadoCargo);
         }
-
-        [HttpPost]
-        public IActionResult CreateEmployeeJob([FromBody] EmpleadoCargoForCreationDTO empleadoCargo)
-        {
-            if (empleadoCargo is null)
-                return BadRequest("EmpleadoCargoForCreationDTO object is null");
-
-            var createdEmpleadoCargo = _service.EmpleadoCargoService.CreateEmployeeJob(empleadoCargo);
-
-            return CreatedAtRoute("EmpleadoCargoById", new { id = createdEmpleadoCargo.Id }, createdEmpleadoCargo);
-        }
-
-        [HttpPost("collection")]
-        public IActionResult CreateEmployeeJobCollection([FromBody] IEnumerable<EmpleadoCargoForCreationDTO> empleadoCargoCollection)
-        {
-            var result = _service.EmpleadoCargoService.CreateEmployeeJobCollection(empleadoCargoCollection);
-
-            return CreatedAtRoute("EmpleadoCargoCollection", new { result.ids }, result.empleadoCargos);
-        }
-
         [HttpDelete("{id:guid}")]
         public IActionResult DeleteEmployeeJob(Guid id)
         {
@@ -64,6 +44,33 @@ namespace Proyect.Presentation.Controllers
                 return BadRequest("EmpleadoCargoForUpdateDto object is null");
             _service.EmpleadoCargoService.UpdateEmployeeJob(id, empleadoCargo, trackChanges: true);
             return NoContent();
+        }
+ 
+        [HttpGet("/api/cargos/{CargoId}/empleadoCargos")]
+        public IActionResult GetEmployeesForCompany(Guid CargoId, Guid EmpleadoCargoId)
+        {
+            var employeesJobs = _service.EmpleadoCargoService.GetByCargo(CargoId, EmpleadoCargoId, trackChanges: false);
+            return Ok(employeesJobs);
+        }
+
+        [HttpGet("/api/empleados/{EmpleadoId}/empleadoCargos")]
+        public IActionResult GetByEmployee(Guid EmpleadoId, Guid EmpleadoCargoId)
+        {
+            var employeesJobs = _service.EmpleadoCargoService.GetByEmployee(EmpleadoId, EmpleadoCargoId, trackChanges: false);
+            return Ok(employeesJobs);
+        }
+
+
+        [HttpPost]
+        public IActionResult CreateEmployeeJobForCargoEmployee(Guid CargoId,Guid EmpleadoId, [FromBody] EmpleadoCargoForCreationDTO empleadoCargo)
+        {
+            if (empleadoCargo is null)
+                return BadRequest("EmployeeForCreationDto object is null");
+
+            var employeeToReturn = _service.EmpleadoCargoService.CreateEmployeeJobForCargoEmployee(CargoId, EmpleadoId, empleadoCargo, trackChanges: false);
+
+            return CreatedAtRoute("CreateEmployeeJobForCargoEmployee", new { CargoId, EmpleadoId, id = employeeToReturn.Id },
+                employeeToReturn);
         }
     }
 }

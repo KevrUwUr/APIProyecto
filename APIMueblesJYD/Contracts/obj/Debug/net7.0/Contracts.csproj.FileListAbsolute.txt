@@ -82,11 +82,6 @@ C:\Users\EQUIPO\Desktop\ProyectoKev\APIProyecto\APIMueblesJYD\Contracts\obj\Debu
 C:\Users\EQUIPO\Desktop\ProyectoKev\APIProyecto\APIMueblesJYD\Contracts\obj\Debug\net7.0\Contracts.pdb
 C:\Users\EQUIPO\Desktop\ProyectoKev\APIProyecto\APIMueblesJYD\Contracts\obj\Debug\net7.0\Contracts.genruntimeconfig.cache
 C:\Users\EQUIPO\Desktop\ProyectoKev\APIProyecto\APIMueblesJYD\Contracts\obj\Debug\net7.0\ref\Contracts.dll
-C:\Users\Aprendiz\Desktop\APIProyecto\APIMueblesJYD\Contracts\obj\Debug\net7.0\Contracts.csproj.AssemblyReference.cache
-C:\Users\Aprendiz\Desktop\APIProyecto\APIMueblesJYD\Contracts\obj\Debug\net7.0\Contracts.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Aprendiz\Desktop\APIProyecto\APIMueblesJYD\Contracts\obj\Debug\net7.0\Contracts.AssemblyInfoInputs.cache
-C:\Users\Aprendiz\Desktop\APIProyecto\APIMueblesJYD\Contracts\obj\Debug\net7.0\Contracts.AssemblyInfo.cs
-C:\Users\Aprendiz\Desktop\APIProyecto\APIMueblesJYD\Contracts\obj\Debug\net7.0\Contracts.csproj.CoreCompileInputs.cache
 C:\Users\Aprendiz\Desktop\APIProyecto\APIMueblesJYD\Contracts\bin\Debug\net7.0\Contracts.deps.json
 C:\Users\Aprendiz\Desktop\APIProyecto\APIMueblesJYD\Contracts\bin\Debug\net7.0\Contracts.runtimeconfig.json
 C:\Users\Aprendiz\Desktop\APIProyecto\APIMueblesJYD\Contracts\bin\Debug\net7.0\Contracts.dll
@@ -95,6 +90,11 @@ C:\Users\Aprendiz\Desktop\APIProyecto\APIMueblesJYD\Contracts\bin\Debug\net7.0\E
 C:\Users\Aprendiz\Desktop\APIProyecto\APIMueblesJYD\Contracts\bin\Debug\net7.0\Shared.dll
 C:\Users\Aprendiz\Desktop\APIProyecto\APIMueblesJYD\Contracts\bin\Debug\net7.0\Entities.pdb
 C:\Users\Aprendiz\Desktop\APIProyecto\APIMueblesJYD\Contracts\bin\Debug\net7.0\Shared.pdb
+C:\Users\Aprendiz\Desktop\APIProyecto\APIMueblesJYD\Contracts\obj\Debug\net7.0\Contracts.csproj.AssemblyReference.cache
+C:\Users\Aprendiz\Desktop\APIProyecto\APIMueblesJYD\Contracts\obj\Debug\net7.0\Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Aprendiz\Desktop\APIProyecto\APIMueblesJYD\Contracts\obj\Debug\net7.0\Contracts.AssemblyInfoInputs.cache
+C:\Users\Aprendiz\Desktop\APIProyecto\APIMueblesJYD\Contracts\obj\Debug\net7.0\Contracts.AssemblyInfo.cs
+C:\Users\Aprendiz\Desktop\APIProyecto\APIMueblesJYD\Contracts\obj\Debug\net7.0\Contracts.csproj.CoreCompileInputs.cache
 C:\Users\Aprendiz\Desktop\APIProyecto\APIMueblesJYD\Contracts\obj\Debug\net7.0\Contracts.csproj.CopyComplete
 C:\Users\Aprendiz\Desktop\APIProyecto\APIMueblesJYD\Contracts\obj\Debug\net7.0\Contracts.dll
 C:\Users\Aprendiz\Desktop\APIProyecto\APIMueblesJYD\Contracts\obj\Debug\net7.0\refint\Contracts.dll
