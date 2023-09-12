@@ -59,6 +59,31 @@ namespace Service
             return perdidaProductosDTO;
         }
 
+
+        public IEnumerable<PerdidaProductoDTO> GetLoseProductForLoseAndProduct(Guid perdidaId, Guid productoId, bool trackChanges)
+        {
+            var perdida = _repository.Perdida.GetLose(perdidaId, trackChanges);
+
+            if (perdida is null)
+            {
+                throw new PerdidaNotFoundException(perdidaId);
+            }
+            var producto = _repository.Producto.GetProduct(productoId, trackChanges);
+
+            if (producto is null)
+            {
+                throw new ProductoNotFoundException(productoId);
+            }
+
+            var perdidaProductosFromDb = _repository.PerdidaProducto.GetLoseProductForLoseAndProduct(perdidaId, productoId, trackChanges);
+            var perdidaProductosDTO = _mapper.Map<IEnumerable<PerdidaProductoDTO>>(perdidaProductosFromDb);
+
+            return perdidaProductosDTO;
+        }
+
+
+
+
         public PerdidaProductoDTO GetLoseProductByLose(Guid perdidaId, Guid Id, bool trackChanges)
         {
             var perdida = _repository.Perdida.GetLose(perdidaId, trackChanges);

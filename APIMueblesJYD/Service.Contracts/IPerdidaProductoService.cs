@@ -12,6 +12,11 @@ namespace Service.Contracts
     {
         IEnumerable<PerdidaProductoDTO> GetAllLoseProducts(bool trackChanges);
         PerdidaProductoDTO GetLoseProduct(Guid Id, bool trackChanges);
+
+
+        PerdidaProductoDTO GetLoseProductForLoseAndProduct(Guid perdidaId, Guid productoId, bool trackChanges);
+
+
         IEnumerable<PerdidaProductoDTO> GetLoseProductsByLose(Guid perdidaId, bool trackChanges);
         PerdidaProductoDTO GetLoseProductByLose(Guid perdidaId, Guid Id, bool trackChanges);
         PerdidaProductoDTO CreateLoseProductForLoseAndProduct(Guid perdidaId, Guid productoId, PerdidaProductoForCreationDTO perdidaProductoForCreation, bool trackChanges);

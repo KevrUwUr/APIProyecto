@@ -20,6 +20,12 @@ namespace APIRestProyecto
             CreateMap<CategoriaForCreationDTO, Categoria>();
             CreateMap<CategoriaForUpdateDTO, Categoria>();
 
+            CreateMap<ContactoProveedor, ContactoProveedorDTO>()
+                .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.IdContactoProveedor));
+
+            CreateMap<ContactoProveedorDTO, ContactoProveedor>();
+            CreateMap<ContactoProveedorDTO, ContactoProveedor>();
+
             CreateMap<MetodoPago, MetodoPagoDTO>()
                 .ForMember(dest => dest.IdMetodoPago, opt => opt.MapFrom(src => src.IdMetodoPago));
 

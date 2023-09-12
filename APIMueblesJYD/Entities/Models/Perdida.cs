@@ -22,7 +22,7 @@ namespace Entities.Models
 
         [Required(ErrorMessage = "Total es un campo requerido.")]
         public float Total { get; set; }
-        public ICollection<PerdidaProducto>? perdida_Productos { get; set; }
+        public ICollection<PerdidaProducto>? perdidaProductos { get; set; }
 
         [ForeignKey(nameof(Empleado))]
         public Guid EmpleadoId { get; set; }

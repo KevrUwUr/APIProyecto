@@ -57,6 +57,14 @@ namespace Proyect.Presentation.Controllers
                 perdidaProductoToReturn);
         }
 
+        [HttpGet("{id:guid}")]
+        public IActionResult GetLoseProductForLoseAndProduct(Guid perdidaId, Guid productoId)
+        {
+            var proveedor = _service.PerdidaProductoService.GetLoseProductForLoseAndProduct(perdidaId, productoId, trackChanges: false);
+            return Ok(proveedor);
+        }
+
+
         [HttpDelete("{id:guid}")]
         public IActionResult DeleteLoseProductForLoseAndProduct(Guid perdidaId, Guid productoId, Guid id)
         {

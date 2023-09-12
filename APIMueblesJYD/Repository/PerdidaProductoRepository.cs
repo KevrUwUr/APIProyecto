@@ -33,6 +33,13 @@ namespace Repository
             FindByCondition(e => e.IdPerdida.Equals(perdidaId) && e.PerdidaProductoId == (Id), trackChanges)
             .SingleOrDefault();
 
+
+        public IEnumerable<PerdidaProducto> GetLoseProductByLoseAndProduct(Guid perdidaId, Guid productoId, bool trackChanges) =>
+            FindByCondition(e => e.IdPerdida.Equals(perdidaId) && e.ProductoId==(productoId), trackChanges)
+            .OrderBy(e => e.Perdida)
+            .ToList();
+
+
         public void CreateLoseProductForLoseProduct(Guid perdidaId, Guid productoId, PerdidaProducto perdidaProducto)
         {
             perdidaProducto.IdPerdida = perdidaId;

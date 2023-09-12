@@ -20,5 +20,21 @@ namespace Repository
         public ContactoProveedor GetSupplierContact(Guid Id, bool trackChanges) =>
             FindByCondition(c => c.IdContactoProveedor.Equals(Id), trackChanges)
             .SingleOrDefault();
+
+        public IEnumerable<ContactoProveedor> GetAllContactSuppliersForSupplier(Guid proveedorId, bool trackChanges) =>
+            FindByCondition(e => e.IdProveedor.Equals(proveedorId), trackChanges)
+            .OrderBy(e => e.NombreProv)
+            .ToList();
+        public ContactoProveedor GetContactSupplierForSupplier(Guid proveedorId, Guid Id, bool trackChanges) =>
+            FindByCondition(e => e.IdProveedor.Equals(proveedorId) && e.IdContactoProveedor == (Id), trackChanges)
+            .SingleOrDefault();
+
+        public void CreateContactSupplierForSupplier(Guid proveedorId, ContactoProveedor contProv)
+        {
+            contProv.IdProveedor = proveedorId;
+            Create(contProv);
+        }
+
+        public void DeleteContactSupplier(ContactoProveedor contProv) => Delete(contProv);
     }
 }

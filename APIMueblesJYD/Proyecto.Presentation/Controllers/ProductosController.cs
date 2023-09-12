@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-
 using Service.Contracts;
 using Proyect.Presentation.ModelBinders;
 using Shared.DataTransferObjects;

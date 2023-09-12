@@ -6,5 +6,11 @@ using System.Threading.Tasks;
 
 namespace Shared.DataTransferObjects
 {
-    public record PerdidaForCreationDTO(DateTime FechaPerdida, int Estado, float Total);
+    public class PerdidaForCreationDTO
+    {
+        public DateTime FechaPerdida { get; set; }
+        public int Estado { get; set; }
+        public float Total { get; set; }
+        public PerdidaProductoDTO perdidaProductoDTO { get; set; }
+    }
 }
