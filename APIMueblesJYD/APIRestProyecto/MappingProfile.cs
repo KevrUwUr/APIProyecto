@@ -32,9 +32,9 @@ namespace APIRestProyecto
             CreateMap<MetodoPagoForCreationDTO, MetodoPago>();
             CreateMap<MetodoPagoForUpdateDTO, MetodoPago>();
 
-            CreateMap<PerdidaProducto, PerdidaProductoDTO>()
-                .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.IdPerdida))
-                .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.ProductoId));
+            CreateMap<PerdidaProducto, PerdidaProductoDTO>();
+                //.ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.IdPerdida))
+                //.ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.ProductoId));
 
             CreateMap<PerdidaProductoForCreationDTO, PerdidaProducto>();
             CreateMap<PerdidaProductoForUpdateDTO, PerdidaProducto>();

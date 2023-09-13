@@ -6,11 +6,5 @@ using System.Threading.Tasks;
 
 namespace Shared.DataTransferObjects
 {
-    public record PerdidaProductoForCreationDTO
-    {
-        public float PrecioUnitario { get; init; }
-        public int Cantidad { get; init; }
-        public string Motivo { get; init; }
-    }
-
+    public record PerdidaProductoForCreationDTO (float PrecioUnitario, int Cantidad, string Motivo);
 }

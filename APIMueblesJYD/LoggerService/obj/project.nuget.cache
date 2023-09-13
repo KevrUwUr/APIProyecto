@@ -1,20 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "yhNXeLONhxYBbVwhcQ6lH1GmgliTAojsj9xL4Blukd4aCczMIpqqb3AkQiawOZa5yp1dJYqmEovGPlIaMVgoWw==",
+  "dgSpecHash": "2TLwNim2i5wQh47LzBvdrM30q/hu5p3dUQg4KUJ11S2XrbUog0qf3FqAE03bNwbDhlhPJ+BYV/SGSFkTIrpWvw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aprendiz\\Desktop\\MueblesJ&D\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj",
+  "projectFilePath": "C:\\Proyecto\\APIProyecto\\APIProyecto\\APIMueblesJYD\\LoggerService\\LoggerService.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Aprendiz\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\Aprendiz\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
-    "C:\\Users\\Aprendiz\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\Aprendiz\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0\\microsoft.extensions.logging.6.0.0.nupkg.sha512",
-    "C:\\Users\\Aprendiz\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\Aprendiz\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
-    "C:\\Users\\Aprendiz\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
-    "C:\\Users\\Aprendiz\\.nuget\\packages\\nlog\\5.2.3\\nlog.5.2.3.nupkg.sha512",
-    "C:\\Users\\Aprendiz\\.nuget\\packages\\nlog.extensions.logging\\5.3.3\\nlog.extensions.logging.5.3.3.nupkg.sha512",
-    "C:\\Users\\Aprendiz\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
-    "C:\\Users\\Aprendiz\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    "C:\\Users\\TheGamerXD\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\TheGamerXD\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
+    "C:\\Users\\TheGamerXD\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\TheGamerXD\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0\\microsoft.extensions.logging.6.0.0.nupkg.sha512",
+    "C:\\Users\\TheGamerXD\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\TheGamerXD\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\TheGamerXD\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\TheGamerXD\\.nuget\\packages\\nlog\\5.2.3\\nlog.5.2.3.nupkg.sha512",
+    "C:\\Users\\TheGamerXD\\.nuget\\packages\\nlog.extensions.logging\\5.3.3\\nlog.extensions.logging.5.3.3.nupkg.sha512",
+    "C:\\Users\\TheGamerXD\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "C:\\Users\\TheGamerXD\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

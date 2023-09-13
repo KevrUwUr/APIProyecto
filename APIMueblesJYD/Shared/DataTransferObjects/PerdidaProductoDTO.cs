@@ -8,7 +8,6 @@ namespace Shared.DataTransferObjects
 {
     public record PerdidaProductoDTO
     {
-        public Guid Id { get; init; }
         public float PrecioUnitario { get; init; }
         public int Cantidad { get; init; }
         public string? Motivo { get; init; }

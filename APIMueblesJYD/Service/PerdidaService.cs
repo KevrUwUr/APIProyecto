@@ -49,7 +49,7 @@ namespace Service
             var perdidaEntity = _mapper.Map<Perdida>(lose);
 
             _repository.Perdida.CreateLose(perdidaEntity);
-            _repository.Save();
+            no_repository.Save();
 
             var loseToReturn = _mapper.Map<PerdidaDTO>(perdidaEntity);
             return loseToReturn;

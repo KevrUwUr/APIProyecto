@@ -10,7 +10,7 @@ using System.Xml.Linq;
 
 namespace Proyect.Presentation.Controllers
 {
-    [Route("api/perdidas/{perdidaId}/productos/{productosId}/perdidaproductos")]
+    [Route("api/perdidas/{perdidaId}/productos/{productoId}")]
     [ApiController]
     public class PerdidaProductosController : ControllerBase
     {
@@ -34,30 +34,31 @@ namespace Proyect.Presentation.Controllers
         [HttpGet("/api/perdidas/{perdidaId}/perdidaproductos")]
         public IActionResult GetAllLoseProductsForLose(Guid perdidaId)
         {
-            var perdidaLoseProductos = _service.PerdidaProductoService.GetLoseProductsByLose(perdidaId, trackChanges: false);
+            var perdidaLoseProductos = _service.PerdidaProductoService.GetAllLoseProductsByLose(perdidaId, trackChanges: false);
             return Ok(perdidaLoseProductos);
         }
 
-        [HttpGet("/api/perdidas/{perdidaId}/perdidaproductos/{id:Guid}", Name = "GetLoseProductForLose")]
-        public IActionResult GetLoseProductForLose(Guid perdidaId, Guid id)
-        {
-            var perdidaLoseProducto = _service.PerdidaProductoService.GetLoseProductByLose(perdidaId, id, trackChanges: false);
-            return Ok(perdidaLoseProducto);
-        }
-        [HttpPost]
-        public IActionResult CreateLoseProductForLoseAndProduct(Guid perdidaId, Guid productoId, [FromBody] PerdidaProductoForCreationDTO perdidaProducto)
-        {
-            if (perdidaProducto is null)
-            {
-                return BadRequest("LoseProductForCreationDTO object is null");
-            }
-            var perdidaProductoToReturn = _service.PerdidaProductoService.CreateLoseProductForLoseAndProduct(perdidaId, productoId, perdidaProducto, trackChanges: false);
+        //[HttpGet("/api/perdidas/{perdidaId}/perdidaproductos/{id:Guid}", Name = "GetLoseProductForLose")]
+        //public IActionResult GetLoseProductForLose(Guid perdidaId, Guid id)
+        //{
+        //    var perdidaLoseProducto = _service.PerdidaProductoService.GetLoseProductByLose(perdidaId, trackChanges: false);
+        //    return Ok(perdidaLoseProducto);
+        //}
 
-            return CreatedAtRoute("GetLoseProductForLose", new { perdidaId, id = perdidaProductoToReturn.Id },
-                perdidaProductoToReturn);
-        }
 
-        [HttpGet("{id:guid}")]
+        //[HttpPost]
+        //public IActionResult CreateLoseProductForLoseAndProduct(Guid perdidaId, Guid productoId, [FromBody] PerdidaProductoForCreationDTO perdidaProducto)
+        //{
+        //    if (perdidaProducto is null)
+        //    {
+        //        return BadRequest("LoseProductForCreationDTO object is null");
+        //    }
+        //    var perdidaProductoToReturn = _service.PerdidaProductoService.CreateLoseProductForLoseAndProduct(perdidaId, productoId, perdidaProducto, trackChanges: false);
+
+        //    return CreatedAtRoute("GetLoseProductForLose", new { perdidaId, productoId }, perdidaProductoToReturn);
+        //}
+
+        [HttpGet]
         public IActionResult GetLoseProductForLoseAndProduct(Guid perdidaId, Guid productoId)
         {
             var proveedor = _service.PerdidaProductoService.GetLoseProductForLoseAndProduct(perdidaId, productoId, trackChanges: false);
@@ -65,10 +66,11 @@ namespace Proyect.Presentation.Controllers
         }
 
 
-        [HttpDelete("{id:guid}")]
-        public IActionResult DeleteLoseProductForLoseAndProduct(Guid perdidaId, Guid productoId, Guid id)
+
+        [HttpDelete]
+        public IActionResult DeleteLoseProductForLoseAndProduct(Guid perdidaId, Guid productoId)
         {
-            _service.PerdidaProductoService.DeleteLoseProductForLose(perdidaId, productoId, id, trackChanges: false);
+            _service.PerdidaProductoService.DeleteLoseProductForLose(perdidaId, productoId, trackChanges: false);
             return NoContent();
         }
 
@@ -80,7 +82,7 @@ namespace Proyect.Presentation.Controllers
                 return BadRequest("LoseProductForUpdateDTO object is null");
             }
 
-            _service.PerdidaProductoService.UpdateLoseProductForLoseAndProduct(perdidaId, productoId, id, perdidaProducto, perdProdTrackChanges: false, perdTrackChanges: true, prodTrackChanges: true);
+            _service.PerdidaProductoService.UpdateLoseProductForLoseAndProduct(perdidaId, productoId, perdidaProducto, perdProdTrackChanges: false, perdTrackChanges: true, prodTrackChanges: true);
             return NoContent();
         }
 
@@ -89,15 +91,29 @@ namespace Proyect.Presentation.Controllers
         [HttpGet("/api/productos/{productoId}/perdidaproductos")]
         public IActionResult GetAllPerdidaProductosForProduct(Guid productoId)
         {
-            var perdidaProducto = _service.PerdidaProductoService.GetLoseProductsByProduct(productoId, trackChanges: false);
+            var perdidaProducto = _service.PerdidaProductoService.GetAllLoseProductsByProduct(productoId, trackChanges: false);
             return Ok(perdidaProducto);
         }
 
-        [HttpGet("/api/productos/{productoId}/perdidaproductos/{id:Guid}", Name = "GetPerdidaProductoForProduct")]
-        public IActionResult GetPerdidaProductoForProduct(Guid productoId, Guid id)
-        {
-            var perdidaProducto = _service.PerdidaProductoService.GetLoseProductByProduct(productoId, id, trackChanges: false);
-            return Ok(perdidaProducto);
-        }
+        //[HttpGet("/api/productos/{productoId}/perdidaproductos/{id:Guid}", Name = "GetPerdidaProductoForProduct")]
+        //public IActionResult GetPerdidaProductoForProduct(Guid productoId, Guid id)
+        //{
+        //    var perdidaProducto = _service.PerdidaProductoService.GetLoseProductByProduct(productoId, id, trackChanges: false);
+        //    return Ok(perdidaProducto);
+        //}
+
+        //[HttpGet("/api/perdidas/{perdidaId}/perdidaproductos")]
+        //public IActionResult GetAllLoseProductsForLoseAndProduct(Guid perdidaId)
+        //{
+        //    var perdidaLoseProductos = _service.PerdidaProductoService.GetAllLoseProductsForLoseAndProduct(perdidaId, trackChanges: false);
+        //    return Ok(perdidaLoseProductos);
+        //}
+
+        //[HttpGet("/api/perdidas/{perdidaId}/perdidaproductos/{id:Guid}", Name = "GetLoseProductForLose")]
+        //public IActionResult GetLoseProductForLoseAndProduct(Guid perdidaId, Guid ProductoId)
+        //{
+        //    var perdidaLoseProducto = _service.PerdidaProductoService.GetLoseProductForLoseAndProduct(perdidaId, ProductoId, trackChanges: false);
+        //    return Ok(perdidaLoseProducto);
+        //}
     }
 }
