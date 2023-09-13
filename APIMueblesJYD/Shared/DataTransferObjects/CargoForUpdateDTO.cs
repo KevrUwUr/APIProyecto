@@ -6,6 +6,6 @@ using System.Threading.Tasks;
 
 namespace Shared.DataTransferObjects
 {
-    public record CargoForUpdateDTO(string Nombre, int Estado,
+    public record CargoForUpdateDTO(string NombreCargo, int Estado,
         IEnumerable<EmpleadoCargoForCreationDTO> EmpleadoCargo);
 }

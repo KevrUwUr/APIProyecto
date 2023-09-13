@@ -113,14 +113,10 @@ namespace Service
             var cargoEntity = _repository.Cargo.GetCargo(cargoId, trackChanches);
 
             if (cargoEntity == null)
-            {
                 throw new CargoNotFoundException(cargoId);
-            }
 
             _mapper.Map(cargoForUpdate, cargoEntity);
-
             _repository.Save();
-
         }
     }
 }
