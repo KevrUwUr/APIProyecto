@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Proyect.Presentation.ModelBinders;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
 using Service.Contracts;
 using Shared.DataTransferObjects;
 
 namespace Proyect.Presentation.Controllers
 {
-    [Route("api/cargos")]
+    [Route("api/[controller]")]
     [ApiController]
     public class CargosController : ControllerBase
     {
@@ -38,7 +40,7 @@ namespace Proyect.Presentation.Controllers
 
             var createdCargo = _service.CargoService.CreateCargo(cargo);
 
-            return CreatedAtRoute("CargoById", new { id = createdCargo.Id }, createdCargo);
+            return CreatedAtRoute("GetCargo", new { id = createdCargo.Id }, createdCargo);
         }
 
         [HttpPost("collection")]

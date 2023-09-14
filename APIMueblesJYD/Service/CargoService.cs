@@ -105,7 +105,6 @@ namespace Service
 
             _repository.Cargo.DeleteCargo(cargo);
             _repository.Save();
-
         }
 
         public void UpdateCargo(Guid cargoId, CargoForUpdateDTO cargoForUpdate, bool trackChanches)

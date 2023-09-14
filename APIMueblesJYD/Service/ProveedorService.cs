@@ -61,9 +61,9 @@ namespace Service
             var supplierEntities = _repository.Proveedor.GetByIds(ids, trackChanges);
             if (ids.Count() != supplierEntities.Count())
                 throw new CollectionByIdsBadRequestException();
-            var companiesToReturn = _mapper.Map<IEnumerable<ProveedorDTO>>(supplierEntities);
+            var suppliersToReturn = _mapper.Map<IEnumerable<ProveedorDTO>>(supplierEntities);
 
-            return companiesToReturn;
+            return suppliersToReturn;
         }
         public (IEnumerable<ProveedorDTO> proveedores, string ids) CreateSupplierCollection
             (IEnumerable<ProveedorForCreationDTO> supplierCollection)

@@ -25,7 +25,7 @@ namespace Proyect.Presentation.Controllers
             return Ok(metodoPagos);
         }
 
-        [HttpGet("{id:Guid}")]
+        [HttpGet("{id:Guid}", Name = "GetPaymentMethod")]
         public IActionResult GetPaymentMethod(Guid Id)
         {
             var metodoPago = _service.MetodoPagoService.GetPaymentMethod(Id, trackChanges: false);
@@ -40,7 +40,7 @@ namespace Proyect.Presentation.Controllers
             }
             var createdPaymentMethod = _service.MetodoPagoService.CreatePaymentMethod(paymentMethod);
 
-            return CreatedAtRoute("PaymentMethodById", new { id = createdPaymentMethod.IdMetodoPago },
+            return CreatedAtRoute("GetPaymentMethod", new { id = createdPaymentMethod.IdMetodoPago },
             createdPaymentMethod);
         }
 

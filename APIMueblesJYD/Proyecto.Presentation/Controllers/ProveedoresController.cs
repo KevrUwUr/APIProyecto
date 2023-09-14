@@ -7,7 +7,6 @@ using Shared.DataTransferObjects;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Xml.Linq;
 
 namespace Proyect.Presentation.Controllers
 {
@@ -25,22 +24,22 @@ namespace Proyect.Presentation.Controllers
             return Ok(proveedores);
         }
 
-        [HttpGet("{id:Guid}")]
+        [HttpGet("{id:Guid}", Name = "GetSupplier")]
         public IActionResult GetSupplier(Guid Id)
         {
             var proveedor = _service.ProveedorService.GetSupplier(Id, trackChanges: false);
             return Ok(proveedor);
         }
         [HttpPost]
-        public IActionResult CreateSupplier([FromBody] ProveedorForCreationDTO Proveedor)
+        public IActionResult CreateSupplier([FromBody] ProveedorForCreationDTO proveedor)
         {
-            if (Proveedor == null)
+            if (proveedor == null)
             {
                 return BadRequest("ProveedorForCreationDTO object is null");
             }
-            var createdProveedor = _service.ProveedorService.CreateSupplier(Proveedor);
+            var createdProveedor = _service.ProveedorService.CreateSupplier(proveedor);
 
-            return CreatedAtRoute("ProveedorById", new { id = createdProveedor.IdProveedor },
+            return CreatedAtRoute("GetSupplier", new { id = createdProveedor.IdProveedor },
             createdProveedor);
         }
 

@@ -25,7 +25,7 @@ namespace Proyect.Presentation.Controllers
             return Ok(perdidas);
         }
 
-        [HttpGet("{id:Guid}")]
+        [HttpGet("{id:Guid}", Name = "GetLose")]
         public IActionResult GetLose(Guid Id)
         {
             var proveedor = _service.PerdidaService.GetLose(Id, trackChanges: false);
@@ -40,7 +40,7 @@ namespace Proyect.Presentation.Controllers
             }
             var createdPerdida = _service.PerdidaService.CreateLose(Perdida);
 
-            return CreatedAtRoute("PerdidaById", new { id = createdPerdida.IdPerdida },
+            return CreatedAtRoute("GetLose", new { id = createdPerdida.IdPerdida },
             createdPerdida);
         }
 

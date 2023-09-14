@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Service.Contracts;
-using Proyect.Presentation.ModelBinders;
 using Shared.DataTransferObjects;
+using Proyect.Presentation.ModelBinders;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -44,18 +44,21 @@ namespace Proyect.Presentation.Controllers
             var contactoProv = _service.ContactoProveedorService.GetContactSupplierForSupplier(proveedorId, id, trackChanges: false);
             return Ok(contactoProv);
         }
+
+
         [HttpPost]
-        public IActionResult CreateContactSupplierForSupplier(Guid proveedorId, [FromBody] ContactoProveedorForCreationDTO contactoProv)
+        public IActionResult CreateContactSupplierForSupplier(Guid proveedorId, [FromBody] ContactoProveedorForCreationDTO contactoProveedor)
         {
-            if (contactoProv is null)
+            if (contactoProveedor is null)
             {
                 return BadRequest("ContactSupplierForCreationDto object is null");
             }
-            var contactoProvToReturn = _service.ContactoProveedorService.CreateContactSupplierForSupplier(proveedorId, contactoProv, trackChanges: false);
+            var contactoProvToReturn = _service.ContactoProveedorService.CreateContactSupplierForSupplier(proveedorId, contactoProveedor, trackChanges: false);
 
-            return CreatedAtRoute("GetContactSupplierForSupplier", new { proveedorId, id = contactoProvToReturn.IdProveedor },
+            return CreatedAtRoute("GetContactSupplierForSupplier", new { proveedorId, id = contactoProvToReturn.ContProvId },
                 contactoProvToReturn);
         }
+
 
         [HttpDelete("{id:guid}")]
         public IActionResult DeleteContactSupplierForSupplier(Guid proveedorId, Guid id)
@@ -65,14 +68,14 @@ namespace Proyect.Presentation.Controllers
         }
 
         [HttpPut("{id:guid}")]
-        public IActionResult UpdateContactSupplierForSupplier(Guid proveedorId, Guid id, [FromBody] ContactoProveedorForUpdateDTO contactoProv)
+        public IActionResult UpdateContactSupplierForSupplier(Guid proveedorId, Guid id, [FromBody] ContactoProveedorForUpdateDTO contactoProveedor)
         {
-            if (contactoProv is null)
+            if (contactoProveedor is null)
             {
                 return BadRequest("ContactSupplierForUpdateDto object is null");
             }
 
-            _service.ContactoProveedorService.UpdateContactSupplierForSupplier(proveedorId, id, contactoProv, provTrackChanges: false, contProvTrackChanges: true);
+            _service.ContactoProveedorService.UpdateContactSupplierForSupplier(proveedorId, id, contactoProveedor, provTrackChanges: false, contProvTrackChanges: true);
             return NoContent();
         }
     }

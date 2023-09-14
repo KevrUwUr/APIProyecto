@@ -62,9 +62,9 @@ namespace Service
             var categoryEntities = _repository.Categoria.GetByIds(ids, trackChanges);
             if (ids.Count() != categoryEntities.Count())
                 throw new CollectionByIdsBadRequestException();
-            var companiesToReturn = _mapper.Map<IEnumerable<CategoriaDTO>>(categoryEntities);
+            var categoriesToReturn = _mapper.Map<IEnumerable<CategoriaDTO>>(categoryEntities);
 
-            return companiesToReturn;
+            return categoriesToReturn;
         }
         public (IEnumerable<CategoriaDTO> categorias, string ids) CreateCategoryCollection
             (IEnumerable<CategoriaForCreationDTO> categoryCollection)

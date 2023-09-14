@@ -25,14 +25,14 @@ namespace Proyect.Presentation.Controllers
             return Ok(categorias);
         }
 
-        [HttpGet("{id:Guid}")]
+        [HttpGet("{id:Guid}", Name = "GetCategory")]
         public IActionResult GetCategory(Guid Id)
         {
             var categoria = _service.CategoriaService.GetCategory(Id, trackChanges: false);
             return Ok(categoria);
         }
         [HttpPost]
-        public IActionResult Createcategory([FromBody] CategoriaForCreationDTO category)
+        public IActionResult CreateCategory([FromBody] CategoriaForCreationDTO category)
         {
             if (category == null)
             {
@@ -40,7 +40,7 @@ namespace Proyect.Presentation.Controllers
             }
             var createdcategory = _service.CategoriaService.CreateCategory(category);
 
-            return CreatedAtRoute("CategoryById", new { id = createdcategory.Id },
+            return CreatedAtRoute("GetCategory", new { id = createdcategory.Id },
             createdcategory);
         }
 

@@ -6,6 +6,6 @@ using System.Threading.Tasks;
 
 namespace Shared.DataTransferObjects
 {
-    public record ProveedorForCreationDTO(string RazonSocial, int Estado
-            /*, IEnumerable<ContactoProveedorForCreationDTO>ContactoProveedors*/);
+    public record ProveedorForCreationDTO(string RazonSocial, int Estado,
+        IEnumerable<ContactoProveedorForCreationDTO>ContactoProveedores);
 }
