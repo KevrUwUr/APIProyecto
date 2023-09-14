@@ -1,0 +1,15 @@
+Para iniciar el host:
+1. Van al visual studio code (El azul)
+2. Dan ctrl+ñ
+3. Crean una nueva consola
+4. Ponen los comandos
+	4.1 cd mueblesjyd
+	4.2 npm start
+
+http://localhost:3000/
+http://localhost:3000/Admin
+http://localhost:3000/QuienesSomos
+http://localhost:3000/Registrarse
+http://localhost:3000/Login
+http://localhost:3000/Cargos
+http://localhost:3000/Productos
