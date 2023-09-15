@@ -6,6 +6,14 @@ using System.Threading.Tasks;
 
 namespace Shared.DataTransferObjects
 {
-    public record EmpleadoDTO (int Id, string Nombres, string Apellidos, string Sexo, DateTime FechaNacimiento, int Estado);
+    public record EmpleadoDTO
+    {
+        public Guid EmpleadoId { get; init; }
+        public string? Nombres { get; init;}
+        public string? Apellidos { get; init;}
+        public string? Sexo { get; init;}
+        public DateTime FechaNacimiento { get; init; }
+        public int Estado { get; init;}
+    }
     
 }

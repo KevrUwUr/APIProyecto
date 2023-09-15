@@ -43,19 +43,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\TheGamerXD\\.nuget\\packages\\": {}
+    "C:\\Users\\EQUIPO\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Proyecto\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj",
+      "projectUniqueName": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj",
       "projectName": "Service.Contracts",
-      "projectPath": "C:\\Proyecto\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj",
-      "packagesPath": "C:\\Users\\TheGamerXD\\.nuget\\packages\\",
-      "outputPath": "C:\\Proyecto\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\obj\\",
+      "projectPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj",
+      "packagesPath": "C:\\Users\\EQUIPO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\TheGamerXD\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\EQUIPO\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -69,11 +69,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Proyecto\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Proyecto\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj"
+            "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Entities\\Entities.csproj"
             },
-            "C:\\Proyecto\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Shared\\Shared.csproj": {
-              "projectPath": "C:\\Proyecto\\APIProyecto\\APIProyecto\\APIMueblesJYD\\Shared\\Shared.csproj"
+            "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Shared\\Shared.csproj": {
+              "projectPath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Shared\\Shared.csproj"
             }
           }
         }
@@ -103,7 +103,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

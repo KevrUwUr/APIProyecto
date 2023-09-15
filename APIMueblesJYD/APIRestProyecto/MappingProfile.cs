@@ -57,6 +57,12 @@ namespace APIRestProyecto
 
             CreateMap<Usuario, UsuarioDTO>()
                 .ForMember(dest => dest.IdUsuario, opt => opt.MapFrom(src => src.IdUsuario));
+
+            CreateMap<EmpleadoForCreationDTO, Empleado>();
+            CreateMap<EmpleadoForUpdateDTO, Empleado>();
+            CreateMap<Empleado, EmpleadoDTO>()
+                .ForMember(dest => dest.EmpleadoId, opt => opt.MapFrom(src => src.EmpleadoId));
+
         }
     }
 }
