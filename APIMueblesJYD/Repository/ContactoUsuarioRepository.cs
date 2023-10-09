@@ -21,5 +21,20 @@ namespace Repository
         public ContactoUsuario GetUserContact(Guid Id, bool trackChanges) =>
             FindByCondition(c => c.IdContactoCliente.Equals(Id), trackChanges)
             .SingleOrDefault();
+        public IEnumerable<ContactoUsuario> GetAllContactUsersForUser(Guid usuarioId, bool trackChanges) =>
+            FindByCondition(e => e.IdUsuario.Equals(usuarioId), trackChanges)
+            .OrderBy(e => e.Usuario)
+            .ToList();
+        public ContactoUsuario GetContactUserForUser(Guid usuarioId, Guid Id, bool trackChanges) =>
+            FindByCondition(e => e.IdUsuario.Equals(usuarioId) && e.IdContactoCliente == (Id), trackChanges)
+            .SingleOrDefault();
+
+        public void CreateContactUserForUser(Guid usuarioId, ContactoUsuario contUsuario)
+        {
+            contUsuario.IdUsuario = usuarioId;
+            Create(contUsuario);
+        }
+
+        public void DeleteContactUser(ContactoUsuario contUsuario) => Delete(contUsuario);
     }
 }

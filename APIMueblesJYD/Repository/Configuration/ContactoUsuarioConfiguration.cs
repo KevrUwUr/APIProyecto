@@ -14,7 +14,7 @@ namespace Repository.Configuration
                 new ContactoUsuario
                 {
                     IdContactoCliente = new Guid("03B22D58-4A3D-4AB1-93D3-143686897A49"),
-                    NumeroTelefonico = 5614248,
+                    Telefono = "5614248",
                     IndicativoCiudad = "601",
                     TipoTelefono = "Fijo",
                     Direccion = "Cra 12C #53-08",
@@ -26,7 +26,7 @@ namespace Repository.Configuration
                 new ContactoUsuario
                 {
                     IdContactoCliente = new Guid("9D1A4BD6-E6EB-40BD-8333-A8745C90AE58"),
-                    NumeroTelefonico = 315874920,
+                    Telefono = "315874920",
                     IndicativoCiudad = "301",
                     TipoTelefono = "Celular",
                     Direccion = "Av. 7 de Septiembre #25-10",
@@ -38,7 +38,7 @@ namespace Repository.Configuration
                 new ContactoUsuario
                 {
                     IdContactoCliente = new Guid("06DC8C36-D46E-4EB1-97D5-92355BA32B9F"),
-                    NumeroTelefonico = 317895623,
+                    Telefono = "317895623",
                     IndicativoCiudad = "571",
                     TipoTelefono = "Fijo",
                     Direccion = "Calle 24 #18-15",
@@ -50,7 +50,7 @@ namespace Repository.Configuration
                 new ContactoUsuario
                 {
                     IdContactoCliente = new Guid("9F355A72-89F6-47C8-AAAB-931E4D5D40A5"),
-                    NumeroTelefonico = 318564237,
+                    Telefono = "318564237",
                     IndicativoCiudad = "571",
                     TipoTelefono = "Celular",
                     Direccion = "Cra 10A #5-30",

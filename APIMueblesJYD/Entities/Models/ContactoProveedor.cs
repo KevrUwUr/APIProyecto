@@ -19,7 +19,7 @@ namespace Entities.Models
         public string? NombreProv { get; set; }
 
         [Required(ErrorMessage = "Este es un campo requerido")]
-        public int Telefono { get; set; }
+        public string? Telefono { get; set; }
 
         [Required(ErrorMessage = "E-Mail es un campo requerido.")]
         [MaxLength(80, ErrorMessage = "Largo maximo del nombre es de 80 caracteres")]

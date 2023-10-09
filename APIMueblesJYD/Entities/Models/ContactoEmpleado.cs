@@ -15,7 +15,7 @@ namespace Entities.Models
         public Guid IdContactoEmpleado { get; set; }
 
         [Required(ErrorMessage = "Este es un campo requerido")]
-        public int Telefono { get; set; }
+        public string? Telefono { get; set; }
 
         [Required(ErrorMessage = "Direccion es un campo requerido.")]
         [MaxLength(80, ErrorMessage = "Largo maximo del nombre es de 80 caracteres")]

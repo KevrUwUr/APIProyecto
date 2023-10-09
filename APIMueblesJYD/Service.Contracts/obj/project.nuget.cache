@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PvZMsmQJrRBMUVW689+6+v/BDzAkmMV4XxxTfWttIo9pa6rKGyXlnFNy0HBHLONpfRm3Ui+O3koVoK1E34S72A==",
+  "dgSpecHash": "JO30h7ziTJWkKnCd7ZoOdtE2LzfbzveD0cuWogGRC67L96O3Np08wTCB5t5i2Myt9whhk0JCl0JU7AtG9bDM6A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\EQUIPO\\Desktop\\ProyectoKev\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj",
+  "projectFilePath": "C:\\Proyecto\\APIProyecto\\APIMueblesJYD\\Service.Contracts\\Service.Contracts.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
