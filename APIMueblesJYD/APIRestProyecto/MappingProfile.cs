@@ -12,7 +12,7 @@ namespace APIRestProyecto
                 .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.CargoId));
 
             CreateMap<CargoForCreationDTO, Cargo>();
-            CreateMap<CargoForUpdateDTO, Cargo>();
+            CreateMap<CargoForUpdateDTO, Cargo>().ReverseMap();
 
             CreateMap<Categoria, CategoriaDTO>()
                 .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.IdCategoria));
@@ -20,11 +20,23 @@ namespace APIRestProyecto
             CreateMap<CategoriaForCreationDTO, Categoria>();
             CreateMap<CategoriaForUpdateDTO, Categoria>();
 
+            CreateMap<ContactoEmpleado, ContactoEmpleadoDTO>()
+                .ForMember(dest => dest.ContEmpId, opt => opt.MapFrom(src => src.IdContactoEmpleado));
+
+            CreateMap<ContactoEmpleadoForCreationDTO, ContactoEmpleado>();
+            CreateMap<ContactoEmpleadoForUpdateDTO, ContactoEmpleado>().ReverseMap();
+
             CreateMap<ContactoProveedor, ContactoProveedorDTO>()
                 .ForMember(dest => dest.ContProvId, opt => opt.MapFrom(src => src.IdContactoProveedor));
 
             CreateMap<ContactoProveedorForCreationDTO, ContactoProveedor>();
-            CreateMap<ContactoProveedorForUpdateDTO, ContactoProveedor>();
+            CreateMap<ContactoProveedorForUpdateDTO, ContactoProveedor>().ReverseMap();
+
+            CreateMap<ContactoUsuario, ContactoUsuarioDTO>()
+                .ForMember(dest => dest.ContUsuarioId, opt => opt.MapFrom(src => src.IdContactoCliente));
+
+            CreateMap<ContactoUsuarioForCreationDTO, ContactoUsuario>();
+            CreateMap<ContactoUsuarioForUpdateDTO, ContactoUsuario>().ReverseMap();
 
             CreateMap<MetodoPago, MetodoPagoDTO>()
                 .ForMember(dest => dest.IdMetodoPago, opt => opt.MapFrom(src => src.IdMetodoPago));

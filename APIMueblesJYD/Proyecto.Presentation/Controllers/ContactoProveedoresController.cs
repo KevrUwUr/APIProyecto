@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.JsonPatch;
 
 namespace Proyect.Presentation.Controllers
 {
@@ -76,6 +77,21 @@ namespace Proyect.Presentation.Controllers
             }
 
             _service.ContactoProveedorService.UpdateContactSupplierForSupplier(proveedorId, id, contactoProveedor, provTrackChanges: false, contProvTrackChanges: true);
+            return NoContent();
+        }
+
+        [HttpPatch("{id:guid}")]
+        public IActionResult PartiallyUpdateContactoProveedorForProveedor(Guid proveedorId, Guid id,
+            [FromBody] JsonPatchDocument<ContactoProveedorForUpdateDTO> patchDoc)
+        {
+            if (patchDoc is null)
+                return BadRequest("patchDoc object sent from client is null.");
+
+            var result = _service.ContactoProveedorService.GetContactoProveedorForPatch(proveedorId, id, provTrackChanges: false, contProvTrackChanges: true);
+            patchDoc.ApplyTo(result.contProvToPatch);
+
+            _service.ContactoProveedorService.SaveChangesForPatch(result.contProvToPatch, result.contProvEntity);
+
             return NoContent();
         }
     }

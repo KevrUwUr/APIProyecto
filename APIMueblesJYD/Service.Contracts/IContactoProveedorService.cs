@@ -18,5 +18,8 @@ namespace Service.Contracts
         void DeleteContactSupplierForSupplier(Guid proveedorId, Guid Id, bool trackChanges);
         void UpdateContactSupplierForSupplier(Guid proveedorId, Guid id,
             ContactoProveedorForUpdateDTO contactoProvForUpdate, bool provTrackChanges, bool contProvTrackChanges);
+        (ContactoProveedorForUpdateDTO contProvToPatch, ContactoProveedor contProvEntity) GetContactoProveedorForPatch
+            (Guid proveedorId, Guid id, bool provTrackChanges, bool contProvTrackChanges);
+        void SaveChangesForPatch(ContactoProveedorForUpdateDTO contProvToPatch, ContactoProveedor contProvEntity);
     }
 }

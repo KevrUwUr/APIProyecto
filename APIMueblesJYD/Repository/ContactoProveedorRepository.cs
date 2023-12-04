@@ -25,6 +25,7 @@ namespace Repository
             FindByCondition(e => e.IdProveedor.Equals(proveedorId), trackChanges)
             .OrderBy(e => e.NombreProv)
             .ToList();
+
         public ContactoProveedor GetContactSupplierForSupplier(Guid proveedorId, Guid Id, bool trackChanges) =>
             FindByCondition(e => e.IdProveedor.Equals(proveedorId) && e.IdContactoProveedor == (Id), trackChanges)
             .SingleOrDefault();

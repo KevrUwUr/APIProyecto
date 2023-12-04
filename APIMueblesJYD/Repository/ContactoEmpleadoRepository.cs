@@ -20,5 +20,22 @@ namespace Repository
         public ContactoEmpleado GetEmployeeContact(Guid Id, bool trackChanges) =>
             FindByCondition(c => c.IdContactoEmpleado.Equals(Id), trackChanges)
             .SingleOrDefault();
+
+        public IEnumerable<ContactoEmpleado> GetAllContactEmployeesForEmployee(Guid empleadoId, bool trackChanges) =>
+            FindByCondition(e => e.EmpleadoId.Equals(empleadoId), trackChanges)
+            .OrderBy(e => e.Empleado)
+            .ToList();
+
+        public ContactoEmpleado GetContactEmployeeForEmployee(Guid empleadoId, Guid Id, bool trackChanges) =>
+            FindByCondition(e => e.EmpleadoId.Equals(empleadoId) && e.IdContactoEmpleado == (Id), trackChanges)
+            .SingleOrDefault();
+
+        public void CreateContactEmployeeForEmployee(Guid empleadoId, ContactoEmpleado contProv)
+        {
+            contProv.EmpleadoId = empleadoId;
+            Create(contProv);
+        }
+
+        public void DeleteContactEmployee(ContactoEmpleado contProv) => Delete(contProv);
     }
 }

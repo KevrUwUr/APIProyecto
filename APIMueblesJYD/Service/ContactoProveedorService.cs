@@ -121,14 +121,13 @@ namespace Service
             _repository.Save();
         }
 
-        public (ContactoProveedorForUpdateDTO contProvToPatch, ContactoProveedor contProvEntity) GetContactoProveedorForPatch(Guid proveedorId, Guid id, bool catTrackChanges, bool prodTrackChanges)
+        public (ContactoProveedorForUpdateDTO contProvToPatch, ContactoProveedor contProvEntity) GetContactoProveedorForPatch(Guid proveedorId, Guid id, bool provTrackChanges, bool contProvTrackChanges)
         {
-            var proveedor = _repository.Proveedor.GetSupplier(proveedorId, catTrackChanges);
+            var proveedor = _repository.Proveedor.GetSupplier(proveedorId, contProvTrackChanges);
             if (proveedor is null)
                 throw new ProveedorNotFoundException(proveedorId);
 
-            var contProvEntity = _repository.ContactoProveedor.GetContactSupplierForSupplier(proveedorId, id,
-            prodTrackChanges);
+            var contProvEntity = _repository.ContactoProveedor.GetContactSupplierForSupplier(proveedorId, id, contProvTrackChanges);
 
             if (contProvEntity is null)
                 throw new ContactoProveedorNotFoundException(proveedorId);

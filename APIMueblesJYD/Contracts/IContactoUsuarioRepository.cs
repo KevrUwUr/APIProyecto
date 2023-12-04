@@ -12,5 +12,9 @@ namespace Contracts
     {
         IEnumerable<ContactoUsuario> GetAllUserContacts(bool trackChanges);
         ContactoUsuario GetUserContact(Guid Id, bool trackChanges);
+        IEnumerable<ContactoUsuario> GetAllContactUsersForUser(Guid usuarioId, bool trackChanges);
+        ContactoUsuario GetContactUserForUser(Guid usuarioId, Guid Id, bool trackChanges);
+        void CreateContactUserForUser(Guid usuarioId, ContactoUsuario contUsuario);
+        void DeleteContactUser(ContactoUsuario contUsuario);
     }
 }
