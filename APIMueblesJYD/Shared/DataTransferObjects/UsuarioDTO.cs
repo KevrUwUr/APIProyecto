@@ -6,10 +6,24 @@ using System.Threading.Tasks;
 
 namespace Shared.DataTransferObjects
 {
-    public record UsuarioDTO(int IdUsuario, string PrimNombre, string SegNombre, 
-        string PrimApellido, string SegApellido, string Sexo, string TipoDocumento, 
-        int NumDocumento, DateTime FechaNacimiento, int Estado, DateTime FechaRegistro,
-        int TipoUsuario, DateTime FechaContrato, string Cargo, DateTime FechaFin,
-        string Contrasena, string Llave);
-
+    public record UsuarioDTO
+    {
+        public Guid IdUsuario { get; init; }
+        public string? PrimNombre { get; init; }
+        public string? SegNombre { get; init; }
+        public string? PrimApellido { get; init; }
+        public string? SegApellido { get; init; }
+        public string? Sexo { get; init; }
+        public string? TipoDocumento { get; init; }
+        public int NumDocumento { get; init; }
+        public DateTime FechaNacimiento { get; init; }
+        public int Estado { get; init; }
+        public DateTime FechaRegistro { get; init; }
+        public int TipoUsuario { get; init; }
+        public DateTime FechaContrato { get; init; }
+        public string? Cargo { get; init; }
+        public DateTime FechaFin { get; init; }
+        public string? Contrasena { get; init; }
+        public string? Llave { get; init; }
+    }
 }

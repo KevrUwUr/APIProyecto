@@ -25,5 +25,10 @@ namespace Repository
             FindByCondition(c => c.IdUsuario.Equals(IdUsuario), trackChanges)
             .SingleOrDefault();
 
+        public void CreateUser(Usuario user) => Create(user);
+        public IEnumerable<Usuario> GetByIds(IEnumerable<Guid> ids, bool trackChanges) =>
+            FindByCondition(x => ids.Contains(x.IdUsuario), trackChanges)
+            .ToList();
+        public void DeleteUser(Usuario user) => Delete(user);
     }
 }
