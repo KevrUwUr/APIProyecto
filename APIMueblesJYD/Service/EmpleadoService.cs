@@ -45,11 +45,6 @@ namespace Service
             return empleadoDTO;
         }
 
-
-
-
-
-
         public EmpleadoDTO CreateEmployee(EmpleadoForCreationDTO empleado)
         {
             var empleadoEntity = _mapper.Map<Empleado>(empleado);
@@ -125,7 +120,6 @@ namespace Service
             _mapper.Map(empleadoForUpdate, empleadoEntity);
 
             _repository.Save();
-
         }
     }
 }

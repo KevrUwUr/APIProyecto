@@ -30,6 +30,5 @@ namespace Repository
             FindByCondition(x => ids.Contains(x.IdPerdida), trackChanges)
             .ToList();
         public void DeleteLose(Perdida lose) => Delete(lose);
-
     }
 }

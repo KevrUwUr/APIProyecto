@@ -10,35 +10,36 @@ namespace Entities.Models
 {
     public class ContactoUsuario
     {
-        [Column("IdContactoCliente")]
+        [Column("IdContactoUsuario")]
         [Key]
-        public Guid IdContactoCliente { get; set; }
+        public Guid IdContactoUsuario { get; set; }
 
         [Required(ErrorMessage = "Este es un campo requerido")]
-        public int NumeroTelefonico { get; set; }
+        [MaxLength(20, ErrorMessage = "Largo maximo de el telefono es de 20 caracteres")]
+        public string? NumeroTelefonico { get; set; }
 
         [Required(ErrorMessage = "IndicativoCiudad es un campo requerido.")]
-        [MaxLength(80, ErrorMessage = "Largo maximo del nombre es de 80 caracteres")]
+        [MaxLength(80, ErrorMessage = "Largo maximo del indicativo ciudad es de 80 caracteres")]
         public string? IndicativoCiudad { get; set; }
 
         [Required(ErrorMessage = "TipoTelefono es un campo requerido.")]
-        [MaxLength(80, ErrorMessage = "Largo maximo del nombre es de 80 caracteres")]
+        [MaxLength(80, ErrorMessage = "Largo maximo del tipo de telefono es de 80 caracteres")]
         public string? TipoTelefono { get; set; }
 
         [Required(ErrorMessage = "Direccion es un campo requerido.")]
-        [MaxLength(80, ErrorMessage = "Largo maximo del nombre es de 80 caracteres")]
+        [MaxLength(80, ErrorMessage = "Largo maximo del direccion es de 80 caracteres")]
         public string? Direccion { get; set; }
 
         [Required(ErrorMessage = "Ciudad es un campo requerido.")]
-        [MaxLength(80, ErrorMessage = "Largo maximo del nombre es de 80 caracteres")]
+        [MaxLength(80, ErrorMessage = "Largo maximo del ciudad es de 80 caracteres")]
         public string? Ciudad { get; set; }
 
         [Required(ErrorMessage = "Barrio_Localidad es un campo requerido.")]
-        [MaxLength(80, ErrorMessage = "Largo maximo del nombre es de 80 caracteres")]
+        [MaxLength(80, ErrorMessage = "Largo maximo del barrio/localidad es de 80 caracteres")]
         public string? Barrio_Localidad { get; set; }
 
         [Required(ErrorMessage = "E-Mail es un campo requerido.")]
-        [MaxLength(80, ErrorMessage = "Largo maximo del nombre es de 80 caracteres")]
+        [MaxLength(80, ErrorMessage = "Largo maximo del email es de 80 caracteres")]
         public string? Email { get; set; }
 
         [ForeignKey(nameof(Usuario))]

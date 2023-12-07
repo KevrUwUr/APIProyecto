@@ -29,10 +29,14 @@ namespace APIRestProyecto
             CreateMap<ContactoProveedorForUpdateDTO, ContactoProveedor>().ReverseMap();
 
             CreateMap<ContactoUsuario, ContactoUsuarioDTO>()
-                .ForMember(dest => dest.ContUsuarioId, opt => opt.MapFrom(src => src.IdContactoCliente));
+                .ForMember(dest => dest.ContUsuarioId, opt => opt.MapFrom(src => src.IdContactoUsuario));
             CreateMap<ContactoUsuarioForCreationDTO, ContactoUsuario>();
             CreateMap<ContactoUsuarioForUpdateDTO, ContactoUsuario>().ReverseMap();
 
+            CreateMap<FacturaVenta, FacturaVentaDTO>()
+                .ForMember(dest => dest.FacturaVentaId, opt => opt.MapFrom(src => src.FacturaVentaId));
+            CreateMap<FacturaVentaForCreationDTO, FacturaVenta>();
+            CreateMap<FacturaVentaForUpdateDTO, FacturaVenta>().ReverseMap();
 
             CreateMap<Empleado, EmpleadoDTO>()
                 .ForMember(dest => dest.EmpleadoId, opt => opt.MapFrom(src => src.EmpleadoId));
@@ -42,7 +46,7 @@ namespace APIRestProyecto
             CreateMap<MetodoPago, MetodoPagoDTO>()
                 .ForMember(dest => dest.IdMetodoPago, opt => opt.MapFrom(src => src.IdMetodoPago));
             CreateMap<MetodoPagoForCreationDTO, MetodoPago>();
-            CreateMap<MetodoPagoForUpdateDTO, MetodoPago>();
+            CreateMap<MetodoPagoForUpdateDTO, MetodoPago>().ReverseMap();
 
             CreateMap<Perdida, PerdidaDTO>()
                 .ForMember(dest => dest.IdPerdida, opt => opt.MapFrom(src => src.IdPerdida));
@@ -56,7 +60,7 @@ namespace APIRestProyecto
             CreateMap<Producto, ProductoDTO>()
                 .ForMember(dest => dest.ProductoId, opt => opt.MapFrom(src => src.ProductoId));
             CreateMap<ProductoForCreationDTO, Producto>();
-            CreateMap<ProductoForUpdateDTO, Producto>();
+            CreateMap<ProductoForUpdateDTO, Producto>().ReverseMap();
 
             CreateMap<Proveedor, ProveedorDTO>()
                 .ForMember(dest => dest.IdProveedor, opt => opt.MapFrom(src => src.IdProveedor));

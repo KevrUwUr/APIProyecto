@@ -12,7 +12,7 @@ namespace Repository
     {
         public ContactoProveedorRepository(RepositoryContext repositoryContext)
             : base(repositoryContext) { }
-        public IEnumerable<ContactoProveedor> GetAllSupplierContacts(bool trackChanges) =>
+        public IEnumerable<ContactoProveedor> GetAllSuppliersContacts(bool trackChanges) =>
             FindAll(trackChanges)
             .OrderBy(c => c.Proveedor)
             .ToList();
@@ -23,7 +23,7 @@ namespace Repository
 
         public IEnumerable<ContactoProveedor> GetAllContactSuppliersForSupplier(Guid proveedorId, bool trackChanges) =>
             FindByCondition(e => e.IdProveedor.Equals(proveedorId), trackChanges)
-            .OrderBy(e => e.NombreProv)
+            .OrderBy(e => e.Proveedor)
             .ToList();
 
         public ContactoProveedor GetContactSupplierForSupplier(Guid proveedorId, Guid Id, bool trackChanges) =>

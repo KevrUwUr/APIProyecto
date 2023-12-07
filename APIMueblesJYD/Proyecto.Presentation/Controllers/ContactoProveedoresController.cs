@@ -25,7 +25,7 @@ namespace Proyect.Presentation.Controllers
             return Ok(proveedores);
         }
 
-        [HttpGet("/api/contactoProveedores/{id:Guid}", Name = "GetContactSupplier")]
+        [HttpGet("/api/contactoProveedores/{Id:Guid}", Name = "GetContactSupplier")]
         public IActionResult GetContactSupplier(Guid Id)
         {
             var contactoProv = _service.ContactoProveedorService.GetSupplierContact(Id, trackChanges: false);
@@ -39,10 +39,10 @@ namespace Proyect.Presentation.Controllers
             return Ok(proveedores);
         }
 
-        [HttpGet("{id:guid}", Name = "GetContactSupplierForSupplier")]
-        public IActionResult GetContactSupplierForSupplier(Guid proveedorId, Guid id)
+        [HttpGet("{Id:guid}", Name = "GetContactSupplierForSupplier")]
+        public IActionResult GetContactSupplierForSupplier(Guid proveedorId, Guid Id)
         {
-            var contactoProv = _service.ContactoProveedorService.GetContactSupplierForSupplier(proveedorId, id, trackChanges: false);
+            var contactoProv = _service.ContactoProveedorService.GetContactSupplierForSupplier(proveedorId, Id, trackChanges: false);
             return Ok(contactoProv);
         }
 
@@ -56,38 +56,38 @@ namespace Proyect.Presentation.Controllers
             }
             var contactoProvToReturn = _service.ContactoProveedorService.CreateContactSupplierForSupplier(proveedorId, contactoProveedor, trackChanges: false);
 
-            return CreatedAtRoute("GetContactSupplierForSupplier", new { proveedorId, id = contactoProvToReturn.ContProvId },
+            return CreatedAtRoute("GetContactSupplierForSupplier", new { proveedorId, Id = contactoProvToReturn.ContProvId },
                 contactoProvToReturn);
         }
 
 
-        [HttpDelete("{id:guid}")]
-        public IActionResult DeleteContactSupplierForSupplier(Guid proveedorId, Guid id)
+        [HttpDelete("{Id:guid}")]
+        public IActionResult DeleteContactSupplierForSupplier(Guid proveedorId, Guid Id)
         {
-            _service.ContactoProveedorService.DeleteContactSupplierForSupplier(proveedorId, id, trackChanges: false);
+            _service.ContactoProveedorService.DeleteContactSupplierForSupplier(proveedorId, Id, trackChanges: false);
             return NoContent();
         }
 
-        [HttpPut("{id:guid}")]
-        public IActionResult UpdateContactSupplierForSupplier(Guid proveedorId, Guid id, [FromBody] ContactoProveedorForUpdateDTO contactoProveedor)
+        [HttpPut("{Id:guid}")]
+        public IActionResult UpdateContactSupplierForSupplier(Guid proveedorId, Guid Id, [FromBody] ContactoProveedorForUpdateDTO contactoProveedor)
         {
             if (contactoProveedor is null)
             {
                 return BadRequest("ContactSupplierForUpdateDto object is null");
             }
 
-            _service.ContactoProveedorService.UpdateContactSupplierForSupplier(proveedorId, id, contactoProveedor, provTrackChanges: false, contProvTrackChanges: true);
+            _service.ContactoProveedorService.UpdateContactSupplierForSupplier(proveedorId, Id, contactoProveedor, provTrackChanges: false, contProvTrackChanges: true);
             return NoContent();
         }
 
-        [HttpPatch("{id:guid}")]
-        public IActionResult PartiallyUpdateContactoProveedorForProveedor(Guid proveedorId, Guid id,
+        [HttpPatch("{Id:guid}")]
+        public IActionResult PartiallyUpdateContactoProveedorForProveedor(Guid proveedorId, Guid Id,
             [FromBody] JsonPatchDocument<ContactoProveedorForUpdateDTO> patchDoc)
         {
             if (patchDoc is null)
                 return BadRequest("patchDoc object sent from client is null.");
 
-            var result = _service.ContactoProveedorService.GetContactoProveedorForPatch(proveedorId, id, provTrackChanges: false, contProvTrackChanges: true);
+            var result = _service.ContactoProveedorService.GetContactoProveedorForPatch(proveedorId, Id, provTrackChanges: false, contProvTrackChanges: true);
             patchDoc.ApplyTo(result.contProvToPatch);
 
             _service.ContactoProveedorService.SaveChangesForPatch(result.contProvToPatch, result.contProvEntity);

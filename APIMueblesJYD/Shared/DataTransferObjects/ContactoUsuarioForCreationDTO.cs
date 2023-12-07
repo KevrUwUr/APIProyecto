@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace Shared.DataTransferObjects
 {
-    public record ContactoUsuarioForCreationDTO (int NumeroTelefonico, string IndicativoCiudad, string Direccion, 
-        string Ciudad, string Barrio_Localidad, string Email, Guid IdUsuario);
+    public record ContactoUsuarioForCreationDTO(string NumeroTelefonico, string IndicativoCiudad, 
+        string TipoTelefono, string Direccion, string Ciudad, string Barrio_Localidad, string Email)
+    {
+    }
 }

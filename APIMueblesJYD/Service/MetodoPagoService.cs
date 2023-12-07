@@ -44,59 +44,103 @@ namespace Service
             var metodoPagoDTO = _mapper.Map<MetodoPagoDTO>(metodoPago);
             return metodoPagoDTO;
         }
-        public MetodoPagoDTO CreatePaymentMethod(MetodoPagoForCreationDTO paymentMethod)
+
+        public IEnumerable<MetodoPagoDTO> GetAllPaymentMethodsForSaleBill(Guid facturaVentaId, bool trackChanges)
         {
+            var facturaVenta = _repository.FacturaVenta.GetSaleBill(facturaVentaId, trackChanges);
+
+            if (facturaVenta is null)
+            {
+                throw new MetodoPagoNotFoundException(facturaVentaId);
+            }
+            var metPagosFromDb = _repository.MetodoPago.GetAllPaymentMethodsForSaleBill(facturaVentaId, trackChanges);
+            var metPagosDTO = _mapper.Map<IEnumerable<MetodoPagoDTO>>(metPagosFromDb);
+
+            return metPagosDTO;
+        }
+
+        public MetodoPagoDTO GetPaymentMethodForSaleBill(Guid facturaVentaId, Guid Id, bool trackChanges)
+        {
+            var facturaVenta = _repository.FacturaVenta.GetSaleBill(facturaVentaId, trackChanges);
+            if (facturaVenta is null)
+            {
+                throw new FacturaVentaNotFoundException(facturaVentaId);
+            }
+            var facVentaDb = _repository.MetodoPago.GetPaymentMethodForSaleBill(facturaVentaId, Id, trackChanges);
+            if (facVentaDb is null)
+            {
+                throw new MetodoPagoNotFoundException(Id);
+            }
+            var facVenta = _mapper.Map<MetodoPagoDTO>(facVentaDb);
+            return facVenta;
+        }
+
+        public MetodoPagoDTO CreatePaymentMethodForSaleBill(Guid facturaVentaId, MetodoPagoForCreationDTO paymentMethod, bool trackChanges)
+        {
+            var facturaVenta = _repository.FacturaVenta.GetSaleBill(facturaVentaId, trackChanges);
+            if (facturaVenta is null)
+                throw new FacturaVentaNotFoundException(facturaVentaId);
+
             var metodoPagoEntity = _mapper.Map<MetodoPago>(paymentMethod);
 
-            _repository.MetodoPago.CreatePaymentMethod(metodoPagoEntity);
+            _repository.MetodoPago.CreatePaymentMethodForSaleBill(facturaVentaId, metodoPagoEntity);
             _repository.Save();
 
             var paymentMethodToReturn = _mapper.Map<MetodoPagoDTO>(metodoPagoEntity);
             return paymentMethodToReturn;
         }
-        public IEnumerable<MetodoPagoDTO> GetByIds(IEnumerable<Guid> ids, bool trackChanges)
-        {
-            if (ids is null)
-                throw new IdParametersBadRequestException();
-            var paymentMethodEntities = _repository.MetodoPago.GetByIds(ids, trackChanges);
-            if (ids.Count() != paymentMethodEntities.Count())
-                throw new CollectionByIdsBadRequestException();
-            var companiesToReturn = _mapper.Map<IEnumerable<MetodoPagoDTO>>(paymentMethodEntities);
 
-            return companiesToReturn;
-        }
-        public (IEnumerable<MetodoPagoDTO> metodoPagos, string ids) CreatePaymentMethodCollection
-            (IEnumerable<MetodoPagoForCreationDTO> paymentMethodCollection)
+        public void DeletePaymentMethodForSaleBill(Guid facturaVentaId, Guid paymentMethodId, bool trackChanges)
         {
-            if (paymentMethodCollection is null)
-                throw new MetodoPagoCollectionBadRequest();
-            var paymentMethodEntities = _mapper.Map<IEnumerable<MetodoPago>>(paymentMethodCollection);
-            foreach (var paymentMethod in paymentMethodEntities)
-            {
-                _repository.MetodoPago.CreatePaymentMethod(paymentMethod);
-            }
-            _repository.Save();
-            var paymentMethodCollectionToReturn =
-            _mapper.Map<IEnumerable<MetodoPagoDTO>>(paymentMethodEntities);
-            var ids = string.Join(",", paymentMethodCollectionToReturn.Select(c => c.IdMetodoPago));
-            return (categories: paymentMethodCollectionToReturn, ids: ids);
-        }
-        public void DeletePaymentMethod(Guid paymentMethodId, bool trackChanges)
-        {
-            var paymentMethod = _repository.MetodoPago.GetPaymentMethod(paymentMethodId, trackChanges);
+            var facturaVenta = _repository.FacturaVenta.GetSaleBill(facturaVentaId, trackChanges);
+            if (facturaVenta is null)
+                throw new FacturaVentaNotFoundException(facturaVentaId);
+
+            var paymentMethod = _repository.MetodoPago.GetPaymentMethodForSaleBill(facturaVentaId, paymentMethodId, 
+                trackChanges);
             if (paymentMethod == null)
                 throw new MetodoPagoNotFoundException(paymentMethodId);
 
             _repository.MetodoPago.DeletePaymentMethod(paymentMethod);
             _repository.Save();
         }
-        public void UpdatePaymentMethod(Guid paymentMethodId, MetodoPagoForUpdateDTO paymentMethodForUpdate, bool trackChanges)
+
+        public void UpdatePaymentMethodForSaleBill(Guid facturaVentaId, Guid paymentMethodId, MetodoPagoForUpdateDTO paymentMethodForUpdate, bool facVentaTrackChanges, bool metPagoTrackChanges)
         {
-            var paymentMethodEntity = _repository.MetodoPago.GetPaymentMethod(paymentMethodId, trackChanges);
-            if (paymentMethodEntity == null)
+            var facturaVenta = _repository.FacturaVenta.GetSaleBill(facturaVentaId, facVentaTrackChanges);
+            if (facturaVenta is null)
+            {
+                throw new FacturaVentaNotFoundException(paymentMethodId);
+            }
+
+            var paymentMethodEntity = _repository.MetodoPago.GetPaymentMethodForSaleBill(facturaVentaId,paymentMethodId, metPagoTrackChanges);
+            if (paymentMethodEntity is null)
+            {
                 throw new MetodoPagoNotFoundException(paymentMethodId);
+            }
 
             _mapper.Map(paymentMethodForUpdate, paymentMethodEntity);
+            _repository.Save();
+        }
+
+        public (MetodoPagoForUpdateDTO metPagoToPatch, MetodoPago metPagoEntity) GetMetodoPagoForPatch(Guid facturaVentaId, Guid id, bool facVentaTrackChanges, bool metodoPagoTrackChanges)
+        {
+            var facturaVenta = _repository.FacturaVenta.GetSaleBill(facturaVentaId, metodoPagoTrackChanges);
+            if (facturaVenta is null)
+                throw new FacturaVentaNotFoundException(facturaVentaId);
+
+            var metodoPagoEntity = _repository.MetodoPago.GetPaymentMethodForSaleBill(facturaVentaId, id, metodoPagoTrackChanges);
+
+            if (metodoPagoEntity is null)
+                throw new MetodoPagoNotFoundException(facturaVentaId);
+
+            var metodoPagoToPatch = _mapper.Map<MetodoPagoForUpdateDTO>(metodoPagoEntity);
+            return (metodoPagoToPatch, metodoPagoEntity);
+        }
+
+        public void SaveChangesForPatch(MetodoPagoForUpdateDTO metodoPagoToPatch, MetodoPago metodoPagoEntity)
+        {
+            _mapper.Map(metodoPagoToPatch, metodoPagoEntity);
             _repository.Save();
         }
     }

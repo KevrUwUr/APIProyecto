@@ -19,7 +19,7 @@ namespace Repository
             .ToList();
 
         public ContactoUsuario GetUserContact(Guid Id, bool trackChanges) =>
-            FindByCondition(c => c.IdContactoCliente.Equals(Id), trackChanges)
+            FindByCondition(c => c.IdContactoUsuario.Equals(Id), trackChanges)
             .SingleOrDefault();
 
         public IEnumerable<ContactoUsuario> GetAllContactUsersForUser(Guid usuarioId, bool trackChanges) =>
@@ -28,7 +28,7 @@ namespace Repository
             .ToList();
 
         public ContactoUsuario GetContactUserForUser(Guid usuarioId, Guid Id, bool trackChanges) =>
-            FindByCondition(e => e.IdUsuario.Equals(usuarioId) && e.IdContactoCliente == (Id), trackChanges)
+            FindByCondition(e => e.IdUsuario.Equals(usuarioId) && e.IdContactoUsuario == (Id), trackChanges)
             .SingleOrDefault();
 
         public void CreateContactUserForUser(Guid usuarioId, ContactoUsuario contUsuario)

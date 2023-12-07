@@ -44,5 +44,104 @@ namespace Service
             var facturaVentaDTO = _mapper.Map<FacturaVentaDTO>(facturaVenta);
             return facturaVentaDTO;
         }
+
+        public IEnumerable<FacturaVentaDTO> GetAllSaleBillsForUser(Guid usuarioId, bool trackChanges)
+        {
+            var usuario = _repository.Usuario.GetUser(usuarioId, trackChanges);
+
+            if (usuario is null)
+            {
+                throw new UsuarioNotFoundException(usuarioId);
+            }
+            var facVentasFromDb = _repository.FacturaVenta.GetAllSaleBillsForUser(usuarioId, trackChanges);
+            var facVentasDTO = _mapper.Map<IEnumerable<FacturaVentaDTO>>(facVentasFromDb);
+
+            return facVentasDTO;
+        }
+
+        public FacturaVentaDTO GetSaleBillForUser(Guid usuarioId, Guid Id, bool trackChanges)
+        {
+            var usuario = _repository.Usuario.GetUser(usuarioId, trackChanges);
+            if (usuario is null)
+            {
+                throw new UsuarioNotFoundException(usuarioId);
+            }
+            var facVentaDb = _repository.FacturaVenta.GetSaleBillForUser(usuarioId, Id, trackChanges);
+            if (facVentaDb is null)
+            {
+                throw new FacturaVentaNotFoundException(Id);
+            }
+            var facVenta = _mapper.Map<FacturaVentaDTO>(facVentaDb);
+            return facVenta;
+        }
+
+        public FacturaVentaDTO CreateSaleBillForUser(Guid usuarioId, FacturaVentaForCreationDTO facVentaForCreation, bool trackChanges)
+        {
+            var usuario = _repository.Usuario.GetUser(usuarioId, trackChanges);
+            if (usuario is null)
+                throw new UsuarioNotFoundException(usuarioId);
+
+            var facVentaEntity = _mapper.Map<FacturaVenta>(facVentaForCreation);
+
+            _repository.FacturaVenta.CreateSaleBillForUser(usuarioId, facVentaEntity);
+            _repository.Save();
+
+            var facVentaToReturn = _mapper.Map<FacturaVentaDTO>(facVentaEntity);
+            return facVentaToReturn;
+        }
+
+        public void DeleteSaleBillForUser(Guid usuarioId, Guid Id, bool trackChanges)
+        {
+            var usuario = _repository.Usuario.GetUser(usuarioId, trackChanges);
+            if (usuario is null)
+                throw new UsuarioNotFoundException(usuarioId);
+
+            var facVentaForUsuario = _repository.FacturaVenta.GetSaleBillForUser(usuarioId, Id,
+            trackChanges);
+            if (facVentaForUsuario is null)
+                throw new FacturaVentaNotFoundException(Id);
+
+            _repository.FacturaVenta.DeleteSaleBill(facVentaForUsuario);
+            _repository.Save();
+        }
+
+        public void UpdateSaleBillForUser(Guid usuarioId, Guid id, FacturaVentaForUpdateDTO facVentaForUpdate, bool usuarioTrackChanges, bool facVentaTrackChanges)
+        {
+            var usuario = _repository.Usuario.GetUser(usuarioId, usuarioTrackChanges);
+            if (usuario is null)
+            {
+                throw new UsuarioNotFoundException(usuarioId);
+            }
+
+            var facVentaEntity = _repository.FacturaVenta.GetSaleBillForUser(usuarioId, id, facVentaTrackChanges);
+            if (facVentaEntity is null)
+            {
+                throw new FacturaVentaNotFoundException(id);
+            }
+
+            _mapper.Map(facVentaForUpdate, facVentaEntity);
+            _repository.Save();
+        }
+
+        public (FacturaVentaForUpdateDTO facVentaToPatch, FacturaVenta facVentaEntity) GetFacturaVentaForPatch(Guid usuarioId, Guid id, bool usuarioTrackChanges, bool facVentaTrackChanges)
+        {
+            var usuario = _repository.Usuario.GetUser(usuarioId, facVentaTrackChanges);
+            if (usuario is null)
+                throw new UsuarioNotFoundException(usuarioId);
+
+            var facVentaEntity = _repository.FacturaVenta.GetSaleBillForUser(usuarioId, id, facVentaTrackChanges);
+
+            if (facVentaEntity is null)
+                throw new FacturaVentaNotFoundException(usuarioId);
+
+            var facVentaToPatch = _mapper.Map<FacturaVentaForUpdateDTO>(facVentaEntity);
+            return (facVentaToPatch, facVentaEntity);
+        }
+
+        public void SaveChangesForPatch(FacturaVentaForUpdateDTO facVentaToPatch, FacturaVenta facVentaEntity)
+        {
+            _mapper.Map(facVentaToPatch, facVentaEntity);
+            _repository.Save();
+        }
     }
 }

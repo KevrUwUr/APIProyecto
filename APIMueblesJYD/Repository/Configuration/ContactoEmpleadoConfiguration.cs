@@ -18,7 +18,7 @@ namespace Repository.Configuration
             new ContactoEmpleado
             {
                 IdContactoEmpleado = new Guid("319B841C-0573-416A-8754-FCD82AEE04BC"),
-                Telefono = 312546845,
+                Telefono = "312546845",
                 Direccion = "Cra15B #13-52",
                 Email = "ContactoE1@gmail.com",
                 FechaCreacion = new DateTime(2023, 8, 28),
@@ -27,7 +27,7 @@ namespace Repository.Configuration
             new ContactoEmpleado
             {
                 IdContactoEmpleado = new Guid("07B892EF-0511-4CF4-B2C6-9CC4932418DD"),
-                Telefono = 315874920,
+                Telefono = "315874920",
                 Direccion = "Av. 7 de Septiembre #25-10",
                 Email = "ContactoE2@gmail.com",
                 FechaCreacion = new DateTime(2023, 8, 28),
@@ -36,7 +36,7 @@ namespace Repository.Configuration
             new ContactoEmpleado
             {
                 IdContactoEmpleado = new Guid("66A5C506-CA79-4323-9826-2719D047D961"),
-                Telefono = 318657489,
+                Telefono = "318657489",
                 Direccion = "Calle 24 #18-15",
                 Email = "ContactoE3@gmail.com",
                 FechaCreacion = new DateTime(2023, 8, 29),
@@ -45,7 +45,7 @@ namespace Repository.Configuration
             new ContactoEmpleado
             {
                 IdContactoEmpleado = new Guid("E385B218-E55B-4C17-AE51-58FA9343483E"),
-                Telefono = 314985632,
+                Telefono = "314985632",
                 Direccion = "Cra 10A #5-30",
                 Email = "ContactoE4@gmail.com",
                 FechaCreacion = new DateTime(2023, 8, 29),
@@ -54,7 +54,7 @@ namespace Repository.Configuration
             new ContactoEmpleado
             {
                 IdContactoEmpleado = new Guid("6215BE00-B0A6-4DF5-BF6F-481F8089C441"),
-                Telefono = 317654987,
+                Telefono = "317654987",
                 Direccion = "Cra 20 #8-45",
                 Email = "ContactoE5@gmail.com",
                 FechaCreacion = new DateTime(2023, 8, 30),

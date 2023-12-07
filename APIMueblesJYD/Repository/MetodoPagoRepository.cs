@@ -1,6 +1,5 @@
 ﻿using Contracts;
 using Entities.Models;
-using Shared.DataTransferObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,10 +24,21 @@ namespace Repository
             FindByCondition(c => c.IdMetodoPago.Equals(IdMetodoPago), trackChanges)
             .SingleOrDefault();
 
-        public void CreatePaymentMethod(MetodoPago metodoPago) => Create(metodoPago);
-        public IEnumerable<MetodoPago> GetByIds(IEnumerable<Guid> ids, bool trackChanges) =>
-            FindByCondition(x => ids.Contains(x.IdMetodoPago), trackChanges)
+        public IEnumerable<MetodoPago> GetAllPaymentMethodsForSaleBill(Guid facVentaId, bool trackChanges) =>
+            FindByCondition(e => e.FacturaVentaId.Equals(facVentaId), trackChanges)
+            .OrderBy(e => e.FacturaVenta)
             .ToList();
+
+        public MetodoPago GetPaymentMethodForSaleBill(Guid facVentaId, Guid Id, bool trackChanges) =>
+            FindByCondition(e => e.FacturaVentaId.Equals(facVentaId) && e.IdMetodoPago == (Id), trackChanges)
+            .SingleOrDefault();
+
+        public void CreatePaymentMethodForSaleBill(Guid facturaVentaId, MetodoPago metodoPago)
+        {
+            metodoPago.IdMetodoPago = facturaVentaId;
+            Create(metodoPago);
+        }
+
         public void DeletePaymentMethod(MetodoPago metodoPago) => Delete(metodoPago);
     }
 }

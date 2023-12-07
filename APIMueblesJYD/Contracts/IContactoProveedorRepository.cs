@@ -9,8 +9,8 @@ namespace Contracts
 {
     public interface IContactoProveedorRepository
     {
-        IEnumerable<ContactoProveedor> GetAllSupplierContacts(bool trackChanges);
-        ContactoProveedor GetSupplierContact(Guid suplierContactId, bool trackChanges);
+        IEnumerable<ContactoProveedor> GetAllSuppliersContacts(bool trackChanges);
+        ContactoProveedor GetSupplierContact(Guid supplierContactId, bool trackChanges);
         IEnumerable<ContactoProveedor> GetAllContactSuppliersForSupplier(Guid proveedorId, bool trackChanges);
         ContactoProveedor GetContactSupplierForSupplier(Guid proveedorId, Guid Id, bool trackChanges);
         void CreateContactSupplierForSupplier(Guid proveedorId, ContactoProveedor contProv);

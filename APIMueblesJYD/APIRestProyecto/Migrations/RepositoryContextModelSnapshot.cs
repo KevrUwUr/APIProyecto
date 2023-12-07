@@ -167,8 +167,10 @@ namespace APIRestProyecto.Migrations
                     b.Property<DateTime>("FechaCreacion")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("Telefono")
-                        .HasColumnType("int");
+                    b.Property<string>("Telefono")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.HasKey("IdContactoEmpleado");
 
@@ -184,7 +186,7 @@ namespace APIRestProyecto.Migrations
                             Email = "ContactoE1@gmail.com",
                             EmpleadoId = new Guid("41fff2b6-9886-40bc-ab38-d34cfaae3f96"),
                             FechaCreacion = new DateTime(2023, 8, 28, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Telefono = 312546845
+                            Telefono = "312546845"
                         },
                         new
                         {
@@ -193,7 +195,7 @@ namespace APIRestProyecto.Migrations
                             Email = "ContactoE2@gmail.com",
                             EmpleadoId = new Guid("1f03e9da-4f5a-4c01-a74b-5484a0622a88"),
                             FechaCreacion = new DateTime(2023, 8, 28, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Telefono = 315874920
+                            Telefono = "315874920"
                         },
                         new
                         {
@@ -202,7 +204,7 @@ namespace APIRestProyecto.Migrations
                             Email = "ContactoE3@gmail.com",
                             EmpleadoId = new Guid("aad28fbf-f3e8-43b2-97d4-9eab3d59597a"),
                             FechaCreacion = new DateTime(2023, 8, 29, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Telefono = 318657489
+                            Telefono = "318657489"
                         },
                         new
                         {
@@ -211,7 +213,7 @@ namespace APIRestProyecto.Migrations
                             Email = "ContactoE4@gmail.com",
                             EmpleadoId = new Guid("06e66a66-1840-4a55-abcf-475e8218963f"),
                             FechaCreacion = new DateTime(2023, 8, 29, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Telefono = 314985632
+                            Telefono = "314985632"
                         },
                         new
                         {
@@ -220,7 +222,7 @@ namespace APIRestProyecto.Migrations
                             Email = "ContactoE5@gmail.com",
                             EmpleadoId = new Guid("da511896-b59c-4052-9103-6bf83a9f4b0a"),
                             FechaCreacion = new DateTime(2023, 8, 30, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Telefono = 317654987
+                            Telefono = "317654987"
                         });
                 });
 
@@ -253,8 +255,10 @@ namespace APIRestProyecto.Migrations
                         .HasMaxLength(80)
                         .HasColumnType("nvarchar(80)");
 
-                    b.Property<int>("Telefono")
-                        .HasColumnType("int");
+                    b.Property<string>("Telefono")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.HasKey("IdContactoProveedor");
 
@@ -272,7 +276,7 @@ namespace APIRestProyecto.Migrations
                             FechaBaja = new DateTime(2023, 5, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IdProveedor = new Guid("d0a22af1-85b2-4ea6-9daa-d0e321c07964"),
                             NombreProv = "Sam Raiden",
-                            Telefono = 314526948
+                            Telefono = "314526948"
                         },
                         new
                         {
@@ -283,7 +287,7 @@ namespace APIRestProyecto.Migrations
                             FechaBaja = new DateTime(2023, 6, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IdProveedor = new Guid("6e6d4c81-9958-44ff-bf39-838a4940c822"),
                             NombreProv = "Laura Montoya",
-                            Telefono = 310987654
+                            Telefono = "310987654"
                         },
                         new
                         {
@@ -294,7 +298,7 @@ namespace APIRestProyecto.Migrations
                             FechaBaja = new DateTime(2023, 4, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IdProveedor = new Guid("303504ff-9312-4d2b-9d52-8d16ef08eb69"),
                             NombreProv = "Carlos Rivera",
-                            Telefono = 317895623
+                            Telefono = "317895623"
                         },
                         new
                         {
@@ -305,7 +309,7 @@ namespace APIRestProyecto.Migrations
                             FechaBaja = new DateTime(2023, 7, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IdProveedor = new Guid("0dd8f80d-4df6-4fe9-bb72-28c7f5561e7c"),
                             NombreProv = "Elena Gómez",
-                            Telefono = 312589764
+                            Telefono = "312589764"
                         },
                         new
                         {
@@ -316,7 +320,7 @@ namespace APIRestProyecto.Migrations
                             FechaBaja = new DateTime(2023, 6, 30, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IdProveedor = new Guid("be2c0877-d46b-46e3-b793-cb5711f214c7"),
                             NombreProv = "Ana Martínez",
-                            Telefono = 319875634
+                            Telefono = "319875634"
                         },
                         new
                         {
@@ -327,7 +331,7 @@ namespace APIRestProyecto.Migrations
                             FechaBaja = new DateTime(2023, 7, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IdProveedor = new Guid("9abc8d3b-3bd1-49c3-84e2-35c59447b0f3"),
                             NombreProv = "Juan Soto",
-                            Telefono = 316547896
+                            Telefono = "316547896"
                         },
                         new
                         {
@@ -338,7 +342,7 @@ namespace APIRestProyecto.Migrations
                             FechaBaja = new DateTime(2023, 6, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IdProveedor = new Guid("7a1429e1-c547-4f00-a33a-d27d402bca3f"),
                             NombreProv = "María Salas",
-                            Telefono = 318564237
+                            Telefono = "318564237"
                         },
                         new
                         {
@@ -349,7 +353,7 @@ namespace APIRestProyecto.Migrations
                             FechaBaja = new DateTime(2023, 6, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IdProveedor = new Guid("e630fb8f-a34d-4b4d-9de1-6808fe6a6edf"),
                             NombreProv = "Luis Gutiérrez",
-                            Telefono = 313258741
+                            Telefono = "313258741"
                         },
                         new
                         {
@@ -360,16 +364,16 @@ namespace APIRestProyecto.Migrations
                             FechaBaja = new DateTime(2023, 7, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             IdProveedor = new Guid("7f740088-b8c7-4094-90b3-9c6385e58597"),
                             NombreProv = "Fernando López",
-                            Telefono = 317896542
+                            Telefono = "317896542"
                         });
                 });
 
             modelBuilder.Entity("Entities.Models.ContactoUsuario", b =>
                 {
-                    b.Property<Guid>("IdContactoCliente")
+                    b.Property<Guid>("IdContactoUsuario")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier")
-                        .HasColumnName("IdContactoCliente");
+                        .HasColumnName("IdContactoUsuario");
 
                     b.Property<string>("Barrio_Localidad")
                         .IsRequired()
@@ -399,15 +403,17 @@ namespace APIRestProyecto.Migrations
                         .HasMaxLength(80)
                         .HasColumnType("nvarchar(80)");
 
-                    b.Property<int>("NumeroTelefonico")
-                        .HasColumnType("int");
+                    b.Property<string>("NumeroTelefonico")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<string>("TipoTelefono")
                         .IsRequired()
                         .HasMaxLength(80)
                         .HasColumnType("nvarchar(80)");
 
-                    b.HasKey("IdContactoCliente");
+                    b.HasKey("IdContactoUsuario");
 
                     b.HasIndex("IdUsuario");
 
@@ -416,50 +422,50 @@ namespace APIRestProyecto.Migrations
                     b.HasData(
                         new
                         {
-                            IdContactoCliente = new Guid("03b22d58-4a3d-4ab1-93d3-143686897a49"),
+                            IdContactoUsuario = new Guid("03b22d58-4a3d-4ab1-93d3-143686897a49"),
                             Barrio_Localidad = "Usme",
                             Ciudad = "Bogotá D.C.",
                             Direccion = "Cra 12C #53-08",
                             Email = "ContactoC1@gmail.com",
                             IdUsuario = new Guid("1449f86e-3988-43c6-9210-252136156e7e"),
                             IndicativoCiudad = "601",
-                            NumeroTelefonico = 5614248,
+                            NumeroTelefonico = "5614248",
                             TipoTelefono = "Fijo"
                         },
                         new
                         {
-                            IdContactoCliente = new Guid("9d1a4bd6-e6eb-40bd-8333-a8745c90ae58"),
+                            IdContactoUsuario = new Guid("9d1a4bd6-e6eb-40bd-8333-a8745c90ae58"),
                             Barrio_Localidad = "El Poblado",
                             Ciudad = "Medellín",
                             Direccion = "Av. 7 de Septiembre #25-10",
                             Email = "ContactoC2@gmail.com",
                             IdUsuario = new Guid("e0aac839-d3e4-4b5c-9b6e-dbf0303db2b2"),
                             IndicativoCiudad = "301",
-                            NumeroTelefonico = 315874920,
+                            NumeroTelefonico = "315874920",
                             TipoTelefono = "Celular"
                         },
                         new
                         {
-                            IdContactoCliente = new Guid("06dc8c36-d46e-4eb1-97d5-92355ba32b9f"),
+                            IdContactoUsuario = new Guid("06dc8c36-d46e-4eb1-97d5-92355ba32b9f"),
                             Barrio_Localidad = "San Fernando",
                             Ciudad = "Cali",
                             Direccion = "Calle 24 #18-15",
                             Email = "ContactoC3@gmail.com",
                             IdUsuario = new Guid("58d04fc7-e269-4e8b-aea4-3f6da3fea9bc"),
                             IndicativoCiudad = "571",
-                            NumeroTelefonico = 317895623,
+                            NumeroTelefonico = "895623",
                             TipoTelefono = "Fijo"
                         },
                         new
                         {
-                            IdContactoCliente = new Guid("9f355a72-89f6-47c8-aaab-931e4d5d40a5"),
+                            IdContactoUsuario = new Guid("9f355a72-89f6-47c8-aaab-931e4d5d40a5"),
                             Barrio_Localidad = "Granada",
                             Ciudad = "Cali",
                             Direccion = "Cra 10A #5-30",
                             Email = "ContactoC4@gmail.com",
                             IdUsuario = new Guid("e5f2abb9-bcd0-422b-9e8c-9597bb21bec1"),
                             IndicativoCiudad = "571",
-                            NumeroTelefonico = 318564237,
+                            NumeroTelefonico = "318564237",
                             TipoTelefono = "Celular"
                         });
                 });
@@ -1102,10 +1108,6 @@ namespace APIRestProyecto.Migrations
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)");
 
-                    b.Property<Guid>("PerdidaProductoId")
-                        .HasColumnType("uniqueidentifier")
-                        .HasColumnName("PerdidaProductoId");
-
                     b.Property<float>("PrecioUnitario")
                         .HasColumnType("real");
 
@@ -1122,7 +1124,6 @@ namespace APIRestProyecto.Migrations
                             ProductoId = new Guid("ce7dc2ea-5931-49a1-8946-9782a5843612"),
                             Cantidad = 5,
                             Motivo = "Robo",
-                            PerdidaProductoId = new Guid("00000000-0000-0000-0000-000000000000"),
                             PrecioUnitario = 300000f
                         },
                         new
@@ -1131,7 +1132,6 @@ namespace APIRestProyecto.Migrations
                             ProductoId = new Guid("dd6b62dc-f917-4379-9955-1c244ee78c4b"),
                             Cantidad = 5,
                             Motivo = "Roto",
-                            PerdidaProductoId = new Guid("00000000-0000-0000-0000-000000000000"),
                             PrecioUnitario = 200000f
                         },
                         new
@@ -1140,7 +1140,6 @@ namespace APIRestProyecto.Migrations
                             ProductoId = new Guid("edf59c51-6384-422f-b941-ce879c82dcdc"),
                             Cantidad = 5,
                             Motivo = "Mal Estado",
-                            PerdidaProductoId = new Guid("00000000-0000-0000-0000-000000000000"),
                             PrecioUnitario = 350000f
                         },
                         new
@@ -1149,7 +1148,6 @@ namespace APIRestProyecto.Migrations
                             ProductoId = new Guid("30d27e06-251c-4911-819a-59a9a3966f78"),
                             Cantidad = 5,
                             Motivo = "Daño",
-                            PerdidaProductoId = new Guid("00000000-0000-0000-0000-000000000000"),
                             PrecioUnitario = 500000f
                         },
                         new
@@ -1158,7 +1156,6 @@ namespace APIRestProyecto.Migrations
                             ProductoId = new Guid("8b538521-a513-4f5a-b4e6-ae3c57912499"),
                             Cantidad = 5,
                             Motivo = "Perdida",
-                            PerdidaProductoId = new Guid("00000000-0000-0000-0000-000000000000"),
                             PrecioUnitario = 100000f
                         });
                 });
@@ -1690,7 +1687,7 @@ namespace APIRestProyecto.Migrations
             modelBuilder.Entity("Entities.Models.PerdidaProducto", b =>
                 {
                     b.HasOne("Entities.Models.Perdida", "Perdida")
-                        .WithMany("perdida_Productos")
+                        .WithMany("perdidaProductos")
                         .HasForeignKey("IdPerdida")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -1748,7 +1745,7 @@ namespace APIRestProyecto.Migrations
 
             modelBuilder.Entity("Entities.Models.Perdida", b =>
                 {
-                    b.Navigation("perdida_Productos");
+                    b.Navigation("perdidaProductos");
                 });
 
             modelBuilder.Entity("Entities.Models.Producto", b =>

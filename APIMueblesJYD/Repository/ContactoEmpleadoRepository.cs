@@ -30,12 +30,12 @@ namespace Repository
             FindByCondition(e => e.EmpleadoId.Equals(empleadoId) && e.IdContactoEmpleado == (Id), trackChanges)
             .SingleOrDefault();
 
-        public void CreateContactEmployeeForEmployee(Guid empleadoId, ContactoEmpleado contProv)
+        public void CreateContactEmployeeForEmployee(Guid empleadoId, ContactoEmpleado contEmp)
         {
-            contProv.EmpleadoId = empleadoId;
-            Create(contProv);
+            contEmp.EmpleadoId = empleadoId;
+            Create(contEmp);
         }
 
-        public void DeleteContactEmployee(ContactoEmpleado contProv) => Delete(contProv);
+        public void DeleteContactEmployee(ContactoEmpleado contEmp) => Delete(contEmp);
     }
 }

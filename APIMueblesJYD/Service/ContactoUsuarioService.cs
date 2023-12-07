@@ -95,10 +95,12 @@ namespace Service
             var usuario = _repository.Usuario.GetUser(usuarioId, trackChanges);
             if (usuario is null)
                 throw new UsuarioNotFoundException(usuarioId);
+
             var contUsuarioForUsuario = _repository.ContactoUsuario.GetContactUserForUser(usuarioId, Id,
             trackChanges);
             if (contUsuarioForUsuario is null)
                 throw new ContactoUsuarioNotFoundException(Id);
+
             _repository.ContactoUsuario.DeleteContactUser(contUsuarioForUsuario);
             _repository.Save();
         }

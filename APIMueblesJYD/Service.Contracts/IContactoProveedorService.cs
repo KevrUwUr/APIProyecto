@@ -16,10 +16,10 @@ namespace Service.Contracts
         ContactoProveedorDTO GetContactSupplierForSupplier(Guid proveedorId, Guid Id, bool trackChanges);
         ContactoProveedorDTO CreateContactSupplierForSupplier(Guid proveedorId, ContactoProveedorForCreationDTO contactoProvForCreation, bool trackChanges);
         void DeleteContactSupplierForSupplier(Guid proveedorId, Guid Id, bool trackChanges);
-        void UpdateContactSupplierForSupplier(Guid proveedorId, Guid id,
+        void UpdateContactSupplierForSupplier(Guid proveedorId, Guid Id,
             ContactoProveedorForUpdateDTO contactoProvForUpdate, bool provTrackChanges, bool contProvTrackChanges);
         (ContactoProveedorForUpdateDTO contProvToPatch, ContactoProveedor contProvEntity) GetContactoProveedorForPatch
-            (Guid proveedorId, Guid id, bool provTrackChanges, bool contProvTrackChanges);
+            (Guid proveedorId, Guid Id, bool provTrackChanges, bool contProvTrackChanges);
         void SaveChangesForPatch(ContactoProveedorForUpdateDTO contProvToPatch, ContactoProveedor contProvEntity);
     }
 }

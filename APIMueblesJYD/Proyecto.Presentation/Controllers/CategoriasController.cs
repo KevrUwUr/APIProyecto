@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Proyect.Presentation.ModelBinders;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.ModelBinding.Binders;
 using Service.Contracts;
 using Shared.DataTransferObjects;
 

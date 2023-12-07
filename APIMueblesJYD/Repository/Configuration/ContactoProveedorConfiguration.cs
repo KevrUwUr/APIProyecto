@@ -15,7 +15,7 @@ namespace Repository.Configuration
                 {
                     IdContactoProveedor = new Guid("11B72F91-F5A9-4E6A-8C48-624A0729941D"),
                     NombreProv = "Sam Raiden",
-                    Telefono = 314526948,
+                    Telefono = "314526948",
                     Email = "ContactP1@gmail.com",
                     Estado = 1,
                     FechaAlta = new DateTime(2020, 3, 13),
@@ -26,7 +26,7 @@ namespace Repository.Configuration
                 {
                     IdContactoProveedor = new Guid("42DC025F-3E80-4768-930D-6EF208FAAC3E"),
                     NombreProv = "Laura Montoya",
-                    Telefono = 310987654,
+                    Telefono = "310987654",
                     Email = "ContactP2@gmail.com",
                     Estado = 1,
                     FechaAlta = new DateTime(2022, 8, 20),
@@ -37,7 +37,7 @@ namespace Repository.Configuration
                 {
                     IdContactoProveedor = new Guid("6299AE61-9578-4898-A9D6-8697A84B9C84"),
                     NombreProv = "Carlos Rivera",
-                    Telefono = 317895623,
+                    Telefono = "317895623",
                     Email = "ContactP3@gmail.com",
                     Estado = 2,
                     FechaAlta = new DateTime(2021, 5, 10),
@@ -48,7 +48,7 @@ namespace Repository.Configuration
                 {
                     IdContactoProveedor = new Guid("D6E22B76-D99F-4376-9DEE-B542EE7AA729"),
                     NombreProv = "Elena Gómez",
-                    Telefono = 312589764,
+                    Telefono = "312589764",
                     Email = "ContactP4@gmail.com",
                     Estado = 1,
                     FechaAlta = new DateTime(2023, 2, 18),
@@ -59,7 +59,7 @@ namespace Repository.Configuration
                 {
                     IdContactoProveedor = new Guid("AAEC0A58-444B-48BC-9291-6AAA50F27008"),
                     NombreProv = "Ana Martínez",
-                    Telefono = 319875634,
+                    Telefono = "319875634",
                     Email = "ContactP5@gmail.com",
                     Estado = 1,
                     FechaAlta = new DateTime(2022, 6, 5),
@@ -70,7 +70,7 @@ namespace Repository.Configuration
                 {
                     IdContactoProveedor = new Guid("136AD92B-614D-41FA-90D7-1F0F4A6C6D6E"),
                     NombreProv = "Juan Soto",
-                    Telefono = 316547896,
+                    Telefono = "316547896",
                     Email = "ContactP6@gmail.com",
                     Estado = 1,
                     FechaAlta = new DateTime(2021, 9, 12),
@@ -81,7 +81,7 @@ namespace Repository.Configuration
                 {
                     IdContactoProveedor = new Guid("8A91EBD3-D855-4BE0-AF6D-5DD91D3A4811"),
                     NombreProv = "María Salas",
-                    Telefono = 318564237,
+                    Telefono = "318564237",
                     Email = "ContactP7@gmail.com",
                     Estado = 1,
                     FechaAlta = new DateTime(2020, 12, 8),
@@ -92,7 +92,7 @@ namespace Repository.Configuration
                 {
                     IdContactoProveedor = new Guid("35CE9EA9-6AED-459E-9FDE-C02B768DDBEC"),
                     NombreProv = "Luis Gutiérrez",
-                    Telefono = 313258741,
+                    Telefono = "313258741",
                     Email = "ContactP8@gmail.com",
                     Estado = 2,
                     FechaAlta = new DateTime(2021, 3, 25),
@@ -103,7 +103,7 @@ namespace Repository.Configuration
                 {
                     IdContactoProveedor = new Guid("6F562B34-CEE6-4684-BE79-4A3638DE30F0"),
                     NombreProv = "Fernando López",
-                    Telefono = 317896542,
+                    Telefono = "317896542",
                     Email = "ContactP9@gmail.com",
                     Estado = 1,
                     FechaAlta = new DateTime(2022, 4, 17),

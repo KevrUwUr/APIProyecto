@@ -12,5 +12,6 @@ namespace Shared.DataTransferObjects
         public DateTime FechaTransaccion { get; init; }
         public int Tipo { get; init; }
         public string? NombrePlataforma { get; init; }
+        public Guid FacturaVentaId { get; init; }
     }
 }

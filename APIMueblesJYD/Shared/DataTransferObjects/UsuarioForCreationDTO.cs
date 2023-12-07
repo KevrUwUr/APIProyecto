@@ -10,5 +10,6 @@ namespace Shared.DataTransferObjects
         string PrimApellido, string SegApellido, string Sexo, string TipoDocumento,
         int NumDocumento, DateTime FechaNacimiento, int Estado, DateTime FechaRegistro,
         int TipoUsuario, DateTime FechaContrato, string Cargo, DateTime FechaFin,
-        string Contrasena, string Llave);
+        string Contrasena, string Llave, IEnumerable<ContactoUsuarioForCreationDTO>ContactoUsuarios,
+        IEnumerable<FacturaVentaForCreationDTO>FacturaVentas);
 }

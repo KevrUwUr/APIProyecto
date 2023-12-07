@@ -27,7 +27,7 @@ namespace Service
 
         public IEnumerable<ContactoProveedorDTO> GetAllSupplierContacts(bool trackChanges)
         {
-            var contactoProveedor = _repository.ContactoProveedor.GetAllSupplierContacts(trackChanges);
+            var contactoProveedor = _repository.ContactoProveedor.GetAllSuppliersContacts(trackChanges);
             var contactoProveedorDTO = _mapper.Map<IEnumerable<ContactoProveedorDTO>>(contactoProveedor);
 
             return contactoProveedorDTO;
@@ -36,7 +36,7 @@ namespace Service
         public ContactoProveedorDTO GetSupplierContact(Guid Id, bool trackChanges)
         {
             var contactoProveedor = _repository.ContactoProveedor.GetSupplierContact(Id, trackChanges);
-            if (contactoProveedor == null)
+            if(contactoProveedor == null)
             {
                 throw new ContactoProveedorNotFoundException(Id);
             }
@@ -103,31 +103,31 @@ namespace Service
             _repository.Save();
         }
 
-        public void UpdateContactSupplierForSupplier(Guid proveedorId, Guid id, ContactoProveedorForUpdateDTO contProvForUpdate, bool provTrackChanges, bool contProvTrackChanges)
+        public void UpdateContactSupplierForSupplier(Guid proveedorId, Guid Id, ContactoProveedorForUpdateDTO contProvForUpdate, bool empTrackChanges, bool contProvTrackChanges)
         {
-            var proveedor = _repository.Proveedor.GetSupplier(proveedorId, provTrackChanges);
+            var proveedor = _repository.Proveedor.GetSupplier(proveedorId, empTrackChanges);
             if (proveedor is null)
             {
                 throw new ProveedorNotFoundException(proveedorId);
             }
 
-            var contProvEntity = _repository.ContactoProveedor.GetContactSupplierForSupplier(proveedorId, id, contProvTrackChanges);
+            var contProvEntity = _repository.ContactoProveedor.GetContactSupplierForSupplier(proveedorId, Id, contProvTrackChanges);
             if (contProvEntity is null)
             {
-                throw new ContactoProveedorNotFoundException(id);
+                throw new ContactoProveedorNotFoundException(Id);
             }
 
             _mapper.Map(contProvForUpdate, contProvEntity);
             _repository.Save();
         }
 
-        public (ContactoProveedorForUpdateDTO contProvToPatch, ContactoProveedor contProvEntity) GetContactoProveedorForPatch(Guid proveedorId, Guid id, bool provTrackChanges, bool contProvTrackChanges)
+        public (ContactoProveedorForUpdateDTO contProvToPatch, ContactoProveedor contProvEntity) GetContactoProveedorForPatch(Guid proveedorId, Guid Id, bool empTrackChanges, bool contProvTrackChanges)
         {
             var proveedor = _repository.Proveedor.GetSupplier(proveedorId, contProvTrackChanges);
             if (proveedor is null)
                 throw new ProveedorNotFoundException(proveedorId);
 
-            var contProvEntity = _repository.ContactoProveedor.GetContactSupplierForSupplier(proveedorId, id, contProvTrackChanges);
+            var contProvEntity = _repository.ContactoProveedor.GetContactSupplierForSupplier(proveedorId, Id, contProvTrackChanges);
 
             if (contProvEntity is null)
                 throw new ContactoProveedorNotFoundException(proveedorId);

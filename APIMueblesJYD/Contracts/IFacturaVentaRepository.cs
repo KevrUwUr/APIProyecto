@@ -12,5 +12,9 @@ namespace Contracts
     {
         IEnumerable<FacturaVenta> GetAllSaleBills(bool trackChanges);
         FacturaVenta GetSaleBill(Guid saleBillId, bool trackChanges);
+        IEnumerable<FacturaVenta> GetAllSaleBillsForUser(Guid usuarioId, bool trackChanges);
+        FacturaVenta GetSaleBillForUser(Guid usuarioId, Guid Id, bool trackChanges);
+        void CreateSaleBillForUser(Guid usuarioId, FacturaVenta facVenta);
+        void DeleteSaleBill(FacturaVenta facVenta);
     }
 }

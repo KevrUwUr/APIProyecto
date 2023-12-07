@@ -11,7 +11,7 @@ namespace Shared.DataTransferObjects
     {
         public Guid ContProvId { get; init; }
         public string? NombreProv { get; init; }
-        public int Telefono { get; init; }
+        public string? Telefono { get; init; }
         public string? Email { get; init; }
         public int Estado { get; init; }
         public DateTime FechaAlta { get; init; }

@@ -6,7 +6,5 @@ using System.Threading.Tasks;
 
 namespace Shared.DataTransferObjects
 {
-    public record MetodoPagoForCreationDTO(DateTime FechaTransaccion, int Tipo, string NombrePlataforma
-        //, IEnumerable<FacturaVentaForCreationDTO>FacturaVentas
-        );
+    public record MetodoPagoForCreationDTO(DateTime FechaTransaccion, int Tipo, string NombrePlataforma);
 }

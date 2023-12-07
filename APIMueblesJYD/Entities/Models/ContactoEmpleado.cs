@@ -15,15 +15,16 @@ namespace Entities.Models
         public Guid IdContactoEmpleado { get; set; }
 
         [Required(ErrorMessage = "Este es un campo requerido")]
-        public int Telefono { get; set; }
+        [MaxLength(20, ErrorMessage = "Largo maximo del telefono es de 20 caracteres")]
+        public string? Telefono { get; set; }
 
         [Required(ErrorMessage = "Direccion es un campo requerido.")]
-        [MaxLength(80, ErrorMessage = "Largo maximo del nombre es de 80 caracteres")]
+        [MaxLength(80, ErrorMessage = "Largo maximo de la direccion es de 80 caracteres")]
 
         public string? Direccion { get; set; }
 
         [Required(ErrorMessage = "E-Mail es un campo requerido.")]
-        [MaxLength(80, ErrorMessage = "Largo maximo del nombre es de 80 caracteres")]
+        [MaxLength(80, ErrorMessage = "Largo maximo del email es de 80 caracteres")]
 
         public string? Email { get; set; }
 

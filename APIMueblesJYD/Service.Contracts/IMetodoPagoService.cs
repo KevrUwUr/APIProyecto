@@ -12,11 +12,14 @@ namespace Service.Contracts
     {
         IEnumerable<MetodoPagoDTO> GetAllPaymentMethods(bool trackChanges);
         MetodoPagoDTO GetPaymentMethod(Guid Id, bool trackChanges);
-        MetodoPagoDTO CreatePaymentMethod(MetodoPagoForCreationDTO paymentMethod);
-        IEnumerable<MetodoPagoDTO> GetByIds(IEnumerable<Guid> ids, bool trackChanges);
-        (IEnumerable<MetodoPagoDTO> metodoPagos, string ids) CreatePaymentMethodCollection
-            (IEnumerable<MetodoPagoForCreationDTO> paymentMethodCollection);
-        void DeletePaymentMethod(Guid paymentMethodId, bool trackChanges);
-        void UpdatePaymentMethod(Guid paymentMethodId, MetodoPagoForUpdateDTO paymentMethodForUpdate, bool trackChanges);
+        IEnumerable<MetodoPagoDTO> GetAllPaymentMethodsForSaleBill(Guid facturaVentaId, bool trackChanges);
+        MetodoPagoDTO GetPaymentMethodForSaleBill(Guid facturaVentaId, Guid Id, bool trackChanges);
+        MetodoPagoDTO CreatePaymentMethodForSaleBill(Guid facturaVentaId, MetodoPagoForCreationDTO paymentMethod, bool trackChanges);
+        void DeletePaymentMethodForSaleBill(Guid facturaVentaId, Guid paymentMethodId, bool trackChanges);
+        void UpdatePaymentMethodForSaleBill(Guid facturaVentaId, Guid paymentMethodId, 
+            MetodoPagoForUpdateDTO paymentMethodForUpdate, bool facVentaTrackChanges, bool metPagoTrackChanges);
+        (MetodoPagoForUpdateDTO metPagoToPatch, MetodoPago metPagoEntity) GetMetodoPagoForPatch
+            (Guid facturaVentaId, Guid Id, bool facturaVentaTrackChanges, bool metPagoTrackChanges);
+        void SaveChangesForPatch(MetodoPagoForUpdateDTO metPagoToPatch, MetodoPago metPagoEntity);
     }
 }

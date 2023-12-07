@@ -12,8 +12,9 @@ namespace Contracts
     {
         IEnumerable<MetodoPago> GetAllPaymentMethods(bool trackChanges);
         MetodoPago GetPaymentMethod(Guid payMethodId, bool trackChanges);
-        void CreatePaymentMethod(MetodoPago metodoPago);
-        IEnumerable<MetodoPago> GetByIds(IEnumerable<Guid> ids, bool trackChanges);
+        IEnumerable<MetodoPago> GetAllPaymentMethodsForSaleBill(Guid facturaVentaId, bool trackChanges);
+        MetodoPago GetPaymentMethodForSaleBill(Guid facturaVentaId, Guid Id, bool trackChanges);
+        void CreatePaymentMethodForSaleBill(Guid facturaVentaId, MetodoPago metodoPago);
         void DeletePaymentMethod(MetodoPago metodoPago);
     }
 }
