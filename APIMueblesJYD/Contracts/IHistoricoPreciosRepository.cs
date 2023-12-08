@@ -12,5 +12,9 @@ namespace Contracts
     {
         IEnumerable<HistoricoPrecios> GetAllPriceHistories(bool trackChanges);
         HistoricoPrecios GetPriceHistory(Guid priceHistoryId, bool trackChanges);
+        IEnumerable<HistoricoPrecios> GetAllPriceHistoriesForProduct(Guid productoId, bool trackChanges);
+        HistoricoPrecios GetPriceHistoryForProduct(Guid productoId, Guid Id, bool trackChanges);
+        void CreatePriceHistoryForProduct(Guid productoId, HistoricoPrecios historicoPrecio);
+        void DeletePriceHistory(HistoricoPrecios historicoPrecio);
     }
 }

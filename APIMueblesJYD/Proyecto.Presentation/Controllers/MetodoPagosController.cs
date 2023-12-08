@@ -1,12 +1,12 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using Service.Contracts;
+using Shared.DataTransferObjects;
+using Proyect.Presentation.ModelBinders;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Proyect.Presentation.ModelBinders;
-using Microsoft.AspNetCore.Mvc;
-using Service.Contracts;
-using Shared.DataTransferObjects;
 using Microsoft.AspNetCore.JsonPatch;
 
 namespace Proyect.Presentation.Controllers
@@ -21,71 +21,73 @@ namespace Proyect.Presentation.Controllers
         [HttpGet("/api/metodoPagos")]
         public IActionResult GetAllPaymentMethods()
         {
-            var metodoPagos = _service.MetodoPagoService.GetAllPaymentMethods(trackChanges: false);
-            return Ok(metodoPagos);
+            var metodoPago = _service.MetodoPagoService.GetAllPaymentMethods(trackChanges: false);
+            return Ok(metodoPago);
         }
 
-        [HttpGet("/api/metodoPagos/{id:Guid}", Name = "GetPaymentMethod")]
+        [HttpGet("/api/metodoPagos/{Id:Guid}", Name = "GetPaymentMethod")]
         public IActionResult GetPaymentMethod(Guid Id)
         {
-            var metodoPago = _service.MetodoPagoService.GetPaymentMethod(Id, trackChanges: false);
-            return Ok(metodoPago);
+            var metPago = _service.MetodoPagoService.GetPaymentMethod(Id, trackChanges: false);
+            return Ok(metPago);
         }
 
         [HttpGet]
         public IActionResult GetAllPaymentMethodsForSaleBill(Guid facturaVentaId)
         {
-            var facVentas = _service.MetodoPagoService.GetAllPaymentMethodsForSaleBill(facturaVentaId, trackChanges: false);
-            return Ok(facVentas);
+            var metodoPago = _service.MetodoPagoService.GetAllPaymentMethodsForSaleBill(facturaVentaId, trackChanges: false);
+            return Ok(metodoPago);
         }
 
-        [HttpGet("{id:guid}", Name = "GetPaymentMethodForSaleBill")]
-        public IActionResult GetPaymentMethodForSaleBill(Guid facturaVentaId, Guid id)
+        [HttpGet("{Id:guid}", Name = "GetPaymentMethodForSaleBill")]
+        public IActionResult GetPaymentMethodForSaleBill(Guid facturaVentaId, Guid Id)
         {
-            var contactoEmp = _service.MetodoPagoService.GetPaymentMethodForSaleBill(facturaVentaId, id, trackChanges: false);
-            return Ok(contactoEmp);
+            var metPago = _service.MetodoPagoService.GetPaymentMethodForSaleBill(facturaVentaId, Id, trackChanges: false);
+            return Ok(metPago);
         }
+
 
         [HttpPost]
-        public IActionResult CreatePaymentMethodForSaleBill(Guid facturaVentaId, [FromBody] MetodoPagoForCreationDTO paymentMethod)
+        public IActionResult CreatePaymentMethodForSaleBill(Guid facturaVentaId, [FromBody] MetodoPagoForCreationDTO metodoPago)
         {
-            if (paymentMethod == null)
+            if (metodoPago is null)
             {
-                return BadRequest("MetodoPagoForCreationDTO object is null");
+                return BadRequest("PaymentMethodForCreationDto object is null");
             }
-            var createdPaymentMethod = _service.MetodoPagoService.CreatePaymentMethodForSaleBill(facturaVentaId, paymentMethod, trackChanges: false);
+            var metPagoToReturn = _service.MetodoPagoService.CreatePaymentMethodForSaleBill(facturaVentaId, metodoPago, trackChanges: false);
 
-            return CreatedAtRoute("GetPaymentMethod", new { id = createdPaymentMethod.IdMetodoPago },
-            createdPaymentMethod);
+            return CreatedAtRoute("GetPaymentMethodForSaleBill", new { facturaVentaId, Id = metPagoToReturn.IdMetodoPago },
+                metPagoToReturn);
         }
 
-        [HttpDelete("{id:guid}")]
-        public IActionResult DeletePaymentMethodForSaleBill(Guid facturaVentaId, Guid id)
+
+        [HttpDelete("{Id:guid}")]
+        public IActionResult DeletePaymentMethodForSaleBill(Guid facturaVentaId, Guid Id)
         {
-            _service.MetodoPagoService.DeletePaymentMethodForSaleBill(facturaVentaId, id, trackChanges: false);
+            _service.MetodoPagoService.DeletePaymentMethodForSaleBill(facturaVentaId, Id, trackChanges: false);
             return NoContent();
         }
 
-        [HttpPut("{id:guid}")]
-        public IActionResult UpdatePaymentMethodForSaleBill(Guid facturaVentaId, Guid Id, [FromBody] MetodoPagoForUpdateDTO paymentMethod)
+        [HttpPut("{Id:guid}")]
+        public IActionResult UpdatePaymentMethodForSaleBill(Guid facturaVentaId, Guid Id, [FromBody] MetodoPagoForUpdateDTO metodoPago)
         {
-            if (paymentMethod is null)
+            if (metodoPago is null)
             {
-                return BadRequest("paymentMethodForUpdateDTO object is null");
+                return BadRequest("PaymentMethodForUpdateDto object is null");
             }
 
-            _service.MetodoPagoService.UpdatePaymentMethodForSaleBill(facturaVentaId, Id, paymentMethod, facVentaTrackChanges: true, metPagoTrackChanges: true);
+            _service.MetodoPagoService.UpdatePaymentMethodForSaleBill(facturaVentaId, Id, metodoPago, facVentaTrackChanges: false, metPagoTrackChanges: true);
             return NoContent();
         }
 
         [HttpPatch("{Id:guid}")]
-        public IActionResult PartiallyUpdateMetodoPagoForMetodoPago(Guid metodoPagoId, Guid Id,
+        public IActionResult PartiallyUpdateMetodoPagoForProveedor(Guid facturaVentaId, Guid Id,
             [FromBody] JsonPatchDocument<MetodoPagoForUpdateDTO> patchDoc)
         {
             if (patchDoc is null)
                 return BadRequest("patchDoc object sent from client is null.");
 
-            var result = _service.MetodoPagoService.GetMetodoPagoForPatch(metodoPagoId, Id, facturaVentaTrackChanges: false, metPagoTrackChanges: true);
+            var result = _service.MetodoPagoService.GetMetodoPagoForPatch(facturaVentaId, Id, facturaVentaTrackChanges: false, metPagoTrackChanges: true);
             patchDoc.ApplyTo(result.metPagoToPatch);
 
             _service.MetodoPagoService.SaveChangesForPatch(result.metPagoToPatch, result.metPagoEntity);

@@ -11,10 +11,10 @@ namespace Proyect.Presentation.Controllers
 {
     [Route("api/empleados")]
     [ApiController]
-    public class EmpleadoController : ControllerBase
+    public class EmpleadosController : ControllerBase
     {
         private readonly IServiceManager _service;
-        public EmpleadoController(IServiceManager service) => _service = service;
+        public EmpleadosController(IServiceManager service) => _service = service;
         [HttpGet]
         public IActionResult GetEmployee()
         {

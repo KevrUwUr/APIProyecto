@@ -33,6 +33,11 @@ namespace APIRestProyecto
             CreateMap<ContactoUsuarioForCreationDTO, ContactoUsuario>();
             CreateMap<ContactoUsuarioForUpdateDTO, ContactoUsuario>().ReverseMap();
 
+            CreateMap<FacturaCompra, FacturaCompraDTO>()
+                .ForMember(dest => dest.FacturaCompraId, opt => opt.MapFrom(src => src.FacturaCompraId));
+            CreateMap<FacturaCompraForCreationDTO, FacturaCompra>();
+            CreateMap<FacturaCompraForUpdateDTO, FacturaCompra>().ReverseMap();
+
             CreateMap<FacturaVenta, FacturaVentaDTO>()
                 .ForMember(dest => dest.FacturaVentaId, opt => opt.MapFrom(src => src.FacturaVentaId));
             CreateMap<FacturaVentaForCreationDTO, FacturaVenta>();
@@ -42,6 +47,11 @@ namespace APIRestProyecto
                 .ForMember(dest => dest.EmpleadoId, opt => opt.MapFrom(src => src.EmpleadoId));
             CreateMap<EmpleadoForCreationDTO, Empleado>();
             CreateMap<EmpleadoForUpdateDTO, Empleado>();
+
+            CreateMap<HistoricoPrecios, HistoricoPreciosDTO>()
+                .ForMember(dest => dest.IdHistoricoPrecios, opt => opt.MapFrom(src => src.IdHistoricoPrecios));
+            CreateMap<HistoricoPreciosForCreationDTO, HistoricoPrecios>();
+            CreateMap<HistoricoPreciosForUpdateDTO, HistoricoPrecios>().ReverseMap();
 
             CreateMap<MetodoPago, MetodoPagoDTO>()
                 .ForMember(dest => dest.IdMetodoPago, opt => opt.MapFrom(src => src.IdMetodoPago));

@@ -1,6 +1,5 @@
 ﻿using Contracts;
 using Entities.Models;
-using Shared.DataTransferObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,5 +24,21 @@ namespace Repository
             FindByCondition(c => c.IdHistoricoPrecios.Equals(IdHistoricoPrecios), trackChanges)
             .SingleOrDefault();
 
+        public IEnumerable<HistoricoPrecios> GetAllPriceHistoriesForProduct(Guid productoId, bool trackChanges) =>
+            FindByCondition(e => e.ProductoId.Equals(productoId), trackChanges)
+            .OrderBy(e => e.Producto)
+            .ToList();
+
+        public HistoricoPrecios GetPriceHistoryForProduct(Guid productoId, Guid Id, bool trackChanges) =>
+            FindByCondition(e => e.ProductoId.Equals(productoId) && e.IdHistoricoPrecios == (Id), trackChanges)
+            .SingleOrDefault();
+
+        public void CreatePriceHistoryForProduct(Guid productoId, HistoricoPrecios historicoPrecio)
+        {
+            historicoPrecio.ProductoId = productoId;
+            Create(historicoPrecio);
+        }
+
+        public void DeletePriceHistory(HistoricoPrecios historicoPrecio) => Delete(historicoPrecio);
     }
 }

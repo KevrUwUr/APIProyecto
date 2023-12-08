@@ -28,8 +28,8 @@ namespace Proyect.Presentation.Controllers
         [HttpGet("/api/facturaVentas/{id:Guid}", Name = "GetSaleBill")]
         public IActionResult GetSaleBill(Guid Id)
         {
-            var contactoEmp = _service.FacturaVentaService.GetSaleBill(Id, trackChanges: false);
-            return Ok(contactoEmp);
+            var facVenta = _service.FacturaVentaService.GetSaleBill(Id, trackChanges: false);
+            return Ok(facVenta);
         }
 
         [HttpGet]
@@ -42,8 +42,8 @@ namespace Proyect.Presentation.Controllers
         [HttpGet("{id:guid}", Name = "GetSaleBillForUser")]
         public IActionResult GetSaleBillForUser(Guid usuarioId, Guid id)
         {
-            var contactoEmp = _service.FacturaVentaService.GetSaleBillForUser(usuarioId, id, trackChanges: false);
-            return Ok(contactoEmp);
+            var facVenta = _service.FacturaVentaService.GetSaleBillForUser(usuarioId, id, trackChanges: false);
+            return Ok(facVenta);
         }
 
         [HttpPost]
@@ -53,10 +53,10 @@ namespace Proyect.Presentation.Controllers
             {
                 return BadRequest("SaleBillForCreationDto object is null");
             }
-            var contactoEmpToReturn = _service.FacturaVentaService.CreateSaleBillForUser(usuarioId, saleBill, trackChanges: false);
+            var facVentaToReturn = _service.FacturaVentaService.CreateSaleBillForUser(usuarioId, saleBill, trackChanges: false);
 
-            return CreatedAtRoute("GetSaleBillForUser", new { usuarioId, id = contactoEmpToReturn.FacturaVentaId },
-                contactoEmpToReturn);
+            return CreatedAtRoute("GetSaleBillForUser", new { usuarioId, id = facVentaToReturn.FacturaVentaId },
+                facVentaToReturn);
         }
 
         [HttpDelete("{id:guid}")]

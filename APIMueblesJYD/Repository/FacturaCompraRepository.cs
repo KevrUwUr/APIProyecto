@@ -1,6 +1,5 @@
 ﻿using Contracts;
 using Entities.Models;
-using Shared.DataTransferObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,5 +24,21 @@ namespace Repository
             FindByCondition(c => c.FacturaCompraId.Equals(FacturaCompraId), trackChanges)
             .SingleOrDefault();
 
+        public IEnumerable<FacturaCompra> GetAllBuyBillsForSupplier(Guid proveedorId, bool trackChanges) =>
+            FindByCondition(e => e.IdProveedor.Equals(proveedorId), trackChanges)
+            .OrderBy(e => e.Proveedores)
+            .ToList();
+
+        public FacturaCompra GetBuyBillForSupplier(Guid proveedorId, Guid Id, bool trackChanges) =>
+            FindByCondition(e => e.IdProveedor.Equals(proveedorId) && e.FacturaCompraId == (Id), trackChanges)
+            .SingleOrDefault();
+
+        public void CreateBuyBillForSupplier(Guid proveedorId, FacturaCompra facCompra)
+        {
+            facCompra.IdProveedor = proveedorId;
+            Create(facCompra);
+        }
+
+        public void DeleteBuyBill(FacturaCompra facCompra) => Delete(facCompra);
     }
 }

@@ -33,12 +33,12 @@ namespace Repository
             FindByCondition(e => e.IdUsuario.Equals(usuarioId) && e.FacturaVentaId == (Id), trackChanges)
             .SingleOrDefault();
 
-        public void CreateSaleBillForUser(Guid usuarioId, FacturaVenta contEmp)
+        public void CreateSaleBillForUser(Guid usuarioId, FacturaVenta facVenta)
         {
-            contEmp.IdUsuario = usuarioId;
-            Create(contEmp);
+            facVenta.IdUsuario = usuarioId;
+            Create(facVenta);
         }
 
-        public void DeleteSaleBill(FacturaVenta contEmp) => Delete(contEmp);
+        public void DeleteSaleBill(FacturaVenta facVenta) => Delete(facVenta);
     }
 }

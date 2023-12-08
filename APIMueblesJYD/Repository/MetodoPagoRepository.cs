@@ -35,7 +35,7 @@ namespace Repository
 
         public void CreatePaymentMethodForSaleBill(Guid facturaVentaId, MetodoPago metodoPago)
         {
-            metodoPago.IdMetodoPago = facturaVentaId;
+            metodoPago.FacturaVentaId = facturaVentaId;
             Create(metodoPago);
         }
 
