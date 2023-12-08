@@ -47,6 +47,19 @@ namespace Service
             return perdidaProductosDTO;
         }
 
+        public IEnumerable<PerdidaProductoDTO> GetAllLoseProductsByProduct(Guid productoId, bool trackChanges)
+        {
+            var producto = _repository.Producto.GetProduct(productoId, trackChanges);
+
+            if (producto is null)
+            {
+                throw new ProductoNotFoundException(productoId);
+            }
+            var perdidaProductoFromDb = _repository.PerdidaProducto.GetAllLoseProductsByProduct(productoId, trackChanges);
+            var perdidaProductoDTO = _mapper.Map<IEnumerable<PerdidaProductoDTO>>(perdidaProductoFromDb);
+
+            return perdidaProductoDTO;
+        }
 
         public IEnumerable<PerdidaProductoDTO> GetAllLoseProductsForLoseAndProduct(Guid perdidaId, Guid productoId, bool trackChanges)
         {
@@ -150,37 +163,5 @@ namespace Service
             _mapper.Map(perdidaProductoForUpdate, perdidaProductoEntity);
             _repository.Save();
         }
-
-        /**/
-
-        public IEnumerable<PerdidaProductoDTO> GetAllLoseProductsByProduct(Guid productoId, bool trackChanges)
-        {
-            var producto = _repository.Producto.GetProduct(productoId, trackChanges);
-
-            if (producto is null)
-            {
-                throw new ProductoNotFoundException(productoId);
-            }
-            var perdidaProductoFromDb = _repository.PerdidaProducto.GetAllLoseProductsByProduct(productoId, trackChanges);
-            var perdidaProductoDTO = _mapper.Map<IEnumerable<PerdidaProductoDTO>>(perdidaProductoFromDb);
-
-            return perdidaProductoDTO;
-        }
-
-        //public PerdidaProductoDTO GetLoseProductByProduct(Guid productoId, Guid Id, bool trackChanges)
-        //{
-        //    var producto = _repository.Producto.GetProduct(productoId, trackChanges);
-        //    if (producto is null)
-        //    {
-        //        throw new ProductoNotFoundException(productoId);
-        //    }
-        //    var employeDb = _repository.PerdidaProducto.GetLoseProductByProduct(productoId, Id, trackChanges);
-        //    if (employeDb is null)
-        //    {
-        //        throw new PerdidaProductoNotFoundException(Id);
-        //    }
-        //    var employee = _mapper.Map<PerdidaProductoDTO>(employeDb);
-        //    return employee;
-        //}
     }
 }

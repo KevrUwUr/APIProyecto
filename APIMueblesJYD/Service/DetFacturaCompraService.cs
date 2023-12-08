@@ -97,7 +97,7 @@ namespace Service
             var perdProdloyeDb = _repository.DetFacturaCompra.GetDetBuyBillByBuyBillAndProduct(facturaCompraId, productoId, trackChanges);
             if (perdProdloyeDb is null)
             {
-                throw new DFacturaCompraNotFoundException(facturaCompraId, productoId);
+                throw new DetalleFacturaCompraNotFoundException(facturaCompraId, productoId);
             }
             var detalleFacturaCompra = _mapper.Map<DFacturaCompraDTO>(perdProdloyeDb);
             return detalleFacturaCompra;
@@ -114,9 +114,9 @@ namespace Service
             if (producto is null)
                 throw new ProductoNotFoundException(productoId);
 
-            var detalleFacturaCompraEntity = _mapper.Map<DFacturaCompra>(detalleFacturaCompraForCreation);
+            var detalleFacturaCompraEntity = _mapper.Map<DetalleFacturaCompra>(detalleFacturaCompraForCreation);
 
-            _repository.DFacturaCompra.CreateDetBuyBillForBuyBillAndProduct(facturaCompraId, productoId, detalleFacturaCompraEntity);
+            _repository.DetFacturaCompra.CreateDetBuyBillForBuyBillAndProduct(facturaCompraId, productoId, detalleFacturaCompraEntity);
             _repository.Save();
 
             var detalleFacturaCompraToReturn = _mapper.Map<DFacturaCompraDTO>(detalleFacturaCompraEntity);
@@ -133,10 +133,10 @@ namespace Service
             if (producto is null)
                 throw new ProductoNotFoundException(productoId);
 
-            var detalleFacturaCompraForBuyBill = _repository.DFacturaCompra.GetDetBuyBillByBuyBillAndProduct(facturaCompraId, productoId, trackChanges);
+            var detalleFacturaCompraForBuyBill = _repository.DetFacturaCompra.GetDetBuyBillByBuyBillAndProduct(facturaCompraId, productoId, trackChanges);
             if (detalleFacturaCompraForBuyBill is null)
-                throw new DFacturaCompraNotFoundException(facturaCompraId, productoId);
-            _repository.DFacturaCompra.DeleteDetBuyBill(detalleFacturaCompraForBuyBill);
+                throw new DetalleFacturaCompraNotFoundException(facturaCompraId, productoId);
+            _repository.DetFacturaCompra.DeleteDetBuyBill(detalleFacturaCompraForBuyBill);
             _repository.Save();
         }
 
@@ -154,10 +154,10 @@ namespace Service
                 throw new ProductoNotFoundException(productoId);
             }
 
-            var detalleFacturaCompraEntity = _repository.DFacturaCompra.GetDetBuyBillByBuyBillAndProduct(facturaCompraId, productoId, perdProdTrackChanges);
+            var detalleFacturaCompraEntity = _repository.DetFacturaCompra.GetDetBuyBillByBuyBillAndProduct(facturaCompraId, productoId, perdProdTrackChanges);
             if (detalleFacturaCompraEntity is null)
             {
-                throw new DFacturaCompraNotFoundException(facturaCompraId, productoId);
+                throw new DetalleFacturaCompraNotFoundException(facturaCompraId, productoId);
             }
 
             _mapper.Map(detalleFacturaCompraForUpdate, detalleFacturaCompraEntity);
