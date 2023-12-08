@@ -10,10 +10,6 @@ namespace Entities.Models
 {
     public class DetalleFacturaCompra
     {
-        [Column("DetalleacturaCompraId")]
-        [Key]
-        public Guid DetalleacturaCompraId { get; set; }
-
         [Required(ErrorMessage = "Este es un campo requerido")]
         public float ValorUnitario { get; set; }
 

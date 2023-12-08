@@ -6,6 +6,12 @@ using System.Threading.Tasks;
 
 namespace Shared.DataTransferObjects
 {
-    public record EmpleadoCargoDTO (DateTime FechaInicio, DateTime FechaFin, int NumeroContrato, int EmpleadoId, int CargoId);
-    
+    public record EmpleadoCargoDTO
+    {
+        public DateTime FechaInicio { get; init; }
+        public DateTime FechaFin { get; init; }
+        public int NumeroContrato { get; init; }
+        public Guid EmpleadoId { get; init; }
+        public Guid CargoId { get; init; }
+    }
 }

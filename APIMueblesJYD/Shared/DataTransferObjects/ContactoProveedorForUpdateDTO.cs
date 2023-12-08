@@ -7,7 +7,5 @@ using System.Threading.Tasks;
 namespace Shared.DataTransferObjects
 {
     public record ContactoProveedorForUpdateDTO(string NombreProv, string Telefono,
-        string Email, int Estado, DateTime FechaAlta, DateTime FechaBaja)
-    {
-    }
+        string Email, int Estado, DateTime FechaAlta, DateTime FechaBaja);
 }

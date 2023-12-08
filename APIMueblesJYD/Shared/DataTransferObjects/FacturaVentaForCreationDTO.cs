@@ -8,5 +8,6 @@ namespace Shared.DataTransferObjects
 {
     public record FacturaVentaForCreationDTO(int NFactura, DateTime FechaGeneracion, 
         DateTime FechaExpedicion, DateTime FechaVencimiento, float TotalBruto, float TotalIVA, 
-        float TotalRefuete, float TotalPago);
+        float TotalRefuete, float TotalPago, IEnumerable<ContactoProveedorForCreationDTO> ContactoProveedor,
+        IEnumerable<FacturaVentaForCreationDTO> FacturaVenta);
 }

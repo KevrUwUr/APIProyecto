@@ -18,6 +18,14 @@ namespace APIRestProyecto
             CreateMap<CategoriaForCreationDTO, Categoria>();
             CreateMap<CategoriaForUpdateDTO, Categoria>();
 
+            CreateMap<DetalleFacturaCompra, DFacturaCompraDTO>();
+            CreateMap<DFacturaCompraForCreationDTO, DetalleFacturaCompra>();
+            CreateMap<DFacturaCompraForUpdateDTO, DetalleFacturaCompra>();
+
+            CreateMap<DetalleFacturaVenta, DFacturaVentaDTO>();
+            CreateMap<DFacturaVentaForCreationDTO, DetalleFacturaVenta>();
+            CreateMap<DFacturaVentaForUpdateDTO, DetalleFacturaVenta>();
+
             CreateMap<ContactoEmpleado, ContactoEmpleadoDTO>()
                 .ForMember(dest => dest.ContEmpId, opt => opt.MapFrom(src => src.IdContactoEmpleado));
             CreateMap<ContactoEmpleadoForCreationDTO, ContactoEmpleado>();
@@ -47,6 +55,10 @@ namespace APIRestProyecto
                 .ForMember(dest => dest.EmpleadoId, opt => opt.MapFrom(src => src.EmpleadoId));
             CreateMap<EmpleadoForCreationDTO, Empleado>();
             CreateMap<EmpleadoForUpdateDTO, Empleado>();
+
+            CreateMap<EmpleadoCargo, EmpleadoCargoDTO>();
+            CreateMap<EmpleadoCargoForCreationDTO, EmpleadoCargo>();
+            CreateMap<EmpleadoCargoForUpdateDTO, EmpleadoCargo>();
 
             CreateMap<HistoricoPrecios, HistoricoPreciosDTO>()
                 .ForMember(dest => dest.IdHistoricoPrecios, opt => opt.MapFrom(src => src.IdHistoricoPrecios));

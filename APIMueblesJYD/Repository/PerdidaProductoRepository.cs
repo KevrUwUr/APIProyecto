@@ -21,18 +21,15 @@ namespace Repository
                 .OrderBy(c => c.IdPerdida)
                 .ToList();
 
-        public PerdidaProducto GetProductLose(Guid IdPerdidaProducto, bool trackChanges) =>
-            FindByCondition(c => c.IdPerdida.Equals(IdPerdidaProducto), trackChanges)
-            .SingleOrDefault();
-
         public IEnumerable<PerdidaProducto> GetAllLoseProductsByLose(Guid perdidaId, bool trackChanges) =>
             FindByCondition(e => e.IdPerdida.Equals(perdidaId), trackChanges)
             .OrderBy(e => e.Perdida)
             .ToList();
-        //public PerdidaProducto GetLoseProductByLose(Guid perdidaId, Guid Id, bool trackChanges) =>
-        //    FindByCondition(e => e.IdPerdida.Equals(perdidaId) && e.PerdidaProductoId == (Id), trackChanges)
-        //    .SingleOrDefault();
 
+        public IEnumerable<PerdidaProducto> GetAllLoseProductsByProduct(Guid productoId, bool trackChanges) =>
+            FindByCondition(e => e.ProductoId.Equals(productoId), trackChanges)
+            .OrderBy(e => e.Perdida)
+            .ToList();
 
         public IEnumerable<PerdidaProducto> GetAllLoseProductsByLoseAndProduct(Guid perdidaId, Guid productoId, bool trackChanges) =>
             FindByCondition(e => e.IdPerdida.Equals(perdidaId) && e.ProductoId==(productoId), trackChanges)
@@ -43,7 +40,7 @@ namespace Repository
             .SingleOrDefault();
 
 
-        public void CreateLoseProductForLoseProduct(Guid perdidaId, Guid productoId, PerdidaProducto perdidaProducto)
+        public void CreateLoseProductForLoseAndProduct(Guid perdidaId, Guid productoId, PerdidaProducto perdidaProducto)
         {
             perdidaProducto.IdPerdida = perdidaId;
             perdidaProducto.ProductoId = productoId;
@@ -51,13 +48,5 @@ namespace Repository
         }
 
         public void DeleteLoseProduct(PerdidaProducto perdidaProducto) => Delete(perdidaProducto);
-
-        public IEnumerable<PerdidaProducto> GetAllLoseProductsByProduct(Guid productoId, bool trackChanges) =>
-            FindByCondition(e => e.ProductoId.Equals(productoId), trackChanges)
-            .OrderBy(e => e.Perdida)
-            .ToList();
-        //public PerdidaProducto GetLoseProductByProduct(Guid productoId, Guid Id, bool trackChanges) =>
-        //    FindByCondition(e => e.ProductoId.Equals(productoId) && e.PerdidaProductoId == (Id), trackChanges)
-        //    .SingleOrDefault();
     }
 }

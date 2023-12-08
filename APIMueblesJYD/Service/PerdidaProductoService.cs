@@ -33,18 +33,6 @@ namespace Service
             return perdidaProductoDTO;
         }
 
-        public PerdidaProductoDTO GetLoseProduct(Guid Id, bool trackChanges)
-        {
-            var perdidaProducto = _repository.PerdidaProducto.GetProductLose(Id, trackChanges);
-            if(perdidaProducto == null)
-            {
-                throw new PerdidaProductoNotFoundException(Id);
-            }
-
-            var perdidaProductoDTO = _mapper.Map<PerdidaProductoDTO>(perdidaProducto);
-            return perdidaProductoDTO;
-        }
-
         public IEnumerable<PerdidaProductoDTO> GetAllLoseProductsByLose(Guid perdidaId, bool trackChanges)
         {
             var perdida = _repository.Perdida.GetLose(perdidaId, trackChanges);
@@ -102,24 +90,6 @@ namespace Service
             return perdidaProducto;
         }
 
-
-
-        //public PerdidaProductoDTO GetLoseProductByLose(Guid perdidaId, Guid Id, bool trackChanges)
-        //{
-        //    var perdida = _repository.Perdida.GetLose(perdidaId, trackChanges);
-        //    if (perdida is null)
-        //    {
-        //        throw new PerdidaNotFoundException(perdidaId);
-        //    }
-        //    var perdProdloyeDb = _repository.PerdidaProducto.GetLoseProductByLose(perdidaId, Id, trackChanges);
-        //    if (perdProdloyeDb is null)
-        //    {
-        //        throw new PerdidaProductoNotFoundException(Id);
-        //    }
-        //    var perdidaProducto = _mapper.Map<PerdidaProductoDTO>(perdProdloyeDb);
-        //    return perdidaProducto;
-        //}
-
         public PerdidaProductoDTO CreateLoseProductForLoseAndProduct(Guid perdidaId, Guid productoId, PerdidaProductoForCreationDTO perdidaProductoForCreation, bool trackChanges)
         {
             var perdida = _repository.Perdida.GetLose(perdidaId, trackChanges);
@@ -133,7 +103,7 @@ namespace Service
 
             var perdidaProductoEntity = _mapper.Map<PerdidaProducto>(perdidaProductoForCreation);
 
-            _repository.PerdidaProducto.CreateLoseProductForLoseProduct(perdidaId, productoId, perdidaProductoEntity);
+            _repository.PerdidaProducto.CreateLoseProductForLoseAndProduct(perdidaId, productoId, perdidaProductoEntity);
             _repository.Save();
 
             var perdidaProductoToReturn = _mapper.Map<PerdidaProductoDTO>(perdidaProductoEntity);
