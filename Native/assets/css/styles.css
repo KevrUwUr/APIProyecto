@@ -1,0 +1,153 @@
+#custom-container {
+  background: rgba(67, 64, 64, 0.54);
+}
+
+#custom-navbar {
+  width: 100%;
+  background: #002b5b;
+  color: var(--bs-black);
+  font-size: 20px;
+}
+
+#custom-navbar .nav-link {
+  color: var(--bs-white);
+  font-weight: bold;
+}
+
+.custom-container {
+  margin-top: 19px;
+  margin-bottom: 9px;
+  height: 382px;
+}
+
+.custom-card-header {
+  height: 130px;
+}
+
+.custom-button {
+  margin: 0;
+  padding: 5px 15px;
+  height: 80px;
+}
+
+.custom-table-responsive {
+  width: 100%;
+  height: 185px;
+  padding: 10px;
+  margin-bottom: 36px;
+  padding-bottom: 0;
+}
+
+/* Estilos para thead (encabezado de la tabla) */
+.custom-table thead {
+  background: #002b5b;
+}
+
+.custom-table th {
+  text-align: center;
+  width: 50px;
+  background: #002b5b;
+  color: var(--bs-table-bg);
+}
+
+/* Estilos para tbody (cuerpo de la tabla) */
+.custom-table tbody {
+  text-align: center;
+}
+
+/* styles.css */
+.custom-background {
+  background: #ea5455;
+  height: 100px;
+}
+
+.custom-color {
+  color: #000000;
+}
+
+.custom-p {
+  color: #000000;
+  font-family: ABeeZee;
+}
+
+.custom-list {
+  color: #000000;
+  list-style: none;
+  padding: 0;
+}
+
+.custom-list-item {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.custom-icon {
+  color: #000000;
+}
+
+.custom-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.custom-link:hover {
+  text-decoration: underline;
+}
+
+.custom-title {
+  margin: 0;
+  padding: 5px;
+  margin-top: 6px;
+  margin-left: 0;
+  color: #002b63;
+  font-weight: bold;
+}
+
+/* Estilos para los botones en las celdas td */
+.custom-table td .btn {
+  margin-left: 5px;
+}
+
+.btn-eliminar {
+  color: #DC3545; /* Color rojo para el ícono de eliminar */
+}
+
+/* Estilos para el ícono de eliminar dentro del botón "Eliminar" */
+.btn-eliminar i {
+  color: white; /* Cambia el color del ícono a blanco */
+}
+
+.custom-table td .btn:hover {
+  text-decoration: none;
+}
+
+#ipi-table {
+  background: #002b5b;
+}
+
+styles.css
+body {
+  background: #f9f5eb;
+}
+
+header {
+  background: rgba(67, 64, 64, 0.54);
+}
+
+.navbar {
+  width: 100%;
+  background: #002b5b;
+  color: var(--bs-black);
+  font-size: 20px;
+}
+
+.navbar img {
+  max-height: 70px; /* Ajusta el tamaño de la imagen de tu logotipo */
+}
+
+.navbar-nav .nav-item a {
+  color: var(--bs-white);
+  font-weight: bold;
+  font-family: ABeeZee, sans-serif;
+}
+

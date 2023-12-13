@@ -1,0 +1,31 @@
+.container-py{
+    background: #e4dccf;
+    margin : 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+
+}
+
+.product-title{
+    font-family: ABeeZee, sans-serif;
+    font-weight: bold;
+    padding-left: 2px;
+}
+
+.product-name{
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 10px; 
+}
+
+.product-description{
+    font-family: ABeeZee, sans-serif;
+    padding: 10px; 
+}
+
+.row {
+    margin : 10px;
+    display: flex;
+    padding: 10px; 
+}
